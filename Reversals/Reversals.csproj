@@ -70,8 +70,9 @@
     <ApplicationIcon>mainIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bloomberglp.Blpapi">
-      <HintPath>..\..\..\Option PR\OptionPR\bin\x64\Debug\Bloomberglp.Blpapi.dll</HintPath>
+    <Reference Include="Bloomberglp.Blpapi, Version=3.6.2.0, Culture=neutral, PublicKeyToken=ec3efa8c033c2bc5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Bloomberglp.Blpapi.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.DotNetBar.Schedule, Version=11.3.0.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
