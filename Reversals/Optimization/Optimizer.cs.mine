@@ -1,0 +1,103 @@
+﻿using System;
+using System.Threading;
+using System.Collections.Generic;
+using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
+using DevComponents.DotNetBar.Controls;
+using OptionPR.Display.SummaryDisplayer;
+using OptionPR.Strategies;
+
+namespace OptionPR.Optimization
+{
+    class Optimizer
+    {
+        private Strategy _strategy;
+        private List<OptimizationParameter> _optParameters;
+        private OptimizationParameter _parameterStep1;
+        private OptimizationParameter _parameterStep2;
+        private int _parameterStep1CurrentValue;
+        private int _parameterStep2CurrentValue;
+        private int _displayCounter;
+        private int _step1Incrementor;
+        private int _step2Incrementor;
+        private DateTime _startTime;
+        private DateTime _endTime;
+
+        private List<Strategy.StrategyAdditionalParameter> _strategyAdditionalParameters;
+
+        public Optimizer(Strategy strategy, List<OptimizationParameter> optParameters, DataGridView parametersTable, DateTime startTime, DateTime endTime)
+        {
+            _strategy = strategy;
+            _strategyAdditionalParameters = _strategy.AdditionalParameters;
+            _startTime = startTime;
+            _endTime = endTime;
+
+            foreach (OptimizationParameter optParameter in optParameters)
+            {
+                if (optParameter.Name == "Stop Level")
+                {
+                    _parameterStep1 = optParameter;
+                    _step1Incrementor = (int)optParameter.Step;
+                    _parameterStep1CurrentValue = (int)optParameter.MinValue;
+                }
+                else if (optParameter.Name == "Reversal Level")
+                {
+                    _parameterStep2 = optParameter;
+                    _step2Incrementor = (int)optParameter.Step;
+                    _parameterStep2CurrentValue = (int)optParameter.MinValue;
+                }
+            }
+            _displayCounter = 1;
+        }
+
+        public void StartOptimize(DataGridView summaryTable, Chart summaryChart, GroupPanel summaryGroupPanel)
+        {
+            if (_strategy is StepChange)
+            {
+                while (_parameterStep1CurrentValue <= (int)_parameterStep1.MaxValue)
+                {
+                    //Log("              step1 = {0}", _step1CurrentValue);
+                    Strategy.StrategyAdditionalParameter parameterStep1 = new Strategy.StrategyAdditionalParameter("", "Stop Level", _parameterStep1CurrentValue, typeof(int), true);
+
+                    while (_parameterStep2CurrentValue <= (int)_parameterStep2.MaxValue)
+                    {
+
+                        Strategy.StrategyAdditionalParameter parameterStep2 = new Strategy.StrategyAdditionalParameter("", "Reversal Level", _parameterStep2CurrentValue, typeof(int), true);
+                        _strategy.AdditionalParameters[7] = parameterStep1;
+                        _strategy.AdditionalParameters[8] = parameterStep2;
+                        //Log("step2 = {0}", _step2CurrentValue);
+                        _strategy.Start(0);
+                        DisplayBackTestResult(summaryTable, summaryChart, summaryGroupPanel);
+                        _strategy.Clear();
+
+                        _parameterStep2CurrentValue += _step2Incrementor;
+                    }
+
+                    _parameterStep1CurrentValue += _step1Incrementor;
+                    _parameterStep2CurrentValue = (int)_parameterStep2.MinValue;
+                }
+            }
+        }
+
+        public void DisplayBackTestResult(DataGridView summaryTable, Chart summaryChart, GroupPanel summaryGroupPanel)
+        {
+            SummaryDisplayer _summaryDisplayer = new SummaryDisplayer(_strategy, true, _startTime, _endTime);
+
+            _summaryDisplayer.DisplayTable(summaryTable);
+
+            //_summaryDisplayer.DisplayChart(summaryChart);
+
+            //_summaryDisplayer.DisplayLabelItems(summaryGroupPanel);
+
+            Log("was displayed {0} 1 - {1}; 2 - {2}", _displayCounter, _parameterStep1CurrentValue, _parameterStep2CurrentValue);
+            _displayCounter++;
+        }
+
+
+        public virtual void Log(string format, params object[] args)
+        {
+            string msg = string.Format(format + "\r\n", args);
+            System.IO.File.AppendAllText(@"Log1.txt", msg);
+        }
+    }
+}

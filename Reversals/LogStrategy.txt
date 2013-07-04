@@ -1,0 +1,72 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|                         NEW TEST                      |
+|step 1 = 8                step 2 = 8               |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                         
+                          NEW DAY                        
+                                                         
+29.04.2013 17:02:53    -    was added premium = 3020
+30.04.2013 8:53:39    -    fixed price 1469,4 - bar close 1478 = -8,6
+30.04.2013 8:53:39    -    order id 1 added op Buy at price 1478 with posNumber 1, range 0,599999999999909
+30.04.2013 13:08:06    -    fixed price 1477,4 - bar close 1469,3 = 8,1 REVERSE
+30.04.2013 13:08:06    -    order id 2 added op Sell at price 1469,3 with posNumber 0, range -0,100000000000136
+30.04.2013 15:16:57    -    fixed price 1469,4 - bar close 1477,5 = -8,1 REVERSE
+30.04.2013 15:16:57    -    order id 3 added op Buy at price 1477,5 with posNumber 1, range 0,0999999999999091
+30.04.2013 15:38:56    -    fixed price 1477,4 - bar close 1469,4 = 8 REVERSE
+30.04.2013 15:38:56    -    order id 4 added op Sell at price 1469,4 with posNumber 0, range 0
+30.04.2013 17:02:31    -    Was added summary profit - summary profit -100,76 = summarySqrValue ( -25,2655000000071 + -25,2655000000071) - commission 50,23
+                                                         
+                          NEW DAY                        
+                                                         
+                            bar time = 30.04.2013 17:02:31 FIXED PRICE - 1468,1 
+30.04.2013 17:02:31    -    was added premium = 3020
+30.04.2013 20:39:44    -    fixed price 1468,1 - bar close 1476,1 = -8
+30.04.2013 20:39:44    -    order id 5 added op Buy at price 1476,1 with posNumber 1, range 0
+01.05.2013 12:34:14    -    fixed price 1476,1 - bar close 1467,5 = 8,6 REVERSE
+01.05.2013 12:34:14    -    order id 6 added op Sell at price 1467,5 with posNumber 0, range -0,599999999999909
+01.05.2013 13:55:54    -    fixed price 1468,1 - bar close 1460,1 = 8
+01.05.2013 13:55:54    -    order id 7 added op Sell at price 1460,1 with posNumber -1, range 0
+01.05.2013 14:31:45    -    fixed price 1460,1 - bar close 1451,7 = 8,4
+01.05.2013 14:31:45    -    order id 8 added op Sell at price 1451,7 with posNumber -2, range -0,399999999999864
+01.05.2013 16:39:18    -    fixed price 1452,1 - bar close 1442,3 = 9,8
+01.05.2013 16:39:18    -    order id 9 added op Sell at price 1442,3 with posNumber -3, range -1,79999999999995
+01.05.2013 17:01:11    -    position closed by order id 10 with price 1460,1 last positions are -2 with fpl 4329,52
+01.05.2013 17:01:11    -    position closed by order id 11 with price 1451,7 last positions are -1 with fpl 2320,24
+01.05.2013 17:01:11    -    position closed by order id 12 with price 1442,3 last positions are 0 with fpl 71,76
+01.05.2013 17:01:11    -    Was added summary profit - summary profit -10411,48 = summarySqrValue ( -10340,7655 + -3,7375) - commission 66,98
+                                                         
+                          NEW DAY                        
+                                                         
+                            bar time = 01.05.2013 17:01:11 FIXED PRICE - 1441,8 
+01.05.2013 17:01:11    -    was added premium = 3020
+01.05.2013 18:36:26    -    fixed price 1441,8 - bar close 1450,1 = -8,3
+01.05.2013 18:36:26    -    order id 13 added op Buy at price 1450,1 with posNumber 1, range 0,299999999999955
+01.05.2013 19:47:12    -    fixed price 1449,8 - bar close 1458,3 = -8,5
+01.05.2013 19:47:12    -    order id 14 added op Buy at price 1458,3 with posNumber 2, range 0,5
+02.05.2013 13:20:03    -    fixed price 1457,8 - bar close 1466,6 = -8,8
+02.05.2013 13:20:03    -    order id 15 added op Buy at price 1466,6 with posNumber 3, range 0,799999999999955
+02.05.2013 17:01:13    -    position closed by order id 16 with price 1450,1 last positions are 2 with fpl 5310,24
+02.05.2013 17:01:13    -    position closed by order id 17 with price 1458,3 last positions are 1 with fpl 3348,8
+02.05.2013 17:01:13    -    position closed by order id 18 with price 1466,6 last positions are 0 with fpl 1363,44
+02.05.2013 17:01:13    -    Was added summary profit - summary profit -13086,63 = summarySqrValue ( -12746,968 + -289,432000000012) - commission 50,23
+                                                         
+                          NEW DAY                        
+                                                         
+                            bar time = 02.05.2013 17:01:13 FIXED PRICE - 1471 
+02.05.2013 17:01:13    -    was added premium = 3020
+03.05.2013 8:21:55    -    fixed price 1471 - bar close 1479,1 = -8,1
+03.05.2013 8:21:55    -    order id 19 added op Buy at price 1479,1 with posNumber 1, range 0,0999999999999091
+03.05.2013 11:22:41    -    fixed price 1479 - bar close 1488 = -9
+03.05.2013 11:22:41    -    order id 20 added op Buy at price 1488 with posNumber 2, range 1
+03.05.2013 12:54:52    -    fixed price 1487 - bar close 1477,8 = 9,2 REVERSE
+03.05.2013 12:54:52    -    order id 21 added op Sell at price 1477,8 with posNumber 1, range -1,20000000000005
+03.05.2013 13:30:01    -    fixed price 1479 - bar close 1469,6 = 9,4
+03.05.2013 13:30:01    -    order id 22 added op Sell at price 1469,6 with posNumber 0, range -1,40000000000009
+03.05.2013 13:31:04    -    fixed price 1471 - bar close 1463 = 8
+03.05.2013 13:31:04    -    order id 23 added op Sell at price 1463 with posNumber -1, range 0
+03.05.2013 15:02:10    -    fixed price 1463 - bar close 1471,4 = -8,4 REVERSE
+03.05.2013 15:02:10    -    order id 24 added op Buy at price 1471,4 with posNumber 0, range 0,400000000000091
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|                         NEW TEST                      |
+|step 1 = 8                step 2 = 8               |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

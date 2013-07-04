@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WeeklyData" targetNamespace="http://tempuri.org/WeeklyData.xsd" xmlns:mstns="http://tempuri.org/WeeklyData.xsd" xmlns="http://tempuri.org/WeeklyData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WeeklyData" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="WeeklyData" msprop:Generator_UserDSName="WeeklyData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tableTrades" msdata:Locale="en-US" msprop:Generator_TableClassName="tableTradesDataTable" msprop:Generator_TableVarName="tabletableTrades" msprop:Generator_TablePropName="tableTrades" msprop:Generator_RowDeletingName="tableTradesRowDeleting" msprop:Generator_UserTableName="tableTrades" msprop:Generator_RowChangingName="tableTradesRowChanging" msprop:Generator_RowEvHandlerName="tableTradesRowChangeEventHandler" msprop:Generator_RowDeletedName="tableTradesRowDeleted" msprop:Generator_RowEvArgName="tableTradesRowChangeEvent" msprop:Generator_RowChangedName="tableTradesRowChanged" msprop:Generator_RowClassName="tableTradesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" minOccurs="0" />
+              <xs:element name="id_Day" msprop:Generator_ColumnVarNameInTable="columnid_Day" msprop:Generator_ColumnPropNameInRow="id_Day" msprop:Generator_ColumnPropNameInTable="id_DayColumn" msprop:Generator_UserColumnName="id_Day" type="xs:int" minOccurs="0" />
+              <xs:element name="TimeOpen" msprop:Generator_ColumnVarNameInTable="columnTimeOpen" msprop:Generator_ColumnPropNameInRow="TimeOpen" msprop:Generator_ColumnPropNameInTable="TimeOpenColumn" msprop:Generator_UserColumnName="TimeOpen" type="xs:string" minOccurs="0" />
+              <xs:element name="TimeClose" msprop:Generator_ColumnVarNameInTable="columnTimeClose" msprop:Generator_ColumnPropNameInRow="TimeClose" msprop:Generator_ColumnPropNameInTable="TimeCloseColumn" msprop:Generator_UserColumnName="TimeClose" type="xs:string" minOccurs="0" />
+              <xs:element name="Operation" msprop:Generator_ColumnVarNameInTable="columnOperation" msprop:Generator_ColumnPropNameInRow="Operation" msprop:Generator_ColumnPropNameInTable="OperationColumn" msprop:Generator_UserColumnName="Operation" type="xs:string" minOccurs="0" />
+              <xs:element name="OpenPr" msprop:Generator_ColumnVarNameInTable="columnOpenPr" msprop:Generator_ColumnPropNameInRow="OpenPr" msprop:Generator_ColumnPropNameInTable="OpenPrColumn" msprop:Generator_UserColumnName="OpenPr" type="xs:double" minOccurs="0" />
+              <xs:element name="ClosePr" msprop:Generator_ColumnVarNameInTable="columnClosePr" msprop:Generator_ColumnPropNameInRow="ClosePr" msprop:Generator_ColumnPropNameInTable="ClosePrColumn" msprop:Generator_UserColumnName="ClosePr" type="xs:double" minOccurs="0" />
+              <xs:element name="Trades" msprop:Generator_ColumnVarNameInTable="columnTrades" msprop:Generator_ColumnPropNameInRow="Trades" msprop:Generator_ColumnPropNameInTable="TradesColumn" msprop:Generator_UserColumnName="Trades" type="xs:double" minOccurs="0" />
+              <xs:element name="Commission" msprop:Generator_ColumnVarNameInTable="columnCommission" msprop:Generator_ColumnPropNameInRow="Commission" msprop:Generator_ColumnPropNameInTable="CommissionColumn" msprop:Generator_UserColumnName="Commission" type="xs:double" minOccurs="0" />
+              <xs:element name="PosPNL" msprop:Generator_ColumnVarNameInTable="columnPosPNL" msprop:Generator_ColumnPropNameInRow="PosPNL" msprop:Generator_ColumnPropNameInTable="PosPNLColumn" msprop:Generator_UserColumnName="PosPNL" type="xs:double" minOccurs="0" />
+              <xs:element name="ClosePNL" msprop:Generator_ColumnVarNameInTable="columnClosePNL" msprop:Generator_ColumnPropNameInRow="ClosePNL" msprop:Generator_ColumnPropNameInTable="ClosePNLColumn" msprop:Generator_UserColumnName="ClosePNL" type="xs:double" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tableWeek" msdata:Locale="en-US" msprop:Generator_TableClassName="tableWeekDataTable" msprop:Generator_TableVarName="tabletableWeek" msprop:Generator_TablePropName="tableWeek" msprop:Generator_RowDeletingName="tableWeekRowDeleting" msprop:Generator_UserTableName="tableWeek" msprop:Generator_RowChangingName="tableWeekRowChanging" msprop:Generator_RowEvHandlerName="tableWeekRowChangeEventHandler" msprop:Generator_RowDeletedName="tableWeekRowDeleted" msprop:Generator_RowEvArgName="tableWeekRowChangeEvent" msprop:Generator_RowChangedName="tableWeekRowChanged" msprop:Generator_RowClassName="tableWeekRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="Start_x0020_Date" msdata:Caption="" msprop:Generator_ColumnVarNameInTable="columnStart_Date" msprop:Generator_ColumnPropNameInRow="Start_Date" msprop:Generator_ColumnPropNameInTable="Start_DateColumn" msprop:Generator_UserColumnName="Start Date" type="xs:string" minOccurs="0" />
+              <xs:element name="End_x0020_Date" msprop:Generator_ColumnVarNameInTable="columnEnd_Date" msprop:Generator_ColumnPropNameInRow="End_Date" msprop:Generator_ColumnPropNameInTable="End_DateColumn" msprop:Generator_UserColumnName="End Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Time_x0020_Value" msprop:Generator_ColumnVarNameInTable="columnTime_Value" msprop:Generator_ColumnPropNameInRow="Time_Value" msprop:Generator_ColumnPropNameInTable="Time_ValueColumn" msprop:Generator_UserColumnName="Time Value" type="xs:double" minOccurs="0" />
+              <xs:element name="Trades" msprop:Generator_ColumnVarNameInTable="columnTrades" msprop:Generator_ColumnPropNameInRow="Trades" msprop:Generator_ColumnPropNameInTable="TradesColumn" msprop:Generator_UserColumnName="Trades" type="xs:double" minOccurs="0" />
+              <xs:element name="Commission" msprop:Generator_ColumnVarNameInTable="columnCommission" msprop:Generator_ColumnPropNameInRow="Commission" msprop:Generator_ColumnPropNameInTable="CommissionColumn" msprop:Generator_UserColumnName="Commission" type="xs:double" minOccurs="0" />
+              <xs:element name="PosPNL" msprop:Generator_ColumnVarNameInTable="columnPosPNL" msprop:Generator_ColumnPropNameInRow="PosPNL" msprop:Generator_ColumnPropNameInTable="PosPNLColumn" msprop:Generator_UserColumnName="PosPNL" type="xs:double" minOccurs="0" />
+              <xs:element name="ClosePNL" msprop:Generator_ColumnVarNameInTable="columnClosePNL" msprop:Generator_ColumnPropNameInRow="ClosePNL" msprop:Generator_ColumnPropNameInTable="ClosePNLColumn" msprop:Generator_UserColumnName="ClosePNL" type="xs:double" minOccurs="0" />
+              <xs:element name="PNL" msprop:Generator_ColumnVarNameInTable="columnPNL" msprop:Generator_ColumnPropNameInRow="PNL" msprop:Generator_ColumnPropNameInTable="PNLColumn" msprop:Generator_UserColumnName="PNL" type="xs:double" minOccurs="0" />
+              <xs:element name="Reversal" msprop:Generator_ColumnVarNameInTable="columnReversal" msprop:Generator_ColumnPropNameInRow="Reversal" msprop:Generator_ColumnPropNameInTable="ReversalColumn" msprop:Generator_UserColumnName="Reversal" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tableDays" msdata:Locale="en-US" msprop:Generator_TableClassName="tableDaysDataTable" msprop:Generator_TableVarName="tabletableDays" msprop:Generator_TablePropName="tableDays" msprop:Generator_RowDeletingName="tableDaysRowDeleting" msprop:Generator_UserTableName="tableDays" msprop:Generator_RowChangingName="tableDaysRowChanging" msprop:Generator_RowEvHandlerName="tableDaysRowChangeEventHandler" msprop:Generator_RowDeletedName="tableDaysRowDeleted" msprop:Generator_RowEvArgName="tableDaysRowChangeEvent" msprop:Generator_RowChangedName="tableDaysRowChanged" msprop:Generator_RowClassName="tableDaysRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="id_Week" msprop:Generator_ColumnVarNameInTable="columnid_Week" msprop:Generator_ColumnPropNameInRow="id_Week" msprop:Generator_ColumnPropNameInTable="id_WeekColumn" msprop:Generator_UserColumnName="id_Week" type="xs:int" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Time_x0020_Value" msdata:Caption="" msprop:Generator_ColumnVarNameInTable="columnTime_Value" msprop:Generator_ColumnPropNameInRow="Time_Value" msprop:Generator_ColumnPropNameInTable="Time_ValueColumn" msprop:Generator_UserColumnName="Time Value" type="xs:double" minOccurs="0" />
+              <xs:element name="Trades" msprop:Generator_ColumnVarNameInTable="columnTrades" msprop:Generator_ColumnPropNameInRow="Trades" msprop:Generator_ColumnPropNameInTable="TradesColumn" msprop:Generator_UserColumnName="Trades" type="xs:double" minOccurs="0" />
+              <xs:element name="Commission" msprop:Generator_ColumnVarNameInTable="columnCommission" msprop:Generator_ColumnPropNameInRow="Commission" msprop:Generator_ColumnPropNameInTable="CommissionColumn" msprop:Generator_UserColumnName="Commission" type="xs:double" minOccurs="0" />
+              <xs:element name="PosPNL" msprop:Generator_ColumnVarNameInTable="columnPosPNL" msprop:Generator_ColumnPropNameInRow="PosPNL" msprop:Generator_ColumnPropNameInTable="PosPNLColumn" msprop:Generator_UserColumnName="PosPNL" type="xs:double" minOccurs="0" />
+              <xs:element name="ClosePNL" msprop:Generator_ColumnVarNameInTable="columnClosePNL" msprop:Generator_ColumnPropNameInRow="ClosePNL" msprop:Generator_ColumnPropNameInTable="ClosePNLColumn" msprop:Generator_UserColumnName="ClosePNL" type="xs:double" minOccurs="0" />
+              <xs:element name="PNL" msprop:Generator_ColumnVarNameInTable="columnPNL" msprop:Generator_ColumnPropNameInRow="PNL" msprop:Generator_ColumnPropNameInTable="PNLColumn" msprop:Generator_UserColumnName="PNL" type="xs:double" minOccurs="0" />
+              <xs:element name="Reversal" msprop:Generator_ColumnVarNameInTable="columnReversal" msprop:Generator_ColumnPropNameInRow="Reversal" msprop:Generator_ColumnPropNameInTable="ReversalColumn" msprop:Generator_UserColumnName="Reversal" type="xs:int" minOccurs="0" />
+              <xs:element name="OpenPrice" msprop:Generator_ColumnVarNameInTable="columnOpenPrice" msprop:Generator_ColumnPropNameInRow="OpenPrice" msprop:Generator_ColumnPropNameInTable="OpenPriceColumn" msprop:Generator_UserColumnName="OpenPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="ClosePrice" msprop:Generator_ColumnVarNameInTable="columnClosePrice" msprop:Generator_ColumnPropNameInRow="ClosePrice" msprop:Generator_ColumnPropNameInTable="ClosePriceColumn" msprop:Generator_UserColumnName="ClosePrice" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="tableTradesKey11">
+      <xs:selector xpath=".//mstns:tableTrades" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="tableWeekKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tableWeek" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="tableDaysKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tableDays" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
