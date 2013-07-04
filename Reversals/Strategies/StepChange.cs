@@ -556,6 +556,13 @@ namespace Reversals.Strategies
             orders.Clear();
             positions.Clear();
             trades.Clear();
+
+            _fixedPrice = 0;
+            _commission = 0;
+            _lastFridayOperation = 0;
+            _lastOrderOperation = new Operation();
+            _lastOrderPrice = new double();
+            _startPrice = new double();
         }
     }
 }

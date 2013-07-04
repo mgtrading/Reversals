@@ -27,7 +27,7 @@ namespace Reversals
             double ndOne = Math.Exp(-(Math.Pow(DOne(underlyingPrice, exercisePrice, time, interest, volatility, dividend), 2)) /2)
                            /
                            (Math.Sqrt(2*Math.PI));
-            return Math.Round(ndOne,2);
+            return Math.Round(ndOne,4);
         }
 
         public double DTwo(double underlyingPrice, double exercisePrice, double time, double interest, double volatility,
@@ -35,7 +35,7 @@ namespace Reversals
         {
             double dTwo = DOne(underlyingPrice, exercisePrice, time, interest, volatility, dividend) -
                           volatility*Math.Sqrt(time);
-            return Math.Round(dTwo,2);
+            return Math.Round(dTwo,4);
         }
 
         public double NdTwo(double underlyingPrice, double exercisePrice, double time, double interest, double volatility,

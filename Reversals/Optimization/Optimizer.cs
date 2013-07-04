@@ -59,10 +59,10 @@ namespace Reversals.Optimization
                 {
                     _strategy = null;
                     _strategy = _startStrategy;
-                    var parameterStep1 = new Strategy.StrategyAdditionalParameter("", "Stop Level", Math.Round(_parameterStep1CurrentValue), typeof(double),true);
+                    var parameterStep1 = new Strategy.StrategyAdditionalParameter("", "Stop Level", Math.Round(_parameterStep1CurrentValue, 2), typeof(double),true);
                     while (_parameterStep2CurrentValue <= (double)_parameterStep2.MaxValue)
                     {
-                        var parameterStep2 = new Strategy.StrategyAdditionalParameter("","Reversal Level",Math.Round(_parameterStep2CurrentValue),typeof(double),true);
+                        var parameterStep2 = new Strategy.StrategyAdditionalParameter("","Reversal Level",Math.Round(_parameterStep2CurrentValue, 2),typeof(double),true);
                         _strategy.AdditionalParameters[7] = parameterStep1;
                         _strategy.AdditionalParameters[8] = parameterStep2;
                         _strategy.Start(0);
