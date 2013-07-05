@@ -2050,6 +2050,23 @@ namespace Reversals.Forms
                     uiStrategy_dataGridViewNoOptomizationParameters[1, i].Value = 0.0;
                 }
             }
+
+            int rowindex = e.RowIndex;
+            int columnindex = e.ColumnIndex;
+            double zim;
+            double pvalue;
+            double step;
+            double ticksize;
+
+            if ((rowindex == 6) && (columnindex == 1))
+            {
+                zim = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[columnindex, rowindex].Value.ToString(), _nfi);
+                //ticksize = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 7].Value.ToString(), _nfi);
+                step = double.Parse(uiStrategy_dataGridViewOptomizationParameters[1, 0].Value.ToString(), _nfi);
+                pvalue = zim / step;
+                uiStrategy_dataGridViewNoOptomizationParameters[1, 5].Value = Math.Round(pvalue, 5);
+                //UpdateOptionsCalc();
+            }
         }
 
         private void uiStrategyOptomizationParameters_CellEndEdit(object sender, DataGridViewCellEventArgs e)
@@ -2075,19 +2092,20 @@ namespace Reversals.Forms
 
             if ((rowindex == 0) && (columnindex == 2))
             {
-                pvalue = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 5].Value.ToString(), _nfi);
-                ticksize = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 7].Value.ToString(), _nfi);
+                zim = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 6].Value.ToString(), _nfi);
+                //ticksize = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 7].Value.ToString(), _nfi);
                 step = double.Parse(uiStrategy_dataGridViewOptomizationParameters[columnindex, rowindex].Value.ToString(), _nfi);
-                zim = pvalue * step / ticksize;
-                uiStrategy_dataGridViewNoOptomizationParameters[1, 6].Value = Math.Round(zim, 7);
+                pvalue = zim / step;
+                uiStrategy_dataGridViewNoOptomizationParameters[1, 5].Value = Math.Round(pvalue, 5);
             }
             if ((rowindex == 0) && (columnindex == 1))
             {
-                pvalue = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 5].Value.ToString(), _nfi);
-                ticksize = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 7].Value.ToString(), _nfi);
+                zim = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 6].Value.ToString(), _nfi);
+                //ticksize = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 7].Value.ToString(), _nfi);
                 step = double.Parse(uiStrategy_dataGridViewOptomizationParameters[columnindex, rowindex].Value.ToString(), _nfi);
-                zim = pvalue * step / ticksize;
-                uiStrategy_dataGridViewNoOptomizationParameters[1, 6].Value = Math.Round(zim, 7);
+                pvalue = zim / step;
+                uiStrategy_dataGridViewNoOptomizationParameters[1, 5].Value = Math.Round(pvalue, 5);
+                UpdateOptionsCalc();
             }
 
             _optParameterssChanging = new ParametersChangingNotifier();

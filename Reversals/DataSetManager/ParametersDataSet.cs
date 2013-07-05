@@ -45,7 +45,7 @@ namespace Reversals.DataSetManager
         #region PARAMETERS CALCULATING
         public void CalcelateStepValues()
         {
-            _stopLevel =  Math.Round(_zim / _pointValue *_tickSize,2);
+            _stopLevel =  Math.Round(_zim / _pointValue, 2);
             _reversalLevel *= _tickSize;
             _defaultMinValue *= _tickSize;
             _defaultMaxValue *= _tickSize;
