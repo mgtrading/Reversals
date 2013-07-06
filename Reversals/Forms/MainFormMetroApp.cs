@@ -1929,17 +1929,20 @@ namespace Reversals.Forms
         }
         private void buttonX1_Click(object sender, EventArgs e)
         {
-            _calendarDisplayer.MonthRangeDecrement();
-            SetCalendarValues();
-
+            if (_calendarDisplayer != null)
+            {
+                _calendarDisplayer.MonthRangeDecrement();
+                SetCalendarValues();
+            }
         }
 
         private void buttonX2_Click(object sender, EventArgs e)
         {
-           
-            _calendarDisplayer.MonthRangeIncrement();
-            SetCalendarValues();
-
+            if (_calendarDisplayer != null)
+            {
+                _calendarDisplayer.MonthRangeIncrement();
+                SetCalendarValues();
+            }
         }
 
         private void SetLabelColor()
@@ -2051,19 +2054,16 @@ namespace Reversals.Forms
                 }
             }
 
-            int rowindex = e.RowIndex;
-            int columnindex = e.ColumnIndex;
-            double zim;
-            double pvalue;
-            double step;
-            double ticksize;
+            var rowindex = e.RowIndex;
+            var columnindex = e.ColumnIndex;
 
-            if ((rowindex == 6) && (columnindex == 1))
+
+            if ((rowindex == 6) && (columnindex == 1)&&(uiStrategy_dataGridViewOptomizationParameters.DataSource != null))
             {
-                zim = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[columnindex, rowindex].Value.ToString(), _nfi);
+                var zim = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[columnindex, rowindex].Value.ToString(), _nfi);
                 //ticksize = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 7].Value.ToString(), _nfi);
-                step = double.Parse(uiStrategy_dataGridViewOptomizationParameters[1, 0].Value.ToString(), _nfi);
-                pvalue = zim / step;
+                var step = double.Parse(uiStrategy_dataGridViewOptomizationParameters[1, 0].Value.ToString(), _nfi);
+                var pvalue = zim / step;
                 uiStrategy_dataGridViewNoOptomizationParameters[1, 5].Value = Math.Round(pvalue, 5);
                 //UpdateOptionsCalc();
             }
@@ -2076,7 +2076,6 @@ namespace Reversals.Forms
             double zim;
             double pvalue;
             double step;
-            double ticksize;
 
             for (int i = 1; i < uiStrategy_dataGridViewOptomizationParameters.ColumnCount; i++)
             {

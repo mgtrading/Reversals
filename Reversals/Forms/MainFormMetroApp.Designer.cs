@@ -2691,7 +2691,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.15344F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 216F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 219F));
             this.tableLayoutPanel3.Controls.Add(this.uiCalendar_panelExSaving, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.uiCalendar_panelExPrevNext, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.panelEx5, 0, 1);
@@ -4328,7 +4328,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.92074F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.07926F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryGroupPanel, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryChart, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.uiSummary_dataGridViewBT, 0, 0);
@@ -4712,7 +4712,7 @@
             this.uiBTSummaryChart.Legends.Add(legend1);
             this.uiBTSummaryChart.Location = new System.Drawing.Point(150, 564);
             this.uiBTSummaryChart.Name = "uiBTSummaryChart";
-            this.uiBTSummaryChart.Size = new System.Drawing.Size(989, 1);
+            this.uiBTSummaryChart.Size = new System.Drawing.Size(986, 1);
             this.uiBTSummaryChart.TabIndex = 36;
             this.uiBTSummaryChart.Text = "chart1";
             this.uiBTSummaryChart.Visible = false;
@@ -4757,7 +4757,7 @@
             this.uiSummary_dataGridViewBT.RowHeadersVisible = false;
             this.uiSummary_dataGridViewBT.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.uiSummary_dataGridViewBT.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uiSummary_dataGridViewBT.Size = new System.Drawing.Size(1142, 561);
+            this.uiSummary_dataGridViewBT.Size = new System.Drawing.Size(1139, 561);
             this.uiSummary_dataGridViewBT.TabIndex = 22;
             this.uiSummary_dataGridViewBT.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.uiBTSummaryTable_RowsAdded);
             // 
@@ -4854,7 +4854,7 @@
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.92F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.08F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryScrollbar, 2, 0);
             this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryTable, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryChart, 1, 1);
@@ -4874,9 +4874,9 @@
             this.uiFTSummaryScrollbar.BackColor = System.Drawing.Color.White;
             this.uiFTSummaryScrollbar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiFTSummaryScrollbar.ForeColor = System.Drawing.Color.Black;
-            this.uiFTSummaryScrollbar.Location = new System.Drawing.Point(1145, 3);
+            this.uiFTSummaryScrollbar.Location = new System.Drawing.Point(1142, 3);
             this.uiFTSummaryScrollbar.Name = "uiFTSummaryScrollbar";
-            this.uiFTSummaryScrollbar.Size = new System.Drawing.Size(24, 550);
+            this.uiFTSummaryScrollbar.Size = new System.Drawing.Size(27, 550);
             this.uiFTSummaryScrollbar.TabIndex = 19;
             // 
             // uiFTSummaryTable
@@ -4925,7 +4925,7 @@
             this.uiFTSummaryTable.RowHeadersVisible = false;
             this.uiFTSummaryTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.uiFTSummaryTable.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uiFTSummaryTable.Size = new System.Drawing.Size(1142, 556);
+            this.uiFTSummaryTable.Size = new System.Drawing.Size(1139, 556);
             this.uiFTSummaryTable.TabIndex = 32;
             // 
             // smb
@@ -5005,7 +5005,7 @@
             this.uiFTSummaryChart.Legends.Add(legend2);
             this.uiFTSummaryChart.Location = new System.Drawing.Point(150, 559);
             this.uiFTSummaryChart.Name = "uiFTSummaryChart";
-            this.uiFTSummaryChart.Size = new System.Drawing.Size(989, 6);
+            this.uiFTSummaryChart.Size = new System.Drawing.Size(986, 6);
             this.uiFTSummaryChart.TabIndex = 37;
             this.uiFTSummaryChart.Text = "<no data>";
             this.uiFTSummaryChart.Visible = false;

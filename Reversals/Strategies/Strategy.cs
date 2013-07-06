@@ -40,7 +40,7 @@ namespace Reversals.Strategies
                 Optimizable = optimizable;
             }
         }
-        
+
         #endregion
 
         #region EVENT HANDLERS
@@ -57,7 +57,7 @@ namespace Reversals.Strategies
         protected List<Position> trades = new List<Position>();
         protected List<Order> orders = new List<Order>();
         protected Backtest backtest;
-        protected int order_id = 0; 
+        protected int order_id = 0;
         protected bool initialized;
         #endregion
 
@@ -88,10 +88,12 @@ namespace Reversals.Strategies
             orders.Clear();
             positions.Clear();
             trades.Clear();
+
+
         }
 
         public virtual void Trade(ref List<Position> pos, Tick tick)
-        {            
+        {
             //foreach (Position _position in _positions)
             for (int i = 0; i < pos.Count; i++)
             {
@@ -107,7 +109,7 @@ namespace Reversals.Strategies
 
         protected virtual void DispatchOrders(Tick tick)
         {
-            if(backtest == null)
+            if (backtest == null)
                 backtest = new Backtest(orders, positions, trades);
             backtest.DispatchOrders(tick, out orders, out positions, out trades);
         }
@@ -120,19 +122,19 @@ namespace Reversals.Strategies
         #endregion
 
         #region PROPERTIES
-        public  StrategyParameters Parameters
+        public StrategyParameters Parameters
         {
             get { return parameters; }
             set { parameters = value; }
         }
 
-        public  List<StrategyAdditionalParameter> AdditionalParameters
+        public List<StrategyAdditionalParameter> AdditionalParameters
         {
             get { return additional; }
             set { additional = value; }
         }
 
-        public  StrategyAdditionalParameter AdditionalParameter()
+        public StrategyAdditionalParameter AdditionalParameter()
         {
             return new StrategyAdditionalParameter();
         }
