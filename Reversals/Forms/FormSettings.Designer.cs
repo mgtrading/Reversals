@@ -31,6 +31,7 @@ namespace Reversals.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSettings));
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
             this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.buttonX_test_connection = new DevComponents.DotNetBar.ButtonX();
             this.labelX74 = new DevComponents.DotNetBar.LabelX();
             this.uiTBSettingPassword = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.uiTBSettingUser = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -41,12 +42,9 @@ namespace Reversals.Forms
             this.labelX71 = new DevComponents.DotNetBar.LabelX();
             this.labelX70 = new DevComponents.DotNetBar.LabelX();
             this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel10 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.superTabItem10 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel9 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.superTabControlPanel8 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.buttonX_test_connection = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
             this.superTabControlPanel2.SuspendLayout();
@@ -72,7 +70,6 @@ namespace Reversals.Forms
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
             this.superTabControl1.Controls.Add(this.superTabControlPanel2);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel10);
             this.superTabControl1.Controls.Add(this.superTabControlPanel9);
             this.superTabControl1.Controls.Add(this.superTabControlPanel8);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -88,8 +85,7 @@ namespace Reversals.Forms
             this.superTabControl1.TabFont = new System.Drawing.Font("Segoe UI", 9F);
             this.superTabControl1.TabIndex = 2;
             this.superTabControl1.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.superTabItem2,
-            this.superTabItem10});
+            this.superTabItem2});
             this.superTabControl1.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.Office2010BackstageBlue;
             this.superTabControl1.TabVerticalSpacing = 3;
             // 
@@ -111,6 +107,18 @@ namespace Reversals.Forms
             this.superTabControlPanel2.Size = new System.Drawing.Size(315, 308);
             this.superTabControlPanel2.TabIndex = 1;
             this.superTabControlPanel2.TabItem = this.superTabItem2;
+            // 
+            // buttonX_test_connection
+            // 
+            this.buttonX_test_connection.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX_test_connection.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX_test_connection.Location = new System.Drawing.Point(107, 260);
+            this.buttonX_test_connection.Name = "buttonX_test_connection";
+            this.buttonX_test_connection.Size = new System.Drawing.Size(148, 36);
+            this.buttonX_test_connection.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX_test_connection.TabIndex = 18;
+            this.buttonX_test_connection.Text = "Test Connection";
+            this.buttonX_test_connection.Click += new System.EventHandler(this.buttonX_test_connection_Click);
             // 
             // labelX74
             // 
@@ -277,22 +285,6 @@ namespace Reversals.Forms
             this.superTabItem2.Name = "superTabItem2";
             this.superTabItem2.Text = "Connection";
             // 
-            // superTabControlPanel10
-            // 
-            this.superTabControlPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel10.Location = new System.Drawing.Point(72, 0);
-            this.superTabControlPanel10.Name = "superTabControlPanel10";
-            this.superTabControlPanel10.Size = new System.Drawing.Size(315, 308);
-            this.superTabControlPanel10.TabIndex = 4;
-            this.superTabControlPanel10.TabItem = this.superTabItem10;
-            // 
-            // superTabItem10
-            // 
-            this.superTabItem10.AttachedControl = this.superTabControlPanel10;
-            this.superTabItem10.GlobalItem = false;
-            this.superTabItem10.Name = "superTabItem10";
-            this.superTabItem10.Text = "Other";
-            // 
             // superTabControlPanel9
             // 
             this.superTabControlPanel9.Controls.Add(this.labelX5);
@@ -325,18 +317,6 @@ namespace Reversals.Forms
             this.superTabControlPanel8.Size = new System.Drawing.Size(315, 308);
             this.superTabControlPanel8.TabIndex = 2;
             // 
-            // buttonX_test_connection
-            // 
-            this.buttonX_test_connection.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX_test_connection.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX_test_connection.Location = new System.Drawing.Point(107, 260);
-            this.buttonX_test_connection.Name = "buttonX_test_connection";
-            this.buttonX_test_connection.Size = new System.Drawing.Size(148, 36);
-            this.buttonX_test_connection.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX_test_connection.TabIndex = 18;
-            this.buttonX_test_connection.Text = "Test Connection";
-            this.buttonX_test_connection.Click += new System.EventHandler(this.buttonX_test_connection_Click);
-            // 
             // FormSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,8 +344,6 @@ namespace Reversals.Forms
         #endregion
 
         private DevComponents.DotNetBar.SuperTabControl superTabControl1;
-        private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel10;
-        private DevComponents.DotNetBar.SuperTabItem superTabItem10;
         private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel2;
         private DevComponents.DotNetBar.SuperTabItem superTabItem2;
         private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel9;

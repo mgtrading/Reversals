@@ -1319,7 +1319,7 @@ namespace Reversals.Forms
                 // TODO: Load in comboboxes list of symbols when we connect or change symbols list
 
                 uiDataArchive_checkedListBoxSymbols.Items.Clear();
-                uiDataArchive_dataGridViewXContracts.RowCount = _contracts.Count;
+                uiDataArchive_dataGridViewXContracts.RowCount = _contracts.Count;                
                 uiCalendar_comboBoxXSymbol.Items.Clear();
                 uiStrategy_comboBoxExDataSet.Items.Clear();
                 for (int i = 0; i < _contracts.Count; i++)
@@ -1347,6 +1347,7 @@ namespace Reversals.Forms
                     uiDataArchive_dataGridViewXContracts.Rows[i].Cells[3].Value = eDateStr;
                     //* add list
                 }
+                PreviewChangeSymbol();
             });
         }
 
@@ -2126,6 +2127,7 @@ namespace Reversals.Forms
         {
             if (uiDataArchive_dataGridViewXContracts.SelectedRows.Count <= 0) return;
 
+            uiDataArchive_dateTimeInputFindTime.Value = DateTime.Today;
             var symbol = uiDataArchive_dataGridViewXContracts.SelectedRows[0].Cells[1].Value.ToString();
 
             PreviewTickData.SetCurrentSymbol(symbol);
@@ -2163,6 +2165,12 @@ namespace Reversals.Forms
                     " " + list1[i].Date.ToString("HH:mm:ss");
                 uiDataArchive_dataGridViewXPreview.Rows[i].Cells[1].Value = list1[i].Price;
             }
+            if (n > 0)
+            {
+                uiDataArchive_dataGridViewXPreview.ClearSelection();
+                uiDataArchive_dataGridViewXPreview.Rows[0].Selected = true;
+                uiDataArchive_dataGridViewXPreview.FirstDisplayedScrollingRowIndex = 0;
+            }
         }
 
         private void uiDataArchive_buttonXFind_Click(object sender, EventArgs e)
@@ -2189,19 +2197,20 @@ namespace Reversals.Forms
             }
         }
 
-        private void uiDataArchive_dataGridViewXContracts_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            PreviewChangeSymbol();
-        }
-
-        private void uiDataArchive_dataGridViewXContracts_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            PreviewChangeSymbol();
-        }
-
         private void uiDataArchive_dateTimeInputFindDate_ValueChanged(object sender, EventArgs e)
         {
             PreviewShowTickData();
+        }
+
+        
+        private void uiDataArchive_dataGridViewXContracts_CurrentCellChanged(object sender, EventArgs e)
+        {
+            var defTimeOut= ToastNotification.DefaultTimeoutInterval;
+            ToastNotification.DefaultTimeoutInterval = 800;
+            ToastNotification.Show(uiDataArchive_dataGridViewXPreview, "Loading...");
+            PreviewChangeSymbol();
+            ToastNotification.DefaultTimeoutInterval = defTimeOut;
+
         }
 
         #endregion
