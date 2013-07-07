@@ -2172,7 +2172,6 @@ namespace Reversals.Forms
                 uiDataArchive_dataGridViewXPreview.FirstDisplayedScrollingRowIndex = 0;
             }
         }
-
         private void uiDataArchive_buttonXFind_Click(object sender, EventArgs e)
         {
             var list1 = PreviewTickData.GetTickData(uiDataArchive_dateTimeInputFindDate.Value.Date);
@@ -2197,6 +2196,34 @@ namespace Reversals.Forms
             }
         }
 
+        /*
+        private void uiDataArchive_buttonXFind_Click(object sender, EventArgs e)
+        {
+            var n = uiDataArchive_dataGridViewXPreview.Rows.Count;
+            if (n == 0) return;
+            var searchString =
+                uiDataArchive_dateTimeInputFindDate.Value.ToString(DateFormatsManager.CurrentShortDateFormat) + " " + uiDataArchive_dateTimeInputFindTime.Value.ToString("HH:mm");
+
+            
+            uiDataArchive_dataGridViewXPreview.ClearSelection();
+            for (var i = 0; i < n; i++)
+            {
+                var str = uiDataArchive_dataGridViewXPreview.Rows[i].Cells[0].Value;
+                var currDt = Convert.ToDateTime(str,CultureInfo.InvariantCulture);
+
+                if (currDt.ToString(DateFormatsManager.CurrentShortDateFormat + " HH:mm") == searchString)
+                {
+                    uiDataArchive_dataGridViewXPreview.Rows[i].Selected = true;
+                    uiDataArchive_dataGridViewXPreview.FirstDisplayedScrollingRowIndex = i;
+                    break;
+                }
+            }
+            if (uiDataArchive_dataGridViewXPreview.SelectedRows.Count <= 0)
+            {
+                ToastNotification.Show(uiDataArchive_dataGridViewXPreview, "Nothing found.");
+            }
+        }
+        */
         private void uiDataArchive_dateTimeInputFindDate_ValueChanged(object sender, EventArgs e)
         {
             PreviewShowTickData();
