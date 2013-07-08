@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             DevComponents.DotNetBar.SuperGrid.Style.Background background1 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
             DevComponents.DotNetBar.SuperGrid.Style.Background background2 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
             DevComponents.DotNetBar.SuperGrid.Style.Background background3 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
@@ -60,6 +60,38 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.metroShellMain = new DevComponents.DotNetBar.Metro.MetroShell();
+            this.metroTabPanel_data_archive = new DevComponents.DotNetBar.Metro.MetroTabPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.uiDataArchive_panelExSearchPanel = new DevComponents.DotNetBar.PanelEx();
+            this.uiDataArchive_dateTimeInputFindTime = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+            this.uiDataArchive_dateTimeInputFindDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+            this.uiDataArchive_buttonXFind = new DevComponents.DotNetBar.ButtonX();
+            this.uiDataArchive_labelXSearch = new DevComponents.DotNetBar.LabelX();
+            this.uiDataArchive_panelExSymbols = new DevComponents.DotNetBar.PanelEx();
+            this.uiDataArchive_checkedListBoxSymbols = new System.Windows.Forms.CheckedListBox();
+            this.uiDataArchive_panelExCollectingControl = new DevComponents.DotNetBar.PanelEx();
+            this.uiDataArchive_labelXCollectingControl = new DevComponents.DotNetBar.LabelX();
+            this.uiDataArchive_dateTimeInputEnd = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+            this.uiDataArchive_dateTimeInputStart = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+            this.labelX10 = new DevComponents.DotNetBar.LabelX();
+            this.labelX11 = new DevComponents.DotNetBar.LabelX();
+            this.uiDataArchive_buttonXStopCollecting = new DevComponents.DotNetBar.ButtonX();
+            this.uiDataArchive_buttonXStartCollecting = new DevComponents.DotNetBar.ButtonX();
+            this.uiDataArchive_panelExContracts = new DevComponents.DotNetBar.PanelEx();
+            this.uiDataArchive_dataGridViewXContracts = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uiDataArchive_panelExSymbolControl = new DevComponents.DotNetBar.PanelEx();
+            this.uiDataArchive_buttonXEditSymbol = new DevComponents.DotNetBar.ButtonX();
+            this.uiDataArchive_labelXSymbolsCommands = new DevComponents.DotNetBar.LabelX();
+            this.uiDataArchive_buttonXDelSymbol = new DevComponents.DotNetBar.ButtonX();
+            this.uiDataArchive_buttonXAddSymbol = new DevComponents.DotNetBar.ButtonX();
+            this.uiDataArchive_panelExPreview = new DevComponents.DotNetBar.PanelEx();
+            this.uiDataArchive_dataGridViewXPreview = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.PreviewColumnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PreviewColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroTabPanel_startegy = new DevComponents.DotNetBar.Metro.MetroTabPanel();
             this.uiStrategyTablTableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.uiStrategy_panelExOptions = new DevComponents.DotNetBar.PanelEx();
@@ -176,38 +208,6 @@
             this.uiStrategy_WorkingButtonsPanel = new DevComponents.DotNetBar.PanelEx();
             this.uiStrategy_buttonXStart = new DevComponents.DotNetBar.ButtonX();
             this.uiStrategy_buttonXStop = new DevComponents.DotNetBar.ButtonX();
-            this.metroTabPanel_data_archive = new DevComponents.DotNetBar.Metro.MetroTabPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.uiDataArchive_panelExSearchPanel = new DevComponents.DotNetBar.PanelEx();
-            this.uiDataArchive_dateTimeInputFindTime = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
-            this.uiDataArchive_dateTimeInputFindDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
-            this.uiDataArchive_buttonXFind = new DevComponents.DotNetBar.ButtonX();
-            this.uiDataArchive_labelXSearch = new DevComponents.DotNetBar.LabelX();
-            this.uiDataArchive_panelExSymbols = new DevComponents.DotNetBar.PanelEx();
-            this.uiDataArchive_checkedListBoxSymbols = new System.Windows.Forms.CheckedListBox();
-            this.uiDataArchive_panelExCollectingControl = new DevComponents.DotNetBar.PanelEx();
-            this.uiDataArchive_labelXCollectingControl = new DevComponents.DotNetBar.LabelX();
-            this.uiDataArchive_dateTimeInputEnd = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
-            this.uiDataArchive_dateTimeInputStart = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
-            this.labelX10 = new DevComponents.DotNetBar.LabelX();
-            this.labelX11 = new DevComponents.DotNetBar.LabelX();
-            this.uiDataArchive_buttonXStopCollecting = new DevComponents.DotNetBar.ButtonX();
-            this.uiDataArchive_buttonXStartCollecting = new DevComponents.DotNetBar.ButtonX();
-            this.uiDataArchive_panelExContracts = new DevComponents.DotNetBar.PanelEx();
-            this.uiDataArchive_dataGridViewXContracts = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uiDataArchive_panelExSymbolControl = new DevComponents.DotNetBar.PanelEx();
-            this.uiDataArchive_buttonXEditSymbol = new DevComponents.DotNetBar.ButtonX();
-            this.uiDataArchive_labelXSymbolsCommands = new DevComponents.DotNetBar.LabelX();
-            this.uiDataArchive_buttonXDelSymbol = new DevComponents.DotNetBar.ButtonX();
-            this.uiDataArchive_buttonXAddSymbol = new DevComponents.DotNetBar.ButtonX();
-            this.uiDataArchive_panelExPreview = new DevComponents.DotNetBar.PanelEx();
-            this.uiDataArchive_dataGridViewXPreview = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.PreviewColumnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PreviewColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroTabPanel_calendar = new DevComponents.DotNetBar.Metro.MetroTabPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.uiCalendar_panelExSaving = new DevComponents.DotNetBar.PanelEx();
@@ -347,6 +347,20 @@
             this.uiStatus_toolStripProgressBar = new DevComponents.DotNetBar.ProgressBarItem();
             this.uiStatus_labelItemSeparate = new DevComponents.DotNetBar.LabelItem();
             this.metroShellMain.SuspendLayout();
+            this.metroTabPanel_data_archive.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.uiDataArchive_panelExSearchPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputFindTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputFindDate)).BeginInit();
+            this.uiDataArchive_panelExSymbols.SuspendLayout();
+            this.uiDataArchive_panelExCollectingControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputEnd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputStart)).BeginInit();
+            this.uiDataArchive_panelExContracts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dataGridViewXContracts)).BeginInit();
+            this.uiDataArchive_panelExSymbolControl.SuspendLayout();
+            this.uiDataArchive_panelExPreview.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dataGridViewXPreview)).BeginInit();
             this.metroTabPanel_startegy.SuspendLayout();
             this.uiStrategyTablTableLayout.SuspendLayout();
             this.uiStrategy_panelExOptions.SuspendLayout();
@@ -370,20 +384,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.uiStrategy_dataGridViewOptomizationParameters)).BeginInit();
             this.uiStrategy_panelExRunContinuesPanel.SuspendLayout();
             this.uiStrategy_WorkingButtonsPanel.SuspendLayout();
-            this.metroTabPanel_data_archive.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.uiDataArchive_panelExSearchPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputFindTime)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputFindDate)).BeginInit();
-            this.uiDataArchive_panelExSymbols.SuspendLayout();
-            this.uiDataArchive_panelExCollectingControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputEnd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputStart)).BeginInit();
-            this.uiDataArchive_panelExContracts.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dataGridViewXContracts)).BeginInit();
-            this.uiDataArchive_panelExSymbolControl.SuspendLayout();
-            this.uiDataArchive_panelExPreview.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dataGridViewXPreview)).BeginInit();
             this.metroTabPanel_calendar.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.uiCalendar_panelExSaving.SuspendLayout();
@@ -424,8 +424,8 @@
             // 
             this.metroShellMain.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.metroShellMain.CaptionVisible = true;
-            this.metroShellMain.Controls.Add(this.metroTabPanel_data_archive);
             this.metroShellMain.Controls.Add(this.metroTabPanel_startegy);
+            this.metroShellMain.Controls.Add(this.metroTabPanel_data_archive);
             this.metroShellMain.Controls.Add(this.metroTabPanel_calendar);
             this.metroShellMain.Controls.Add(this.metroTabPanel_weekly);
             this.metroShellMain.Controls.Add(this.metroTabPanel_summary);
@@ -463,7 +463,734 @@
             this.metroShellMain.TabIndex = 0;
             this.metroShellMain.TabStripFont = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroShellMain.Text = "metroShell1";
+            this.metroShellMain.SelectedTabChanged += new System.EventHandler(this.metroShellMain_SelectedTabChanged);
             this.metroShellMain.SettingsButtonClick += new System.EventHandler(this.metroShell1_SettingsButtonClick);
+            // 
+            // metroTabPanel_data_archive
+            // 
+            this.metroTabPanel_data_archive.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.metroTabPanel_data_archive.Controls.Add(this.tableLayoutPanel1);
+            this.metroTabPanel_data_archive.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroTabPanel_data_archive.Location = new System.Drawing.Point(0, 51);
+            this.metroTabPanel_data_archive.Name = "metroTabPanel_data_archive";
+            this.metroTabPanel_data_archive.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.metroTabPanel_data_archive.Size = new System.Drawing.Size(1198, 589);
+            // 
+            // 
+            // 
+            this.metroTabPanel_data_archive.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.metroTabPanel_data_archive.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.metroTabPanel_data_archive.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTabPanel_data_archive.TabIndex = 5;
+            this.metroTabPanel_data_archive.Visible = false;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel1.Controls.Add(this.uiDataArchive_panelExSearchPanel, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.uiDataArchive_panelExSymbols, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.uiDataArchive_panelExCollectingControl, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.uiDataArchive_panelExContracts, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.uiDataArchive_panelExSymbolControl, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.uiDataArchive_panelExPreview, 2, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.Black;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1192, 586);
+            this.tableLayoutPanel1.TabIndex = 24;
+            // 
+            // uiDataArchive_panelExSearchPanel
+            // 
+            this.uiDataArchive_panelExSearchPanel.CanvasColor = System.Drawing.SystemColors.Control;
+            this.uiDataArchive_panelExSearchPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_panelExSearchPanel.Controls.Add(this.uiDataArchive_dateTimeInputFindTime);
+            this.uiDataArchive_panelExSearchPanel.Controls.Add(this.uiDataArchive_dateTimeInputFindDate);
+            this.uiDataArchive_panelExSearchPanel.Controls.Add(this.uiDataArchive_buttonXFind);
+            this.uiDataArchive_panelExSearchPanel.Controls.Add(this.uiDataArchive_labelXSearch);
+            this.uiDataArchive_panelExSearchPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiDataArchive_panelExSearchPanel.Location = new System.Drawing.Point(925, 3);
+            this.uiDataArchive_panelExSearchPanel.Name = "uiDataArchive_panelExSearchPanel";
+            this.uiDataArchive_panelExSearchPanel.Size = new System.Drawing.Size(264, 82);
+            this.uiDataArchive_panelExSearchPanel.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.uiDataArchive_panelExSearchPanel.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiDataArchive_panelExSearchPanel.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.uiDataArchive_panelExSearchPanel.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.uiDataArchive_panelExSearchPanel.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.uiDataArchive_panelExSearchPanel.Style.GradientAngle = 90;
+            this.uiDataArchive_panelExSearchPanel.TabIndex = 31;
+            // 
+            // uiDataArchive_dateTimeInputFindTime
+            // 
+            this.uiDataArchive_dateTimeInputFindTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiDataArchive_dateTimeInputFindTime.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputFindTime.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.uiDataArchive_dateTimeInputFindTime.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputFindTime.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.uiDataArchive_dateTimeInputFindTime.ButtonDropDown.Visible = true;
+            this.uiDataArchive_dateTimeInputFindTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.uiDataArchive_dateTimeInputFindTime.ForeColor = System.Drawing.Color.Black;
+            this.uiDataArchive_dateTimeInputFindTime.Format = DevComponents.Editors.eDateTimePickerFormat.LongTime;
+            this.uiDataArchive_dateTimeInputFindTime.IsPopupCalendarOpen = false;
+            this.uiDataArchive_dateTimeInputFindTime.Location = new System.Drawing.Point(18, 49);
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.ClearButtonVisible = true;
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.DisplayMonth = new System.DateTime(2013, 5, 1, 0, 0, 0, 0);
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.MarkedDates = new System.DateTime[0];
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.TodayButtonVisible = true;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.Visible = false;
+            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
+            this.uiDataArchive_dateTimeInputFindTime.Name = "uiDataArchive_dateTimeInputFindTime";
+            this.uiDataArchive_dateTimeInputFindTime.Size = new System.Drawing.Size(161, 23);
+            this.uiDataArchive_dateTimeInputFindTime.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_dateTimeInputFindTime.TabIndex = 49;
+            this.uiDataArchive_dateTimeInputFindTime.TimeSelectorTimeFormat = DevComponents.Editors.DateTimeAdv.eTimeSelectorFormat.Time24H;
+            this.uiDataArchive_dateTimeInputFindTime.Value = new System.DateTime(2013, 5, 28, 0, 0, 0, 0);
+            // 
+            // uiDataArchive_dateTimeInputFindDate
+            // 
+            this.uiDataArchive_dateTimeInputFindDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiDataArchive_dateTimeInputFindDate.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputFindDate.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.uiDataArchive_dateTimeInputFindDate.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputFindDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.uiDataArchive_dateTimeInputFindDate.ButtonDropDown.Visible = true;
+            this.uiDataArchive_dateTimeInputFindDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.uiDataArchive_dateTimeInputFindDate.ForeColor = System.Drawing.Color.Black;
+            this.uiDataArchive_dateTimeInputFindDate.IsPopupCalendarOpen = false;
+            this.uiDataArchive_dateTimeInputFindDate.Location = new System.Drawing.Point(18, 25);
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.ClearButtonVisible = true;
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.DisplayMonth = new System.DateTime(2013, 5, 1, 0, 0, 0, 0);
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.MarkedDates = new System.DateTime[0];
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.TodayButtonVisible = true;
+            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
+            this.uiDataArchive_dateTimeInputFindDate.Name = "uiDataArchive_dateTimeInputFindDate";
+            this.uiDataArchive_dateTimeInputFindDate.Size = new System.Drawing.Size(161, 23);
+            this.uiDataArchive_dateTimeInputFindDate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_dateTimeInputFindDate.TabIndex = 48;
+            this.uiDataArchive_dateTimeInputFindDate.Value = new System.DateTime(2013, 5, 28, 0, 0, 0, 0);
+            this.uiDataArchive_dateTimeInputFindDate.ValueChanged += new System.EventHandler(this.uiDataArchive_dateTimeInputFindDate_ValueChanged);
+            // 
+            // uiDataArchive_buttonXFind
+            // 
+            this.uiDataArchive_buttonXFind.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.uiDataArchive_buttonXFind.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiDataArchive_buttonXFind.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.uiDataArchive_buttonXFind.Location = new System.Drawing.Point(184, 25);
+            this.uiDataArchive_buttonXFind.Margin = new System.Windows.Forms.Padding(2);
+            this.uiDataArchive_buttonXFind.Name = "uiDataArchive_buttonXFind";
+            this.uiDataArchive_buttonXFind.Size = new System.Drawing.Size(69, 47);
+            this.uiDataArchive_buttonXFind.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_buttonXFind.TabIndex = 47;
+            this.uiDataArchive_buttonXFind.Text = "Find";
+            this.uiDataArchive_buttonXFind.Click += new System.EventHandler(this.uiDataArchive_buttonXFind_Click);
+            // 
+            // uiDataArchive_labelXSearch
+            // 
+            // 
+            // 
+            // 
+            this.uiDataArchive_labelXSearch.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_labelXSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.uiDataArchive_labelXSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uiDataArchive_labelXSearch.ForeColor = System.Drawing.Color.Black;
+            this.uiDataArchive_labelXSearch.Location = new System.Drawing.Point(0, 0);
+            this.uiDataArchive_labelXSearch.Name = "uiDataArchive_labelXSearch";
+            this.uiDataArchive_labelXSearch.PaddingLeft = 6;
+            this.uiDataArchive_labelXSearch.PaddingTop = 3;
+            this.uiDataArchive_labelXSearch.SingleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.uiDataArchive_labelXSearch.Size = new System.Drawing.Size(264, 23);
+            this.uiDataArchive_labelXSearch.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
+            this.uiDataArchive_labelXSearch.SymbolColor = System.Drawing.Color.Blue;
+            this.uiDataArchive_labelXSearch.TabIndex = 30;
+            this.uiDataArchive_labelXSearch.Text = "SEARCH";
+            // 
+            // uiDataArchive_panelExSymbols
+            // 
+            this.uiDataArchive_panelExSymbols.CanvasColor = System.Drawing.SystemColors.Control;
+            this.uiDataArchive_panelExSymbols.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_panelExSymbols.Controls.Add(this.uiDataArchive_checkedListBoxSymbols);
+            this.uiDataArchive_panelExSymbols.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiDataArchive_panelExSymbols.Location = new System.Drawing.Point(3, 91);
+            this.uiDataArchive_panelExSymbols.Name = "uiDataArchive_panelExSymbols";
+            this.uiDataArchive_panelExSymbols.Padding = new System.Windows.Forms.Padding(1);
+            this.uiDataArchive_panelExSymbols.Size = new System.Drawing.Size(264, 336);
+            this.uiDataArchive_panelExSymbols.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.uiDataArchive_panelExSymbols.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiDataArchive_panelExSymbols.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.uiDataArchive_panelExSymbols.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.uiDataArchive_panelExSymbols.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.uiDataArchive_panelExSymbols.Style.GradientAngle = 90;
+            this.uiDataArchive_panelExSymbols.TabIndex = 29;
+            // 
+            // uiDataArchive_checkedListBoxSymbols
+            // 
+            this.uiDataArchive_checkedListBoxSymbols.BackColor = System.Drawing.Color.White;
+            this.uiDataArchive_checkedListBoxSymbols.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.uiDataArchive_checkedListBoxSymbols.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiDataArchive_checkedListBoxSymbols.ForeColor = System.Drawing.Color.Black;
+            this.uiDataArchive_checkedListBoxSymbols.FormattingEnabled = true;
+            this.uiDataArchive_checkedListBoxSymbols.Location = new System.Drawing.Point(1, 1);
+            this.uiDataArchive_checkedListBoxSymbols.Name = "uiDataArchive_checkedListBoxSymbols";
+            this.uiDataArchive_checkedListBoxSymbols.Size = new System.Drawing.Size(262, 334);
+            this.uiDataArchive_checkedListBoxSymbols.TabIndex = 44;
+            // 
+            // uiDataArchive_panelExCollectingControl
+            // 
+            this.uiDataArchive_panelExCollectingControl.CanvasColor = System.Drawing.SystemColors.Control;
+            this.uiDataArchive_panelExCollectingControl.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_labelXCollectingControl);
+            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_dateTimeInputEnd);
+            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_dateTimeInputStart);
+            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.labelX10);
+            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.labelX11);
+            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_buttonXStopCollecting);
+            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_buttonXStartCollecting);
+            this.uiDataArchive_panelExCollectingControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiDataArchive_panelExCollectingControl.Location = new System.Drawing.Point(3, 433);
+            this.uiDataArchive_panelExCollectingControl.Name = "uiDataArchive_panelExCollectingControl";
+            this.uiDataArchive_panelExCollectingControl.Size = new System.Drawing.Size(264, 150);
+            this.uiDataArchive_panelExCollectingControl.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.uiDataArchive_panelExCollectingControl.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiDataArchive_panelExCollectingControl.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.uiDataArchive_panelExCollectingControl.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.uiDataArchive_panelExCollectingControl.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.uiDataArchive_panelExCollectingControl.Style.GradientAngle = 90;
+            this.uiDataArchive_panelExCollectingControl.TabIndex = 25;
+            // 
+            // uiDataArchive_labelXCollectingControl
+            // 
+            // 
+            // 
+            // 
+            this.uiDataArchive_labelXCollectingControl.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_labelXCollectingControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.uiDataArchive_labelXCollectingControl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uiDataArchive_labelXCollectingControl.ForeColor = System.Drawing.Color.Black;
+            this.uiDataArchive_labelXCollectingControl.Location = new System.Drawing.Point(0, 0);
+            this.uiDataArchive_labelXCollectingControl.Name = "uiDataArchive_labelXCollectingControl";
+            this.uiDataArchive_labelXCollectingControl.PaddingLeft = 6;
+            this.uiDataArchive_labelXCollectingControl.PaddingTop = 3;
+            this.uiDataArchive_labelXCollectingControl.SingleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.uiDataArchive_labelXCollectingControl.Size = new System.Drawing.Size(264, 23);
+            this.uiDataArchive_labelXCollectingControl.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
+            this.uiDataArchive_labelXCollectingControl.SymbolColor = System.Drawing.Color.Blue;
+            this.uiDataArchive_labelXCollectingControl.TabIndex = 48;
+            this.uiDataArchive_labelXCollectingControl.Text = "COLLECTING CONTROL";
+            // 
+            // uiDataArchive_dateTimeInputEnd
+            // 
+            this.uiDataArchive_dateTimeInputEnd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiDataArchive_dateTimeInputEnd.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputEnd.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.uiDataArchive_dateTimeInputEnd.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputEnd.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.uiDataArchive_dateTimeInputEnd.ButtonDropDown.Visible = true;
+            this.uiDataArchive_dateTimeInputEnd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.uiDataArchive_dateTimeInputEnd.ForeColor = System.Drawing.Color.Black;
+            this.uiDataArchive_dateTimeInputEnd.IsPopupCalendarOpen = false;
+            this.uiDataArchive_dateTimeInputEnd.Location = new System.Drawing.Point(59, 65);
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.ClearButtonVisible = true;
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.DisplayMonth = new System.DateTime(2013, 5, 1, 0, 0, 0, 0);
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.MarkedDates = new System.DateTime[0];
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.TodayButtonVisible = true;
+            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
+            this.uiDataArchive_dateTimeInputEnd.Name = "uiDataArchive_dateTimeInputEnd";
+            this.uiDataArchive_dateTimeInputEnd.Size = new System.Drawing.Size(195, 23);
+            this.uiDataArchive_dateTimeInputEnd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_dateTimeInputEnd.TabIndex = 47;
+            this.uiDataArchive_dateTimeInputEnd.Value = new System.DateTime(2013, 5, 28, 0, 0, 0, 0);
+            // 
+            // uiDataArchive_dateTimeInputStart
+            // 
+            this.uiDataArchive_dateTimeInputStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiDataArchive_dateTimeInputStart.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputStart.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.uiDataArchive_dateTimeInputStart.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputStart.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.uiDataArchive_dateTimeInputStart.ButtonDropDown.Visible = true;
+            this.uiDataArchive_dateTimeInputStart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.uiDataArchive_dateTimeInputStart.ForeColor = System.Drawing.Color.Black;
+            this.uiDataArchive_dateTimeInputStart.IsPopupCalendarOpen = false;
+            this.uiDataArchive_dateTimeInputStart.Location = new System.Drawing.Point(59, 34);
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.ClearButtonVisible = true;
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.DisplayMonth = new System.DateTime(2013, 5, 1, 0, 0, 0, 0);
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.MarkedDates = new System.DateTime[0];
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.TodayButtonVisible = true;
+            this.uiDataArchive_dateTimeInputStart.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
+            this.uiDataArchive_dateTimeInputStart.Name = "uiDataArchive_dateTimeInputStart";
+            this.uiDataArchive_dateTimeInputStart.Size = new System.Drawing.Size(195, 23);
+            this.uiDataArchive_dateTimeInputStart.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_dateTimeInputStart.TabIndex = 44;
+            this.uiDataArchive_dateTimeInputStart.Value = new System.DateTime(2013, 5, 28, 0, 0, 0, 0);
+            // 
+            // labelX10
+            // 
+            this.labelX10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelX10.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelX10.ForeColor = System.Drawing.Color.Black;
+            this.labelX10.Location = new System.Drawing.Point(7, 34);
+            this.labelX10.Name = "labelX10";
+            this.labelX10.Size = new System.Drawing.Size(46, 23);
+            this.labelX10.TabIndex = 45;
+            this.labelX10.Text = "Start";
+            this.labelX10.TextAlignment = System.Drawing.StringAlignment.Far;
+            // 
+            // labelX11
+            // 
+            this.labelX11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelX11.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelX11.ForeColor = System.Drawing.Color.Black;
+            this.labelX11.Location = new System.Drawing.Point(7, 63);
+            this.labelX11.Name = "labelX11";
+            this.labelX11.Size = new System.Drawing.Size(46, 23);
+            this.labelX11.TabIndex = 46;
+            this.labelX11.Text = "End";
+            this.labelX11.TextAlignment = System.Drawing.StringAlignment.Far;
+            // 
+            // uiDataArchive_buttonXStopCollecting
+            // 
+            this.uiDataArchive_buttonXStopCollecting.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.uiDataArchive_buttonXStopCollecting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiDataArchive_buttonXStopCollecting.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.uiDataArchive_buttonXStopCollecting.Location = new System.Drawing.Point(176, 105);
+            this.uiDataArchive_buttonXStopCollecting.Margin = new System.Windows.Forms.Padding(2);
+            this.uiDataArchive_buttonXStopCollecting.Name = "uiDataArchive_buttonXStopCollecting";
+            this.uiDataArchive_buttonXStopCollecting.Size = new System.Drawing.Size(78, 35);
+            this.uiDataArchive_buttonXStopCollecting.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_buttonXStopCollecting.TabIndex = 29;
+            this.uiDataArchive_buttonXStopCollecting.Text = "Stop";
+            this.uiDataArchive_buttonXStopCollecting.Click += new System.EventHandler(this.buttonX_data_archive_stop_Click);
+            // 
+            // uiDataArchive_buttonXStartCollecting
+            // 
+            this.uiDataArchive_buttonXStartCollecting.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.uiDataArchive_buttonXStartCollecting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.uiDataArchive_buttonXStartCollecting.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.uiDataArchive_buttonXStartCollecting.Location = new System.Drawing.Point(12, 105);
+            this.uiDataArchive_buttonXStartCollecting.Margin = new System.Windows.Forms.Padding(2);
+            this.uiDataArchive_buttonXStartCollecting.Name = "uiDataArchive_buttonXStartCollecting";
+            this.uiDataArchive_buttonXStartCollecting.Size = new System.Drawing.Size(78, 35);
+            this.uiDataArchive_buttonXStartCollecting.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_buttonXStartCollecting.TabIndex = 28;
+            this.uiDataArchive_buttonXStartCollecting.Text = "Collect";
+            this.uiDataArchive_buttonXStartCollecting.Click += new System.EventHandler(this.buttonX_data_archive_start_Click);
+            // 
+            // uiDataArchive_panelExContracts
+            // 
+            this.uiDataArchive_panelExContracts.CanvasColor = System.Drawing.SystemColors.Control;
+            this.uiDataArchive_panelExContracts.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_panelExContracts.Controls.Add(this.uiDataArchive_dataGridViewXContracts);
+            this.uiDataArchive_panelExContracts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiDataArchive_panelExContracts.Location = new System.Drawing.Point(273, 3);
+            this.uiDataArchive_panelExContracts.Name = "uiDataArchive_panelExContracts";
+            this.uiDataArchive_panelExContracts.Padding = new System.Windows.Forms.Padding(1);
+            this.tableLayoutPanel1.SetRowSpan(this.uiDataArchive_panelExContracts, 3);
+            this.uiDataArchive_panelExContracts.Size = new System.Drawing.Size(646, 580);
+            this.uiDataArchive_panelExContracts.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.uiDataArchive_panelExContracts.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiDataArchive_panelExContracts.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.uiDataArchive_panelExContracts.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.uiDataArchive_panelExContracts.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.uiDataArchive_panelExContracts.Style.GradientAngle = 90;
+            this.uiDataArchive_panelExContracts.TabIndex = 26;
+            // 
+            // uiDataArchive_dataGridViewXContracts
+            // 
+            this.uiDataArchive_dataGridViewXContracts.AllowUserToAddRows = false;
+            this.uiDataArchive_dataGridViewXContracts.AllowUserToDeleteRows = false;
+            this.uiDataArchive_dataGridViewXContracts.BackgroundColor = System.Drawing.Color.White;
+            this.uiDataArchive_dataGridViewXContracts.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiDataArchive_dataGridViewXContracts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.uiDataArchive_dataGridViewXContracts.ColumnHeadersHeight = 30;
+            this.uiDataArchive_dataGridViewXContracts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.uiDataArchive_dataGridViewXContracts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uiDataArchive_dataGridViewXContracts.DefaultCellStyle = dataGridViewCellStyle8;
+            this.uiDataArchive_dataGridViewXContracts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiDataArchive_dataGridViewXContracts.EnableHeadersVisualStyles = false;
+            this.uiDataArchive_dataGridViewXContracts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.uiDataArchive_dataGridViewXContracts.Location = new System.Drawing.Point(1, 1);
+            this.uiDataArchive_dataGridViewXContracts.Name = "uiDataArchive_dataGridViewXContracts";
+            this.uiDataArchive_dataGridViewXContracts.ReadOnly = true;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiDataArchive_dataGridViewXContracts.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.uiDataArchive_dataGridViewXContracts.RowHeadersVisible = false;
+            this.uiDataArchive_dataGridViewXContracts.RowHeadersWidth = 30;
+            this.uiDataArchive_dataGridViewXContracts.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.uiDataArchive_dataGridViewXContracts.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.uiDataArchive_dataGridViewXContracts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.uiDataArchive_dataGridViewXContracts.ShowEditingIcon = false;
+            this.uiDataArchive_dataGridViewXContracts.Size = new System.Drawing.Size(644, 578);
+            this.uiDataArchive_dataGridViewXContracts.TabIndex = 31;
+            this.uiDataArchive_dataGridViewXContracts.CurrentCellChanged += new System.EventHandler(this.uiDataArchive_dataGridViewXContracts_CurrentCellChanged);
+            // 
+            // Column1
+            // 
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Column1.HeaderText = "";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 30;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.HeaderText = "Contract";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Start Date";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 165;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "End Date";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 165;
+            // 
+            // uiDataArchive_panelExSymbolControl
+            // 
+            this.uiDataArchive_panelExSymbolControl.CanvasColor = System.Drawing.SystemColors.Control;
+            this.uiDataArchive_panelExSymbolControl.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_panelExSymbolControl.Controls.Add(this.uiDataArchive_buttonXEditSymbol);
+            this.uiDataArchive_panelExSymbolControl.Controls.Add(this.uiDataArchive_labelXSymbolsCommands);
+            this.uiDataArchive_panelExSymbolControl.Controls.Add(this.uiDataArchive_buttonXDelSymbol);
+            this.uiDataArchive_panelExSymbolControl.Controls.Add(this.uiDataArchive_buttonXAddSymbol);
+            this.uiDataArchive_panelExSymbolControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiDataArchive_panelExSymbolControl.Location = new System.Drawing.Point(3, 3);
+            this.uiDataArchive_panelExSymbolControl.Name = "uiDataArchive_panelExSymbolControl";
+            this.uiDataArchive_panelExSymbolControl.Size = new System.Drawing.Size(264, 82);
+            this.uiDataArchive_panelExSymbolControl.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.uiDataArchive_panelExSymbolControl.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiDataArchive_panelExSymbolControl.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.uiDataArchive_panelExSymbolControl.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.uiDataArchive_panelExSymbolControl.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.uiDataArchive_panelExSymbolControl.Style.GradientAngle = 90;
+            this.uiDataArchive_panelExSymbolControl.TabIndex = 27;
+            // 
+            // uiDataArchive_buttonXEditSymbol
+            // 
+            this.uiDataArchive_buttonXEditSymbol.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.uiDataArchive_buttonXEditSymbol.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.uiDataArchive_buttonXEditSymbol.Location = new System.Drawing.Point(93, 33);
+            this.uiDataArchive_buttonXEditSymbol.Margin = new System.Windows.Forms.Padding(2);
+            this.uiDataArchive_buttonXEditSymbol.Name = "uiDataArchive_buttonXEditSymbol";
+            this.uiDataArchive_buttonXEditSymbol.Size = new System.Drawing.Size(78, 35);
+            this.uiDataArchive_buttonXEditSymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_buttonXEditSymbol.TabIndex = 31;
+            this.uiDataArchive_buttonXEditSymbol.Text = "Edit";
+            this.uiDataArchive_buttonXEditSymbol.Click += new System.EventHandler(this.uiDataArchive_buttonXEditSymbol_Click);
+            // 
+            // uiDataArchive_labelXSymbolsCommands
+            // 
+            // 
+            // 
+            // 
+            this.uiDataArchive_labelXSymbolsCommands.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiDataArchive_labelXSymbolsCommands.Dock = System.Windows.Forms.DockStyle.Top;
+            this.uiDataArchive_labelXSymbolsCommands.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uiDataArchive_labelXSymbolsCommands.ForeColor = System.Drawing.Color.Black;
+            this.uiDataArchive_labelXSymbolsCommands.Location = new System.Drawing.Point(0, 0);
+            this.uiDataArchive_labelXSymbolsCommands.Name = "uiDataArchive_labelXSymbolsCommands";
+            this.uiDataArchive_labelXSymbolsCommands.PaddingLeft = 6;
+            this.uiDataArchive_labelXSymbolsCommands.PaddingTop = 3;
+            this.uiDataArchive_labelXSymbolsCommands.SingleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.uiDataArchive_labelXSymbolsCommands.Size = new System.Drawing.Size(264, 23);
+            this.uiDataArchive_labelXSymbolsCommands.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
+            this.uiDataArchive_labelXSymbolsCommands.SymbolColor = System.Drawing.Color.Blue;
+            this.uiDataArchive_labelXSymbolsCommands.TabIndex = 30;
+            this.uiDataArchive_labelXSymbolsCommands.Text = "SYMBOLS COMMANDS";
+            // 
+            // uiDataArchive_buttonXDelSymbol
+            // 
+            this.uiDataArchive_buttonXDelSymbol.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.uiDataArchive_buttonXDelSymbol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiDataArchive_buttonXDelSymbol.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.uiDataArchive_buttonXDelSymbol.Location = new System.Drawing.Point(176, 33);
+            this.uiDataArchive_buttonXDelSymbol.Margin = new System.Windows.Forms.Padding(2);
+            this.uiDataArchive_buttonXDelSymbol.Name = "uiDataArchive_buttonXDelSymbol";
+            this.uiDataArchive_buttonXDelSymbol.Size = new System.Drawing.Size(78, 35);
+            this.uiDataArchive_buttonXDelSymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_buttonXDelSymbol.TabIndex = 29;
+            this.uiDataArchive_buttonXDelSymbol.Text = "Delete";
+            this.uiDataArchive_buttonXDelSymbol.Click += new System.EventHandler(this.buttonX_data_archive_delete_Click);
+            // 
+            // uiDataArchive_buttonXAddSymbol
+            // 
+            this.uiDataArchive_buttonXAddSymbol.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.uiDataArchive_buttonXAddSymbol.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.uiDataArchive_buttonXAddSymbol.Location = new System.Drawing.Point(10, 33);
+            this.uiDataArchive_buttonXAddSymbol.Margin = new System.Windows.Forms.Padding(2);
+            this.uiDataArchive_buttonXAddSymbol.Name = "uiDataArchive_buttonXAddSymbol";
+            this.uiDataArchive_buttonXAddSymbol.Size = new System.Drawing.Size(78, 35);
+            this.uiDataArchive_buttonXAddSymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_buttonXAddSymbol.TabIndex = 28;
+            this.uiDataArchive_buttonXAddSymbol.Text = "Add";
+            this.uiDataArchive_buttonXAddSymbol.Click += new System.EventHandler(this.buttonX_data_arch_add_Click);
+            // 
+            // uiDataArchive_panelExPreview
+            // 
+            this.uiDataArchive_panelExPreview.CanvasColor = System.Drawing.SystemColors.Control;
+            this.uiDataArchive_panelExPreview.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiDataArchive_panelExPreview.Controls.Add(this.uiDataArchive_dataGridViewXPreview);
+            this.uiDataArchive_panelExPreview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiDataArchive_panelExPreview.Location = new System.Drawing.Point(925, 91);
+            this.uiDataArchive_panelExPreview.Name = "uiDataArchive_panelExPreview";
+            this.uiDataArchive_panelExPreview.Padding = new System.Windows.Forms.Padding(1);
+            this.tableLayoutPanel1.SetRowSpan(this.uiDataArchive_panelExPreview, 2);
+            this.uiDataArchive_panelExPreview.Size = new System.Drawing.Size(264, 492);
+            this.uiDataArchive_panelExPreview.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.uiDataArchive_panelExPreview.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiDataArchive_panelExPreview.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.uiDataArchive_panelExPreview.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.uiDataArchive_panelExPreview.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.uiDataArchive_panelExPreview.Style.GradientAngle = 90;
+            this.uiDataArchive_panelExPreview.TabIndex = 30;
+            // 
+            // uiDataArchive_dataGridViewXPreview
+            // 
+            this.uiDataArchive_dataGridViewXPreview.AllowUserToAddRows = false;
+            this.uiDataArchive_dataGridViewXPreview.AllowUserToDeleteRows = false;
+            this.uiDataArchive_dataGridViewXPreview.BackgroundColor = System.Drawing.Color.White;
+            this.uiDataArchive_dataGridViewXPreview.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiDataArchive_dataGridViewXPreview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.uiDataArchive_dataGridViewXPreview.ColumnHeadersHeight = 30;
+            this.uiDataArchive_dataGridViewXPreview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.uiDataArchive_dataGridViewXPreview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PreviewColumnDate,
+            this.PreviewColumnPrice});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uiDataArchive_dataGridViewXPreview.DefaultCellStyle = dataGridViewCellStyle11;
+            this.uiDataArchive_dataGridViewXPreview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiDataArchive_dataGridViewXPreview.EnableHeadersVisualStyles = false;
+            this.uiDataArchive_dataGridViewXPreview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.uiDataArchive_dataGridViewXPreview.Location = new System.Drawing.Point(1, 1);
+            this.uiDataArchive_dataGridViewXPreview.Name = "uiDataArchive_dataGridViewXPreview";
+            this.uiDataArchive_dataGridViewXPreview.ReadOnly = true;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiDataArchive_dataGridViewXPreview.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.uiDataArchive_dataGridViewXPreview.RowHeadersVisible = false;
+            this.uiDataArchive_dataGridViewXPreview.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.uiDataArchive_dataGridViewXPreview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.uiDataArchive_dataGridViewXPreview.ShowEditingIcon = false;
+            this.uiDataArchive_dataGridViewXPreview.Size = new System.Drawing.Size(262, 490);
+            this.uiDataArchive_dataGridViewXPreview.TabIndex = 33;
+            // 
+            // PreviewColumnDate
+            // 
+            this.PreviewColumnDate.HeaderText = "Date";
+            this.PreviewColumnDate.Name = "PreviewColumnDate";
+            this.PreviewColumnDate.ReadOnly = true;
+            this.PreviewColumnDate.Width = 155;
+            // 
+            // PreviewColumnPrice
+            // 
+            this.PreviewColumnPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.PreviewColumnPrice.HeaderText = "Price";
+            this.PreviewColumnPrice.Name = "PreviewColumnPrice";
+            this.PreviewColumnPrice.ReadOnly = true;
             // 
             // metroTabPanel_startegy
             // 
@@ -487,7 +1214,6 @@
             // 
             this.metroTabPanel_startegy.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.metroTabPanel_startegy.TabIndex = 1;
-            this.metroTabPanel_startegy.Visible = false;
             // 
             // uiStrategyTablTableLayout
             // 
@@ -690,7 +1416,7 @@
             this.uiStrategy_panelExDataOptions.Name = "uiStrategy_panelExDataOptions";
             this.uiStrategy_panelExDataOptions.Size = new System.Drawing.Size(294, 104);
             this.uiStrategy_panelExDataOptions.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.uiStrategy_panelExDataOptions.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiStrategy_panelExDataOptions.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.uiStrategy_panelExDataOptions.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
             this.uiStrategy_panelExDataOptions.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.uiStrategy_panelExDataOptions.Style.ForeColor.Color = System.Drawing.Color.SteelBlue;
@@ -898,40 +1624,40 @@
             // 
             this.uiBlackSDivYield.AllowUserToAddRows = false;
             this.uiBlackSDivYield.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiBlackSDivYield.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiBlackSDivYield.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.uiBlackSDivYield.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.uiBlackSDivYield.ColumnHeadersVisible = false;
             this.uiBlackSDivYield.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn53});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiBlackSDivYield.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uiBlackSDivYield.DefaultCellStyle = dataGridViewCellStyle2;
             this.uiBlackSDivYield.EnableHeadersVisualStyles = false;
             this.uiBlackSDivYield.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.uiBlackSDivYield.HighlightSelectedColumnHeaders = false;
             this.uiBlackSDivYield.Location = new System.Drawing.Point(392, 199);
             this.uiBlackSDivYield.MultiSelect = false;
             this.uiBlackSDivYield.Name = "uiBlackSDivYield";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiBlackSDivYield.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiBlackSDivYield.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.uiBlackSDivYield.RowHeadersVisible = false;
             this.uiBlackSDivYield.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.uiBlackSDivYield.Size = new System.Drawing.Size(85, 20);
@@ -2358,14 +3084,14 @@
             this.uiStrategy_dataGridViewNoOptomizationParameters.BackgroundColor = System.Drawing.Color.White;
             this.uiStrategy_dataGridViewNoOptomizationParameters.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.uiStrategy_dataGridViewNoOptomizationParameters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiStrategy_dataGridViewNoOptomizationParameters.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uiStrategy_dataGridViewNoOptomizationParameters.DefaultCellStyle = dataGridViewCellStyle4;
             this.uiStrategy_dataGridViewNoOptomizationParameters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiStrategy_dataGridViewNoOptomizationParameters.Location = new System.Drawing.Point(1, 1);
             this.uiStrategy_dataGridViewNoOptomizationParameters.Name = "uiStrategy_dataGridViewNoOptomizationParameters";
@@ -2508,14 +3234,14 @@
             this.uiStrategy_dataGridViewOptomizationParameters.BackgroundColor = System.Drawing.Color.White;
             this.uiStrategy_dataGridViewOptomizationParameters.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.uiStrategy_dataGridViewOptomizationParameters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiStrategy_dataGridViewOptomizationParameters.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uiStrategy_dataGridViewOptomizationParameters.DefaultCellStyle = dataGridViewCellStyle5;
             this.uiStrategy_dataGridViewOptomizationParameters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiStrategy_dataGridViewOptomizationParameters.GridColor = System.Drawing.SystemColors.Control;
             this.uiStrategy_dataGridViewOptomizationParameters.Location = new System.Drawing.Point(1, 1);
@@ -2661,731 +3387,6 @@
             this.uiStrategy_buttonXStop.Text = "Stop";
             this.uiStrategy_buttonXStop.Click += new System.EventHandler(this.uiStop_Click);
             // 
-            // metroTabPanel_data_archive
-            // 
-            this.metroTabPanel_data_archive.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.metroTabPanel_data_archive.Controls.Add(this.tableLayoutPanel1);
-            this.metroTabPanel_data_archive.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTabPanel_data_archive.Location = new System.Drawing.Point(0, 51);
-            this.metroTabPanel_data_archive.Name = "metroTabPanel_data_archive";
-            this.metroTabPanel_data_archive.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.metroTabPanel_data_archive.Size = new System.Drawing.Size(1198, 589);
-            // 
-            // 
-            // 
-            this.metroTabPanel_data_archive.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.metroTabPanel_data_archive.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.metroTabPanel_data_archive.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroTabPanel_data_archive.TabIndex = 5;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
-            this.tableLayoutPanel1.Controls.Add(this.uiDataArchive_panelExSearchPanel, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.uiDataArchive_panelExSymbols, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.uiDataArchive_panelExCollectingControl, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.uiDataArchive_panelExContracts, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.uiDataArchive_panelExSymbolControl, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.uiDataArchive_panelExPreview, 2, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.Black;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 156F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1192, 586);
-            this.tableLayoutPanel1.TabIndex = 24;
-            // 
-            // uiDataArchive_panelExSearchPanel
-            // 
-            this.uiDataArchive_panelExSearchPanel.CanvasColor = System.Drawing.SystemColors.Control;
-            this.uiDataArchive_panelExSearchPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_panelExSearchPanel.Controls.Add(this.uiDataArchive_dateTimeInputFindTime);
-            this.uiDataArchive_panelExSearchPanel.Controls.Add(this.uiDataArchive_dateTimeInputFindDate);
-            this.uiDataArchive_panelExSearchPanel.Controls.Add(this.uiDataArchive_buttonXFind);
-            this.uiDataArchive_panelExSearchPanel.Controls.Add(this.uiDataArchive_labelXSearch);
-            this.uiDataArchive_panelExSearchPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiDataArchive_panelExSearchPanel.Location = new System.Drawing.Point(925, 3);
-            this.uiDataArchive_panelExSearchPanel.Name = "uiDataArchive_panelExSearchPanel";
-            this.uiDataArchive_panelExSearchPanel.Size = new System.Drawing.Size(264, 82);
-            this.uiDataArchive_panelExSearchPanel.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.uiDataArchive_panelExSearchPanel.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.uiDataArchive_panelExSearchPanel.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.uiDataArchive_panelExSearchPanel.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.uiDataArchive_panelExSearchPanel.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.uiDataArchive_panelExSearchPanel.Style.GradientAngle = 90;
-            this.uiDataArchive_panelExSearchPanel.TabIndex = 31;
-            // 
-            // uiDataArchive_dateTimeInputFindTime
-            // 
-            this.uiDataArchive_dateTimeInputFindTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiDataArchive_dateTimeInputFindTime.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputFindTime.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.uiDataArchive_dateTimeInputFindTime.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputFindTime.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.uiDataArchive_dateTimeInputFindTime.ButtonDropDown.Visible = true;
-            this.uiDataArchive_dateTimeInputFindTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.uiDataArchive_dateTimeInputFindTime.ForeColor = System.Drawing.Color.Black;
-            this.uiDataArchive_dateTimeInputFindTime.Format = DevComponents.Editors.eDateTimePickerFormat.LongTime;
-            this.uiDataArchive_dateTimeInputFindTime.IsPopupCalendarOpen = false;
-            this.uiDataArchive_dateTimeInputFindTime.Location = new System.Drawing.Point(18, 49);
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.ClearButtonVisible = true;
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.DisplayMonth = new System.DateTime(2013, 5, 1, 0, 0, 0, 0);
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.MarkedDates = new System.DateTime[0];
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.TodayButtonVisible = true;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.Visible = false;
-            this.uiDataArchive_dateTimeInputFindTime.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
-            this.uiDataArchive_dateTimeInputFindTime.Name = "uiDataArchive_dateTimeInputFindTime";
-            this.uiDataArchive_dateTimeInputFindTime.Size = new System.Drawing.Size(161, 23);
-            this.uiDataArchive_dateTimeInputFindTime.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_dateTimeInputFindTime.TabIndex = 49;
-            this.uiDataArchive_dateTimeInputFindTime.TimeSelectorTimeFormat = DevComponents.Editors.DateTimeAdv.eTimeSelectorFormat.Time24H;
-            this.uiDataArchive_dateTimeInputFindTime.Value = new System.DateTime(2013, 5, 28, 0, 0, 0, 0);
-            // 
-            // uiDataArchive_dateTimeInputFindDate
-            // 
-            this.uiDataArchive_dateTimeInputFindDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiDataArchive_dateTimeInputFindDate.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputFindDate.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.uiDataArchive_dateTimeInputFindDate.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputFindDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.uiDataArchive_dateTimeInputFindDate.ButtonDropDown.Visible = true;
-            this.uiDataArchive_dateTimeInputFindDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.uiDataArchive_dateTimeInputFindDate.ForeColor = System.Drawing.Color.Black;
-            this.uiDataArchive_dateTimeInputFindDate.IsPopupCalendarOpen = false;
-            this.uiDataArchive_dateTimeInputFindDate.Location = new System.Drawing.Point(18, 25);
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.ClearButtonVisible = true;
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.DisplayMonth = new System.DateTime(2013, 5, 1, 0, 0, 0, 0);
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.MarkedDates = new System.DateTime[0];
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.TodayButtonVisible = true;
-            this.uiDataArchive_dateTimeInputFindDate.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
-            this.uiDataArchive_dateTimeInputFindDate.Name = "uiDataArchive_dateTimeInputFindDate";
-            this.uiDataArchive_dateTimeInputFindDate.Size = new System.Drawing.Size(161, 23);
-            this.uiDataArchive_dateTimeInputFindDate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_dateTimeInputFindDate.TabIndex = 48;
-            this.uiDataArchive_dateTimeInputFindDate.Value = new System.DateTime(2013, 5, 28, 0, 0, 0, 0);
-            this.uiDataArchive_dateTimeInputFindDate.ValueChanged += new System.EventHandler(this.uiDataArchive_dateTimeInputFindDate_ValueChanged);
-            // 
-            // uiDataArchive_buttonXFind
-            // 
-            this.uiDataArchive_buttonXFind.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.uiDataArchive_buttonXFind.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiDataArchive_buttonXFind.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.uiDataArchive_buttonXFind.Location = new System.Drawing.Point(184, 25);
-            this.uiDataArchive_buttonXFind.Margin = new System.Windows.Forms.Padding(2);
-            this.uiDataArchive_buttonXFind.Name = "uiDataArchive_buttonXFind";
-            this.uiDataArchive_buttonXFind.Size = new System.Drawing.Size(69, 47);
-            this.uiDataArchive_buttonXFind.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_buttonXFind.TabIndex = 47;
-            this.uiDataArchive_buttonXFind.Text = "Find";
-            this.uiDataArchive_buttonXFind.Click += new System.EventHandler(this.uiDataArchive_buttonXFind_Click);
-            // 
-            // uiDataArchive_labelXSearch
-            // 
-            // 
-            // 
-            // 
-            this.uiDataArchive_labelXSearch.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_labelXSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.uiDataArchive_labelXSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiDataArchive_labelXSearch.ForeColor = System.Drawing.Color.Black;
-            this.uiDataArchive_labelXSearch.Location = new System.Drawing.Point(0, 0);
-            this.uiDataArchive_labelXSearch.Name = "uiDataArchive_labelXSearch";
-            this.uiDataArchive_labelXSearch.PaddingLeft = 6;
-            this.uiDataArchive_labelXSearch.PaddingTop = 3;
-            this.uiDataArchive_labelXSearch.SingleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.uiDataArchive_labelXSearch.Size = new System.Drawing.Size(264, 23);
-            this.uiDataArchive_labelXSearch.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
-            this.uiDataArchive_labelXSearch.SymbolColor = System.Drawing.Color.Blue;
-            this.uiDataArchive_labelXSearch.TabIndex = 30;
-            this.uiDataArchive_labelXSearch.Text = "SEARCH";
-            // 
-            // uiDataArchive_panelExSymbols
-            // 
-            this.uiDataArchive_panelExSymbols.CanvasColor = System.Drawing.SystemColors.Control;
-            this.uiDataArchive_panelExSymbols.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_panelExSymbols.Controls.Add(this.uiDataArchive_checkedListBoxSymbols);
-            this.uiDataArchive_panelExSymbols.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiDataArchive_panelExSymbols.Location = new System.Drawing.Point(3, 91);
-            this.uiDataArchive_panelExSymbols.Name = "uiDataArchive_panelExSymbols";
-            this.uiDataArchive_panelExSymbols.Padding = new System.Windows.Forms.Padding(1);
-            this.uiDataArchive_panelExSymbols.Size = new System.Drawing.Size(264, 336);
-            this.uiDataArchive_panelExSymbols.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.uiDataArchive_panelExSymbols.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.uiDataArchive_panelExSymbols.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.uiDataArchive_panelExSymbols.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.uiDataArchive_panelExSymbols.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.uiDataArchive_panelExSymbols.Style.GradientAngle = 90;
-            this.uiDataArchive_panelExSymbols.TabIndex = 29;
-            // 
-            // uiDataArchive_checkedListBoxSymbols
-            // 
-            this.uiDataArchive_checkedListBoxSymbols.BackColor = System.Drawing.Color.White;
-            this.uiDataArchive_checkedListBoxSymbols.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.uiDataArchive_checkedListBoxSymbols.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiDataArchive_checkedListBoxSymbols.ForeColor = System.Drawing.Color.Black;
-            this.uiDataArchive_checkedListBoxSymbols.FormattingEnabled = true;
-            this.uiDataArchive_checkedListBoxSymbols.Location = new System.Drawing.Point(1, 1);
-            this.uiDataArchive_checkedListBoxSymbols.Name = "uiDataArchive_checkedListBoxSymbols";
-            this.uiDataArchive_checkedListBoxSymbols.Size = new System.Drawing.Size(262, 334);
-            this.uiDataArchive_checkedListBoxSymbols.TabIndex = 44;
-            // 
-            // uiDataArchive_panelExCollectingControl
-            // 
-            this.uiDataArchive_panelExCollectingControl.CanvasColor = System.Drawing.SystemColors.Control;
-            this.uiDataArchive_panelExCollectingControl.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_labelXCollectingControl);
-            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_dateTimeInputEnd);
-            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_dateTimeInputStart);
-            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.labelX10);
-            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.labelX11);
-            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_buttonXStopCollecting);
-            this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_buttonXStartCollecting);
-            this.uiDataArchive_panelExCollectingControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiDataArchive_panelExCollectingControl.Location = new System.Drawing.Point(3, 433);
-            this.uiDataArchive_panelExCollectingControl.Name = "uiDataArchive_panelExCollectingControl";
-            this.uiDataArchive_panelExCollectingControl.Size = new System.Drawing.Size(264, 150);
-            this.uiDataArchive_panelExCollectingControl.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.uiDataArchive_panelExCollectingControl.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.uiDataArchive_panelExCollectingControl.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.uiDataArchive_panelExCollectingControl.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.uiDataArchive_panelExCollectingControl.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.uiDataArchive_panelExCollectingControl.Style.GradientAngle = 90;
-            this.uiDataArchive_panelExCollectingControl.TabIndex = 25;
-            // 
-            // uiDataArchive_labelXCollectingControl
-            // 
-            // 
-            // 
-            // 
-            this.uiDataArchive_labelXCollectingControl.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_labelXCollectingControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.uiDataArchive_labelXCollectingControl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiDataArchive_labelXCollectingControl.ForeColor = System.Drawing.Color.Black;
-            this.uiDataArchive_labelXCollectingControl.Location = new System.Drawing.Point(0, 0);
-            this.uiDataArchive_labelXCollectingControl.Name = "uiDataArchive_labelXCollectingControl";
-            this.uiDataArchive_labelXCollectingControl.PaddingLeft = 6;
-            this.uiDataArchive_labelXCollectingControl.PaddingTop = 3;
-            this.uiDataArchive_labelXCollectingControl.SingleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.uiDataArchive_labelXCollectingControl.Size = new System.Drawing.Size(264, 23);
-            this.uiDataArchive_labelXCollectingControl.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
-            this.uiDataArchive_labelXCollectingControl.SymbolColor = System.Drawing.Color.Blue;
-            this.uiDataArchive_labelXCollectingControl.TabIndex = 48;
-            this.uiDataArchive_labelXCollectingControl.Text = "COLLECTING CONTROL";
-            // 
-            // uiDataArchive_dateTimeInputEnd
-            // 
-            this.uiDataArchive_dateTimeInputEnd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiDataArchive_dateTimeInputEnd.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputEnd.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.uiDataArchive_dateTimeInputEnd.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputEnd.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.uiDataArchive_dateTimeInputEnd.ButtonDropDown.Visible = true;
-            this.uiDataArchive_dateTimeInputEnd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.uiDataArchive_dateTimeInputEnd.ForeColor = System.Drawing.Color.Black;
-            this.uiDataArchive_dateTimeInputEnd.IsPopupCalendarOpen = false;
-            this.uiDataArchive_dateTimeInputEnd.Location = new System.Drawing.Point(59, 65);
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.ClearButtonVisible = true;
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.DisplayMonth = new System.DateTime(2013, 5, 1, 0, 0, 0, 0);
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.MarkedDates = new System.DateTime[0];
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.TodayButtonVisible = true;
-            this.uiDataArchive_dateTimeInputEnd.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
-            this.uiDataArchive_dateTimeInputEnd.Name = "uiDataArchive_dateTimeInputEnd";
-            this.uiDataArchive_dateTimeInputEnd.Size = new System.Drawing.Size(195, 23);
-            this.uiDataArchive_dateTimeInputEnd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_dateTimeInputEnd.TabIndex = 47;
-            this.uiDataArchive_dateTimeInputEnd.Value = new System.DateTime(2013, 5, 28, 0, 0, 0, 0);
-            // 
-            // uiDataArchive_dateTimeInputStart
-            // 
-            this.uiDataArchive_dateTimeInputStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiDataArchive_dateTimeInputStart.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputStart.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.uiDataArchive_dateTimeInputStart.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputStart.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.uiDataArchive_dateTimeInputStart.ButtonDropDown.Visible = true;
-            this.uiDataArchive_dateTimeInputStart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.uiDataArchive_dateTimeInputStart.ForeColor = System.Drawing.Color.Black;
-            this.uiDataArchive_dateTimeInputStart.IsPopupCalendarOpen = false;
-            this.uiDataArchive_dateTimeInputStart.Location = new System.Drawing.Point(59, 34);
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.ClearButtonVisible = true;
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.DisplayMonth = new System.DateTime(2013, 5, 1, 0, 0, 0, 0);
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.MarkedDates = new System.DateTime[0];
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.TodayButtonVisible = true;
-            this.uiDataArchive_dateTimeInputStart.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
-            this.uiDataArchive_dateTimeInputStart.Name = "uiDataArchive_dateTimeInputStart";
-            this.uiDataArchive_dateTimeInputStart.Size = new System.Drawing.Size(195, 23);
-            this.uiDataArchive_dateTimeInputStart.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_dateTimeInputStart.TabIndex = 44;
-            this.uiDataArchive_dateTimeInputStart.Value = new System.DateTime(2013, 5, 28, 0, 0, 0, 0);
-            // 
-            // labelX10
-            // 
-            this.labelX10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelX10.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelX10.ForeColor = System.Drawing.Color.Black;
-            this.labelX10.Location = new System.Drawing.Point(7, 34);
-            this.labelX10.Name = "labelX10";
-            this.labelX10.Size = new System.Drawing.Size(46, 23);
-            this.labelX10.TabIndex = 45;
-            this.labelX10.Text = "Start";
-            this.labelX10.TextAlignment = System.Drawing.StringAlignment.Far;
-            // 
-            // labelX11
-            // 
-            this.labelX11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelX11.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelX11.ForeColor = System.Drawing.Color.Black;
-            this.labelX11.Location = new System.Drawing.Point(7, 63);
-            this.labelX11.Name = "labelX11";
-            this.labelX11.Size = new System.Drawing.Size(46, 23);
-            this.labelX11.TabIndex = 46;
-            this.labelX11.Text = "End";
-            this.labelX11.TextAlignment = System.Drawing.StringAlignment.Far;
-            // 
-            // uiDataArchive_buttonXStopCollecting
-            // 
-            this.uiDataArchive_buttonXStopCollecting.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.uiDataArchive_buttonXStopCollecting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiDataArchive_buttonXStopCollecting.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.uiDataArchive_buttonXStopCollecting.Location = new System.Drawing.Point(176, 105);
-            this.uiDataArchive_buttonXStopCollecting.Margin = new System.Windows.Forms.Padding(2);
-            this.uiDataArchive_buttonXStopCollecting.Name = "uiDataArchive_buttonXStopCollecting";
-            this.uiDataArchive_buttonXStopCollecting.Size = new System.Drawing.Size(78, 35);
-            this.uiDataArchive_buttonXStopCollecting.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_buttonXStopCollecting.TabIndex = 29;
-            this.uiDataArchive_buttonXStopCollecting.Text = "Stop";
-            this.uiDataArchive_buttonXStopCollecting.Click += new System.EventHandler(this.buttonX_data_archive_stop_Click);
-            // 
-            // uiDataArchive_buttonXStartCollecting
-            // 
-            this.uiDataArchive_buttonXStartCollecting.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.uiDataArchive_buttonXStartCollecting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.uiDataArchive_buttonXStartCollecting.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.uiDataArchive_buttonXStartCollecting.Location = new System.Drawing.Point(12, 105);
-            this.uiDataArchive_buttonXStartCollecting.Margin = new System.Windows.Forms.Padding(2);
-            this.uiDataArchive_buttonXStartCollecting.Name = "uiDataArchive_buttonXStartCollecting";
-            this.uiDataArchive_buttonXStartCollecting.Size = new System.Drawing.Size(78, 35);
-            this.uiDataArchive_buttonXStartCollecting.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_buttonXStartCollecting.TabIndex = 28;
-            this.uiDataArchive_buttonXStartCollecting.Text = "Collect";
-            this.uiDataArchive_buttonXStartCollecting.Click += new System.EventHandler(this.buttonX_data_archive_start_Click);
-            // 
-            // uiDataArchive_panelExContracts
-            // 
-            this.uiDataArchive_panelExContracts.CanvasColor = System.Drawing.SystemColors.Control;
-            this.uiDataArchive_panelExContracts.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_panelExContracts.Controls.Add(this.uiDataArchive_dataGridViewXContracts);
-            this.uiDataArchive_panelExContracts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiDataArchive_panelExContracts.Location = new System.Drawing.Point(273, 3);
-            this.uiDataArchive_panelExContracts.Name = "uiDataArchive_panelExContracts";
-            this.uiDataArchive_panelExContracts.Padding = new System.Windows.Forms.Padding(1);
-            this.tableLayoutPanel1.SetRowSpan(this.uiDataArchive_panelExContracts, 3);
-            this.uiDataArchive_panelExContracts.Size = new System.Drawing.Size(646, 580);
-            this.uiDataArchive_panelExContracts.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.uiDataArchive_panelExContracts.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.uiDataArchive_panelExContracts.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.uiDataArchive_panelExContracts.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.uiDataArchive_panelExContracts.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.uiDataArchive_panelExContracts.Style.GradientAngle = 90;
-            this.uiDataArchive_panelExContracts.TabIndex = 26;
-            // 
-            // uiDataArchive_dataGridViewXContracts
-            // 
-            this.uiDataArchive_dataGridViewXContracts.AllowUserToAddRows = false;
-            this.uiDataArchive_dataGridViewXContracts.AllowUserToDeleteRows = false;
-            this.uiDataArchive_dataGridViewXContracts.BackgroundColor = System.Drawing.Color.White;
-            this.uiDataArchive_dataGridViewXContracts.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiDataArchive_dataGridViewXContracts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.uiDataArchive_dataGridViewXContracts.ColumnHeadersHeight = 30;
-            this.uiDataArchive_dataGridViewXContracts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.uiDataArchive_dataGridViewXContracts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiDataArchive_dataGridViewXContracts.DefaultCellStyle = dataGridViewCellStyle3;
-            this.uiDataArchive_dataGridViewXContracts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiDataArchive_dataGridViewXContracts.EnableHeadersVisualStyles = false;
-            this.uiDataArchive_dataGridViewXContracts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.uiDataArchive_dataGridViewXContracts.Location = new System.Drawing.Point(1, 1);
-            this.uiDataArchive_dataGridViewXContracts.Name = "uiDataArchive_dataGridViewXContracts";
-            this.uiDataArchive_dataGridViewXContracts.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiDataArchive_dataGridViewXContracts.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.uiDataArchive_dataGridViewXContracts.RowHeadersVisible = false;
-            this.uiDataArchive_dataGridViewXContracts.RowHeadersWidth = 30;
-            this.uiDataArchive_dataGridViewXContracts.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.uiDataArchive_dataGridViewXContracts.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.uiDataArchive_dataGridViewXContracts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.uiDataArchive_dataGridViewXContracts.ShowEditingIcon = false;
-            this.uiDataArchive_dataGridViewXContracts.Size = new System.Drawing.Size(644, 578);
-            this.uiDataArchive_dataGridViewXContracts.TabIndex = 31;
-            this.uiDataArchive_dataGridViewXContracts.CurrentCellChanged += new System.EventHandler(this.uiDataArchive_dataGridViewXContracts_CurrentCellChanged);
-            // 
-            // Column1
-            // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column1.HeaderText = "";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 30;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Contract";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Start Date";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 165;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "End Date";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 165;
-            // 
-            // uiDataArchive_panelExSymbolControl
-            // 
-            this.uiDataArchive_panelExSymbolControl.CanvasColor = System.Drawing.SystemColors.Control;
-            this.uiDataArchive_panelExSymbolControl.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_panelExSymbolControl.Controls.Add(this.uiDataArchive_buttonXEditSymbol);
-            this.uiDataArchive_panelExSymbolControl.Controls.Add(this.uiDataArchive_labelXSymbolsCommands);
-            this.uiDataArchive_panelExSymbolControl.Controls.Add(this.uiDataArchive_buttonXDelSymbol);
-            this.uiDataArchive_panelExSymbolControl.Controls.Add(this.uiDataArchive_buttonXAddSymbol);
-            this.uiDataArchive_panelExSymbolControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiDataArchive_panelExSymbolControl.Location = new System.Drawing.Point(3, 3);
-            this.uiDataArchive_panelExSymbolControl.Name = "uiDataArchive_panelExSymbolControl";
-            this.uiDataArchive_panelExSymbolControl.Size = new System.Drawing.Size(264, 82);
-            this.uiDataArchive_panelExSymbolControl.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.uiDataArchive_panelExSymbolControl.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.uiDataArchive_panelExSymbolControl.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.uiDataArchive_panelExSymbolControl.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.uiDataArchive_panelExSymbolControl.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.uiDataArchive_panelExSymbolControl.Style.GradientAngle = 90;
-            this.uiDataArchive_panelExSymbolControl.TabIndex = 27;
-            // 
-            // uiDataArchive_buttonXEditSymbol
-            // 
-            this.uiDataArchive_buttonXEditSymbol.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.uiDataArchive_buttonXEditSymbol.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.uiDataArchive_buttonXEditSymbol.Location = new System.Drawing.Point(93, 33);
-            this.uiDataArchive_buttonXEditSymbol.Margin = new System.Windows.Forms.Padding(2);
-            this.uiDataArchive_buttonXEditSymbol.Name = "uiDataArchive_buttonXEditSymbol";
-            this.uiDataArchive_buttonXEditSymbol.Size = new System.Drawing.Size(78, 35);
-            this.uiDataArchive_buttonXEditSymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_buttonXEditSymbol.TabIndex = 31;
-            this.uiDataArchive_buttonXEditSymbol.Text = "Edit";
-            this.uiDataArchive_buttonXEditSymbol.Click += new System.EventHandler(this.uiDataArchive_buttonXEditSymbol_Click);
-            // 
-            // uiDataArchive_labelXSymbolsCommands
-            // 
-            // 
-            // 
-            // 
-            this.uiDataArchive_labelXSymbolsCommands.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiDataArchive_labelXSymbolsCommands.Dock = System.Windows.Forms.DockStyle.Top;
-            this.uiDataArchive_labelXSymbolsCommands.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiDataArchive_labelXSymbolsCommands.ForeColor = System.Drawing.Color.Black;
-            this.uiDataArchive_labelXSymbolsCommands.Location = new System.Drawing.Point(0, 0);
-            this.uiDataArchive_labelXSymbolsCommands.Name = "uiDataArchive_labelXSymbolsCommands";
-            this.uiDataArchive_labelXSymbolsCommands.PaddingLeft = 6;
-            this.uiDataArchive_labelXSymbolsCommands.PaddingTop = 3;
-            this.uiDataArchive_labelXSymbolsCommands.SingleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.uiDataArchive_labelXSymbolsCommands.Size = new System.Drawing.Size(264, 23);
-            this.uiDataArchive_labelXSymbolsCommands.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
-            this.uiDataArchive_labelXSymbolsCommands.SymbolColor = System.Drawing.Color.Blue;
-            this.uiDataArchive_labelXSymbolsCommands.TabIndex = 30;
-            this.uiDataArchive_labelXSymbolsCommands.Text = "SYMBOLS COMMANDS";
-            // 
-            // uiDataArchive_buttonXDelSymbol
-            // 
-            this.uiDataArchive_buttonXDelSymbol.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.uiDataArchive_buttonXDelSymbol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiDataArchive_buttonXDelSymbol.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.uiDataArchive_buttonXDelSymbol.Location = new System.Drawing.Point(176, 33);
-            this.uiDataArchive_buttonXDelSymbol.Margin = new System.Windows.Forms.Padding(2);
-            this.uiDataArchive_buttonXDelSymbol.Name = "uiDataArchive_buttonXDelSymbol";
-            this.uiDataArchive_buttonXDelSymbol.Size = new System.Drawing.Size(78, 35);
-            this.uiDataArchive_buttonXDelSymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_buttonXDelSymbol.TabIndex = 29;
-            this.uiDataArchive_buttonXDelSymbol.Text = "Delete";
-            this.uiDataArchive_buttonXDelSymbol.Click += new System.EventHandler(this.buttonX_data_archive_delete_Click);
-            // 
-            // uiDataArchive_buttonXAddSymbol
-            // 
-            this.uiDataArchive_buttonXAddSymbol.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.uiDataArchive_buttonXAddSymbol.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.uiDataArchive_buttonXAddSymbol.Location = new System.Drawing.Point(10, 33);
-            this.uiDataArchive_buttonXAddSymbol.Margin = new System.Windows.Forms.Padding(2);
-            this.uiDataArchive_buttonXAddSymbol.Name = "uiDataArchive_buttonXAddSymbol";
-            this.uiDataArchive_buttonXAddSymbol.Size = new System.Drawing.Size(78, 35);
-            this.uiDataArchive_buttonXAddSymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_buttonXAddSymbol.TabIndex = 28;
-            this.uiDataArchive_buttonXAddSymbol.Text = "Add";
-            this.uiDataArchive_buttonXAddSymbol.Click += new System.EventHandler(this.buttonX_data_arch_add_Click);
-            // 
-            // uiDataArchive_panelExPreview
-            // 
-            this.uiDataArchive_panelExPreview.CanvasColor = System.Drawing.SystemColors.Control;
-            this.uiDataArchive_panelExPreview.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiDataArchive_panelExPreview.Controls.Add(this.uiDataArchive_dataGridViewXPreview);
-            this.uiDataArchive_panelExPreview.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiDataArchive_panelExPreview.Location = new System.Drawing.Point(925, 91);
-            this.uiDataArchive_panelExPreview.Name = "uiDataArchive_panelExPreview";
-            this.uiDataArchive_panelExPreview.Padding = new System.Windows.Forms.Padding(1);
-            this.tableLayoutPanel1.SetRowSpan(this.uiDataArchive_panelExPreview, 2);
-            this.uiDataArchive_panelExPreview.Size = new System.Drawing.Size(264, 492);
-            this.uiDataArchive_panelExPreview.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.uiDataArchive_panelExPreview.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.uiDataArchive_panelExPreview.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.uiDataArchive_panelExPreview.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.uiDataArchive_panelExPreview.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.uiDataArchive_panelExPreview.Style.GradientAngle = 90;
-            this.uiDataArchive_panelExPreview.TabIndex = 30;
-            // 
-            // uiDataArchive_dataGridViewXPreview
-            // 
-            this.uiDataArchive_dataGridViewXPreview.AllowUserToAddRows = false;
-            this.uiDataArchive_dataGridViewXPreview.AllowUserToDeleteRows = false;
-            this.uiDataArchive_dataGridViewXPreview.BackgroundColor = System.Drawing.Color.White;
-            this.uiDataArchive_dataGridViewXPreview.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiDataArchive_dataGridViewXPreview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.uiDataArchive_dataGridViewXPreview.ColumnHeadersHeight = 30;
-            this.uiDataArchive_dataGridViewXPreview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.uiDataArchive_dataGridViewXPreview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PreviewColumnDate,
-            this.PreviewColumnPrice});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiDataArchive_dataGridViewXPreview.DefaultCellStyle = dataGridViewCellStyle6;
-            this.uiDataArchive_dataGridViewXPreview.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiDataArchive_dataGridViewXPreview.EnableHeadersVisualStyles = false;
-            this.uiDataArchive_dataGridViewXPreview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.uiDataArchive_dataGridViewXPreview.Location = new System.Drawing.Point(1, 1);
-            this.uiDataArchive_dataGridViewXPreview.Name = "uiDataArchive_dataGridViewXPreview";
-            this.uiDataArchive_dataGridViewXPreview.ReadOnly = true;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiDataArchive_dataGridViewXPreview.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.uiDataArchive_dataGridViewXPreview.RowHeadersVisible = false;
-            this.uiDataArchive_dataGridViewXPreview.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.uiDataArchive_dataGridViewXPreview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.uiDataArchive_dataGridViewXPreview.ShowEditingIcon = false;
-            this.uiDataArchive_dataGridViewXPreview.Size = new System.Drawing.Size(262, 490);
-            this.uiDataArchive_dataGridViewXPreview.TabIndex = 33;
-            // 
-            // PreviewColumnDate
-            // 
-            this.PreviewColumnDate.HeaderText = "Date";
-            this.PreviewColumnDate.Name = "PreviewColumnDate";
-            this.PreviewColumnDate.ReadOnly = true;
-            this.PreviewColumnDate.Width = 155;
-            // 
-            // PreviewColumnPrice
-            // 
-            this.PreviewColumnPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PreviewColumnPrice.HeaderText = "Price";
-            this.PreviewColumnPrice.Name = "PreviewColumnPrice";
-            this.PreviewColumnPrice.ReadOnly = true;
-            // 
             // metroTabPanel_calendar
             // 
             this.metroTabPanel_calendar.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -3419,7 +3420,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.15344F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 224F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 229F));
             this.tableLayoutPanel3.Controls.Add(this.uiCalendar_panelExSaving, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.uiCalendar_panelExPrevNext, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.panelEx5, 0, 1);
@@ -4329,7 +4330,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.92074F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.07926F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 42F));
             this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryGroupPanel, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryChart, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.uiSummary_dataGridViewBT, 0, 0);
@@ -4713,7 +4714,7 @@
             this.uiBTSummaryChart.Legends.Add(legend1);
             this.uiBTSummaryChart.Location = new System.Drawing.Point(149, 564);
             this.uiBTSummaryChart.Name = "uiBTSummaryChart";
-            this.uiBTSummaryChart.Size = new System.Drawing.Size(982, 1);
+            this.uiBTSummaryChart.Size = new System.Drawing.Size(977, 1);
             this.uiBTSummaryChart.TabIndex = 36;
             this.uiBTSummaryChart.Text = "chart1";
             this.uiBTSummaryChart.Visible = false;
@@ -4758,7 +4759,7 @@
             this.uiSummary_dataGridViewBT.RowHeadersVisible = false;
             this.uiSummary_dataGridViewBT.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.uiSummary_dataGridViewBT.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uiSummary_dataGridViewBT.Size = new System.Drawing.Size(1134, 561);
+            this.uiSummary_dataGridViewBT.Size = new System.Drawing.Size(1129, 561);
             this.uiSummary_dataGridViewBT.TabIndex = 22;
             this.uiSummary_dataGridViewBT.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.uiBTSummaryTable_RowsAdded);
             // 
@@ -4855,7 +4856,7 @@
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.92F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.08F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 42F));
             this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryScrollbar, 2, 0);
             this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryTable, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryChart, 1, 1);
@@ -4875,9 +4876,9 @@
             this.uiFTSummaryScrollbar.BackColor = System.Drawing.Color.White;
             this.uiFTSummaryScrollbar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiFTSummaryScrollbar.ForeColor = System.Drawing.Color.Black;
-            this.uiFTSummaryScrollbar.Location = new System.Drawing.Point(1137, 3);
+            this.uiFTSummaryScrollbar.Location = new System.Drawing.Point(1132, 3);
             this.uiFTSummaryScrollbar.Name = "uiFTSummaryScrollbar";
-            this.uiFTSummaryScrollbar.Size = new System.Drawing.Size(32, 550);
+            this.uiFTSummaryScrollbar.Size = new System.Drawing.Size(37, 550);
             this.uiFTSummaryScrollbar.TabIndex = 19;
             // 
             // uiFTSummaryTable
@@ -4926,7 +4927,7 @@
             this.uiFTSummaryTable.RowHeadersVisible = false;
             this.uiFTSummaryTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.uiFTSummaryTable.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uiFTSummaryTable.Size = new System.Drawing.Size(1134, 556);
+            this.uiFTSummaryTable.Size = new System.Drawing.Size(1129, 556);
             this.uiFTSummaryTable.TabIndex = 32;
             // 
             // smb
@@ -5004,9 +5005,9 @@
             this.uiFTSummaryChart.Dock = System.Windows.Forms.DockStyle.Fill;
             legend2.Name = "Legend1";
             this.uiFTSummaryChart.Legends.Add(legend2);
-            this.uiFTSummaryChart.Location = new System.Drawing.Point(149, 559);
+            this.uiFTSummaryChart.Location = new System.Drawing.Point(148, 559);
             this.uiFTSummaryChart.Name = "uiFTSummaryChart";
-            this.uiFTSummaryChart.Size = new System.Drawing.Size(982, 6);
+            this.uiFTSummaryChart.Size = new System.Drawing.Size(978, 6);
             this.uiFTSummaryChart.TabIndex = 37;
             this.uiFTSummaryChart.Text = "<no data>";
             this.uiFTSummaryChart.Visible = false;
@@ -5042,7 +5043,7 @@
             this.uiFTSummaryGroupPanel.DrawTitleBox = false;
             this.uiFTSummaryGroupPanel.Location = new System.Drawing.Point(3, 559);
             this.uiFTSummaryGroupPanel.Name = "uiFTSummaryGroupPanel";
-            this.uiFTSummaryGroupPanel.Size = new System.Drawing.Size(140, 6);
+            this.uiFTSummaryGroupPanel.Size = new System.Drawing.Size(139, 6);
             // 
             // 
             // 
@@ -5413,6 +5414,7 @@
             // 
             // ui_tabItem_strategy
             // 
+            this.ui_tabItem_strategy.Checked = true;
             this.ui_tabItem_strategy.Name = "ui_tabItem_strategy";
             this.ui_tabItem_strategy.Panel = this.metroTabPanel_startegy;
             this.ui_tabItem_strategy.Text = "&STRATEGY";
@@ -5437,7 +5439,6 @@
             // 
             // ui_tabItem_data_archive
             // 
-            this.ui_tabItem_data_archive.Checked = true;
             this.ui_tabItem_data_archive.Name = "ui_tabItem_data_archive";
             this.ui_tabItem_data_archive.Panel = this.metroTabPanel_data_archive;
             this.ui_tabItem_data_archive.Text = "&DATA ARCHIVE";
@@ -5526,6 +5527,20 @@
             this.Shown += new System.EventHandler(this.MainFormMetroApp_Shown);
             this.metroShellMain.ResumeLayout(false);
             this.metroShellMain.PerformLayout();
+            this.metroTabPanel_data_archive.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.uiDataArchive_panelExSearchPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputFindTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputFindDate)).EndInit();
+            this.uiDataArchive_panelExSymbols.ResumeLayout(false);
+            this.uiDataArchive_panelExCollectingControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputEnd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputStart)).EndInit();
+            this.uiDataArchive_panelExContracts.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dataGridViewXContracts)).EndInit();
+            this.uiDataArchive_panelExSymbolControl.ResumeLayout(false);
+            this.uiDataArchive_panelExPreview.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dataGridViewXPreview)).EndInit();
             this.metroTabPanel_startegy.ResumeLayout(false);
             this.uiStrategyTablTableLayout.ResumeLayout(false);
             this.uiStrategy_panelExOptions.ResumeLayout(false);
@@ -5550,20 +5565,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.uiStrategy_dataGridViewOptomizationParameters)).EndInit();
             this.uiStrategy_panelExRunContinuesPanel.ResumeLayout(false);
             this.uiStrategy_WorkingButtonsPanel.ResumeLayout(false);
-            this.metroTabPanel_data_archive.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.uiDataArchive_panelExSearchPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputFindTime)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputFindDate)).EndInit();
-            this.uiDataArchive_panelExSymbols.ResumeLayout(false);
-            this.uiDataArchive_panelExCollectingControl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputEnd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dateTimeInputStart)).EndInit();
-            this.uiDataArchive_panelExContracts.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dataGridViewXContracts)).EndInit();
-            this.uiDataArchive_panelExSymbolControl.ResumeLayout(false);
-            this.uiDataArchive_panelExPreview.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataArchive_dataGridViewXPreview)).EndInit();
             this.metroTabPanel_calendar.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.uiCalendar_panelExSaving.ResumeLayout(false);
