@@ -2227,13 +2227,14 @@ namespace Reversals.Forms
         private void uiDataArchive_dateTimeInputFindDate_ValueChanged(object sender, EventArgs e)
         {
             PreviewShowTickData();
+            uiDataArchive_dataGridViewXPreview.Focus();
         }
 
         
         private void uiDataArchive_dataGridViewXContracts_CurrentCellChanged(object sender, EventArgs e)
         {
             var defTimeOut= ToastNotification.DefaultTimeoutInterval;
-            ToastNotification.DefaultTimeoutInterval = 800;
+            ToastNotification.DefaultTimeoutInterval = 900;
             ToastNotification.Show(uiDataArchive_dataGridViewXPreview, "Loading...");
             PreviewChangeSymbol();
             ToastNotification.DefaultTimeoutInterval = defTimeOut;
