@@ -11,6 +11,15 @@
         public int ContractSize;
         public double PointValue;
         public double Zim;
-        public double TickSize;         
+        public double TickSize;
+
+        public double StopLevelDef;
+        public double StopLevelMin;
+        public double StopLevelMax;
+        public double StopLevelStep;
+        public double ReversalLevelDef;
+        public double ReversalLevelMin;
+        public double ReversalLevelMax;
+        public double ReversalLevelStep;
     }
 }

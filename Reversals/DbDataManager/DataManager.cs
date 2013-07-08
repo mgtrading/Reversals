@@ -210,7 +210,9 @@ namespace Reversals.DbDataManager
         public static bool AddDataset(DataSetModel dsm)
         {
             String query = "INSERT IGNORE INTO " + TblDatasets;
-            query += "(DataSetName, Symbol_ID,TimeValue, Commission, Multiplier, ContractSize, PointValue, ZIM, TickSize) VALUES";
+            query += "(DataSetName, Symbol_ID,TimeValue, Commission, Multiplier, ContractSize, PointValue, ZIM, TickSize,"
+            +" StopLevelDef, StopLevelMin, StopLevelMax, StopLevelStep"
+            + "  ReversalLevelDef, ReversalLevelMin, ReversalLevelMax, ReversalLevelStep) VALUES";
             query += "('";
             query += dsm.DataSetName + "',";
             query += dsm.SymbolId + ",";
@@ -220,7 +222,17 @@ namespace Reversals.DbDataManager
             query += dsm.ContractSize + ",";
             query += dsm.PointValue + ",";
             query += dsm.Zim + ",";
-            query += dsm.TickSize + ");COMMIT;";
+            query += dsm.TickSize + ",";
+
+            query += dsm.StopLevelDef + ",";
+            query += dsm.StopLevelMin + ",";
+            query += dsm.StopLevelMax + ",";
+            query += dsm.StopLevelStep + ",";
+
+            query += dsm.ReversalLevelDef + ",";
+            query += dsm.ReversalLevelMin + ",";
+            query += dsm.ReversalLevelMax + ",";
+            query += dsm.ReversalLevelStep + ");COMMIT;";
 
             return DoSql(query);
         }
@@ -242,7 +254,17 @@ namespace Reversals.DbDataManager
                 + " ContractSize = " + dsm.ContractSize + ","
                 + " PointValue = " + dsm.PointValue + ","
                 + " ZIM = " + dsm.Zim + ","
-                + " TickSize = " + dsm.TickSize + "";
+                + " TickSize = " + dsm.TickSize + ","
+
+                + " StopLevelDef = " + dsm.StopLevelDef + ","
+                + " StopLevelMin = " + dsm.StopLevelMin + ","
+                + " StopLevelMax = " + dsm.StopLevelMax + ","
+                + " StopLevelStep = " + dsm.StopLevelStep + ","
+
+                + " ReversalLevelDef = " + dsm.ReversalLevelDef + ","
+                + " ReversalLevelMin = " + dsm.ReversalLevelMin + ","
+                + " ReversalLevelMax = " + dsm.ReversalLevelMax + ","
+                + " ReversalLevelStep = " + dsm.ReversalLevelStep + "";
             query += " WHERE  ID = '" + datasetId + "'; COMMIT;";
 
             return DoSql(query);
@@ -534,6 +556,16 @@ namespace Reversals.DbDataManager
                                              + "`PointValue` FLOAT(9,5) NULL, "
                                              + "`ZIM` FLOAT(9,5) NULL, "
                                              + "`TickSize` FLOAT(9,5) NULL, "
+
+                                             + "`StopLevelDef` FLOAT(9,5) NULL, "
+                                             + "`StopLevelMin` FLOAT(9,5) NULL, "
+                                             + "`StopLevelMax` FLOAT(9,5) NULL, "
+                                             + "`StopLevelStep` FLOAT(9,5) NULL, "
+
+                                             + "`ReversalLevelDef` FLOAT(9,5) NULL, "
+                                             + "`ReversalLevelMin` FLOAT(9,5) NULL, "
+                                             + "`ReversalLevelMax` FLOAT(9,5) NULL, "
+                                             + "`ReversalLevelStep` FLOAT(9,5) NULL, "
 
                                              + "PRIMARY KEY (`ID`,`DataSetName`)"
                                              + ")"
