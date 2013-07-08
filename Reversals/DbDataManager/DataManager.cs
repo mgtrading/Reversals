@@ -193,6 +193,17 @@ namespace Reversals.DbDataManager
                     dsm.PointValue = reader.GetDouble(7);
                     dsm.Zim = reader.GetDouble(8);
                     dsm.TickSize = reader.GetDouble(9);
+
+                    dsm.StopLevelDef = reader.GetDouble(10);
+                    dsm.StopLevelMin = reader.GetDouble(11);
+                    dsm.StopLevelMax = reader.GetDouble(12);
+                    dsm.StopLevelStep = reader.GetDouble(13);
+
+                    dsm.ReversalLevelDef = reader.GetDouble(14);
+                    dsm.ReversalLevelMin = reader.GetDouble(15);
+                    dsm.ReversalLevelMax = reader.GetDouble(16);
+                    dsm.ReversalLevelStep = reader.GetDouble(17);
+
                 }
 
                 reader.Close();
@@ -211,7 +222,7 @@ namespace Reversals.DbDataManager
         {
             String query = "INSERT IGNORE INTO " + TblDatasets;
             query += "(DataSetName, Symbol_ID,TimeValue, Commission, Multiplier, ContractSize, PointValue, ZIM, TickSize,"
-            +" StopLevelDef, StopLevelMin, StopLevelMax, StopLevelStep"
+            +" StopLevelDef, StopLevelMin, StopLevelMax, StopLevelStep,"
             + "  ReversalLevelDef, ReversalLevelMin, ReversalLevelMax, ReversalLevelStep) VALUES";
             query += "('";
             query += dsm.DataSetName + "',";

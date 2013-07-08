@@ -15,7 +15,6 @@ using DevComponents.DotNetBar;
 using System.Text.RegularExpressions;
 using Reversals.CollectingPriceData;
 using Reversals.DataContainer;
-using Reversals.DataSetManager;
 using Reversals.DateFormats;
 using Reversals.DbDataManager;
 using Reversals.DbDataManager.Structs;
@@ -50,7 +49,6 @@ namespace Reversals.Forms
         private double _tickSize;
         private List<DataSetModel> _dataSets;
         private ParametersChangingNotifier _optParameterssChanging;
-        private ParametersDataSet _parametersDataSet;
         private bool _addingNewDataSet;
         private readonly Image _expandimage;
         private readonly Image _collapseimage;
@@ -62,18 +60,6 @@ namespace Reversals.Forms
         private List<DataSetModel> _datasetList;
         private readonly List<ResultModel> _weeklist;
         private CalendarDisplayer _calendarDisplayer;
-
-        //temporary variables
-/*
-        private string _previousWeekValue;
-*/
-        //
-/*
-        private DateTime _startCalendarTime;
-*/
-/*
-        private DateTime _endCalendarTime;
-*/
         private readonly BlackScholesCalculator _blackScholesCalculator;
 
         public MainFormMetroApp()
@@ -81,8 +67,8 @@ namespace Reversals.Forms
             InitializeComponent();
 
             InitializeWeeklyDataTable();
-            _expandimage = Resources.treeexpand;//Image.FromFile("treeexpand.jpg");
-            _collapseimage = Resources.treecollapse;// Image.FromFile("treecollapse.jpg");
+            _expandimage = Resources.treeexpand;
+            _collapseimage = Resources.treecollapse;
             _blackScholesCalculator = new BlackScholesCalculator();
 
             uiStrategy_comboBoxExOISStepKind.SelectedIndex = 0;
@@ -92,8 +78,6 @@ namespace Reversals.Forms
 
             uiCalendar_calendarViewResultView.SelectedView = eCalendarView.Month;
             uiBlackSValueDate.Value = DateTime.Now;
-
-            //_monthProfit = new double[12];
 
             uiBlackSInterestRate.KeyPress += KeyPressValidator;
             uiBlackSUnderlyingPrice.KeyPress += KeyPressValidator;
@@ -710,6 +694,7 @@ namespace Reversals.Forms
 
         private void uiDataSet_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             uiStrategy_panelExBlackScholesPanel.Enabled = true;
 
             uiStrategy_buttonXStart.Enabled = true;
@@ -727,9 +712,9 @@ namespace Reversals.Forms
             {
                 if (uiStrategy_comboBoxExDataSet.Text != @"Default DataSet for file")
                 {
-                    _parametersDataSet = new ParametersDataSet(DataManager.GetDatasetData(_dataSets.First(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text).Id));
-                    DisplayDatasetParams(_parametersDataSet);
-                    UpdateOptParamsInstance(_parametersDataSet.Zim, _parametersDataSet.PointValue, _parametersDataSet.TickSize);
+                    var selectedDataSet = DataManager.GetDatasetData(_dataSets.First(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text).Id);
+                    DisplayDatasetParams(selectedDataSet);
+                    UpdateOptParamsInstance(selectedDataSet);
                     _addingNewDataSet = false;
                 }
                 uiStrategy.SelectedIndex = 0;
@@ -737,9 +722,9 @@ namespace Reversals.Forms
 
             if (uiStrategy_radioButtonDataFromDB.Checked)
             {
-                _parametersDataSet = new ParametersDataSet(DataManager.GetDatasetData(_dataSets.First(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text).Id));
-                DisplayDatasetParams(_parametersDataSet);
-                UpdateOptParamsInstance(_parametersDataSet.Zim, _parametersDataSet.PointValue, _parametersDataSet.TickSize);
+                var selectedDataSet = DataManager.GetDatasetData(_dataSets.First(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text).Id);
+                DisplayDatasetParams(selectedDataSet);
+                UpdateOptParamsInstance(selectedDataSet);
                 if (_data != null)
                 {
                     uiStrategy.SelectedIndex = 0;
@@ -761,14 +746,23 @@ namespace Reversals.Forms
 
                 uiStrategy_dataGridViewNoOptomizationParameters.DataSource = tempDataset.AliDataSet151519;
                 uiStrategy_dataGridViewOptomizationParameters.DataSource = tempDataset.OptimParams;
-                UpdateOptParamsInstance(tempDataset.AliZim, tempDataset.AliPv, tempDataset.AliTickSize);
+
+                OptimizationParameters.Instance.Parameters.Clear();
+                OptimizationParameters.Instance.Parameters.Add(new OptimizationParameter("", "Stop Level", typeof(double),
+                                                     tempDataset.OptimParams.Rows[0][2], tempDataset.OptimParams.Rows[0][3],
+                                                     tempDataset.OptimParams.Rows[0][1],
+                                                     tempDataset.OptimParams.Rows[0][4]));
+                OptimizationParameters.Instance.Parameters.Add(new OptimizationParameter("", "Reversal Level", typeof(double),
+                                                     tempDataset.OptimParams.Rows[1][2], tempDataset.OptimParams.Rows[1][3],
+                                                     tempDataset.OptimParams.Rows[1][1],
+                                                     tempDataset.OptimParams.Rows[1][4]));
                 uiStrategy.SelectedIndex = 0;
             }
 
 
         }
 
-        private void DisplayDatasetParams(ParametersDataSet dataSet)
+        private void DisplayDatasetParams(DataSetModel dataSet)
         {
             var parameterProvider = new DataTable();
             var optimalizableparamsProvider = new DataTable();
@@ -833,18 +827,18 @@ namespace Reversals.Forms
 
             row = optimalizableparamsProvider.NewRow();
             row[0] = "Stop Level";
-            row[1] = dataSet.StopLevel;
-            row[2] = dataSet.MinValue;
-            row[3] = dataSet.MaxValue;
-            row[4] = dataSet.Step;
+            row[1] = dataSet.StopLevelDef;
+            row[2] = dataSet.StopLevelMin;
+            row[3] = dataSet.StopLevelMax;
+            row[4] = dataSet.StopLevelStep;
             optimalizableparamsProvider.Rows.Add(row);
 
             row = optimalizableparamsProvider.NewRow();
             row[0] = "Reversal Level";
-            row[1] = dataSet.ReversalLevel;
-            row[2] = dataSet.MinValue;
-            row[3] = dataSet.MaxValue;
-            row[4] = dataSet.Step;
+            row[1] = dataSet.ReversalLevelDef;
+            row[2] = dataSet.ReversalLevelMin;
+            row[3] = dataSet.ReversalLevelMax;
+            row[4] = dataSet.ReversalLevelStep;
             optimalizableparamsProvider.Rows.Add(row);
 
             parameterProvider.Columns["Variables"].ReadOnly = true;
@@ -864,67 +858,58 @@ namespace Reversals.Forms
 
         private void UpdateOptionsCalc()
         {
-            var nfi = new CultureInfo("en-US", false).NumberFormat;
-            double time1 = uiBlackSValueDate.Value.DayOfYear;
-            double time2 = uiBlackSExpiryDate.Value.DayOfYear;
-            var time = (time2 - time1) / 365;
-            textBoxX1.Text = (time * 365).ToString(CultureInfo.InvariantCulture);
-            var underlineprice = double.Parse(uiBlackSUnderlyingPrice.Text, nfi);
-            var strikeprice = double.Parse(uiBlackSPriceStrike.Text, nfi);
-            var volatily = double.Parse(uiBlackSVolality.Text) / 100;
-            var interestrate = double.Parse(uiBlackSInterestRate.Text) / 100;
-            const double divider = 0.05;
-
-            uiBlackSCallDelta.Text = _blackScholesCalculator.CallDelta(underlineprice, strikeprice, time, interestrate,
-                                                                       volatily, divider).ToString(CultureInfo.InvariantCulture);
-            uiBlackSPutDelta.Text = _blackScholesCalculator.PutDelta(underlineprice, strikeprice, time, interestrate,
-                                                                     volatily, divider).ToString(CultureInfo.InvariantCulture);
-            uiBlackSCallGamma.Text = _blackScholesCalculator.Gamma(underlineprice, strikeprice, time, interestrate,
-                                                                      volatily, divider).ToString(CultureInfo.InvariantCulture);
-            uiBlackSPutGamma.Text = uiBlackSCallGamma.Text;
-
-            uiBlackSCallVega.Text = _blackScholesCalculator.Vega(underlineprice, strikeprice, time, interestrate,
-                                                                     volatily, divider).ToString(CultureInfo.InvariantCulture);
-            uiBlackSPutVega.Text = uiBlackSCallVega.Text;
-
-            uiBlackSCallRho.Text = _blackScholesCalculator.CallRho(underlineprice, strikeprice, time, interestrate,
-                                                                     volatily, divider).ToString(CultureInfo.InvariantCulture);
-
-            uiBlackSPutRho.Text = _blackScholesCalculator.PutRho(underlineprice, strikeprice, time, interestrate,
-                                                                     volatily, divider).ToString(CultureInfo.InvariantCulture);
-
-            uiBlackSCallTheta.Text = _blackScholesCalculator.CallTheta(underlineprice, strikeprice, time, interestrate,
-                                                                     volatily, divider).ToString(CultureInfo.InvariantCulture);
-
-            uiBlackSPutTheta.Text = _blackScholesCalculator.PutTheta(underlineprice, strikeprice, time, interestrate,
-                                                                     volatily, divider).ToString(CultureInfo.InvariantCulture);
-            uiBlackSCallPremium.Text = _blackScholesCalculator.CallOption(underlineprice, strikeprice, time, interestrate,
-                                                                     volatily, divider).ToString(CultureInfo.InvariantCulture);
-            uiBlackSPutPremium.Text = _blackScholesCalculator.PutOption(underlineprice, strikeprice, time, interestrate,
-                                                                     volatily, divider).ToString(CultureInfo.InvariantCulture);
-
-            if (uiStrategy_checkBoxXReqTVCheck.Checked)
+            if (uiStrategy_panelExBlackScholesPanel.Enabled)
             {
-                double contractSize = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 3].Value.ToString(), nfi);
-                double movement = double.Parse(uiStrategy_dataGridViewOptomizationParameters[1, 0].Value.ToString(), nfi);
-                double quant2 = double.Parse(uiBlackSQuantity.Text, nfi);
+                var nfi = new CultureInfo("en-US", false).NumberFormat;
+                double time1 = uiBlackSValueDate.Value.DayOfYear;
+                double time2 = uiBlackSExpiryDate.Value.DayOfYear;
+                var time = (time2 - time1)/365;
+                textBoxX1.Text = (time*365).ToString(CultureInfo.InvariantCulture);
+                var underlineprice = double.Parse(uiBlackSUnderlyingPrice.Text, nfi);
+                var strikeprice = double.Parse(uiBlackSPriceStrike.Text, nfi);
+                var volatily = double.Parse(uiBlackSVolality.Text)/100;
+                var interestrate = double.Parse(uiBlackSInterestRate.Text)/100;
+                const double divider = 0.05;
 
-                var totalVega = (quant2 * contractSize) * (_blackScholesCalculator.CallTheta(underlineprice, strikeprice, time, interestrate,
-                                                                volatily, divider)
-                                                                /
-                                                                _blackScholesCalculator.Vega(underlineprice, strikeprice, time, interestrate,
-                                                                       volatily, divider));
+                uiBlackSCallDelta.Text = _blackScholesCalculator.CallDelta(underlineprice, strikeprice, time,interestrate,volatily, divider).ToString(CultureInfo.InvariantCulture);
+                uiBlackSPutDelta.Text = _blackScholesCalculator.PutDelta(underlineprice, strikeprice, time, interestrate,volatily, divider).ToString(CultureInfo.InvariantCulture);
+                uiBlackSCallGamma.Text = _blackScholesCalculator.Gamma(underlineprice, strikeprice, time, interestrate,volatily, divider).ToString(CultureInfo.InvariantCulture);
+                uiBlackSPutGamma.Text = uiBlackSCallGamma.Text;
 
-                var zimD = (quant2 * _blackScholesCalculator.Gamma(underlineprice, strikeprice, time, interestrate,
-                                                                      volatily, divider)) * movement;
+                uiBlackSCallVega.Text = _blackScholesCalculator.Vega(underlineprice, strikeprice, time, interestrate,volatily, divider).ToString(CultureInfo.InvariantCulture);
+                uiBlackSPutVega.Text = uiBlackSCallVega.Text;
 
-                var reqTv = quant2 * contractSize *
-                               _blackScholesCalculator.CallTheta(underlineprice, strikeprice, time, interestrate,
-                                                                 volatily, divider);
+                uiBlackSCallRho.Text = _blackScholesCalculator.CallRho(underlineprice, strikeprice, time, interestrate,volatily, divider).ToString(CultureInfo.InvariantCulture);
 
-                uiBlackSRTV.Text = Math.Round(Math.Abs(reqTv), 4).ToString(nfi);
-                uiBlackSTVega.Text = Math.Round(Math.Abs(totalVega), 4).ToString(nfi);
-                uiBlackSZim.Text = Math.Round(zimD, 4).ToString(nfi);
+                uiBlackSPutRho.Text = _blackScholesCalculator.PutRho(underlineprice, strikeprice, time, interestrate,volatily, divider).ToString(CultureInfo.InvariantCulture);
+
+                uiBlackSCallTheta.Text = _blackScholesCalculator.CallTheta(underlineprice, strikeprice, time,interestrate,volatily, divider).ToString(CultureInfo.InvariantCulture);
+
+                uiBlackSPutTheta.Text = _blackScholesCalculator.PutTheta(underlineprice, strikeprice, time, interestrate,volatily, divider).ToString(CultureInfo.InvariantCulture);
+                uiBlackSCallPremium.Text = _blackScholesCalculator.CallOption(underlineprice, strikeprice, time,interestrate,volatily, divider).ToString(CultureInfo.InvariantCulture);
+                uiBlackSPutPremium.Text = _blackScholesCalculator.PutOption(underlineprice, strikeprice, time,interestrate, volatily, divider).ToString(CultureInfo.InvariantCulture);
+
+                if (uiStrategy_checkBoxXReqTVCheck.Checked)
+                {
+                    double contractSize =
+                        double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 3].Value.ToString(), nfi);
+                    double movement = double.Parse(
+                        uiStrategy_dataGridViewOptomizationParameters[1, 0].Value.ToString(), nfi);
+                    double quant2 = double.Parse(uiBlackSQuantity.Text, nfi);
+
+                    var totalVega = (quant2*contractSize)*
+                                    (_blackScholesCalculator.CallTheta(underlineprice, strikeprice, time, interestrate,volatily, divider)
+                                     / _blackScholesCalculator.Vega(underlineprice, strikeprice, time, interestrate,
+                                                                  volatily, divider));
+
+                    var zimD = (quant2*_blackScholesCalculator.Gamma(underlineprice, strikeprice, time, interestrate,volatily, divider))*movement;
+
+                    var reqTv = quant2*contractSize*_blackScholesCalculator.CallTheta(underlineprice, strikeprice, time, interestrate,volatily, divider);
+
+                    uiBlackSRTV.Text = Math.Round(Math.Abs(reqTv), 4).ToString(nfi);
+                    uiBlackSTVega.Text = Math.Round(Math.Abs(totalVega), 4).ToString(nfi);
+                    uiBlackSZim.Text = Math.Round(zimD, 4).ToString(nfi);
+                }
             }
         }
 
@@ -1521,7 +1506,8 @@ namespace Reversals.Forms
         private void uiAddDatasetButton_Click(object sender, EventArgs e)
         {
             var provider = uiStrategy_dataGridViewNoOptomizationParameters.DataSource as DataTable;
-            if (provider != null)
+            var optProvider = uiStrategy_dataGridViewOptomizationParameters.DataSource as DataTable;
+            if (provider != null && optProvider != null)
             {
                 foreach (DataRow row in provider.Rows)
                 {
@@ -1530,6 +1516,14 @@ namespace Reversals.Forms
                 provider.Rows[0]["Default Value"] = "Untitled DataSet";
                 _addingNewDataSet = true;
                 uiStrategy_comboBoxExDataSet.Text = "";
+
+                foreach (DataRow row in optProvider.Rows)
+                {
+                    row[1] = 0;
+                    row[2] = 0;
+                    row[3] = 0;
+                    row[4] = 0;
+                }
 
                 uiStrategy_dataGridViewNoOptomizationParameters.CurrentCell = uiStrategy_dataGridViewNoOptomizationParameters[1, 0];
             }
@@ -1581,8 +1575,38 @@ namespace Reversals.Forms
                 row[1] = 0;
                 parameterProvider.Rows.Add(row);
 
+                var optimalizableparamsProvider = new DataTable();
+
+                column = new DataColumn("Triggers");
+                optimalizableparamsProvider.Columns.Add(column);
+                column = new DataColumn("Default Value");
+                optimalizableparamsProvider.Columns.Add(column);
+                column = new DataColumn("MinValue");
+                optimalizableparamsProvider.Columns.Add(column);
+                column = new DataColumn("MaxValue");
+                optimalizableparamsProvider.Columns.Add(column);
+                column = new DataColumn("Step");
+                optimalizableparamsProvider.Columns.Add(column);
+
+                row = optimalizableparamsProvider.NewRow();
+                row[0] = "Stop Level";
+                row[1] = 0;
+                row[2] = 0;
+                row[3] = 0;
+                row[4] = 0;
+                optimalizableparamsProvider.Rows.Add(row);
+
+                row = optimalizableparamsProvider.NewRow();
+                row[0] = "Reversal Level";
+                row[1] = 0;
+                row[2] = 0;
+                row[3] = 0;
+                row[4] = 0;
+                optimalizableparamsProvider.Rows.Add(row);
+
                 parameterProvider.Columns["Variables"].ReadOnly = true;
                 uiStrategy_dataGridViewNoOptomizationParameters.DataSource = parameterProvider;
+                uiStrategy_dataGridViewOptomizationParameters.DataSource = optimalizableparamsProvider;
                 _addingNewDataSet = true;
                 uiStrategy_comboBoxExDataSet.Text = "";
                 uiStrategy_dataGridViewNoOptomizationParameters.CurrentCell = uiStrategy_dataGridViewNoOptomizationParameters[1, 0];
@@ -1622,11 +1646,11 @@ namespace Reversals.Forms
         private void uiSaveDatasetButton_Click(object sender, EventArgs e)
         {
             var provider = uiStrategy_dataGridViewNoOptomizationParameters.DataSource as DataTable;
-
+            var optProvider = uiStrategy_dataGridViewOptomizationParameters.DataSource as DataTable;
             var dataSetModel = new DataSetModel();
             try
             {
-                if (provider != null)
+                if (provider != null && optProvider != null)
                 {
                     dataSetModel.SymbolId = _contracts.Find(a => a.ContractName == uiStrategy_comboBoxExSymbol.Text).CountractId;
                     dataSetModel.DataSetName = provider.Rows[0]["Default Value"].ToString();
@@ -1637,6 +1661,16 @@ namespace Reversals.Forms
                     dataSetModel.PointValue = double.Parse(provider.Rows[5]["Default Value"].ToString(), _nfi);
                     dataSetModel.Zim = double.Parse(provider.Rows[6]["Default Value"].ToString(), _nfi);
                     dataSetModel.TickSize = double.Parse(provider.Rows[7]["Default Value"].ToString(), _nfi);
+
+                    dataSetModel.StopLevelDef = double.Parse(optProvider.Rows[0][1].ToString());
+                    dataSetModel.StopLevelMin = double.Parse(optProvider.Rows[0][2].ToString());
+                    dataSetModel.StopLevelMax = double.Parse(optProvider.Rows[0][3].ToString());
+                    dataSetModel.StopLevelStep = double.Parse(optProvider.Rows[0][4].ToString());
+
+                    dataSetModel.ReversalLevelDef = double.Parse(optProvider.Rows[1][1].ToString());
+                    dataSetModel.ReversalLevelMin = double.Parse(optProvider.Rows[1][2].ToString());
+                    dataSetModel.ReversalLevelMax = double.Parse(optProvider.Rows[1][3].ToString());
+                    dataSetModel.ReversalLevelStep = double.Parse(optProvider.Rows[1][4].ToString());
                     _tickSize = dataSetModel.TickSize;
                 }
             }
@@ -1646,7 +1680,7 @@ namespace Reversals.Forms
                 return;
             }
 
-            if (_dataSets.Exists(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text))
+            if (_dataSets.Exists(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text) || _dataSets.Exists(a => a.DataSetName == dataSetModel.DataSetName))
             {
                 var dataSetId = _dataSets.Find(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text).Id;
                 if (DataManager.EditDataset(dataSetId, dataSetModel))
@@ -1663,7 +1697,7 @@ namespace Reversals.Forms
                     }
                     uiStrategy_comboBoxExDataSet.Text = dataSetModel.DataSetName;
                     uiCalendar_comboBoxXDSet.Text = dataSetModel.DataSetName;
-                    UpdateOptParamsInstance(dataSetModel.Zim, dataSetModel.PointValue, _tickSize);
+                    UpdateOptParamsInstance(dataSetModel);
                 }
             }
             else
@@ -1674,7 +1708,7 @@ namespace Reversals.Forms
                     uiCalendar_comboBoxXDSet.Items.Add(dataSetModel.DataSetName);
                     _dataSets = DataManager.GetDatasets();
 
-                    UpdateOptParamsInstance(dataSetModel.Zim, dataSetModel.PointValue, _tickSize);
+                    UpdateOptParamsInstance(dataSetModel);
                     uiStrategy_comboBoxExDataSet.SelectedIndex = uiStrategy_comboBoxExDataSet.Items.Count - 1;
                     uiCalendar_comboBoxXDSet.SelectedIndex = uiCalendar_comboBoxXDSet.Items.Count - 1;
                 }
@@ -1687,9 +1721,10 @@ namespace Reversals.Forms
         {
             if (_addingNewDataSet == false)
             {
-                _parametersDataSet = new ParametersDataSet(DataManager.GetDatasetData(_dataSets.First(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text).Id));
-                DisplayDatasetParams(_parametersDataSet);
-                UpdateOptParamsInstance(_parametersDataSet.Zim, _parametersDataSet.PointValue, _parametersDataSet.TickSize);
+                
+                var currentDataSet = DataManager.GetDatasetData(_dataSets.First(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text).Id);
+                DisplayDatasetParams(currentDataSet);
+                UpdateOptParamsInstance(currentDataSet);
                 if (_data != null)
                 {
                     uiStrategy.SelectedIndex = 0;
@@ -1703,34 +1738,39 @@ namespace Reversals.Forms
             else if (_addingNewDataSet)
             {
                 var provider = uiStrategy_dataGridViewNoOptomizationParameters.DataSource as DataTable;
+                var optProvider = uiStrategy_dataGridViewOptomizationParameters.DataSource as DataTable;
                 if (provider != null)
                 {
                     foreach (DataRow row in provider.Rows)
                     {
-                        row["Default Value"] = "";
+                        row["Default Value"] = 0;
+                    }
+                    provider.Rows[0][1] = "Untitled DataSet";
+                }
+
+                if (optProvider != null)
+                    foreach (DataRow row in optProvider.Rows)
+                    {
+                        row[1] = 0;
+                        row[2] = 0;
+                        row[3] = 0;
+                        row[4] = 0;
                     }
                 }
-            }
-
         }
 
 
-        private void UpdateOptParamsInstance(double zim, double pointValue, double tickSize)
+        private void UpdateOptParamsInstance(DataSetModel currDataSet)
         {
-            const double defaultMaxStepVal = 100;
-            const double defaultMinStepVal = 60;
-            const double defaultStep = 10;
-            const double defaultStepValue = 80;
-
             OptimizationParameters.Instance.Parameters.Clear();
             OptimizationParameters.Instance.Parameters.Add(new OptimizationParameter("", "Stop Level", typeof(double),
-                                                 defaultMinStepVal * tickSize, defaultMaxStepVal * tickSize,
-                                                 Math.Round(zim / pointValue * tickSize, 2),
-                                                 defaultStep * tickSize));
+                                                 currDataSet.StopLevelMin, currDataSet.StopLevelMax,
+                                                 currDataSet.StopLevelDef,
+                                                 currDataSet.StopLevelStep));
             OptimizationParameters.Instance.Parameters.Add(new OptimizationParameter("", "Reversal Level", typeof(double),
-                                                 defaultMinStepVal * tickSize, defaultMaxStepVal * tickSize,
-                                                 defaultStepValue * tickSize,
-                                                 defaultStep * tickSize));
+                                                 currDataSet.ReversalLevelMin, currDataSet.ReversalLevelMax,
+                                                 currDataSet.ReversalLevelDef,
+                                                 currDataSet.ReversalLevelStep));
         }
 
         #endregion

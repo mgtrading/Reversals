@@ -120,7 +120,6 @@
     <Compile Include="CollectingPriceData\IntradayTick.cs" />
     <Compile Include="DataContainer\Tick.cs" />
     <Compile Include="DataContainer\Data.cs" />
-    <Compile Include="DataSetManager\ParametersDataSet.cs" />
     <Compile Include="DateFormats\DateFormatsManager.cs" />
     <Compile Include="DbDataManager\Structs\TickDataModel.cs" />
     <Compile Include="DbDataManager\Structs\ContractModel.cs" />
