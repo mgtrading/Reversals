@@ -36,7 +36,7 @@ namespace Reversals.Optimization
         public List<OptimizationParameter> Parameters
         {
             get { return _parameters; }
-            set { _parameters = value; NotifyEvent(); }
+            set { _parameters = value; }
         }
 
         private void NotifyEvent()

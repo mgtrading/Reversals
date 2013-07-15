@@ -186,6 +186,7 @@ namespace Reversals
     }
     public void InitOptimParams()
     {
+        _optimalizableparamsProvider.Rows.Clear();
         DataRow row = _optimalizableparamsProvider.NewRow();
         var list1 = new ArrayList
        {

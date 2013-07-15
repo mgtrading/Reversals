@@ -424,7 +424,7 @@ namespace Reversals.Display
 
 
 
-                    sumpnl = sumcommission + sumpospnl + sumclosepnl + sumtradeprofit + sumPremiumSumma;
+                    sumpnl = sumpospnl + sumclosepnl + Math.Round(sumtradeprofit + sumcommission + 0.5) + sumPremiumSumma;
 
                     string sumPremium = FormatNumber(sumPremiumSumma);
                     string sumTrProf = FormatNumber(sumtradeprofit);
@@ -442,7 +442,7 @@ namespace Reversals.Display
                                _weekindexer,
                                _dayDate.ToString(DateFormatsManager.CurrentShortDateFormat + " HH:mm:ss"),//result1.ToArray().ElementAt(result1.ToArray().Length - 1).TimeClose,
                                sumPremiumSumma, 
-                               sumtradeprofit, 
+                               Math.Round(sumtradeprofit + sumcommission + 0.5), 
                                sumcommission, 
                                sumpospnl, 
                                sumclosepnl, 

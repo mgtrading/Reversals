@@ -499,7 +499,11 @@ namespace Reversals.Forms
                     if (uiStrategy_checkBoxXReqTVCheck.Checked && paramname == "ZIM")
                     {
                         paramvalue = double.Parse(uiBlackSZim.Text, _nfi);
+                    }
 
+                    if (uiStrategy_checkBoxXReqTVCheck.Checked && paramname == "Time Value")
+                    {
+                        paramvalue = double.Parse(uiBlackSRTV.Text, _nfi);
                     }
                     var additionaltemp = new Strategy.StrategyAdditionalParameter("", paramname, paramvalue, paramvalue.GetType(), false);
                     additional.Add(additionaltemp);
@@ -743,19 +747,20 @@ namespace Reversals.Forms
             if (uiStrategy_comboBoxExDataSet.Text == @"Default DataSet for file")
             {
                 var tempDataset = new TemporaryDatasets();
-
+                uiStrategy_dataGridViewOptomizationParameters.DataSource = null;
                 uiStrategy_dataGridViewNoOptomizationParameters.DataSource = tempDataset.AliDataSet151519;
                 uiStrategy_dataGridViewOptomizationParameters.DataSource = tempDataset.OptimParams;
+                // var optProvider = uiStrategy_dataGridViewOptomizationParameters.DataSource as DataTable;
 
                 OptimizationParameters.Instance.Parameters.Clear();
                 OptimizationParameters.Instance.Parameters.Add(new OptimizationParameter("", "Stop Level", typeof(double),
-                                                     tempDataset.OptimParams.Rows[0][2], tempDataset.OptimParams.Rows[0][3],
-                                                     tempDataset.OptimParams.Rows[0][1],
-                                                     tempDataset.OptimParams.Rows[0][4]));
+                                                     double.Parse(tempDataset.OptimParams.Rows[0][2].ToString(), _nfi), double.Parse(tempDataset.OptimParams.Rows[0][3].ToString(), _nfi),
+                                                     double.Parse(tempDataset.OptimParams.Rows[0][1].ToString(), _nfi),
+                                                     double.Parse(tempDataset.OptimParams.Rows[0][4].ToString(), _nfi)));
                 OptimizationParameters.Instance.Parameters.Add(new OptimizationParameter("", "Reversal Level", typeof(double),
-                                                     tempDataset.OptimParams.Rows[1][2], tempDataset.OptimParams.Rows[1][3],
-                                                     tempDataset.OptimParams.Rows[1][1],
-                                                     tempDataset.OptimParams.Rows[1][4]));
+                                                     double.Parse(tempDataset.OptimParams.Rows[1][2].ToString(), _nfi), double.Parse(tempDataset.OptimParams.Rows[1][3].ToString(), _nfi),
+                                                     double.Parse(tempDataset.OptimParams.Rows[1][1].ToString(), _nfi),
+                                                     double.Parse(tempDataset.OptimParams.Rows[1][4].ToString(), _nfi)));
                 uiStrategy.SelectedIndex = 0;
             }
 
@@ -791,12 +796,12 @@ namespace Reversals.Forms
 
             row = parameterProvider.NewRow();
             row[0] = "Time Value";
-            row[1] = dataSet.TimeValue;
+            row[1] = Math.Round(dataSet.TimeValue, 2);
             parameterProvider.Rows.Add(row);
 
             row = parameterProvider.NewRow();
             row[0] = "Commission";
-            row[1] = dataSet.Commission;
+            row[1] = Math.Round(dataSet.Commission, 3);
             parameterProvider.Rows.Add(row);
 
             row = parameterProvider.NewRow();
@@ -811,17 +816,17 @@ namespace Reversals.Forms
 
             row = parameterProvider.NewRow();
             row[0] = "Point Value";
-            row[1] = dataSet.PointValue;
+            row[1] = Math.Round(dataSet.PointValue,5);
             parameterProvider.Rows.Add(row);
 
             row = parameterProvider.NewRow();
             row[0] = "ZIM";
-            row[1] = dataSet.Zim;
+            row[1] = Math.Round(dataSet.Zim, 5);
             parameterProvider.Rows.Add(row);
 
             row = parameterProvider.NewRow();
             row[0] = "Tick Size";
-            row[1] = dataSet.TickSize;
+            row[1] = Math.Round(dataSet.TickSize, 2);
             _tickSize = dataSet.TickSize;
             parameterProvider.Rows.Add(row);
 
@@ -891,16 +896,11 @@ namespace Reversals.Forms
 
                 if (uiStrategy_checkBoxXReqTVCheck.Checked)
                 {
-                    double contractSize =
-                        double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 3].Value.ToString(), nfi);
-                    double movement = double.Parse(
-                        uiStrategy_dataGridViewOptomizationParameters[1, 0].Value.ToString(), nfi);
+                    double contractSize = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 4].Value.ToString(), nfi);
+                    double movement = double.Parse(uiStrategy_dataGridViewOptomizationParameters[1, 0].Value.ToString(), nfi);
                     double quant2 = double.Parse(uiBlackSQuantity.Text, nfi);
 
-                    var totalVega = (quant2*contractSize)*
-                                    (_blackScholesCalculator.CallTheta(underlineprice, strikeprice, time, interestrate,volatily, divider)
-                                     / _blackScholesCalculator.Vega(underlineprice, strikeprice, time, interestrate,
-                                                                  volatily, divider));
+                    var totalVega = (quant2*contractSize)* _blackScholesCalculator.Vega(underlineprice, strikeprice, time, interestrate,volatily, divider);
 
                     var zimD = (quant2*_blackScholesCalculator.Gamma(underlineprice, strikeprice, time, interestrate,volatily, divider))*movement;
 
@@ -2264,6 +2264,5 @@ namespace Reversals.Forms
             if (metroShellMain.SelectedTab == ui_tabItem_data_archive && uiDataArchive_dataGridViewXPreview.Rows.Count==0)
                 PreviewChangeSymbol();
         }
-
     }
 }

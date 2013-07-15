@@ -41,7 +41,7 @@ namespace Reversals.Backtests
             _size = size;
             _price = price;
             _last = last;
-            _trades = (_operation == Operation.Buy) ? (_last - _price) * _size : (_operation == Operation.Sell) ? (_price - _last) * _size : 0;
+            _trades = (_operation == Operation.Buy) ? Math.Round((_last - _price) * _size, 1) : (_operation == Operation.Sell) ? Math.Round((_price - _last) * _size, 1) : 0;
             _margin = _last * _size;
             _comment = comment;
             _addInfo = addInfo;
@@ -121,7 +121,7 @@ namespace Reversals.Backtests
             set 
             { 
                 _last = value;
-                _trades = (_operation == Operation.Buy) ? (_last - _price) * _size : (_operation == Operation.Sell) ? (_price - _last) * _size : 0;
+                _trades = (_operation == Operation.Buy) ? Math.Round((_last - _price) * _size, 1) : (_operation == Operation.Sell) ? Math.Round((_price - _last) * _size, 1) : 0;
                 _margin = _last * _size;
             }
         }
