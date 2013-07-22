@@ -66,6 +66,7 @@ namespace Reversals.Strategies
 
         public override void Start(int startBarIndex)
         {
+            EnableLogging = false;
             InitializeMainParameters();
 
             int isExistDayTrade = 0;
@@ -84,6 +85,7 @@ namespace Reversals.Strategies
                 }
 
                 Tick tick = ticks[i];
+                //tick.Time = ticks[i].Time.AddHours(2);
 
                 if (i == startBarIndex)
                 {
@@ -95,7 +97,10 @@ namespace Reversals.Strategies
 
                 Tick prevTick = null;
                 if (i - 1 >= startBarIndex)
+                {
                     prevTick = ticks[i - 1];
+                    //prevTick.Time = ticks[i - 1].Time.AddHours(2);
+                }                   
                 else
                 {
                     Log("                                                         ");
@@ -197,7 +202,9 @@ namespace Reversals.Strategies
                                 }
                                 else
                                 {
-                                    if (tick.IntradayIndex < 170000)
+                                    if (tick.IntradayIndex < 170000 && prevTick.IntradayIndex < 170000)
+                                        firstTickAfter17 = true;
+                                    else if (tick.IntradayIndex < 170000)
                                         firstTickAfter17 = false;
                                     else
                                         firstTickAfter17 = true;
@@ -213,8 +220,9 @@ namespace Reversals.Strategies
                     Trade(ref positions, tick);
                     positions.Clear();
                     orders.Clear();
+                    _lastOrderOperation = Operation.Undefined;
                     //isExistDayTrade = trades.Count - isExistDayTrade;
-                    if (isExistDayTrade > 0)
+                    if (isExistDayTrade >= 0)
                     {
                         var todayTrades = isExistDayTrade;
                         isExistDayTrade = 0;
@@ -252,7 +260,8 @@ namespace Reversals.Strategies
                         }
                         else
                         {
-                            AddEndDayPnl(0, 0, 0, 0, tick);
+                            double _dayChangedPrice = Math.Pow(tick.Close - _startPrice, 2) * _contractSize * _multiplier * _pointValue / 2;
+                            AddEndDayPnl(0, 0, 0, _dayChangedPrice, tick);
                         }
 
 
@@ -270,9 +279,8 @@ namespace Reversals.Strategies
                 // TRADING
                 if (tick.Time.DayOfWeek == DayOfWeek.Saturday || tick.Time.DayOfWeek == DayOfWeek.Sunday)
                     continue;
-
-
-                if (_lastOrderOperation == Operation.Buy && positions.Count != 0 && Math.Round(tick.Close - _fixedPrice, 2) < 0 && Math.Round(_fixedPrice - tick.Close, 2) >= Math.Round(_step2, 2))
+                //&& positions.Count != 0 
+                if (_lastOrderOperation == Operation.Buy && Math.Round(tick.Close - _fixedPrice, 2) < 0 && Math.Round(_fixedPrice - tick.Close, 2) >= Math.Round(_step2, 2))
                 {
                     _fixedPrice -= Math.Round(_step2, 2);
 
@@ -284,7 +292,7 @@ namespace Reversals.Strategies
                         _lastFridayOperation = Operation.Sell;
                     }
                 }
-                else if (_lastOrderOperation == Operation.Sell && positions.Count != 0 && Math.Round(_fixedPrice - tick.Close, 2) < 0 && Math.Round(tick.Close - _fixedPrice, 2) >= Math.Round(_step2, 2))
+                else if (_lastOrderOperation == Operation.Sell && Math.Round(_fixedPrice - tick.Close, 2) < 0 && Math.Round(tick.Close - _fixedPrice, 2) >= Math.Round(_step2, 2))
                 {
                     _fixedPrice += Math.Round(_step2, 2);
 
@@ -298,7 +306,7 @@ namespace Reversals.Strategies
                 }
                 else
                 {
-                    if (Math.Round(tick.Close - _fixedPrice, 2) >= Math.Round(_step1, 2))// && _lastOrderOperation != Operation.Sell)
+                    if (Math.Round(tick.Close - _fixedPrice, 2) >= Math.Round(_step1, 2) && _lastOrderOperation != Operation.Sell)
                     {
                         CreateOrder(Operation.Buy, tick, false, 1);
                         if (tick.Time.DayOfWeek == DayOfWeek.Friday && tick.IntradayIndex >= 170000)
@@ -307,7 +315,7 @@ namespace Reversals.Strategies
                             _lastFridayOperation = Operation.Buy;
                         }
                     }
-                    else if (Math.Round(_fixedPrice - tick.Close, 2) >= Math.Round(_step1, 2))// && _lastOrderOperation != Operation.Buy)
+                    else if (Math.Round(_fixedPrice - tick.Close, 2) >= Math.Round(_step1, 2) && _lastOrderOperation != Operation.Buy)
                     {
                         CreateOrder(Operation.Sell, tick, false, 1);
                         if (tick.Time.DayOfWeek == DayOfWeek.Friday && tick.IntradayIndex >= 170000)
@@ -322,38 +330,44 @@ namespace Reversals.Strategies
             }
 
             isExistDayTrade = trades.Count - isExistDayTrade;
-            if (trades[trades.Count - 1].Operation != Operation.PNL)
-            {
-                if (isExistDayTrade > 0)
+            //if (trades.Count > 0)
+            //{
+                if (trades[trades.Count - 1].Operation != Operation.PNL || (trades[trades.Count - 1].Operation == Operation.PNL && ticks[ticks.Count - 2].IntradayIndex >= 170000))
                 {
-                    double _dayChangedPrice = Math.Pow(ticks[ticks.Count - 1].Close - _startPrice, 2) * _contractSize * _multiplier * _pointValue / 2;
-
-                    double _lastOrderPriceChange = 0.0;
-                    if (_lastOrderPrice != 0.0)
+                    if (isExistDayTrade > 0)
                     {
-                        _lastOrderPriceChange = Math.Pow(ticks[ticks.Count - 1].Close - _lastOrderPrice, 2) * _contractSize * _multiplier *
-                                                _pointValue / 2;
+                        double _dayChangedPrice = Math.Pow(ticks[ticks.Count - 1].Close - _startPrice, 2) * _contractSize * _multiplier * _pointValue / 2;
+
+                        double _lastOrderPriceChange = 0.0;
+                        if (_lastOrderPrice != 0.0)
+                        {
+                            _lastOrderPriceChange = Math.Pow(ticks[ticks.Count - 1].Close - _lastOrderPrice, 2) * _contractSize * _multiplier *
+                                                    _pointValue / 2;
+                        }
+
+                        double _summaryChangedProfit = _dayChangedPrice + _lastOrderPriceChange;
+                        Position endDayPNL = new Position(parameters.Account, parameters.Symbol, -1, ticks[ticks.Count - 1].Time,
+                          Operation.PNL, 1, _startPrice, ticks[ticks.Count - 1].Close, "", "", true);
+                        double _dailyCommision = -isExistDayTrade * _commission * _contractSize * _zim;
+                        endDayPNL.TimeClose = ticks[ticks.Count - 1].Time;
+                        endDayPNL.Trades = _summaryChangedProfit; //Trades
+                        endDayPNL.Commission = _dailyCommision;
+                        endDayPNL.PosPNL = _dayChangedPrice;
+                        endDayPNL.ClosePNL = _lastOrderPriceChange;
+                        trades.Add(endDayPNL);
                     }
-
-                    double _summaryChangedProfit = _dayChangedPrice + _lastOrderPriceChange;
-
-                    //AddEndDayPnl(_isExistDayTrade, _summaryChangedProfit, _lastOrderPriceChange, _dayChangedPrice, bars[bars.Count - 1]);
-
-                    Position endDayPNL = new Position(parameters.Account, parameters.Symbol, -1, ticks[ticks.Count - 1].Time,
-                      Operation.PNL, 1, _startPrice, ticks[ticks.Count - 1].Close, "", "", true);
-                    double _dailyCommision = -isExistDayTrade * _commission * _contractSize * _zim;
-                    endDayPNL.TimeClose = ticks[ticks.Count - 1].Time;
-                    endDayPNL.Trades = _summaryChangedProfit; //Trades
-                    endDayPNL.Commission = _dailyCommision;
-                    endDayPNL.PosPNL = _dayChangedPrice;
-                    endDayPNL.ClosePNL = _lastOrderPriceChange;
-                    trades.Add(endDayPNL);
+                    else
+                    {
+                        Position endDayPNL = new Position(parameters.Account, parameters.Symbol, -1, ticks[ticks.Count - 1].Time,
+                                                          Operation.PNL, 1, _startPrice, ticks[ticks.Count - 1].Close, "", "", true);
+                        endDayPNL.PosPNL = Math.Pow(ticks[ticks.Count - 1].Close - _startPrice, 2) * _contractSize * _multiplier * _pointValue / 2;
+                        endDayPNL.TimeClose = ticks[ticks.Count - 1].Time;
+                        trades.Add(endDayPNL);
+                        //AddEndDayPnl(0, 0, 0, 0, ticks[ticks.Count - 1]);
+                    }
                 }
-                else
-                {
-                    AddEndDayPnl(0, 0, 0, 0, ticks[ticks.Count - 1]);
-                }
-            }
+            //}
+
 
             if (ticks[0].IntradayIndex < 170000)
             {
@@ -361,7 +375,7 @@ namespace Reversals.Strategies
                 AddPremium(new DateTime(tick.Time.Year, tick.Time.Month, tick.Time.Day, 17, 00, 00));
             }
             DateTime _premiumTime = new DateTime(ticks[0].Time.Year,
-                                                ticks[0].Time.Month,
+                                                ticks[0].Time.AddDays(1).Month,
                                                 ticks[0].Time.AddDays(1).Day,//bars[0].IntradayIndex < 170000 ? bars[0].Time.AddDays(-1).Day : bars[0].Time.Day,
                                                 17, 0, 0);
             while (_premiumTime <= ticks[ticks.Count - 1].Time)
@@ -386,11 +400,9 @@ namespace Reversals.Strategies
             {
                 if (!trades[i].IsPremium)
                 {
-                    trades[i].Trades *= -1 * _zim * _contractSize;
+                    trades[i].Trades *= -1*_zim*_contractSize;
                 }
             }
-
-            Log("{0}", trades.Count);
         }
 
         private void AddPremium(DateTime open)
@@ -450,6 +462,8 @@ namespace Reversals.Strategies
 
             orders.Add(new Order(parameters.Account, parameters.Symbol, order_id, tick.Time, operation,
                                  OrderType.Market, size, tick.Close, "", ""));
+            orderOperationsList.Add(new Order(parameters.Account, parameters.Symbol, order_id, tick.Time, operation,
+                                 OrderType.Market, size, tick.Close, "", ""));
             _lastOrderPrice = tick.Close;
             Log("{4}    -    order id {0} added op {1} at price {2} with posNumber {3}, range {5}", order_id, operation, tick.Close, _positionsNumber, tick.Time, tick.Close - _fixedPrice);
         }
@@ -468,13 +482,14 @@ namespace Reversals.Strategies
             //additional[5] = new Strategy.StrategyAdditionalParameter("", "ZIM", _step1 * _pointValue,typeof (double),false);
             if (IsOptimisation == false)
             {
-                _zim = Convert.ToDouble(AdditionalParameter(AdditionalParametersEnum.Zim).Value,
-                                        new CultureInfo("en-US", false));
+                _zim = Convert.ToDouble(AdditionalParameter(AdditionalParametersEnum.Zim).Value,new CultureInfo("en-US", false));
             }
             else
             {
-                _zim = _pointValue * _step1;
-                additional[5] = new StrategyAdditionalParameter("", "ZIM", _step1 * _pointValue, typeof(double), false);
+                _zim = Convert.ToDouble(AdditionalParameter(AdditionalParametersEnum.Zim).Value, new CultureInfo("en-US", false));
+                _pointValue = Math.Round(_zim / _step1, 5);
+                //additional[5] = new StrategyAdditionalParameter("", "ZIM", _step1 * _pointValue, typeof(double), false);
+                additional[4] = new StrategyAdditionalParameter("", "Point Value", _pointValue, typeof(double), false);
             }
             //_step1*_pointValue/_tickSize;
         }
@@ -580,7 +595,6 @@ namespace Reversals.Strategies
             _lastOrderOperation = new Operation();
             _lastOrderPrice = new double();
             _startPrice = new double();
-
         }
     }
 }

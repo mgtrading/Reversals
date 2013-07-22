@@ -17,7 +17,8 @@ namespace Reversals.DbDataManager
         private const string TblContracts = "tbl_contracts";
         private const string TblDatasets = "tbl_datasets";
         private const string TblResults = "tbl_calendar_results";
-
+        private const string TblSummaryResults = "tbl_summary_results";
+        private static readonly List<string> QueryQueue = new List<string>();
         #endregion
 
 
@@ -371,6 +372,104 @@ namespace Reversals.DbDataManager
         #endregion
 
 
+        #region SUMMARY RESULTS
+
+        /// <summary>
+        /// Add new results to table with deleting old data
+        /// with current symbolId and datasetId
+        /// </summary>
+        /// <param name="symbolId"></param>
+        /// <param name="datasetId"></param>
+        /// <param name="summaryResultModel"></param>
+        public static void AddSummaryResult(int symbolId, int datasetId, IEnumerable<SummaryResultModel> summaryResultModel)
+        {
+            // DELETE old data
+
+            DelSummaryResult(symbolId, datasetId);
+
+            // ADD new data
+            foreach (var item in summaryResultModel)
+            {
+                //var strDate = Convert.ToDateTime(item.Date).ToString("yyyy/MM/dd HH:mm:ss", CultureInfo.InvariantCulture);
+                var startDate = item.StartDate.ToString("yyyy/MM/dd HH:mm:ss", CultureInfo.InvariantCulture);
+                var endDate = item.EndDate.ToString("yyyy/MM/dd HH:mm:ss", CultureInfo.InvariantCulture);
+
+                var query = "INSERT IGNORE INTO " + TblSummaryResults;
+                query += "(Symbol_ID, Dataset_ID, SymbolName, StartDate, EndDate, Pnl, Reversals, StopLevel, RevLevel, ZIM, PointValue) VALUES";
+                query += "(";
+                query += symbolId + ",";
+                query += datasetId + ",";
+                query += "'" + item.SymbolName + "',";
+                query += "'" + startDate + "',";
+                query += "'" + endDate + "',";
+                query += item.Pnl + ",";
+                query += item.Reversals + ",";
+                query += item.StopLevel + ",";
+                query += item.ReversalLevel + ",";
+                query += item.Zim + ",";
+                query += item.PointValue + ");COMMIT;";
+
+                DoSql(query);
+            }
+        }
+
+        /// <summary>
+        /// Get results
+        /// </summary>
+        /// <param name="symbolId"></param>
+        /// <param name="datasetId"></param>
+        /// <returns></returns>
+        public static List<SummaryResultModel> GetSummaryResult(int symbolId, int datasetId)
+        {
+            var result = new List<SummaryResultModel>();
+
+            var sql = "SELECT * FROM " + TblSummaryResults;
+            sql += " WHERE Symbol_ID =" + symbolId + " AND Dataset_ID = " + datasetId + " ORDER BY `StartDate`";
+
+
+            var reader = GetReader(sql);
+            if (reader != null)
+            {
+                while (reader.Read())
+                {
+                    var srm = new SummaryResultModel
+                        {
+                            SymbolName = reader.GetString(3), 
+                            StartDate = reader.GetDateTime(4),
+                            EndDate = reader.GetDateTime(5),
+                            Pnl = reader.GetDouble(6),
+                            Reversals = reader.GetInt32(7),
+                            StopLevel = reader.GetDouble(8),
+                            ReversalLevel = reader.GetDouble(9),
+                            Zim = reader.GetDouble(10),
+                            PointValue = reader.GetDouble(11)
+                        };
+
+                    result.Add(srm);
+                }
+
+                reader.Close();
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Delete
+        /// </summary>
+        /// <param name="symbolId"></param>
+        /// <param name="datasetId"></param>
+        public static void DelSummaryResult(int symbolId, int datasetId)
+        {
+            var query1 = "DELETE FROM " + TblSummaryResults;
+            query1 += " WHERE Symbol_ID =" + symbolId + " AND Dataset_ID = " + datasetId + " ;COMMIT;";
+
+            DoSql(query1);
+        }
+
+        #endregion
+
+
         #region COLLECTING
 
 
@@ -416,7 +515,7 @@ namespace Reversals.DbDataManager
             }
 
             return res;
-        }
+        }        
 
         /// <summary>
         /// Add tick data to table
@@ -430,9 +529,29 @@ namespace Reversals.DbDataManager
 
             var sql = "INSERT IGNORE INTO " + GetTableNameFromContract(symbol)
             + " (`Time`,`Price`) "
-            + "VALUES('" + dateStr + "', '" + price + "');COMMIT;";
+            + "VALUES('" + dateStr + "', '" + price + "');";
 
-            DoSql(sql);
+            AddToQueue(sql);                        
+        }
+
+        private static void AddToQueue(string sql)
+        {
+            QueryQueue.Add(sql);
+            if (QueryQueue.Count >= 300)
+            {
+                CommitQueue();
+            }
+        }
+
+        internal static void CommitQueue()
+        {
+            if (QueryQueue.Count <= 0) return;
+
+            var fullSql = QueryQueue.Aggregate("", (current, t) => current + t);
+            fullSql += "COMMIT;";
+            DoSql(fullSql);
+
+            QueryQueue.Clear();
         }
 
         /// <summary>
@@ -443,7 +562,6 @@ namespace Reversals.DbDataManager
         /// <param name="endDate"></param>
         public static void DeleteTicks(string contract, DateTime startDate, DateTime endDate)
         {
-
             var startDateStr = Convert.ToDateTime(startDate).ToString("yyyy/MM/dd HH:mm:ss", CultureInfo.InvariantCulture);
             var endDateStr = Convert.ToDateTime(endDate).ToString("yyyy/MM/dd HH:mm:ss", CultureInfo.InvariantCulture);
 
@@ -596,6 +714,28 @@ namespace Reversals.DbDataManager
                                             + "COLLATE='latin1_swedish_ci'"
                                             + "ENGINE=InnoDB;";
             DoSql(createResultsSql);
+
+            const string createSummaryResultSql = "CREATE TABLE  IF NOT EXISTS `" + TblSummaryResults + "` ("
+                                                 + "`ID` INT(10) UNSIGNED  NOT NULL AUTO_INCREMENT,"
+                                                 + "`Symbol_ID` INT(10) NULL,"
+                                                 + "`Dataset_ID` INT(10) NULL,"
+                                                 + "`SymbolName` VARCHAR(50) NULL, "
+                                                 + "`StartDate` DateTime NULL, "
+                                                 + "`EndDate` DateTime NULL, "
+                                                 + "`Pnl` FLOAT(12,2) NULL, "
+                                                 + "`Reversals` INT(10) NULL, "
+                                                 + "`StopLevel` FLOAT(9,5) NULL, "
+                                                 + "`RevLevel` FLOAT(9,5) NULL, "
+
+                                                 + "`ZIM` FLOAT(9,5) NULL, "
+                                                 + "`PointValue` FLOAT(9,5) NULL, "
+
+                                                 + "PRIMARY KEY (`ID`)"
+                                                 + ")"
+                                                 + "COLLATE='latin1_swedish_ci'"
+                                                 + "ENGINE=InnoDB;";
+            DoSql(createSummaryResultSql);
+
         }
 
 
@@ -733,5 +873,7 @@ namespace Reversals.DbDataManager
             return contractModelList;
         }
         #endregion
+
+        
     }
 }

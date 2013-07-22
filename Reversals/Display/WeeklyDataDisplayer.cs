@@ -36,6 +36,7 @@ namespace Reversals.Display
         private double _nextDayClosePrice;
         private DateTime _dayDate;
         private ArrayList templist;
+        private List<Order> _orderList;
 
         private string _dateTimeFormat;
         enum TableID
@@ -49,7 +50,7 @@ namespace Reversals.Display
             : base(vtrades,  startTime, endTime)
         {
             DateTimeFormatInfo dtfInfo = DateTimeFormatInfo.GetInstance(CultureInfo.CurrentCulture);
-
+            _orderList = vtrades.OrderOperationsList;
             _dateTimeFormat = "dd" + dtfInfo.DateSeparator.ToString() + "MM" + dtfInfo.DateSeparator.ToString() + "yyyy" +
                               " HH:mm:ss";
             _dayindexer = 0;
@@ -71,7 +72,7 @@ namespace Reversals.Display
             _weeklyData.Relations.Add("1", _weeklyData.Tables["tableWeek"].Columns["id"],
                                    _weeklyData.Tables["tableDays"].Columns["id_Week"], false);
             _weeklyData.Relations.Add("2", _weeklyData.Tables["tableDays"].Columns["id"],
-                                   _weeklyData.Tables["tableTrades"].Columns["id_Day"], false);
+                                   _weeklyData.Tables["orderTable"].Columns["id_Day"], false);
 
 
 
@@ -104,10 +105,6 @@ namespace Reversals.Display
                          position.TimeOpen.DayOfWeek != DayOfWeek.Saturday))
                     {
 
-
-                        //CalculateTradeParams(position);
-                        //CalculateDayParams();
-                        //CalculateWeekParams();
                    
                         _dayDate = new DateTime(position.TimeOpen.Year, position.TimeOpen.Month, position.TimeOpen.Day,
                                                 17, 00, 00);
@@ -148,118 +145,77 @@ namespace Reversals.Display
             }
 
             DeleteLastPNL();
-
-            //if ((_tempTrades.ElementAt(_tempTrades.Count - 1).TimeOpen.DayOfWeek == DayOfWeek.Friday) && 
-            //    (_tempTrades.ElementAt(_tempTrades.Count - 1).Operation == Operation.Premium))
-            //{
-            //    //DataRow row = _weeklyData.tableDays.NewRow();
-            //    //templist = new ArrayList()
-            //    //               {
-            //    //                    _dayindexer+1,
-            //    //                    _weekindexer+1,
-            //    //                    _tempTrades.ElementAt(_tempTrades.Count - 1).TimeOpen.AddDays(3).ToString(_dateTimeFormat) ,//result1.ToArray().ElementAt(result1.ToArray().Length - 1).TimeClose,
-            //    //                    _tempTrades.ElementAt(_tempTrades.Count - 1).Trades, 
-            //    //                    0, 
-            //    //                    0, 
-            //    //                    0, 
-            //    //                    0, 
-            //    //                    _tempTrades.ElementAt(_tempTrades.Count - 1).Trades, 
-            //    //                    0, 
-            //    //                    _nextDayClosePrice,
-            //    //                    _nextDayClosePrice
-            //    //              };
-            //    //row.ItemArray = templist.ToArray();
-            //    //_weeklyData.tableDays.Rows.Add(row);
-            //    //_weeklyData.AcceptChanges();
-
-            //    DataRow wrow = _weeklyData.tableWeek.NewRow();
-            //    templist = new ArrayList()
-            //                   {
-            //                        _weekindexer+1,
-            //                        _tempTrades.ElementAt(_tempTrades.Count - 1).TimeOpen.AddDays(3).ToString(_dateTimeFormat) ,
-            //                        _tempTrades.ElementAt(_tempTrades.Count - 1).TimeOpen.AddDays(3).ToString(_dateTimeFormat),
-            //                        _tempTrades.ElementAt(_tempTrades.Count - 1).Trades, 
-            //                        0, 
-            //                        0, 
-            //                        0, 
-            //                        0, 
-            //                         _tempTrades.ElementAt(_tempTrades.Count - 1).Trades, 
-            //                        0    
-            //                  };
-
-            //    wrow.ItemArray = templist.ToArray();
-            //    _weeklyData.tableWeek.Rows.Add(wrow);
-            //    _weeklyData.AcceptChanges();
-            //}
-
-            //if (_tempTrades.ElementAt(_tempTrades.Count - 1).Operation == Operation.Premium && _tempTrades.ElementAt(_tempTrades.Count - 1).TimeOpen.DayOfWeek != DayOfWeek.Saturday)
-            //{
-            //    _weeklyData.tableDays.ElementAt(_weeklyData.tableDays.Count - 1).ClosePrice = _nextDayClosePrice;
-            //    _weeklyData.tableDays.ElementAt(_weeklyData.tableDays.Count - 1).OpenPrice = _nextDayOpenPrice;
-            //    DataRow row = _weeklyData.tableDays.NewRow();
-            //    templist = new ArrayList()
-            //                   {
-            //                        _dayindexer+1,
-            //                        _weekindexer,
-            //                        _tempTrades.ElementAt(_tempTrades.Count - 1).TimeOpen.AddDays(1).ToString(_dateTimeFormat) ,
-            //                        _tempTrades.ElementAt(_tempTrades.Count - 1).Trades, 
-            //                        0, 
-            //                        0, 
-            //                        0, 
-            //                        0, 
-            //                        _tempTrades.ElementAt(_tempTrades.Count - 1).Trades, 
-            //                        0, 
-            //                        _nextDayClosePrice,
-            //                        _nextDayClosePrice
-            //                  };
-            //    row.ItemArray = templist.ToArray();
-            //    _weeklyData.tableDays.Rows.Add(row);
-
-            //    var tempTrades = _weeklyData.tableWeek.ElementAt(_weeklyData.tableWeek.Count - 1).PNL;
-            //    var tempEndDate = _tempTrades.ElementAt(_tempTrades.Count - 1).TimeClose.AddDays(1).ToString(_dateTimeFormat);
-
-            //    tempTrades += _tempTrades.ElementAt(_tempTrades.Count - 1).Trades;
-
-            //    _weeklyData.tableWeek.ElementAt(_weeklyData.tableWeek.Count - 1).PNL = tempTrades;
-            //    _weeklyData.tableWeek.ElementAt(_weeklyData.tableWeek.Count - 1).End_Date = tempEndDate;
-            //    _weeklyData.AcceptChanges();
-            //}
-
-            //else
-            //{
-            //    _weeklyData.tableDays.ElementAt(_weeklyData.tableDays.Count - 1).ClosePrice = _nextDayClosePrice;
-            //    _weeklyData.tableDays.ElementAt(_weeklyData.tableDays.Count - 1).OpenPrice = _nextDayOpenPrice;
-            //    DataRow row = _weeklyData.tableDays.NewRow();
-            //    templist = new ArrayList()
-            //                   {
-            //                        _dayindexer+1,
-            //                        _weekindexer,
-            //                        _tempTrades.ElementAt(_tempTrades.Count - 1).TimeOpen.AddDays(2).ToString(_dateTimeFormat) ,
-            //                        _tempTrades.ElementAt(_tempTrades.Count - 1).Trades, 
-            //                        0, 
-            //                        0, 
-            //                        0, 
-            //                        0, 
-            //                        _tempTrades.ElementAt(_tempTrades.Count - 1).Trades, 
-            //                        0, 
-            //                        _nextDayClosePrice,
-            //                        _nextDayClosePrice
-            //                  };
-            //    row.ItemArray = templist.ToArray();
-            //    _weeklyData.tableDays.Rows.Add(row);
-
-            //    var tempTrades = _weeklyData.tableWeek.ElementAt(_weeklyData.tableWeek.Count - 1).PNL;
-            //    var tempEndDate = _tempTrades.ElementAt(_tempTrades.Count - 1).TimeClose.AddDays(1).ToString(_dateTimeFormat);
-
-            //    tempTrades += _tempTrades.ElementAt(_tempTrades.Count - 1).Trades;
-
-            //    _weeklyData.tableWeek.ElementAt(_weeklyData.tableWeek.Count - 1).PNL = tempTrades;
-            //    _weeklyData.tableWeek.ElementAt(_weeklyData.tableWeek.Count - 1).End_Date = tempEndDate;
-            //    _weeklyData.AcceptChanges();
-            //}
+            CalculateOrderParams();
+            //todo at there place need to call CreateOrderTable()
         }
 
+private void CalculateOrderParams()
+{
+    bool _firstOrderDay;
+    foreach(var row in _weeklyData.tableDays)
+    {
 
+        DateTime asd = DateTime.ParseExact(row.Date, DateFormatsManager.CurrentShortDateFormat + " HH:mm:ss", CultureInfo.InvariantCulture);
+        var ad = asd.Hour + asd.Minute/100 + asd.Second/100;
+        int _orderDayIndexer = row.id;
+        int rowDay =DateTime.ParseExact(row.Date, DateFormatsManager.CurrentShortDateFormat + " HH:mm:ss",CultureInfo.InvariantCulture).DayOfYear;
+        //var orderResults = from item in _orderList.AsEnumerable() where
+        //                                                              (item.Time.DayOfYear == rowDay 
+        //                                                                        &&
+        //                                                              (item.Time.Hour + item.Time.Minute/100 + item.Time.Second/100) <=17)
+        //                                                                        ||
+        //                                                            (  rowDay-1 == item.Time.DayOfYear 
+        //                                                                        &&
+        //                                                              (item.Time.Hour + item.Time.Minute / 100 + item.Time.Second / 100 )> 17)
+        //                                                                        ||
+        //                                                             ( item.Time.DayOfWeek == DayOfWeek.Friday 
+        //                                                                        &&
+        //                                                              (item.Time.Hour + item.Time.Minute / 100 + item.Time.Second / 100) > 17)
+
+
+        //                                                          select item;
+       
+        foreach(var  position in _orderList.ToArray())
+        {
+            bool canAddIt = false;
+            int indexer = _orderDayIndexer;
+            if(position.Time.DayOfYear == rowDay)
+            {
+                double hourindex = position.Time.Hour;
+                double minuteindex = position.Time.Minute;
+                double secondindex = position.Time.Second;
+                double dayindex = hourindex + (minuteindex + secondindex)/100;
+                if (dayindex <= 17.00)
+                    canAddIt = true;
+                else
+                   
+                {
+                    indexer++;
+                    canAddIt = true;
+                }
+
+            }
+            if (canAddIt)
+            {
+                var trValues = new ArrayList
+                                   {
+                                       null,
+                                       indexer,
+                                       position.Time.ToString(DateFormatsManager.CurrentShortDateFormat + " HH:mm:ss"),
+                                       position.Operation,
+                                       position.Price,
+                                   };
+
+
+                DataRow drow = _weeklyData.orderTable.NewRow();
+                drow.ItemArray = trValues.ToArray();
+                _weeklyData.orderTable.Rows.Add(drow);
+                _weeklyData.AcceptChanges();
+                _orderList.Remove(position);
+            }
+        }
+    }
+}
         private void CalculateWeekParams()
         {
             int count = _weeklyData.tableWeek.Rows.Count;
@@ -582,11 +538,14 @@ namespace Reversals.Display
 
 
             DataRow row = _weeklyData.tableTrades.NewRow();
-
             row.ItemArray = trValues.ToArray();
             _weeklyData.tableTrades.Rows.Add(row);
             _weeklyData.AcceptChanges();
+     
+
         }
+
+
 
         public BindingSource GetDaysOfWeek(int i)
         {

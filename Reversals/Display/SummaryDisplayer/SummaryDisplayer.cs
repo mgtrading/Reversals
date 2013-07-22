@@ -56,28 +56,20 @@ namespace Reversals.Display.SummaryDisplayer
         public void DisplayTable(DataGridView dgrid)
         {
             var provider = dgrid.DataSource as DataTable;
-            if (provider != null && provider.Columns["StopLVL"] == null)
-            {
-                 provider.Columns.Add(new DataColumn("StopLVL"));
-                 provider.Columns.Add(new DataColumn("RevLVL"));
-                 provider.Columns.Add(new DataColumn("ZIM"));
-                provider.Columns[5].ReadOnly = true;
-                provider.Columns[6].ReadOnly = true;
-                provider.Columns[7].ReadOnly = true;
-            }
 
             string entrieTrSum = FormatNumber(Math.Round(Strategyperformance.EntireTradesSum, 2));
 
             var values = new ArrayList
                              {
-                                 Symbol,
+                                 Strategy.Parameters.Symbol,
                                  MinDt.ToString(DateFormatsManager.CurrentShortDateFormat + " HH:mm:ss"),
                                  MaxDt.ToString(DateFormatsManager.CurrentShortDateFormat + " HH:mm:ss"),
                                  entrieTrSum, 
                                  Strategyperformance.Reversals,
                                  Strategy.AdditionalParameters[7].Value,
                                  Strategy.AdditionalParameters[8].Value,
-                                 Strategy.AdditionalParameters[5].Value
+                                 Strategy.AdditionalParameters[5].Value,
+                                 Strategy.AdditionalParameters[4].Value
                              };
 
             if (provider != null) provider.Rows.Add(values.ToArray());

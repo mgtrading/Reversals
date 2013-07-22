@@ -11,12 +11,14 @@ namespace Reversals.Forms
             InitializeComponent();
         }
 
+        
         private void FormSettings_FormClosing(object sender, FormClosingEventArgs e)
         {
             Properties.Settings.Default.sHost = uiTBSettingHost.Text;
             Properties.Settings.Default.sDB = uiTBSettingDB.Text;
             Properties.Settings.Default.sUser = uiTBSettingUser.Text;
             Properties.Settings.Default.sPassword = uiTBSettingPassword.Text;
+            Properties.Settings.Default.sTimeZone = uiTimeZoneSettingsOffsetValue.Text;
 
             Properties.Settings.Default.Save();
         }
@@ -28,6 +30,7 @@ namespace Reversals.Forms
             uiTBSettingDB.Text = Properties.Settings.Default.sDB;
             uiTBSettingUser.Text = Properties.Settings.Default.sUser;
             uiTBSettingPassword.Text = Properties.Settings.Default.sPassword;
+            uiTimeZoneSettingsOffsetValue.Text = Properties.Settings.Default.sTimeZone;
         }
 
         private void buttonX_test_connection_Click(object sender, EventArgs e)
@@ -36,8 +39,8 @@ namespace Reversals.Forms
             Properties.Settings.Default.sDB = uiTBSettingDB.Text;
             Properties.Settings.Default.sUser = uiTBSettingUser.Text;
             Properties.Settings.Default.sPassword = uiTBSettingPassword.Text;
+            Properties.Settings.Default.sTimeZone = uiTimeZoneSettingsOffsetValue.Text;
 
-            Properties.Settings.Default.Save();
 
             if (DataManager.Initialize(Properties.Settings.Default.sHost, Properties.Settings.Default.sDB, Properties.Settings.Default.sUser, Properties.Settings.Default.sPassword))
             {

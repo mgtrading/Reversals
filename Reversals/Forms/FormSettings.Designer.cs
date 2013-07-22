@@ -30,6 +30,10 @@ namespace Reversals.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSettings));
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
+            this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.uiTimeZoneSettingsOffsetValue = new DevComponents.Editors.IntegerInput();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.uiTimeZoneSettings = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.buttonX_test_connection = new DevComponents.DotNetBar.ButtonX();
             this.labelX74 = new DevComponents.DotNetBar.LabelX();
@@ -47,6 +51,8 @@ namespace Reversals.Forms
             this.superTabControlPanel8 = new DevComponents.DotNetBar.SuperTabControlPanel();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
+            this.superTabControlPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiTimeZoneSettingsOffsetValue)).BeginInit();
             this.superTabControlPanel2.SuspendLayout();
             this.superTabControlPanel9.SuspendLayout();
             this.SuspendLayout();
@@ -65,29 +71,83 @@ namespace Reversals.Forms
             // 
             // 
             this.superTabControl1.ControlBox.MenuBox.Name = "";
+            this.superTabControl1.ControlBox.MenuBox.PopupWidth = 100;
             this.superTabControl1.ControlBox.Name = "";
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
+            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel9);
             this.superTabControl1.Controls.Add(this.superTabControlPanel8);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControl1.FixedTabSize = new System.Drawing.Size(70, 0);
+            this.superTabControl1.FixedTabSize = new System.Drawing.Size(160, 0);
             this.superTabControl1.ForeColor = System.Drawing.Color.Black;
             this.superTabControl1.Location = new System.Drawing.Point(0, 0);
             this.superTabControl1.Name = "superTabControl1";
             this.superTabControl1.ReorderTabsEnabled = true;
             this.superTabControl1.SelectedTabFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.superTabControl1.SelectedTabIndex = 0;
-            this.superTabControl1.Size = new System.Drawing.Size(387, 308);
+            this.superTabControl1.Size = new System.Drawing.Size(565, 472);
             this.superTabControl1.TabAlignment = DevComponents.DotNetBar.eTabStripAlignment.Left;
             this.superTabControl1.TabFont = new System.Drawing.Font("Segoe UI", 9F);
             this.superTabControl1.TabIndex = 2;
             this.superTabControl1.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.superTabItem2});
+            this.superTabItem2,
+            this.uiTimeZoneSettings});
             this.superTabControl1.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.Office2010BackstageBlue;
-            this.superTabControl1.TabVerticalSpacing = 3;
+            // 
+            // superTabControlPanel1
+            // 
+            this.superTabControlPanel1.CanvasColor = System.Drawing.Color.Empty;
+            this.superTabControlPanel1.Controls.Add(this.uiTimeZoneSettingsOffsetValue);
+            this.superTabControlPanel1.Controls.Add(this.labelX1);
+            this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel1.Location = new System.Drawing.Point(162, 0);
+            this.superTabControlPanel1.Name = "superTabControlPanel1";
+            this.superTabControlPanel1.Size = new System.Drawing.Size(403, 472);
+            this.superTabControlPanel1.TabIndex = 4;
+            this.superTabControlPanel1.TabItem = this.uiTimeZoneSettings;
+            this.superTabControlPanel1.TextDockConstrained = false;
+            // 
+            // uiTimeZoneSettingsOffsetValue
+            // 
+            // 
+            // 
+            // 
+            this.uiTimeZoneSettingsOffsetValue.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.uiTimeZoneSettingsOffsetValue.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiTimeZoneSettingsOffsetValue.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.uiTimeZoneSettingsOffsetValue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uiTimeZoneSettingsOffsetValue.Location = new System.Drawing.Point(325, 49);
+            this.uiTimeZoneSettingsOffsetValue.MaxValue = 12;
+            this.uiTimeZoneSettingsOffsetValue.MinValue = -12;
+            this.uiTimeZoneSettingsOffsetValue.Name = "uiTimeZoneSettingsOffsetValue";
+            this.uiTimeZoneSettingsOffsetValue.ShowUpDown = true;
+            this.uiTimeZoneSettingsOffsetValue.Size = new System.Drawing.Size(61, 34);
+            this.uiTimeZoneSettingsOffsetValue.TabIndex = 4;
+            // 
+            // labelX1
+            // 
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.BackColor = System.Drawing.Color.White;
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelX1.ForeColor = System.Drawing.Color.Black;
+            this.labelX1.Location = new System.Drawing.Point(22, 52);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(290, 23);
+            this.labelX1.TabIndex = 0;
+            this.labelX1.Text = "YOUR CURRENT TIMEZONE UTC";
+            // 
+            // uiTimeZoneSettings
+            // 
+            this.uiTimeZoneSettings.AttachedControl = this.superTabControlPanel1;
+            this.uiTimeZoneSettings.GlobalItem = false;
+            this.uiTimeZoneSettings.Name = "uiTimeZoneSettings";
+            this.uiTimeZoneSettings.Text = "Time Zone Settings";
             // 
             // superTabControlPanel2
             // 
@@ -102,9 +162,9 @@ namespace Reversals.Forms
             this.superTabControlPanel2.Controls.Add(this.labelX71);
             this.superTabControlPanel2.Controls.Add(this.labelX70);
             this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(72, 0);
+            this.superTabControlPanel2.Location = new System.Drawing.Point(162, 0);
             this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(315, 308);
+            this.superTabControlPanel2.Size = new System.Drawing.Size(403, 472);
             this.superTabControlPanel2.TabIndex = 1;
             this.superTabControlPanel2.TabItem = this.superTabItem2;
             // 
@@ -112,7 +172,7 @@ namespace Reversals.Forms
             // 
             this.buttonX_test_connection.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX_test_connection.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX_test_connection.Location = new System.Drawing.Point(107, 260);
+            this.buttonX_test_connection.Location = new System.Drawing.Point(138, 260);
             this.buttonX_test_connection.Name = "buttonX_test_connection";
             this.buttonX_test_connection.Size = new System.Drawing.Size(148, 36);
             this.buttonX_test_connection.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -146,7 +206,7 @@ namespace Reversals.Forms
             this.uiTBSettingPassword.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.uiTBSettingPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.uiTBSettingPassword.ForeColor = System.Drawing.Color.Black;
-            this.uiTBSettingPassword.Location = new System.Drawing.Point(107, 210);
+            this.uiTBSettingPassword.Location = new System.Drawing.Point(138, 210);
             this.uiTBSettingPassword.Margin = new System.Windows.Forms.Padding(2);
             this.uiTBSettingPassword.Name = "uiTBSettingPassword";
             this.uiTBSettingPassword.PasswordChar = '*';
@@ -165,10 +225,10 @@ namespace Reversals.Forms
             this.uiTBSettingUser.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.uiTBSettingUser.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.uiTBSettingUser.ForeColor = System.Drawing.Color.Black;
-            this.uiTBSettingUser.Location = new System.Drawing.Point(107, 167);
+            this.uiTBSettingUser.Location = new System.Drawing.Point(138, 167);
             this.uiTBSettingUser.Margin = new System.Windows.Forms.Padding(2);
             this.uiTBSettingUser.Name = "uiTBSettingUser";
-            this.uiTBSettingUser.Size = new System.Drawing.Size(148, 26);
+            this.uiTBSettingUser.Size = new System.Drawing.Size(148, 30);
             this.uiTBSettingUser.TabIndex = 15;
             this.uiTBSettingUser.Text = "root";
             this.uiTBSettingUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -183,10 +243,10 @@ namespace Reversals.Forms
             this.uiTBSettingDB.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.uiTBSettingDB.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.uiTBSettingDB.ForeColor = System.Drawing.Color.Black;
-            this.uiTBSettingDB.Location = new System.Drawing.Point(107, 126);
+            this.uiTBSettingDB.Location = new System.Drawing.Point(138, 126);
             this.uiTBSettingDB.Margin = new System.Windows.Forms.Padding(2);
             this.uiTBSettingDB.Name = "uiTBSettingDB";
-            this.uiTBSettingDB.Size = new System.Drawing.Size(148, 26);
+            this.uiTBSettingDB.Size = new System.Drawing.Size(148, 30);
             this.uiTBSettingDB.TabIndex = 14;
             this.uiTBSettingDB.Text = "pricing_data_db";
             this.uiTBSettingDB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -201,10 +261,10 @@ namespace Reversals.Forms
             this.uiTBSettingHost.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.uiTBSettingHost.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.uiTBSettingHost.ForeColor = System.Drawing.Color.Black;
-            this.uiTBSettingHost.Location = new System.Drawing.Point(107, 83);
+            this.uiTBSettingHost.Location = new System.Drawing.Point(138, 83);
             this.uiTBSettingHost.Margin = new System.Windows.Forms.Padding(2);
             this.uiTBSettingHost.Name = "uiTBSettingHost";
-            this.uiTBSettingHost.Size = new System.Drawing.Size(148, 26);
+            this.uiTBSettingHost.Size = new System.Drawing.Size(148, 30);
             this.uiTBSettingHost.TabIndex = 13;
             this.uiTBSettingHost.Text = "localhost";
             this.uiTBSettingHost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -218,7 +278,7 @@ namespace Reversals.Forms
             this.labelX73.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX73.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelX73.ForeColor = System.Drawing.Color.Black;
-            this.labelX73.Location = new System.Drawing.Point(14, 215);
+            this.labelX73.Location = new System.Drawing.Point(45, 215);
             this.labelX73.Margin = new System.Windows.Forms.Padding(2);
             this.labelX73.Name = "labelX73";
             this.labelX73.Size = new System.Drawing.Size(85, 19);
@@ -235,7 +295,7 @@ namespace Reversals.Forms
             this.labelX72.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX72.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelX72.ForeColor = System.Drawing.Color.Black;
-            this.labelX72.Location = new System.Drawing.Point(43, 172);
+            this.labelX72.Location = new System.Drawing.Point(74, 172);
             this.labelX72.Margin = new System.Windows.Forms.Padding(2);
             this.labelX72.Name = "labelX72";
             this.labelX72.Size = new System.Drawing.Size(56, 19);
@@ -253,7 +313,7 @@ namespace Reversals.Forms
             this.labelX71.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX71.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelX71.ForeColor = System.Drawing.Color.Black;
-            this.labelX71.Location = new System.Drawing.Point(43, 132);
+            this.labelX71.Location = new System.Drawing.Point(74, 132);
             this.labelX71.Margin = new System.Windows.Forms.Padding(2);
             this.labelX71.Name = "labelX71";
             this.labelX71.Size = new System.Drawing.Size(56, 16);
@@ -270,7 +330,7 @@ namespace Reversals.Forms
             this.labelX70.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX70.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelX70.ForeColor = System.Drawing.Color.Black;
-            this.labelX70.Location = new System.Drawing.Point(48, 88);
+            this.labelX70.Location = new System.Drawing.Point(79, 88);
             this.labelX70.Margin = new System.Windows.Forms.Padding(2);
             this.labelX70.Name = "labelX70";
             this.labelX70.Size = new System.Drawing.Size(51, 19);
@@ -289,9 +349,9 @@ namespace Reversals.Forms
             // 
             this.superTabControlPanel9.Controls.Add(this.labelX5);
             this.superTabControlPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel9.Location = new System.Drawing.Point(72, 0);
+            this.superTabControlPanel9.Location = new System.Drawing.Point(162, 0);
             this.superTabControlPanel9.Name = "superTabControlPanel9";
-            this.superTabControlPanel9.Size = new System.Drawing.Size(315, 308);
+            this.superTabControlPanel9.Size = new System.Drawing.Size(403, 472);
             this.superTabControlPanel9.TabIndex = 3;
             // 
             // labelX5
@@ -305,23 +365,23 @@ namespace Reversals.Forms
             this.labelX5.ForeColor = System.Drawing.Color.Black;
             this.labelX5.Location = new System.Drawing.Point(0, 0);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(315, 308);
+            this.labelX5.Size = new System.Drawing.Size(403, 472);
             this.labelX5.TabIndex = 7;
             this.labelX5.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // superTabControlPanel8
             // 
             this.superTabControlPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel8.Location = new System.Drawing.Point(72, 0);
+            this.superTabControlPanel8.Location = new System.Drawing.Point(162, 0);
             this.superTabControlPanel8.Name = "superTabControlPanel8";
-            this.superTabControlPanel8.Size = new System.Drawing.Size(315, 308);
+            this.superTabControlPanel8.Size = new System.Drawing.Size(403, 472);
             this.superTabControlPanel8.TabIndex = 2;
             // 
             // FormSettings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 308);
+            this.ClientSize = new System.Drawing.Size(565, 472);
             this.Controls.Add(this.superTabControl1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -335,6 +395,8 @@ namespace Reversals.Forms
             this.Shown += new System.EventHandler(this.FormSettings_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
+            this.superTabControlPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uiTimeZoneSettingsOffsetValue)).EndInit();
             this.superTabControlPanel2.ResumeLayout(false);
             this.superTabControlPanel9.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -359,6 +421,10 @@ namespace Reversals.Forms
         private DevComponents.DotNetBar.LabelX labelX71;
         private DevComponents.DotNetBar.LabelX labelX70;
         private DevComponents.DotNetBar.ButtonX buttonX_test_connection;
+        private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel1;
+        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.SuperTabItem uiTimeZoneSettings;
+        private DevComponents.Editors.IntegerInput uiTimeZoneSettingsOffsetValue;
 
     }
 }

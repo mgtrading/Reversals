@@ -70,5 +70,17 @@ namespace Reversals.Properties {
                 this["sPassword"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string sTimeZone {
+            get {
+                return ((string)(this["sTimeZone"]));
+            }
+            set {
+                this["sTimeZone"] = value;
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
@@ -64,8 +65,8 @@ namespace Reversals.Forms
 
         public MainFormMetroApp()
         {
-            InitializeComponent();
-
+            InitializeComponent();            
+            
             InitializeWeeklyDataTable();
             _expandimage = Resources.treeexpand;
             _collapseimage = Resources.treecollapse;
@@ -156,33 +157,26 @@ namespace Reversals.Forms
             ToastNotification.CustomGlowColor = Color.Blue;
             ToastNotification.DefaultToastPosition = eToastPosition.TopCenter;
             ToastNotification.DefaultTimeoutInterval = 2000;
+
+            uiBlackSPriceStrike.Text = @"1875.00";
+            uiBlackSInterestRate.Text = @"5";
+            uiBlackSUnderlyingPrice.Text = @"1870.00";
+            uiBlackSVolality.Text = @"19";
+            uiBlackSValueDate.Value = DateTime.Today;
+            uiBlackSExpiryDate.Value = DateTime.Today.AddDays(30);
+
+            DefaultBtSummaryTable();
+            
         }
 
         private void metroShell1_SettingsButtonClick(object sender, EventArgs e)
         {
             var fs = new FormSettings();
-            fs.ShowDialog();
+            fs.Closed += uiSymbol_SelectedIndexChanged;
+            fs.Closed += uiDataArchive_dataGridViewXContracts_CurrentCellChanged;
+            fs.ShowDialog();           
         }
 
-        private void UiBTSummaryScrollBar_Scroll(object sender, ScrollEventArgs e)
-        {
-            if (!(uiSummary_dataGridViewBT.RowCount < 2))
-            {
-
-
-                uiBTSummaryScrollBar.Maximum = uiSummary_dataGridViewBT.RowCount;
-
-                if ((e.OldValue - e.NewValue) > 0)
-                {
-                    uiSummary_dataGridViewBT.FirstDisplayedScrollingRowIndex = e.NewValue;
-
-                }
-                else if ((e.OldValue - e.NewValue) < 0)
-                {
-                    uiSummary_dataGridViewBT.FirstDisplayedScrollingRowIndex = e.NewValue;
-                }
-            }
-        }
 
         private void InitializeWeeklyDataTable()
         {
@@ -328,14 +322,17 @@ namespace Reversals.Forms
         {
             uiStrategy_SelectedIndexChanged(this, e);
             DefaultBtSummaryTable();
-            DefaultFtSummaryTable();
+            //DefaultFtSummaryTable();
 
             uiCalendar_comboBoxXSymbol.SelectedItem = uiStrategy_comboBoxExSymbol.SelectedItem;
             uiCalendar_comboBoxXDSet.SelectedItem = uiStrategy_comboBoxExDataSet.SelectedItem;
 
+            uiSummary_comboBoxXSymbol.SelectedItem = uiStrategy_comboBoxExSymbol.SelectedItem;
+            uiSummary_comboBoxXDSet.SelectedItem = uiStrategy_comboBoxExDataSet.SelectedItem;
+
             uiBTSummaryChart.Series.Clear();
 
-            File.Delete(@"LogStrategy.txt");
+            //File.Delete(@"LogStrategy.txt");
 
             uiStrategy_buttonXStart.Enabled = false;
             uiStrategy_buttonXStop.Enabled = true;
@@ -368,6 +365,9 @@ namespace Reversals.Forms
 
             List<Strategy.StrategyAdditionalParameter> additional = UpdateAdditionalParams();
             TestManager.ResultEvent += DisplayBackTestResult;
+
+          
+             
             TestManager.StartBackTest(parameters, additional, _data.BarsRange(_inSampleStartTime, _inSampleEndTime, 0).Bars);
             TestManager.ResultEvent -= DisplayBackTestResult;
 
@@ -387,7 +387,6 @@ namespace Reversals.Forms
                 {
                     uiStatus_toolStripProgressBar.Value += 1;
                 }
-
             });
         }
 
@@ -401,9 +400,10 @@ namespace Reversals.Forms
 
             Invoke((Action)delegate
             {
-                Report("In Sample/Out Of Sample procedure completed.", InformerMessageType.Success);
+                Report("Optimization completed.", InformerMessageType.Success);
                 uiStrategy_buttonXStart.Enabled = true;
                 uiStrategy_buttonXStop.Enabled = false;
+                uiStatus_toolStripProgressBar.Value = 100;
             });
 
         }
@@ -413,7 +413,7 @@ namespace Reversals.Forms
             Invoke((Action)delegate
             {
                 if (uiStatus_toolStripProgressBar.Value <= uiStatus_toolStripProgressBar.Maximum)
-                    uiStatus_toolStripProgressBar.Value += (int)percent;
+                    uiStatus_toolStripProgressBar.Value = (int)percent;
             });
         }
 
@@ -632,27 +632,35 @@ namespace Reversals.Forms
             uiSummary_dataGridViewBT.RowHeadersDefaultCellStyle.Font = new Font("Segoe UI", 8);
 
             uiSummary_dataGridViewBT.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-            DataTable provider = Provider("BSm", "BFr", "BTo", "PNL", "Reversals");
+            DataTable provider = Provider("Symbol", "StartDate", "EndDate", "PNL", "Reversals", "StopLVL", "RevLVL", "ZIM", "Point Value");
             provider.Columns[0].ReadOnly = true;
             provider.Columns[1].ReadOnly = true;
             provider.Columns[2].ReadOnly = true;
             provider.Columns[3].ReadOnly = true;
             provider.Columns[4].ReadOnly = true;
+            provider.Columns[5].ReadOnly = true;
+            provider.Columns[6].ReadOnly = true;
+            provider.Columns[7].ReadOnly = true;
+            provider.Columns[8].ReadOnly = true;
+            provider.Columns[5].DataType = typeof(double);
+            provider.Columns[6].DataType = typeof(double);
+            provider.Columns[7].DataType = typeof(double);
+            provider.Columns[8].DataType = typeof(double);
 
             uiSummary_dataGridViewBT.DataSource = provider;
         }
 
-        private void DefaultFtSummaryTable()
-        {
-            uiFTSummaryTable.Columns.Clear();
-            uiFTSummaryTable.DefaultCellStyle.Font = new Font("Segoe UI", 8);
-            uiFTSummaryTable.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 8);
-            uiFTSummaryTable.RowHeadersDefaultCellStyle.Font = new Font("Segoe UI", 8);
+        //private void DefaultFtSummaryTable()
+        //{
+        //    uiFTSummaryTable.Columns.Clear();
+        //    uiFTSummaryTable.DefaultCellStyle.Font = new Font("Segoe UI", 8);
+        //    uiFTSummaryTable.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 8);
+        //    uiFTSummaryTable.RowHeadersDefaultCellStyle.Font = new Font("Segoe UI", 8);
 
-            uiFTSummaryTable.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-            DataTable provider1 = Provider("FSm", "FFr", "FTo", "FNet", "FNetPr", "FNetLs", "FPrf%", "FPrF", "FAvgTr", "FNTr", "FNPr", "FNLs");
-            uiFTSummaryTable.DataSource = provider1;
-        }
+        //    uiFTSummaryTable.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+        //    DataTable provider1 = Provider("FSm", "FFr", "FTo", "FNet", "FNetPr", "FNetLs", "FPrf%", "FPrF", "FAvgTr", "FNTr", "FNPr", "FNLs");
+        //    uiFTSummaryTable.DataSource = provider1;
+        //}
 
         private void uiStop_Click(object sender, EventArgs e)
         {
@@ -668,10 +676,21 @@ namespace Reversals.Forms
             uiWeeklyData_superGridControlTable.PrimaryGrid.Columns["id"].CellStyles.Default.TextColor = Color.White;
             uiWeeklyData_superGridControlTable.PrimaryGrid.Columns["id"].FillWeight = 20;
             uiWeeklyData_superGridControlTable.PrimaryGrid.Columns["id"].HeaderText = "";
+            uiWeeklyData_superGridControlTable.PrimaryGrid.Columns["id"].HeaderText = "";
             e.GridPanel.ExpandImage = _expandimage;
             e.GridPanel.CollapseImage = _collapseimage;
             e.GridPanel.DefaultVisualStyles.ColumnHeaderStyles.Default.Background.Color1 = Color.DodgerBlue;
             e.GridPanel.DefaultVisualStyles.ColumnHeaderStyles.Default.Background.Color2 = Color.DodgerBlue;
+        }
+
+        private void uiWeeklyData_superGridControlTable_BeforeExpand(object sender, GridBeforeExpandEventArgs e)
+        {
+            GridRow row = e.GridContainer as GridRow;
+            string str = e.GridPanel.Name;
+            if (row["Trades"].Value.ToString() == "0" && str == "tableDays")
+            {
+                e.Cancel = true;
+            }
         }
 
         private void uiWeeklyDataTable_AfterExpand(object sender, GridAfterExpandEventArgs e)
@@ -682,15 +701,14 @@ namespace Reversals.Forms
             if (e.GridContainer.Rows[0].GridPanel.Columns["id_Week"] != null)
             {
                 e.GridContainer.Rows[0].GridPanel.Columns["id_Week"].Visible = false;
-                e.GridContainer.Rows[0].GridPanel.Columns["Date"].Width = 120;
+                e.GridContainer.Rows[0].GridPanel.Columns["Date"].Width = 150;
                 e.GridContainer.Rows[0].GridPanel.AllowEdit = false;
             }
             if (e.GridContainer.Rows[0].GridPanel.Columns["id_Day"] != null)
             {
                 e.GridContainer.Rows[0].GridPanel.Columns["id"].Visible = false;
                 e.GridContainer.Rows[0].GridPanel.Columns["id_Day"].Visible = false;
-                e.GridContainer.Rows[0].GridPanel.Columns["TimeOpen"].Width = 120;
-                e.GridContainer.Rows[0].GridPanel.Columns["TimeClose"].Width = 120;
+                e.GridContainer.Rows[0].GridPanel.Columns["TimeOpen"].Width = 150;
                 e.GridContainer.Rows[0].GridPanel.AllowEdit = false;
             }
 
@@ -698,19 +716,11 @@ namespace Reversals.Forms
 
         private void uiDataSet_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             uiStrategy_panelExBlackScholesPanel.Enabled = true;
-
             uiStrategy_buttonXStart.Enabled = true;
             uiStrategy_buttonXStop.Enabled = true;
             uiStrategy_WorkingButtonsPanel.Enabled = true;
 
-            uiBlackSPriceStrike.Text = @"1875.00";
-            uiBlackSInterestRate.Text = @"5";
-            uiBlackSUnderlyingPrice.Text = @"1870.00";
-            uiBlackSVolality.Text = @"19";
-            uiBlackSValueDate.Value = DateTime.Today;
-            uiBlackSExpiryDate.Value = DateTime.Today.AddDays(30);
 
             if (uiStrategy_radioButtonDataFromFile.Checked)
             {
@@ -832,18 +842,18 @@ namespace Reversals.Forms
 
             row = optimalizableparamsProvider.NewRow();
             row[0] = "Stop Level";
-            row[1] = dataSet.StopLevelDef;
-            row[2] = dataSet.StopLevelMin;
-            row[3] = dataSet.StopLevelMax;
-            row[4] = dataSet.StopLevelStep;
+            row[1] = Math.Round(dataSet.StopLevelDef, 2);
+            row[2] = Math.Round(dataSet.StopLevelMin, 2);
+            row[3] = Math.Round(dataSet.StopLevelMax, 2);
+            row[4] = Math.Round(dataSet.StopLevelStep, 2);
             optimalizableparamsProvider.Rows.Add(row);
 
             row = optimalizableparamsProvider.NewRow();
             row[0] = "Reversal Level";
-            row[1] = dataSet.ReversalLevelDef;
-            row[2] = dataSet.ReversalLevelMin;
-            row[3] = dataSet.ReversalLevelMax;
-            row[4] = dataSet.ReversalLevelStep;
+            row[1] = Math.Round(dataSet.ReversalLevelDef, 2);
+            row[2] = Math.Round(dataSet.ReversalLevelMin, 2);
+            row[3] = Math.Round(dataSet.ReversalLevelMax, 2);
+            row[4] = Math.Round(dataSet.ReversalLevelStep, 2);
             optimalizableparamsProvider.Rows.Add(row);
 
             parameterProvider.Columns["Variables"].ReadOnly = true;
@@ -859,6 +869,8 @@ namespace Reversals.Forms
         {
             if (_thread != null)
                 _thread.Abort();
+
+
         }
 
         private void UpdateOptionsCalc()
@@ -909,6 +921,9 @@ namespace Reversals.Forms
                     uiBlackSRTV.Text = Math.Round(Math.Abs(reqTv), 4).ToString(nfi);
                     uiBlackSTVega.Text = Math.Round(Math.Abs(totalVega), 4).ToString(nfi);
                     uiBlackSZim.Text = Math.Round(zimD, 4).ToString(nfi);
+
+                    uiStrategy_dataGridViewNoOptomizationParameters.Rows[6].Cells[1].Value = uiBlackSZim.Text;
+                    uiStrategy_dataGridViewNoOptomizationParameters.Rows[1].Cells[1].Value = uiBlackSRTV.Text;
                 }
             }
         }
@@ -924,7 +939,11 @@ namespace Reversals.Forms
             {
                 for (int i = 0; i < uiSummary_dataGridViewBT.Rows.Count; i++)
                 {
-                    uiSummary_dataGridViewBT.Rows[i].Cells[3].Style.ForeColor = uiSummary_dataGridViewBT.Rows[i].Cells[3].Value.ToString().IndexOf("-", StringComparison.Ordinal) > -1 ? Color.Red : Color.Green;
+                    if (uiSummary_dataGridViewBT.Rows[i].Cells.Count >= 3)
+                    {
+                        uiSummary_dataGridViewBT.Rows[i].Cells[3].Style.ForeColor = uiSummary_dataGridViewBT.Rows[i].Cells[3].Value.ToString().IndexOf("-", StringComparison.Ordinal) > -1 ? Color.Red : Color.Green;
+                    }
+                    
                 }
             }
         }
@@ -948,8 +967,8 @@ namespace Reversals.Forms
         {
             var a = e.ElementA as GridCell;
             var b = e.ElementB as GridCell;
-
-            if (a != null && b != null && (a.Value is string && (a.ColumnIndex == 1 || a.ColumnIndex == 2 || a.ColumnIndex == 3)))
+          
+            if (a != null && b != null && (a.Value is string && (a.ColumnIndex == 1 || a.ColumnIndex == 2)))
             {
                 e.Cancel = true;
                 var aValue = DateTime.ParseExact(a.Value.ToString(), DateFormatsManager.CurrentShortDateFormat + " HH:mm:ss", CultureInfo.InvariantCulture);
@@ -1159,6 +1178,7 @@ namespace Reversals.Forms
                 else
                     e.Handled = false;
             }
+
         }
 
         private void uiStrategyNoOptomizationParameters_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
@@ -1194,7 +1214,9 @@ namespace Reversals.Forms
                     UpdateLists();
                 }
             }
+            
             Refresh();
+            
         }
 
         private void uiDataFromDB_CheckedChanged(object sender, EventArgs e)
@@ -1205,7 +1227,6 @@ namespace Reversals.Forms
                 uiStrategy_buttonXStart.Enabled = false;
 
                 uiCalendar_buttonXSave.Enabled = false;
-                uiStrategy_panelExBlackScholesPanel.Enabled = false;
                 uiStrategy_checkBoxXReqTVCheck.Checked = false;
                 uiStrategy_comboBoxExSymbol.Items.Clear();
                 uiCalendar_comboBoxXSymbol.Items.Clear();
@@ -1216,6 +1237,7 @@ namespace Reversals.Forms
                 {
                     uiStrategy_comboBoxExSymbol.Items.Add(item.ContractName);
                     uiCalendar_comboBoxXSymbol.Items.Add(item.ContractName);
+                    uiSummary_comboBoxXSymbol.Items.Add(item.ContractName);
                 }
 
                 uiStrategy_panelExOptions.Enabled = true;
@@ -1232,6 +1254,7 @@ namespace Reversals.Forms
                     uiStrategy_comboBoxExSymbol.SelectedIndex = 0;
                 }
                 uiCalendar_panelExSaving.Enabled = true;
+                uiSummary_panelExSaving.Enabled = true;
             }
         }
 
@@ -1274,7 +1297,7 @@ namespace Reversals.Forms
             var tickList = DataManager.GetContractData(symbol);
             if (tickList.Count > 0)
             {
-                _data = new Data(tickList, Data.DataFileType.TickFromDb);
+                _data = new Data(tickList, Data.DataFileType.TickFromDb,Convert.ToInt32(Properties.Settings.Default.sTimeZone));
 
                 _data.CreateData();
 
@@ -1435,8 +1458,15 @@ namespace Reversals.Forms
             if (contracts.Count > 0)
             {
                 IntradayTick.ProgressEvent += UpdateProgressBar;
+                IntradayTick.ErrorEvent += ErrorCollecting;
                 IntradayTick.CollectContracts(contracts, uiDataArchive_dateTimeInputStart.Value, uiDataArchive_dateTimeInputEnd.Value);
                 ToastNotification.Show(uiDataArchive_checkedListBoxSymbols, @"Collecting start.");
+                uiDataArchive_panelExSearchPanel.Enabled = false;
+                uiDataArchive_panelExSymbolControl.Enabled = false;
+                ui_tabItem_strategy.Enabled = false;
+                ui_tabItem_summary.Enabled = false;
+                ui_tabItem_calendar.Enabled = false;
+                ui_tabItem_weekly.Enabled = false;
             }
             else
             {
@@ -1445,18 +1475,31 @@ namespace Reversals.Forms
             }
         }
 
+        private void ErrorCollecting(int errorCode)
+        {
+            if (errorCode == 2)
+            {
+                ToastNotification.Show(uiDataArchive_checkedListBoxSymbols, @"Invalid symbol name");
+            }
+        }
         void UpdateProgressBar(int value)
         {
             Invoke((Action)delegate
             {
                 if (value == uiStatus_toolStripProgressBar.Minimum)
                 {
-                    uiStatus_labelItemProgramStatus.Text = @"Collecting start";
+                    uiStatus_labelItemProgramStatus.Text = @"Collecting start. Please wait while collecting finished.";
                 }
                 if (value == uiStatus_toolStripProgressBar.Maximum)
                 {
                     uiStatus_labelItemProgramStatus.Text = @"Collecting finished";
                     UpdateLists();
+                    uiDataArchive_panelExSearchPanel.Enabled = true;
+                    uiDataArchive_panelExSymbolControl.Enabled = true;
+                    ui_tabItem_strategy.Enabled = true;
+                    ui_tabItem_summary.Enabled = true;
+                    ui_tabItem_calendar.Enabled = true;
+                    ui_tabItem_weekly.Enabled = true;
                 }
                 uiStatus_toolStripProgressBar.Value = value;
             });
@@ -1476,8 +1519,6 @@ namespace Reversals.Forms
         {
             if (uiStrategy_radioButtonDataFromFile.Checked)
             {
-
-                uiStrategy_panelExBlackScholesPanel.Enabled = false;
                 uiStrategy_checkBoxXReqTVCheck.Checked = false;
 
                 uiStrategy_comboBoxExDataSet.Items.Clear();
@@ -1500,6 +1541,7 @@ namespace Reversals.Forms
                 uiStrategy_buttonXCancelDataSetButton.Enabled = false;
                 uiStrategy_comboBoxExSymbol.Items.Clear();
                 uiCalendar_panelExSaving.Enabled = false;
+                uiSummary_panelExSaving.Enabled = false;
             }
         }
 
@@ -1645,7 +1687,12 @@ namespace Reversals.Forms
 
         private void uiSaveDatasetButton_Click(object sender, EventArgs e)
         {
+
+
             var provider = uiStrategy_dataGridViewNoOptomizationParameters.DataSource as DataTable;
+
+            if (provider == null)
+                return;
             var optProvider = uiStrategy_dataGridViewOptomizationParameters.DataSource as DataTable;
             var dataSetModel = new DataSetModel();
             try
@@ -1683,6 +1730,10 @@ namespace Reversals.Forms
             if (_dataSets.Exists(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text) || _dataSets.Exists(a => a.DataSetName == dataSetModel.DataSetName))
             {
                 var dataSetId = _dataSets.Find(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text).Id;
+                if (_dataSets.Exists(a => a.DataSetName == dataSetModel.DataSetName))
+                {
+                    dataSetId = _dataSets.Find(a => a.DataSetName == dataSetModel.DataSetName).Id; 
+                }
                 if (DataManager.EditDataset(dataSetId, dataSetModel))
                 {
                     _dataSets = DataManager.GetDatasets();
@@ -1719,21 +1770,20 @@ namespace Reversals.Forms
 
         private void uiCancelDataSetButton_Click(object sender, EventArgs e)
         {
-            if (_addingNewDataSet == false)
+            if (_addingNewDataSet == false && _dataSets.Exists(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text))
             {
-                
-                var currentDataSet = DataManager.GetDatasetData(_dataSets.First(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text).Id);
-                DisplayDatasetParams(currentDataSet);
-                UpdateOptParamsInstance(currentDataSet);
-                if (_data != null)
-                {
-                    uiStrategy.SelectedIndex = 0;
-                }
+                    var currentDataSet = DataManager.GetDatasetData(_dataSets.First(a => a.DataSetName == uiStrategy_comboBoxExDataSet.Text).Id);
+                    DisplayDatasetParams(currentDataSet);
+                    UpdateOptParamsInstance(currentDataSet);
+                    if (_data != null)
+                    {
+                        uiStrategy.SelectedIndex = 0;
+                    }
 
-                uiAddDatasetButton.Enabled = true;
-                uiDeleteDatasetButton.Enabled = true;
-                uiStrategy_buttonXSaveDataset.Enabled = true;
-                uiStrategy_buttonXCancelDataSetButton.Enabled = true;
+                    uiAddDatasetButton.Enabled = true;
+                    uiDeleteDatasetButton.Enabled = true;
+                    uiStrategy_buttonXSaveDataset.Enabled = true;
+                    uiStrategy_buttonXCancelDataSetButton.Enabled = true;
             }
             else if (_addingNewDataSet)
             {
@@ -2200,8 +2250,8 @@ namespace Reversals.Forms
                 if (list1[i].Date.Date != uiDataArchive_dateTimeInputFindDate.Value.Date) continue;
 
                 uiDataArchive_dataGridViewXPreview.Rows[i].Cells[0].Value =
-                    list1[i].Date.ToString(DateFormatsManager.CurrentShortDateFormat) +
-                    " " + list1[i].Date.ToString("HH:mm:ss");
+                    list1[i].Date.AddHours(Convert.ToDouble(Properties.Settings.Default.sTimeZone)).ToString(DateFormatsManager.CurrentShortDateFormat) +
+                    " " + list1[i].Date.AddHours(Convert.ToDouble(Properties.Settings.Default.sTimeZone)).ToString("HH:mm:ss");
                 uiDataArchive_dataGridViewXPreview.Rows[i].Cells[1].Value = list1[i].Price;
             }
             if (n > 0)
@@ -2248,12 +2298,14 @@ namespace Reversals.Forms
         
         private void uiDataArchive_dataGridViewXContracts_CurrentCellChanged(object sender, EventArgs e)
         {
-            var defTimeOut= ToastNotification.DefaultTimeoutInterval;
-            ToastNotification.DefaultTimeoutInterval = 900;
-            ToastNotification.Show(uiDataArchive_dataGridViewXPreview, "Loading...");
-            PreviewChangeSymbol();
-            ToastNotification.DefaultTimeoutInterval = defTimeOut;
-
+            if (!IntradayTick.IsBusy())
+            {
+                var defTimeOut = ToastNotification.DefaultTimeoutInterval;
+                ToastNotification.DefaultTimeoutInterval = 900;
+                ToastNotification.Show(uiDataArchive_dataGridViewXPreview, "Loading...");
+                PreviewChangeSymbol();
+                ToastNotification.DefaultTimeoutInterval = defTimeOut;
+            }
         }
 
         #endregion
@@ -2263,6 +2315,147 @@ namespace Reversals.Forms
         {
             if (metroShellMain.SelectedTab == ui_tabItem_data_archive && uiDataArchive_dataGridViewXPreview.Rows.Count==0)
                 PreviewChangeSymbol();
+        }
+
+        #region SUMMARY RESULT SAVING
+        private void uiSummary_comboBoxExSymbol_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var dataSets = DataManager.GetDatasets();
+            var contracts = DataManager.GetContracts();
+            var symbolId = contracts.Find(a => a.ContractName == uiSummary_comboBoxXSymbol.Text).CountractId;
+            uiSummary_comboBoxXDSet.Items.Clear();
+            uiSummary_comboBoxXDSet.Text = "";
+
+            foreach (DataSetModel dataSet in dataSets.Where(a => a.SymbolId == symbolId))
+            {
+                uiSummary_comboBoxXDSet.Items.Add(dataSet.DataSetName);
+            }
+        }
+
+        private void uiSummary_buttonXSave_Click(object sender, EventArgs e)
+        {
+            var contracts = DataManager.GetContracts();
+            var dataSets = DataManager.GetDatasets();
+
+            var symbolId = contracts.Find(a => a.ContractName == uiSummary_comboBoxXSymbol.Text).CountractId;
+            var dSetId = dataSets.Find(a => a.DataSetName == uiSummary_comboBoxXDSet.Text).Id;
+            if (dataSets.Exists(a => a.DataSetName == uiSummary_comboBoxXDSet.Text))
+            {
+                List<SummaryResultModel> summaryResult = new List<SummaryResultModel>();
+                foreach (DataGridViewRow row in uiSummary_dataGridViewBT.Rows)
+                {
+                    SummaryResultModel srm = new SummaryResultModel
+                    {
+                        SymbolName = uiSummary_comboBoxXSymbol.Text,
+                        StartDate = DateTime.ParseExact(row.Cells[1].Value.ToString(), DateFormatsManager.CurrentShortDateFormat + " HH:mm:ss", CultureInfo.InvariantCulture),
+                        EndDate = DateTime.ParseExact(row.Cells[2].Value.ToString(), DateFormatsManager.CurrentShortDateFormat + " HH:mm:ss", CultureInfo.InvariantCulture),
+                        Pnl = Double.Parse(row.Cells[3].Value.ToString()),
+                        Reversals = Int32.Parse(row.Cells[4].Value.ToString()),
+                        StopLevel = Double.Parse(row.Cells[5].Value.ToString()),
+                        ReversalLevel = Double.Parse(row.Cells[6].Value.ToString()),
+                        Zim = Double.Parse(row.Cells[7].Value.ToString()),
+                        PointValue = Double.Parse(row.Cells[8].Value.ToString())
+                    };
+                    summaryResult.Add(srm);
+                }
+                DataManager.AddSummaryResult(symbolId, dSetId, summaryResult);
+                if (summaryResult.Count > 0) ToastNotification.Show(uiSummary_dataGridViewBT, "SUMMARY RESULTS ARE SAVED");
+            }
+        }
+
+        private void uiSummary_buttonXLoad_Click(object sender, EventArgs e)
+        {
+            
+            var contracts = DataManager.GetContracts();
+            var dataSets = DataManager.GetDatasets();
+
+            var symbolId = contracts.Find(a => a.ContractName == uiSummary_comboBoxXSymbol.Text).CountractId;
+            var dSetId = dataSets.Find(a => a.DataSetName == uiSummary_comboBoxXDSet.Text).Id;
+            if (dataSets.Exists(a => a.DataSetName == uiSummary_comboBoxXDSet.Text))
+            {
+                List<SummaryResultModel> summaryResult = DataManager.GetSummaryResult(symbolId, dSetId);
+                var provider = uiSummary_dataGridViewBT.DataSource as DataTable;
+                if (provider!=null) provider.Rows.Clear();
+                foreach (SummaryResultModel result in summaryResult)
+                {
+                    
+                    var values = new ArrayList
+                             {
+                                result.SymbolName,
+                                result.StartDate.ToString(DateFormatsManager.CurrentShortDateFormat + " HH:mm:ss"),
+                                result.EndDate.ToString(DateFormatsManager.CurrentShortDateFormat + " HH:mm:ss"),
+                                Math.Round(result.Pnl,2).ToString("n", _nfi.NumberFormat),
+                                result.Reversals,
+                                Math.Round(result.StopLevel,2),
+                                Math.Round(result.ReversalLevel,2),
+                                Math.Round(result.Zim, 5),
+                                Math.Round(result.PointValue, 5)
+                             };
+
+                    if (provider != null) provider.Rows.Add(values.ToArray());
+                    values.Clear();
+                }
+                try
+                {
+                    MethodInvoker action = delegate
+                    {
+                        uiSummary_dataGridViewBT.DataSource = null;
+                        uiSummary_dataGridViewBT.DataSource = provider;
+                        uiSummary_dataGridViewBT.Columns[1].FillWeight = uiSummary_dataGridViewBT.Columns[2].FillWeight = 180;
+                        uiSummary_dataGridViewBT.Refresh();
+                        if (uiSummary_dataGridViewBT.Rows.Count > 0) ToastNotification.Show(uiSummary_dataGridViewBT, "SUMMARY RESULTS ARE LOADED");
+                    };
+                    uiSummary_dataGridViewBT.Invoke(action);
+                }
+                catch (Exception)
+                {
+                }
+            }
+        }
+
+        private void uiSummary_buttonXDelete_Click(object sender, EventArgs e)
+        {
+            var contracts = DataManager.GetContracts();
+            var dataSets = DataManager.GetDatasets();
+
+            var symbolId = contracts.Find(a => a.ContractName == uiSummary_comboBoxXSymbol.Text).CountractId;
+            var dSetId = dataSets.Find(a => a.DataSetName == uiSummary_comboBoxXDSet.Text).Id;
+            if (dataSets.Exists(a => a.DataSetName == uiSummary_comboBoxXDSet.Text))
+            {
+                DataManager.DelSummaryResult(symbolId, dSetId);
+                //Invoke((Action)(() => DefaultBtSummaryTable()));
+                ToastNotification.Show(uiSummary_dataGridViewBT, "SUMMARY RESULTS ARE DELETED");
+            }
+        }
+        #endregion
+
+        private void MainFormMetroApp_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            IntradayTick.Stop();
+        }
+
+        private void uiSummary_dataGridViewBT_SortCompare(object sender, DataGridViewSortCompareEventArgs e)
+        {
+            if (e.Column.Name == "PNL")
+            {
+                var value1 = Double.Parse(e.CellValue1.ToString(), _nfi);
+                var value2 = Double.Parse(e.CellValue2.ToString(), _nfi);
+                if (value1 == value2)
+                {
+                    e.SortResult = 0;
+                }
+                else if (value1 > value2)
+                    e.SortResult = 1;
+                else
+                    e.SortResult = -1;
+
+                e.Handled = true;
+            }
+        }
+
+        private void uiStatus_labelItemProgramStatus_TextChanged(object sender, EventArgs e)
+        {
+            this.Refresh();
         }
     }
 }

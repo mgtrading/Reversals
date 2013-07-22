@@ -129,7 +129,12 @@ namespace Reversals.Backtests
 
         public override bool Equals(object obj)
         {
-            return (_size == Convert.ToInt32(obj));
+            return (_size == (obj as Order).Size &&
+                _id == (obj as Order).Id &&
+                _time == (obj as Order).Time &&
+                _operation == (obj as Order).Operation &&
+                _type == (obj as Order).Type &&
+                _price == (obj as Order).Price);
         }
 
         public override int GetHashCode()

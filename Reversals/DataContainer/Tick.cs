@@ -5,7 +5,7 @@ namespace Reversals.DataContainer
     public class Tick
     {
         #region VARIABLES
-        private readonly DateTime _time;
+        private DateTime _time;
         private readonly double _close;
         private readonly int _intradayIndex;
         private readonly int _addIntradayIndex;
@@ -27,6 +27,13 @@ namespace Reversals.DataContainer
         public DateTime Time
         {
             get { return _time; }
+            set
+            {
+                if (value != null)
+                {
+                    _time = value;
+                }
+            }
         }
 
         public double Close

@@ -56,9 +56,11 @@ namespace Reversals.Strategies
         protected List<Position> positions = new List<Position>();
         protected List<Position> trades = new List<Position>();
         protected List<Order> orders = new List<Order>();
+        protected List<Order> orderOperationsList = new List<Order>(); 
         protected Backtest backtest;
         protected int order_id = 0;
         protected bool initialized;
+        protected bool EnableLogging;
         #endregion
 
         #region CONSTRUCTORS
@@ -116,8 +118,11 @@ namespace Reversals.Strategies
 
         public void Log(string format, params object[] args)
         {
-            string msg = string.Format(format + "\r\n", args);
-            System.IO.File.AppendAllText(@"LogStrategy.txt", msg);
+            if (EnableLogging)
+            {
+                string msg = string.Format(format + "\r\n", args);
+                System.IO.File.AppendAllText(@"LogStrategy.txt", msg);
+            }
         }
         #endregion
 
@@ -153,6 +158,11 @@ namespace Reversals.Strategies
         public virtual List<Order> Orders
         {
             get { return orders; }
+        }
+
+        public virtual List<Order> OrderOperationsList
+        {
+            get { return orderOperationsList; }
         }
 
         public virtual List<Position> Trades

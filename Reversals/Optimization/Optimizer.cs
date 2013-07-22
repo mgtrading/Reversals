@@ -18,6 +18,7 @@ namespace Reversals.Optimization
         private readonly double _step2Incrementor;
         private readonly DateTime _startTime;
         private readonly DateTime _endTime;
+        private double _percentCompleted;
 
         public delegate void ProgressEventHandler(double precent);
 
@@ -51,6 +52,7 @@ namespace Reversals.Optimization
 
         public void StartOptimize(DataGridView summaryTable)
         {
+            
             double stepPercecnt = 100 / (((double)_parameterStep1.MaxValue - (double)_parameterStep1.MinValue + _step1Incrementor) / _step1Incrementor * ((double)_parameterStep2.MaxValue - (double)_parameterStep2.MinValue + _step2Incrementor) / _step2Incrementor);
             _strategy.IsOptimisation = true;
             if (_strategy is StepChange)
@@ -68,7 +70,8 @@ namespace Reversals.Optimization
                         _strategy.Start(0);
                         DisplayBackTestResult(summaryTable);
                         _strategy.Clear();
-                        ProgressNotify(stepPercecnt);
+                        _percentCompleted += stepPercecnt;
+                        ProgressNotify(_percentCompleted);
                         _parameterStep2CurrentValue += _step2Incrementor;
                     }
                     _parameterStep1CurrentValue += _step1Incrementor;

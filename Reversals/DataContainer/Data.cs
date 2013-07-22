@@ -22,6 +22,7 @@ namespace Reversals.DataContainer
         private readonly DataFileType _fileType;
         private readonly string _source;
         private readonly List<TickDataModel> _contractList;
+        private readonly int _timeZoneOffset;
         #endregion
 
         #region CONSTRUCTORS
@@ -41,6 +42,13 @@ namespace Reversals.DataContainer
         {
             _contractList = contractList;
             _fileType = fileType;
+            _timeZoneOffset = 0;
+        }
+        public Data(List<TickDataModel> contractList, DataFileType fileType,int timeZoneOffset)
+        {
+            _contractList = contractList;
+            _fileType = fileType;
+            _timeZoneOffset = timeZoneOffset;
         }
 
         public Data()
@@ -95,7 +103,7 @@ namespace Reversals.DataContainer
                
                 foreach (var item in tempList)
                 {
-                    DateTime dt = item.Date;
+                    DateTime dt = item.Date.AddHours(_timeZoneOffset);
 
 
                     int intradayIndex = dt.Hour * 10000 + dt.Minute * 100 + dt.Second;

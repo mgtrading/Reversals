@@ -29,37 +29,77 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            DevComponents.DotNetBar.SuperGrid.Style.Background background1 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
-            DevComponents.DotNetBar.SuperGrid.Style.Background background2 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
-            DevComponents.DotNetBar.SuperGrid.Style.Background background3 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
-            DevComponents.DotNetBar.SuperGrid.Style.Background background4 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
-            DevComponents.DotNetBar.SuperGrid.Style.Background background5 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFormMetroApp));
-            DevComponents.DotNetBar.SuperGrid.Style.Background background6 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
-            DevComponents.DotNetBar.SuperGrid.Style.Background background7 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
-            DevComponents.DotNetBar.SuperGrid.Style.Background background8 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            DevComponents.DotNetBar.SuperGrid.Style.Background background9 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
+            DevComponents.DotNetBar.SuperGrid.Style.Background background10 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
+            DevComponents.DotNetBar.SuperGrid.Style.Background background11 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
+            DevComponents.DotNetBar.SuperGrid.Style.Background background12 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
+            DevComponents.DotNetBar.SuperGrid.Style.Background background13 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFormMetroApp));
+            DevComponents.DotNetBar.SuperGrid.Style.Background background14 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
+            DevComponents.DotNetBar.SuperGrid.Style.Background background15 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
+            DevComponents.DotNetBar.SuperGrid.Style.Background background16 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.metroShellMain = new DevComponents.DotNetBar.Metro.MetroShell();
+            this.metroTabPanel_summary = new DevComponents.DotNetBar.Metro.MetroTabPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.uiBTSummaryGroupPanel = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.uiSummaryStatisticsBToData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBFrData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBNLsData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBNPrData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBNTrData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBAvgTrData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBPrFData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBPrfPercData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBNetLSData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBnetPRData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBNetData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBNetPrLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBToLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBFrLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBNLsLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBNPrLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBNTrLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBAvgTrLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBPrFLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBPrfpercLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBNetLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBNetLsLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiBTStatisticDataLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiBTSummaryChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.uiSummary_dataGridViewBT = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.BTSymbol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BTStartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BTEndDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BTPnl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uiSummary_panelExSaving = new DevComponents.DotNetBar.PanelEx();
+            this.uiSummary_buttonXDelete = new DevComponents.DotNetBar.ButtonX();
+            this.uiSummary_buttonXSave = new DevComponents.DotNetBar.ButtonX();
+            this.uiSummary_buttonXLoad = new DevComponents.DotNetBar.ButtonX();
+            this.uiSummary_comboBoxXDSet = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.uiSummary_comboBoxXSymbol = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.metroTabPanel_weekly = new DevComponents.DotNetBar.Metro.MetroTabPanel();
+            this.uiWeekly_tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.uiWeeklyData_superGridControlTable = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
             this.metroTabPanel_startegy = new DevComponents.DotNetBar.Metro.MetroTabPanel();
             this.uiStrategyTablTableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.uiStrategy_panelExOptions = new DevComponents.DotNetBar.PanelEx();
@@ -249,64 +289,21 @@
             this.labelX28 = new DevComponents.DotNetBar.LabelX();
             this.uiCalendar_calendarViewResultView = new DevComponents.DotNetBar.Schedule.CalendarView();
             this.uiCalendar_labelXMonth = new DevComponents.DotNetBar.LabelX();
-            this.metroTabPanel_weekly = new DevComponents.DotNetBar.Metro.MetroTabPanel();
-            this.uiWeekly_tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.uiWeeklyData_superGridControlTable = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
-            this.metroTabPanel_summary = new DevComponents.DotNetBar.Metro.MetroTabPanel();
-            this.uiSummary_tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.pageSlider1 = new DevComponents.DotNetBar.Controls.PageSlider();
-            this.pageSliderPage1 = new DevComponents.DotNetBar.Controls.PageSliderPage();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.uiBTSummaryGroupPanel = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.uiSummaryStatisticsBToData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBFrData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBNLsData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBNPrData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBNTrData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBAvgTrData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBPrFData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBPrfPercData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBNetLSData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBnetPRData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBNetData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBNetPrLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBToLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBFrLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBNLsLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBNPrLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBNTrLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBAvgTrLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBPrFLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBPrfpercLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBNetLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBNetLsLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiBTStatisticDataLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiBTSummaryChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.uiSummary_dataGridViewBT = new System.Windows.Forms.DataGridView();
-            this.btsmb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BFr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BNet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uiBTSummaryScrollBar = new DevComponents.DotNetBar.VScrollBarAdv();
-            this.uiBTSummaryHeaderText = new DevComponents.DotNetBar.LabelX();
-            this.uiBTSymmarySymbol = new DevComponents.DotNetBar.LabelX();
-            this.pageSliderPage2 = new DevComponents.DotNetBar.Controls.PageSliderPage();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.uiFTSummaryScrollbar = new DevComponents.DotNetBar.VScrollBarAdv();
-            this.uiFTSummaryTable = new System.Windows.Forms.DataGridView();
-            this.smb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FFr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FNet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FNetPr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FNetLs = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FPrfperc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FPrF = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FAvgTr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FNTr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FNPr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FNLs = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uiFTSummaryChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.metroAppButton1 = new DevComponents.DotNetBar.Metro.MetroAppButton();
+            this.ui_tabItem_strategy = new DevComponents.DotNetBar.Metro.MetroTabItem();
+            this.ui_tabItem_summary = new DevComponents.DotNetBar.Metro.MetroTabItem();
+            this.ui_tabItem_weekly = new DevComponents.DotNetBar.Metro.MetroTabItem();
+            this.ui_tabItem_calendar = new DevComponents.DotNetBar.Metro.MetroTabItem();
+            this.ui_tabItem_data_archive = new DevComponents.DotNetBar.Metro.MetroTabItem();
+            this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
+            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
+            this.uiStatus_metroStatusBarStripInformer = new DevComponents.DotNetBar.Metro.MetroStatusBar();
+            this.uiStatus_labelItemProgramStatus = new DevComponents.DotNetBar.LabelItem();
+            this.uiStatus_labelItemConnectionStatus = new DevComponents.DotNetBar.LabelItem();
+            this.uiStatus_toolStripProgressBar = new DevComponents.DotNetBar.ProgressBarItem();
+            this.uiStatus_labelItemSeparate = new DevComponents.DotNetBar.LabelItem();
+            this.uiFTSummarySymbol = new DevComponents.DotNetBar.LabelX();
+            this.uiFTSummaryHeaderText = new DevComponents.DotNetBar.LabelX();
             this.uiFTSummaryGroupPanel = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -331,22 +328,18 @@
             this.uiSummaryStatisticsFNetPrLabel = new DevComponents.DotNetBar.LabelX();
             this.uiSummaryStatisticsFNetLabel = new DevComponents.DotNetBar.LabelX();
             this.uiSummaryStatisticsLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiFTSummaryHeaderText = new DevComponents.DotNetBar.LabelX();
-            this.uiFTSummarySymbol = new DevComponents.DotNetBar.LabelX();
-            this.metroAppButton1 = new DevComponents.DotNetBar.Metro.MetroAppButton();
-            this.ui_tabItem_strategy = new DevComponents.DotNetBar.Metro.MetroTabItem();
-            this.ui_tabItem_summary = new DevComponents.DotNetBar.Metro.MetroTabItem();
-            this.ui_tabItem_weekly = new DevComponents.DotNetBar.Metro.MetroTabItem();
-            this.ui_tabItem_calendar = new DevComponents.DotNetBar.Metro.MetroTabItem();
-            this.ui_tabItem_data_archive = new DevComponents.DotNetBar.Metro.MetroTabItem();
-            this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
-            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.uiStatus_metroStatusBarStripInformer = new DevComponents.DotNetBar.Metro.MetroStatusBar();
-            this.uiStatus_labelItemProgramStatus = new DevComponents.DotNetBar.LabelItem();
-            this.uiStatus_labelItemConnectionStatus = new DevComponents.DotNetBar.LabelItem();
-            this.uiStatus_toolStripProgressBar = new DevComponents.DotNetBar.ProgressBarItem();
-            this.uiStatus_labelItemSeparate = new DevComponents.DotNetBar.LabelItem();
+            this.uiFTSummaryChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.uiFTSummaryScrollbar = new DevComponents.DotNetBar.VScrollBarAdv();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.metroShellMain.SuspendLayout();
+            this.metroTabPanel_summary.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.uiBTSummaryGroupPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiBTSummaryChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiSummary_dataGridViewBT)).BeginInit();
+            this.uiSummary_panelExSaving.SuspendLayout();
+            this.metroTabPanel_weekly.SuspendLayout();
+            this.uiWeekly_tableLayoutPanel4.SuspendLayout();
             this.metroTabPanel_startegy.SuspendLayout();
             this.uiStrategyTablTableLayout.SuspendLayout();
             this.uiStrategy_panelExOptions.SuspendLayout();
@@ -396,21 +389,9 @@
             this.panelEx47.SuspendLayout();
             this.panelEx52.SuspendLayout();
             this.panelEx57.SuspendLayout();
-            this.metroTabPanel_weekly.SuspendLayout();
-            this.uiWeekly_tableLayoutPanel4.SuspendLayout();
-            this.metroTabPanel_summary.SuspendLayout();
-            this.uiSummary_tableLayoutPanel4.SuspendLayout();
-            this.pageSlider1.SuspendLayout();
-            this.pageSliderPage1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.uiBTSummaryGroupPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiBTSummaryChart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiSummary_dataGridViewBT)).BeginInit();
-            this.pageSliderPage2.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiFTSummaryTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiFTSummaryChart)).BeginInit();
             this.uiFTSummaryGroupPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiFTSummaryChart)).BeginInit();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroShellMain
@@ -424,11 +405,12 @@
             // 
             this.metroShellMain.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.metroShellMain.CaptionVisible = true;
+            this.metroShellMain.CausesValidation = false;
             this.metroShellMain.Controls.Add(this.metroTabPanel_startegy);
-            this.metroShellMain.Controls.Add(this.metroTabPanel_data_archive);
+            this.metroShellMain.Controls.Add(this.metroTabPanel_summary);
             this.metroShellMain.Controls.Add(this.metroTabPanel_calendar);
             this.metroShellMain.Controls.Add(this.metroTabPanel_weekly);
-            this.metroShellMain.Controls.Add(this.metroTabPanel_summary);
+            this.metroShellMain.Controls.Add(this.metroTabPanel_data_archive);
             this.metroShellMain.ForeColor = System.Drawing.Color.Black;
             this.metroShellMain.HelpButtonText = null;
             this.metroShellMain.HelpButtonVisible = false;
@@ -465,6 +447,685 @@
             this.metroShellMain.Text = "metroShell1";
             this.metroShellMain.SelectedTabChanged += new System.EventHandler(this.metroShellMain_SelectedTabChanged);
             this.metroShellMain.SettingsButtonClick += new System.EventHandler(this.metroShell1_SettingsButtonClick);
+            // 
+            // metroTabPanel_summary
+            // 
+            this.metroTabPanel_summary.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.metroTabPanel_summary.Controls.Add(this.tableLayoutPanel2);
+            this.metroTabPanel_summary.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroTabPanel_summary.Enabled = false;
+            this.metroTabPanel_summary.Location = new System.Drawing.Point(0, 55);
+            this.metroTabPanel_summary.Name = "metroTabPanel_summary";
+            this.metroTabPanel_summary.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.metroTabPanel_summary.Size = new System.Drawing.Size(1198, 585);
+            // 
+            // 
+            // 
+            this.metroTabPanel_summary.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.metroTabPanel_summary.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.metroTabPanel_summary.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTabPanel_summary.TabIndex = 2;
+            this.metroTabPanel_summary.Visible = false;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.92074F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.07926F));
+            this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryGroupPanel, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryChart, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.uiSummary_dataGridViewBT, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.uiSummary_panelExSaving, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.ForeColor = System.Drawing.Color.Black;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 99.0099F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.9900981F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1192, 582);
+            this.tableLayoutPanel2.TabIndex = 37;
+            // 
+            // uiBTSummaryGroupPanel
+            // 
+            this.uiBTSummaryGroupPanel.BackColor = System.Drawing.Color.White;
+            this.uiBTSummaryGroupPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBToData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBFrData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNLsData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNPrData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNTrData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBAvgTrData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrFData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrfPercData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetLSData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBnetPRData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetPrLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBToLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBFrLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNLsLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNPrLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNTrLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBAvgTrLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrFLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrfpercLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetLsLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiBTStatisticDataLabel);
+            this.uiBTSummaryGroupPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiBTSummaryGroupPanel.DrawTitleBox = false;
+            this.uiBTSummaryGroupPanel.Location = new System.Drawing.Point(3, 579);
+            this.uiBTSummaryGroupPanel.Name = "uiBTSummaryGroupPanel";
+            this.uiBTSummaryGroupPanel.Size = new System.Drawing.Size(148, 1);
+            // 
+            // 
+            // 
+            this.uiBTSummaryGroupPanel.Style.BackColor = System.Drawing.Color.RoyalBlue;
+            this.uiBTSummaryGroupPanel.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.uiBTSummaryGroupPanel.Style.BackColorGradientAngle = 90;
+            this.uiBTSummaryGroupPanel.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.uiBTSummaryGroupPanel.Style.BorderBottomWidth = 1;
+            this.uiBTSummaryGroupPanel.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.uiBTSummaryGroupPanel.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.uiBTSummaryGroupPanel.Style.BorderLeftWidth = 1;
+            this.uiBTSummaryGroupPanel.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.uiBTSummaryGroupPanel.Style.BorderRightWidth = 1;
+            this.uiBTSummaryGroupPanel.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.uiBTSummaryGroupPanel.Style.BorderTopWidth = 1;
+            this.uiBTSummaryGroupPanel.Style.CornerDiameter = 4;
+            this.uiBTSummaryGroupPanel.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiBTSummaryGroupPanel.Style.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.uiBTSummaryGroupPanel.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.uiBTSummaryGroupPanel.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.uiBTSummaryGroupPanel.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiBTSummaryGroupPanel.TabIndex = 40;
+            this.uiBTSummaryGroupPanel.Visible = false;
+            // 
+            // uiSummaryStatisticsBToData
+            // 
+            this.uiSummaryStatisticsBToData.AutoSize = true;
+            this.uiSummaryStatisticsBToData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBToData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBToData.Location = new System.Drawing.Point(50, 168);
+            this.uiSummaryStatisticsBToData.Name = "uiSummaryStatisticsBToData";
+            this.uiSummaryStatisticsBToData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBToData.TabIndex = 33;
+            this.uiSummaryStatisticsBToData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBFrData
+            // 
+            this.uiSummaryStatisticsBFrData.AutoSize = true;
+            this.uiSummaryStatisticsBFrData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBFrData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBFrData.Location = new System.Drawing.Point(49, 153);
+            this.uiSummaryStatisticsBFrData.Name = "uiSummaryStatisticsBFrData";
+            this.uiSummaryStatisticsBFrData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBFrData.TabIndex = 32;
+            this.uiSummaryStatisticsBFrData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBNLsData
+            // 
+            this.uiSummaryStatisticsBNLsData.AutoSize = true;
+            this.uiSummaryStatisticsBNLsData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBNLsData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNLsData.Location = new System.Drawing.Point(49, 138);
+            this.uiSummaryStatisticsBNLsData.Name = "uiSummaryStatisticsBNLsData";
+            this.uiSummaryStatisticsBNLsData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBNLsData.TabIndex = 31;
+            this.uiSummaryStatisticsBNLsData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBNPrData
+            // 
+            this.uiSummaryStatisticsBNPrData.AutoSize = true;
+            this.uiSummaryStatisticsBNPrData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBNPrData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNPrData.Location = new System.Drawing.Point(50, 123);
+            this.uiSummaryStatisticsBNPrData.Name = "uiSummaryStatisticsBNPrData";
+            this.uiSummaryStatisticsBNPrData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBNPrData.TabIndex = 30;
+            this.uiSummaryStatisticsBNPrData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBNTrData
+            // 
+            this.uiSummaryStatisticsBNTrData.AutoSize = true;
+            this.uiSummaryStatisticsBNTrData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBNTrData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNTrData.Location = new System.Drawing.Point(50, 107);
+            this.uiSummaryStatisticsBNTrData.Name = "uiSummaryStatisticsBNTrData";
+            this.uiSummaryStatisticsBNTrData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBNTrData.TabIndex = 29;
+            this.uiSummaryStatisticsBNTrData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBAvgTrData
+            // 
+            this.uiSummaryStatisticsBAvgTrData.AutoSize = true;
+            this.uiSummaryStatisticsBAvgTrData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBAvgTrData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBAvgTrData.Location = new System.Drawing.Point(50, 93);
+            this.uiSummaryStatisticsBAvgTrData.Name = "uiSummaryStatisticsBAvgTrData";
+            this.uiSummaryStatisticsBAvgTrData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBAvgTrData.TabIndex = 28;
+            this.uiSummaryStatisticsBAvgTrData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBPrFData
+            // 
+            this.uiSummaryStatisticsBPrFData.AutoSize = true;
+            this.uiSummaryStatisticsBPrFData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBPrFData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBPrFData.Location = new System.Drawing.Point(50, 78);
+            this.uiSummaryStatisticsBPrFData.Name = "uiSummaryStatisticsBPrFData";
+            this.uiSummaryStatisticsBPrFData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBPrFData.TabIndex = 27;
+            this.uiSummaryStatisticsBPrFData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBPrfPercData
+            // 
+            this.uiSummaryStatisticsBPrfPercData.AutoSize = true;
+            this.uiSummaryStatisticsBPrfPercData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBPrfPercData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBPrfPercData.Location = new System.Drawing.Point(50, 63);
+            this.uiSummaryStatisticsBPrfPercData.Name = "uiSummaryStatisticsBPrfPercData";
+            this.uiSummaryStatisticsBPrfPercData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBPrfPercData.TabIndex = 26;
+            this.uiSummaryStatisticsBPrfPercData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBNetLSData
+            // 
+            this.uiSummaryStatisticsBNetLSData.AutoSize = true;
+            this.uiSummaryStatisticsBNetLSData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBNetLSData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNetLSData.Location = new System.Drawing.Point(50, 48);
+            this.uiSummaryStatisticsBNetLSData.Name = "uiSummaryStatisticsBNetLSData";
+            this.uiSummaryStatisticsBNetLSData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBNetLSData.TabIndex = 25;
+            this.uiSummaryStatisticsBNetLSData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBnetPRData
+            // 
+            this.uiSummaryStatisticsBnetPRData.AutoSize = true;
+            this.uiSummaryStatisticsBnetPRData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBnetPRData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBnetPRData.Location = new System.Drawing.Point(50, 33);
+            this.uiSummaryStatisticsBnetPRData.Name = "uiSummaryStatisticsBnetPRData";
+            this.uiSummaryStatisticsBnetPRData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBnetPRData.TabIndex = 24;
+            this.uiSummaryStatisticsBnetPRData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBNetData
+            // 
+            this.uiSummaryStatisticsBNetData.AutoSize = true;
+            this.uiSummaryStatisticsBNetData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBNetData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNetData.Location = new System.Drawing.Point(50, 20);
+            this.uiSummaryStatisticsBNetData.Name = "uiSummaryStatisticsBNetData";
+            this.uiSummaryStatisticsBNetData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBNetData.TabIndex = 23;
+            this.uiSummaryStatisticsBNetData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBNetPrLabel
+            // 
+            this.uiSummaryStatisticsBNetPrLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBNetPrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBNetPrLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNetPrLabel.Location = new System.Drawing.Point(1, 32);
+            this.uiSummaryStatisticsBNetPrLabel.Name = "uiSummaryStatisticsBNetPrLabel";
+            this.uiSummaryStatisticsBNetPrLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBNetPrLabel.TabIndex = 22;
+            this.uiSummaryStatisticsBNetPrLabel.Text = "BNetPr";
+            // 
+            // uiSummaryStatisticsBToLabel
+            // 
+            this.uiSummaryStatisticsBToLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBToLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBToLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBToLabel.Location = new System.Drawing.Point(1, 168);
+            this.uiSummaryStatisticsBToLabel.Name = "uiSummaryStatisticsBToLabel";
+            this.uiSummaryStatisticsBToLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBToLabel.TabIndex = 10;
+            this.uiSummaryStatisticsBToLabel.Text = "BTo";
+            // 
+            // uiSummaryStatisticsBFrLabel
+            // 
+            this.uiSummaryStatisticsBFrLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBFrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBFrLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBFrLabel.Location = new System.Drawing.Point(1, 152);
+            this.uiSummaryStatisticsBFrLabel.Name = "uiSummaryStatisticsBFrLabel";
+            this.uiSummaryStatisticsBFrLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBFrLabel.TabIndex = 9;
+            this.uiSummaryStatisticsBFrLabel.Text = "BFr";
+            // 
+            // uiSummaryStatisticsBNLsLabel
+            // 
+            this.uiSummaryStatisticsBNLsLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBNLsLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBNLsLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNLsLabel.Location = new System.Drawing.Point(1, 137);
+            this.uiSummaryStatisticsBNLsLabel.Name = "uiSummaryStatisticsBNLsLabel";
+            this.uiSummaryStatisticsBNLsLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBNLsLabel.TabIndex = 8;
+            this.uiSummaryStatisticsBNLsLabel.Text = "BNLs";
+            // 
+            // uiSummaryStatisticsBNPrLabel
+            // 
+            this.uiSummaryStatisticsBNPrLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBNPrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBNPrLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNPrLabel.Location = new System.Drawing.Point(1, 122);
+            this.uiSummaryStatisticsBNPrLabel.Name = "uiSummaryStatisticsBNPrLabel";
+            this.uiSummaryStatisticsBNPrLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBNPrLabel.TabIndex = 7;
+            this.uiSummaryStatisticsBNPrLabel.Text = "BNPr";
+            // 
+            // uiSummaryStatisticsBNTrLabel
+            // 
+            this.uiSummaryStatisticsBNTrLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBNTrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBNTrLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNTrLabel.Location = new System.Drawing.Point(1, 106);
+            this.uiSummaryStatisticsBNTrLabel.Name = "uiSummaryStatisticsBNTrLabel";
+            this.uiSummaryStatisticsBNTrLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBNTrLabel.TabIndex = 6;
+            this.uiSummaryStatisticsBNTrLabel.Text = "BNTr";
+            // 
+            // uiSummaryStatisticsBAvgTrLabel
+            // 
+            this.uiSummaryStatisticsBAvgTrLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBAvgTrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBAvgTrLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBAvgTrLabel.Location = new System.Drawing.Point(0, 92);
+            this.uiSummaryStatisticsBAvgTrLabel.Name = "uiSummaryStatisticsBAvgTrLabel";
+            this.uiSummaryStatisticsBAvgTrLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBAvgTrLabel.TabIndex = 5;
+            this.uiSummaryStatisticsBAvgTrLabel.Text = "BAvgTr";
+            // 
+            // uiSummaryStatisticsBPrFLabel
+            // 
+            this.uiSummaryStatisticsBPrFLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBPrFLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBPrFLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBPrFLabel.Location = new System.Drawing.Point(1, 78);
+            this.uiSummaryStatisticsBPrFLabel.Name = "uiSummaryStatisticsBPrFLabel";
+            this.uiSummaryStatisticsBPrFLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBPrFLabel.TabIndex = 4;
+            this.uiSummaryStatisticsBPrFLabel.Text = "BPrF";
+            // 
+            // uiSummaryStatisticsBPrfpercLabel
+            // 
+            this.uiSummaryStatisticsBPrfpercLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBPrfpercLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBPrfpercLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBPrfpercLabel.Location = new System.Drawing.Point(0, 62);
+            this.uiSummaryStatisticsBPrfpercLabel.Name = "uiSummaryStatisticsBPrfpercLabel";
+            this.uiSummaryStatisticsBPrfpercLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBPrfpercLabel.TabIndex = 3;
+            this.uiSummaryStatisticsBPrfpercLabel.Text = "BPrf%";
+            // 
+            // uiSummaryStatisticsBNetLabel
+            // 
+            this.uiSummaryStatisticsBNetLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBNetLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBNetLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNetLabel.Location = new System.Drawing.Point(0, 16);
+            this.uiSummaryStatisticsBNetLabel.Name = "uiSummaryStatisticsBNetLabel";
+            this.uiSummaryStatisticsBNetLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBNetLabel.TabIndex = 2;
+            this.uiSummaryStatisticsBNetLabel.Text = "BNet";
+            // 
+            // uiSummaryStatisticsBNetLsLabel
+            // 
+            this.uiSummaryStatisticsBNetLsLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBNetLsLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBNetLsLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNetLsLabel.Location = new System.Drawing.Point(0, 47);
+            this.uiSummaryStatisticsBNetLsLabel.Name = "uiSummaryStatisticsBNetLsLabel";
+            this.uiSummaryStatisticsBNetLsLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBNetLsLabel.TabIndex = 1;
+            this.uiSummaryStatisticsBNetLsLabel.Text = "BNetLs";
+            // 
+            // uiBTStatisticDataLabel
+            // 
+            this.uiBTStatisticDataLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiBTStatisticDataLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiBTStatisticDataLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiBTStatisticDataLabel.Location = new System.Drawing.Point(17, 3);
+            this.uiBTStatisticDataLabel.Name = "uiBTStatisticDataLabel";
+            this.uiBTStatisticDataLabel.Size = new System.Drawing.Size(75, 17);
+            this.uiBTStatisticDataLabel.TabIndex = 0;
+            this.uiBTStatisticDataLabel.Text = "Statistic data:";
+            this.uiBTStatisticDataLabel.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // uiBTSummaryChart
+            // 
+            this.uiBTSummaryChart.BorderlineColor = System.Drawing.SystemColors.AppWorkspace;
+            this.uiBTSummaryChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
+            chartArea3.AxisX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea3.AxisX2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea3.AxisY.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea3.AxisY2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea3.Name = "ChartArea1";
+            this.uiBTSummaryChart.ChartAreas.Add(chartArea3);
+            this.uiBTSummaryChart.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.uiBTSummaryChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend3.Name = "Legend1";
+            this.uiBTSummaryChart.Legends.Add(legend3);
+            this.uiBTSummaryChart.Location = new System.Drawing.Point(157, 579);
+            this.uiBTSummaryChart.Name = "uiBTSummaryChart";
+            this.uiBTSummaryChart.Size = new System.Drawing.Size(1032, 1);
+            this.uiBTSummaryChart.TabIndex = 36;
+            this.uiBTSummaryChart.Text = "chart1";
+            this.uiBTSummaryChart.Visible = false;
+            // 
+            // uiSummary_dataGridViewBT
+            // 
+            this.uiSummary_dataGridViewBT.AllowUserToAddRows = false;
+            this.uiSummary_dataGridViewBT.AllowUserToDeleteRows = false;
+            this.uiSummary_dataGridViewBT.AllowUserToResizeRows = false;
+            this.uiSummary_dataGridViewBT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.uiSummary_dataGridViewBT.BackgroundColor = System.Drawing.Color.White;
+            this.uiSummary_dataGridViewBT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.uiSummary_dataGridViewBT.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiSummary_dataGridViewBT.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.uiSummary_dataGridViewBT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.uiSummary_dataGridViewBT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.BTSymbol,
+            this.BTStartDate,
+            this.BTEndDate,
+            this.BTPnl});
+            this.tableLayoutPanel2.SetColumnSpan(this.uiSummary_dataGridViewBT, 2);
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uiSummary_dataGridViewBT.DefaultCellStyle = dataGridViewCellStyle19;
+            this.uiSummary_dataGridViewBT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiSummary_dataGridViewBT.EnableHeadersVisualStyles = false;
+            this.uiSummary_dataGridViewBT.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.uiSummary_dataGridViewBT.Location = new System.Drawing.Point(0, 44);
+            this.uiSummary_dataGridViewBT.Margin = new System.Windows.Forms.Padding(0);
+            this.uiSummary_dataGridViewBT.Name = "uiSummary_dataGridViewBT";
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiSummary_dataGridViewBT.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            this.uiSummary_dataGridViewBT.RowHeadersVisible = false;
+            this.uiSummary_dataGridViewBT.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.uiSummary_dataGridViewBT.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.uiSummary_dataGridViewBT.Size = new System.Drawing.Size(1192, 532);
+            this.uiSummary_dataGridViewBT.TabIndex = 22;
+            this.uiSummary_dataGridViewBT.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.uiBTSummaryTable_RowsAdded);
+            this.uiSummary_dataGridViewBT.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.uiSummary_dataGridViewBT_SortCompare);
+            // 
+            // BTSymbol
+            // 
+            this.BTSymbol.HeaderText = "Symbol";
+            this.BTSymbol.Name = "BTSymbol";
+            this.BTSymbol.ReadOnly = true;
+            // 
+            // BTStartDate
+            // 
+            this.BTStartDate.FillWeight = 150F;
+            this.BTStartDate.HeaderText = "StartDate";
+            this.BTStartDate.Name = "BTStartDate";
+            this.BTStartDate.ReadOnly = true;
+            // 
+            // BTEndDate
+            // 
+            this.BTEndDate.FillWeight = 150F;
+            this.BTEndDate.HeaderText = "EndDate";
+            this.BTEndDate.Name = "BTEndDate";
+            this.BTEndDate.ReadOnly = true;
+            // 
+            // BTPnl
+            // 
+            dataGridViewCellStyle18.Format = "N2";
+            dataGridViewCellStyle18.NullValue = null;
+            this.BTPnl.DefaultCellStyle = dataGridViewCellStyle18;
+            this.BTPnl.HeaderText = "PNL";
+            this.BTPnl.Name = "BTPnl";
+            this.BTPnl.ReadOnly = true;
+            // 
+            // uiSummary_panelExSaving
+            // 
+            this.uiSummary_panelExSaving.CanvasColor = System.Drawing.SystemColors.Control;
+            this.uiSummary_panelExSaving.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.tableLayoutPanel2.SetColumnSpan(this.uiSummary_panelExSaving, 2);
+            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_buttonXDelete);
+            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_buttonXSave);
+            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_buttonXLoad);
+            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_comboBoxXDSet);
+            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_comboBoxXSymbol);
+            this.uiSummary_panelExSaving.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiSummary_panelExSaving.Enabled = false;
+            this.uiSummary_panelExSaving.Location = new System.Drawing.Point(3, 3);
+            this.uiSummary_panelExSaving.Name = "uiSummary_panelExSaving";
+            this.uiSummary_panelExSaving.Size = new System.Drawing.Size(1186, 38);
+            this.uiSummary_panelExSaving.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.uiSummary_panelExSaving.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiSummary_panelExSaving.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.uiSummary_panelExSaving.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.uiSummary_panelExSaving.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.uiSummary_panelExSaving.Style.GradientAngle = 90;
+            this.uiSummary_panelExSaving.TabIndex = 41;
+            // 
+            // uiSummary_buttonXDelete
+            // 
+            this.uiSummary_buttonXDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.uiSummary_buttonXDelete.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.uiSummary_buttonXDelete.Location = new System.Drawing.Point(618, 6);
+            this.uiSummary_buttonXDelete.Name = "uiSummary_buttonXDelete";
+            this.uiSummary_buttonXDelete.Size = new System.Drawing.Size(75, 26);
+            this.uiSummary_buttonXDelete.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiSummary_buttonXDelete.TabIndex = 4;
+            this.uiSummary_buttonXDelete.Text = "DELETE";
+            this.uiSummary_buttonXDelete.Click += new System.EventHandler(this.uiSummary_buttonXDelete_Click);
+            // 
+            // uiSummary_buttonXSave
+            // 
+            this.uiSummary_buttonXSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.uiSummary_buttonXSave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.uiSummary_buttonXSave.Location = new System.Drawing.Point(522, 6);
+            this.uiSummary_buttonXSave.Name = "uiSummary_buttonXSave";
+            this.uiSummary_buttonXSave.Size = new System.Drawing.Size(75, 26);
+            this.uiSummary_buttonXSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiSummary_buttonXSave.TabIndex = 3;
+            this.uiSummary_buttonXSave.Text = "SAVE";
+            this.uiSummary_buttonXSave.Click += new System.EventHandler(this.uiSummary_buttonXSave_Click);
+            // 
+            // uiSummary_buttonXLoad
+            // 
+            this.uiSummary_buttonXLoad.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.uiSummary_buttonXLoad.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.uiSummary_buttonXLoad.Location = new System.Drawing.Point(426, 6);
+            this.uiSummary_buttonXLoad.Name = "uiSummary_buttonXLoad";
+            this.uiSummary_buttonXLoad.Size = new System.Drawing.Size(75, 26);
+            this.uiSummary_buttonXLoad.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiSummary_buttonXLoad.TabIndex = 2;
+            this.uiSummary_buttonXLoad.Text = "LOAD";
+            this.uiSummary_buttonXLoad.Click += new System.EventHandler(this.uiSummary_buttonXLoad_Click);
+            // 
+            // uiSummary_comboBoxXDSet
+            // 
+            this.uiSummary_comboBoxXDSet.DisplayMember = "Text";
+            this.uiSummary_comboBoxXDSet.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.uiSummary_comboBoxXDSet.ForeColor = System.Drawing.Color.Black;
+            this.uiSummary_comboBoxXDSet.FormattingEnabled = true;
+            this.uiSummary_comboBoxXDSet.ItemHeight = 20;
+            this.uiSummary_comboBoxXDSet.Location = new System.Drawing.Point(240, 6);
+            this.uiSummary_comboBoxXDSet.Name = "uiSummary_comboBoxXDSet";
+            this.uiSummary_comboBoxXDSet.Size = new System.Drawing.Size(165, 26);
+            this.uiSummary_comboBoxXDSet.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiSummary_comboBoxXDSet.TabIndex = 1;
+            this.uiSummary_comboBoxXDSet.WatermarkText = "DataSet Name";
+            this.uiSummary_comboBoxXDSet.SelectedIndexChanged += new System.EventHandler(this.uiCalendarDSet_SelectedIndexChanged);
+            // 
+            // uiSummary_comboBoxXSymbol
+            // 
+            this.uiSummary_comboBoxXSymbol.DisplayMember = "Text";
+            this.uiSummary_comboBoxXSymbol.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.uiSummary_comboBoxXSymbol.ForeColor = System.Drawing.Color.Black;
+            this.uiSummary_comboBoxXSymbol.FormattingEnabled = true;
+            this.uiSummary_comboBoxXSymbol.ItemHeight = 20;
+            this.uiSummary_comboBoxXSymbol.Location = new System.Drawing.Point(21, 6);
+            this.uiSummary_comboBoxXSymbol.Name = "uiSummary_comboBoxXSymbol";
+            this.uiSummary_comboBoxXSymbol.Size = new System.Drawing.Size(199, 26);
+            this.uiSummary_comboBoxXSymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiSummary_comboBoxXSymbol.TabIndex = 0;
+            this.uiSummary_comboBoxXSymbol.WatermarkText = "Symbol name";
+            this.uiSummary_comboBoxXSymbol.SelectedIndexChanged += new System.EventHandler(this.uiSummary_comboBoxExSymbol_SelectedIndexChanged);
+            // 
+            // metroTabPanel_weekly
+            // 
+            this.metroTabPanel_weekly.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.metroTabPanel_weekly.Controls.Add(this.uiWeekly_tableLayoutPanel4);
+            this.metroTabPanel_weekly.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroTabPanel_weekly.Location = new System.Drawing.Point(0, 55);
+            this.metroTabPanel_weekly.Name = "metroTabPanel_weekly";
+            this.metroTabPanel_weekly.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.metroTabPanel_weekly.Size = new System.Drawing.Size(1198, 585);
+            // 
+            // 
+            // 
+            this.metroTabPanel_weekly.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.metroTabPanel_weekly.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.metroTabPanel_weekly.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTabPanel_weekly.TabIndex = 3;
+            this.metroTabPanel_weekly.Visible = false;
+            // 
+            // uiWeekly_tableLayoutPanel4
+            // 
+            this.uiWeekly_tableLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.uiWeekly_tableLayoutPanel4.ColumnCount = 1;
+            this.uiWeekly_tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.uiWeekly_tableLayoutPanel4.Controls.Add(this.uiWeeklyData_superGridControlTable, 0, 0);
+            this.uiWeekly_tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiWeekly_tableLayoutPanel4.ForeColor = System.Drawing.Color.Black;
+            this.uiWeekly_tableLayoutPanel4.Location = new System.Drawing.Point(3, 0);
+            this.uiWeekly_tableLayoutPanel4.Name = "uiWeekly_tableLayoutPanel4";
+            this.uiWeekly_tableLayoutPanel4.RowCount = 1;
+            this.uiWeekly_tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.uiWeekly_tableLayoutPanel4.Size = new System.Drawing.Size(1192, 582);
+            this.uiWeekly_tableLayoutPanel4.TabIndex = 2;
+            // 
+            // uiWeeklyData_superGridControlTable
+            // 
+            this.uiWeeklyData_superGridControlTable.BackColor = System.Drawing.Color.White;
+            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.AlternateColumnCellStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.TopRight;
+            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.CellStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.TopRight;
+            background9.Color1 = System.Drawing.Color.LightSkyBlue;
+            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.CellStyles.Selected.Background = background9;
+            background10.Color1 = System.Drawing.Color.AliceBlue;
+            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.CellStyles.SelectedMouseOver.Background = background10;
+            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.CellStyles.SelectedMouseOver.TextColor = System.Drawing.Color.Black;
+            background11.Color1 = System.Drawing.Color.DodgerBlue;
+            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.ColumnHeaderRowStyles.Default.WhiteSpaceBackground = background11;
+            background12.Color1 = System.Drawing.Color.DeepSkyBlue;
+            background12.Color2 = System.Drawing.Color.DeepSkyBlue;
+            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.ColumnHeaderStyles.Default.Background = background12;
+            background13.Color1 = System.Drawing.Color.LightBlue;
+            background13.Color2 = System.Drawing.Color.LightBlue;
+            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.ColumnHeaderStyles.MouseOver.Background = background13;
+            this.uiWeeklyData_superGridControlTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiWeeklyData_superGridControlTable.ExpandButtonType = DevComponents.DotNetBar.SuperGrid.ExpandButtonType.Square;
+            this.uiWeeklyData_superGridControlTable.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
+            this.uiWeeklyData_superGridControlTable.ForeColor = System.Drawing.Color.Black;
+            this.uiWeeklyData_superGridControlTable.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F";
+            this.uiWeeklyData_superGridControlTable.Location = new System.Drawing.Point(3, 3);
+            this.uiWeeklyData_superGridControlTable.Name = "uiWeeklyData_superGridControlTable";
+            this.uiWeeklyData_superGridControlTable.PrimaryGrid.AllowEdit = false;
+            this.uiWeeklyData_superGridControlTable.PrimaryGrid.AutoGenerateColumns = false;
+            this.uiWeeklyData_superGridControlTable.PrimaryGrid.CollapseImage = ((System.Drawing.Image)(resources.GetObject("uiWeeklyData_superGridControlTable.PrimaryGrid.CollapseImage")));
+            this.uiWeeklyData_superGridControlTable.PrimaryGrid.ColumnAutoSizeMode = DevComponents.DotNetBar.SuperGrid.ColumnAutoSizeMode.Fill;
+            background14.Color1 = System.Drawing.Color.LightSkyBlue;
+            this.uiWeeklyData_superGridControlTable.PrimaryGrid.DefaultVisualStyles.CellStyles.Selected.Background = background14;
+            this.uiWeeklyData_superGridControlTable.PrimaryGrid.DefaultVisualStyles.CellStyles.Selected.TextColor = System.Drawing.Color.Black;
+            background15.Color1 = System.Drawing.Color.AliceBlue;
+            this.uiWeeklyData_superGridControlTable.PrimaryGrid.DefaultVisualStyles.CellStyles.SelectedMouseOver.Background = background15;
+            background16.Color1 = System.Drawing.Color.DodgerBlue;
+            background16.Color2 = System.Drawing.Color.DodgerBlue;
+            this.uiWeeklyData_superGridControlTable.PrimaryGrid.DefaultVisualStyles.ColumnHeaderStyles.Default.Background = background16;
+            this.uiWeeklyData_superGridControlTable.PrimaryGrid.ExpandImage = ((System.Drawing.Image)(resources.GetObject("uiWeeklyData_superGridControlTable.PrimaryGrid.ExpandImage")));
+            this.uiWeeklyData_superGridControlTable.PrimaryGrid.RowHeaderWidth = 0;
+            this.uiWeeklyData_superGridControlTable.PrimaryGrid.ShowTreeButtons = true;
+            this.uiWeeklyData_superGridControlTable.Size = new System.Drawing.Size(1186, 576);
+            this.uiWeeklyData_superGridControlTable.TabIndex = 1;
+            this.uiWeeklyData_superGridControlTable.Text = "superGridControl1";
+            this.uiWeeklyData_superGridControlTable.CompareElements += new System.EventHandler<DevComponents.DotNetBar.SuperGrid.GridCompareElementsEventArgs>(this.uiWeeklyDataTable_CompareElements);
+            this.uiWeeklyData_superGridControlTable.DataBindingComplete += new System.EventHandler<DevComponents.DotNetBar.SuperGrid.GridDataBindingCompleteEventArgs>(this.uiWeeklyDataTable_DataBindingComplete);
+            this.uiWeeklyData_superGridControlTable.BeforeExpand += new System.EventHandler<DevComponents.DotNetBar.SuperGrid.GridBeforeExpandEventArgs>(this.uiWeeklyData_superGridControlTable_BeforeExpand);
+            this.uiWeeklyData_superGridControlTable.AfterExpand += new System.EventHandler<DevComponents.DotNetBar.SuperGrid.GridAfterExpandEventArgs>(this.uiWeeklyDataTable_AfterExpand);
             // 
             // metroTabPanel_startegy
             // 
@@ -848,7 +1509,6 @@
             this.uiStrategy_panelExBlackScholesPanel.Controls.Add(this.uiBlackSInterestRateLabel);
             this.uiStrategy_panelExBlackScholesPanel.Controls.Add(this.uiBlackSValueDateLabel);
             this.uiStrategy_panelExBlackScholesPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiStrategy_panelExBlackScholesPanel.Enabled = false;
             this.uiStrategy_panelExBlackScholesPanel.Location = new System.Drawing.Point(303, 3);
             this.uiStrategy_panelExBlackScholesPanel.Name = "uiStrategy_panelExBlackScholesPanel";
             this.uiStrategyTablTableLayout.SetRowSpan(this.uiStrategy_panelExBlackScholesPanel, 2);
@@ -898,40 +1558,40 @@
             // 
             this.uiBlackSDivYield.AllowUserToAddRows = false;
             this.uiBlackSDivYield.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiBlackSDivYield.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiBlackSDivYield.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.uiBlackSDivYield.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.uiBlackSDivYield.ColumnHeadersVisible = false;
             this.uiBlackSDivYield.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn53});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiBlackSDivYield.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uiBlackSDivYield.DefaultCellStyle = dataGridViewCellStyle22;
             this.uiBlackSDivYield.EnableHeadersVisualStyles = false;
             this.uiBlackSDivYield.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.uiBlackSDivYield.HighlightSelectedColumnHeaders = false;
             this.uiBlackSDivYield.Location = new System.Drawing.Point(392, 199);
             this.uiBlackSDivYield.MultiSelect = false;
             this.uiBlackSDivYield.Name = "uiBlackSDivYield";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiBlackSDivYield.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiBlackSDivYield.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.uiBlackSDivYield.RowHeadersVisible = false;
             this.uiBlackSDivYield.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.uiBlackSDivYield.Size = new System.Drawing.Size(85, 20);
@@ -2358,14 +3018,14 @@
             this.uiStrategy_dataGridViewNoOptomizationParameters.BackgroundColor = System.Drawing.Color.White;
             this.uiStrategy_dataGridViewNoOptomizationParameters.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.uiStrategy_dataGridViewNoOptomizationParameters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiStrategy_dataGridViewNoOptomizationParameters.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uiStrategy_dataGridViewNoOptomizationParameters.DefaultCellStyle = dataGridViewCellStyle24;
             this.uiStrategy_dataGridViewNoOptomizationParameters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiStrategy_dataGridViewNoOptomizationParameters.Location = new System.Drawing.Point(1, 1);
             this.uiStrategy_dataGridViewNoOptomizationParameters.Name = "uiStrategy_dataGridViewNoOptomizationParameters";
@@ -2508,14 +3168,14 @@
             this.uiStrategy_dataGridViewOptomizationParameters.BackgroundColor = System.Drawing.Color.White;
             this.uiStrategy_dataGridViewOptomizationParameters.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.uiStrategy_dataGridViewOptomizationParameters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiStrategy_dataGridViewOptomizationParameters.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uiStrategy_dataGridViewOptomizationParameters.DefaultCellStyle = dataGridViewCellStyle25;
             this.uiStrategy_dataGridViewOptomizationParameters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiStrategy_dataGridViewOptomizationParameters.GridColor = System.Drawing.SystemColors.Control;
             this.uiStrategy_dataGridViewOptomizationParameters.Location = new System.Drawing.Point(1, 1);
@@ -2666,10 +3326,10 @@
             this.metroTabPanel_data_archive.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.metroTabPanel_data_archive.Controls.Add(this.tableLayoutPanel1);
             this.metroTabPanel_data_archive.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTabPanel_data_archive.Location = new System.Drawing.Point(0, 51);
+            this.metroTabPanel_data_archive.Location = new System.Drawing.Point(0, 55);
             this.metroTabPanel_data_archive.Name = "metroTabPanel_data_archive";
             this.metroTabPanel_data_archive.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.metroTabPanel_data_archive.Size = new System.Drawing.Size(1198, 589);
+            this.metroTabPanel_data_archive.Size = new System.Drawing.Size(1198, 585);
             // 
             // 
             // 
@@ -2706,7 +3366,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 156F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1192, 586);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1192, 582);
             this.tableLayoutPanel1.TabIndex = 24;
             // 
             // uiDataArchive_panelExSearchPanel
@@ -2888,7 +3548,7 @@
             this.uiDataArchive_panelExSymbols.Location = new System.Drawing.Point(3, 91);
             this.uiDataArchive_panelExSymbols.Name = "uiDataArchive_panelExSymbols";
             this.uiDataArchive_panelExSymbols.Padding = new System.Windows.Forms.Padding(1);
-            this.uiDataArchive_panelExSymbols.Size = new System.Drawing.Size(264, 336);
+            this.uiDataArchive_panelExSymbols.Size = new System.Drawing.Size(264, 332);
             this.uiDataArchive_panelExSymbols.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.uiDataArchive_panelExSymbols.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.uiDataArchive_panelExSymbols.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -2906,7 +3566,7 @@
             this.uiDataArchive_checkedListBoxSymbols.FormattingEnabled = true;
             this.uiDataArchive_checkedListBoxSymbols.Location = new System.Drawing.Point(1, 1);
             this.uiDataArchive_checkedListBoxSymbols.Name = "uiDataArchive_checkedListBoxSymbols";
-            this.uiDataArchive_checkedListBoxSymbols.Size = new System.Drawing.Size(262, 334);
+            this.uiDataArchive_checkedListBoxSymbols.Size = new System.Drawing.Size(262, 330);
             this.uiDataArchive_checkedListBoxSymbols.TabIndex = 44;
             // 
             // uiDataArchive_panelExCollectingControl
@@ -2921,7 +3581,7 @@
             this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_buttonXStopCollecting);
             this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_buttonXStartCollecting);
             this.uiDataArchive_panelExCollectingControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiDataArchive_panelExCollectingControl.Location = new System.Drawing.Point(3, 433);
+            this.uiDataArchive_panelExCollectingControl.Location = new System.Drawing.Point(3, 429);
             this.uiDataArchive_panelExCollectingControl.Name = "uiDataArchive_panelExCollectingControl";
             this.uiDataArchive_panelExCollectingControl.Size = new System.Drawing.Size(264, 150);
             this.uiDataArchive_panelExCollectingControl.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -3134,7 +3794,7 @@
             this.uiDataArchive_panelExContracts.Name = "uiDataArchive_panelExContracts";
             this.uiDataArchive_panelExContracts.Padding = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel1.SetRowSpan(this.uiDataArchive_panelExContracts, 3);
-            this.uiDataArchive_panelExContracts.Size = new System.Drawing.Size(646, 580);
+            this.uiDataArchive_panelExContracts.Size = new System.Drawing.Size(646, 576);
             this.uiDataArchive_panelExContracts.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.uiDataArchive_panelExContracts.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.uiDataArchive_panelExContracts.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -3149,14 +3809,14 @@
             this.uiDataArchive_dataGridViewXContracts.AllowUserToDeleteRows = false;
             this.uiDataArchive_dataGridViewXContracts.BackgroundColor = System.Drawing.Color.White;
             this.uiDataArchive_dataGridViewXContracts.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiDataArchive_dataGridViewXContracts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiDataArchive_dataGridViewXContracts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.uiDataArchive_dataGridViewXContracts.ColumnHeadersHeight = 30;
             this.uiDataArchive_dataGridViewXContracts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.uiDataArchive_dataGridViewXContracts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3164,42 +3824,42 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiDataArchive_dataGridViewXContracts.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uiDataArchive_dataGridViewXContracts.DefaultCellStyle = dataGridViewCellStyle28;
             this.uiDataArchive_dataGridViewXContracts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiDataArchive_dataGridViewXContracts.EnableHeadersVisualStyles = false;
             this.uiDataArchive_dataGridViewXContracts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.uiDataArchive_dataGridViewXContracts.Location = new System.Drawing.Point(1, 1);
             this.uiDataArchive_dataGridViewXContracts.Name = "uiDataArchive_dataGridViewXContracts";
             this.uiDataArchive_dataGridViewXContracts.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiDataArchive_dataGridViewXContracts.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiDataArchive_dataGridViewXContracts.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.uiDataArchive_dataGridViewXContracts.RowHeadersVisible = false;
             this.uiDataArchive_dataGridViewXContracts.RowHeadersWidth = 30;
             this.uiDataArchive_dataGridViewXContracts.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.uiDataArchive_dataGridViewXContracts.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.uiDataArchive_dataGridViewXContracts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.uiDataArchive_dataGridViewXContracts.ShowEditingIcon = false;
-            this.uiDataArchive_dataGridViewXContracts.Size = new System.Drawing.Size(644, 578);
+            this.uiDataArchive_dataGridViewXContracts.Size = new System.Drawing.Size(644, 574);
             this.uiDataArchive_dataGridViewXContracts.TabIndex = 31;
             this.uiDataArchive_dataGridViewXContracts.CurrentCellChanged += new System.EventHandler(this.uiDataArchive_dataGridViewXContracts_CurrentCellChanged);
             // 
             // Column1
             // 
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle27;
             this.Column1.HeaderText = "";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
@@ -3316,7 +3976,7 @@
             this.uiDataArchive_panelExPreview.Name = "uiDataArchive_panelExPreview";
             this.uiDataArchive_panelExPreview.Padding = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel1.SetRowSpan(this.uiDataArchive_panelExPreview, 2);
-            this.uiDataArchive_panelExPreview.Size = new System.Drawing.Size(264, 492);
+            this.uiDataArchive_panelExPreview.Size = new System.Drawing.Size(264, 488);
             this.uiDataArchive_panelExPreview.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.uiDataArchive_panelExPreview.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.uiDataArchive_panelExPreview.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -3331,46 +3991,46 @@
             this.uiDataArchive_dataGridViewXPreview.AllowUserToDeleteRows = false;
             this.uiDataArchive_dataGridViewXPreview.BackgroundColor = System.Drawing.Color.White;
             this.uiDataArchive_dataGridViewXPreview.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiDataArchive_dataGridViewXPreview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiDataArchive_dataGridViewXPreview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.uiDataArchive_dataGridViewXPreview.ColumnHeadersHeight = 30;
             this.uiDataArchive_dataGridViewXPreview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.uiDataArchive_dataGridViewXPreview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.PreviewColumnDate,
             this.PreviewColumnPrice});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiDataArchive_dataGridViewXPreview.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uiDataArchive_dataGridViewXPreview.DefaultCellStyle = dataGridViewCellStyle31;
             this.uiDataArchive_dataGridViewXPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiDataArchive_dataGridViewXPreview.EnableHeadersVisualStyles = false;
             this.uiDataArchive_dataGridViewXPreview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.uiDataArchive_dataGridViewXPreview.Location = new System.Drawing.Point(1, 1);
             this.uiDataArchive_dataGridViewXPreview.Name = "uiDataArchive_dataGridViewXPreview";
             this.uiDataArchive_dataGridViewXPreview.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiDataArchive_dataGridViewXPreview.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiDataArchive_dataGridViewXPreview.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.uiDataArchive_dataGridViewXPreview.RowHeadersVisible = false;
             this.uiDataArchive_dataGridViewXPreview.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.uiDataArchive_dataGridViewXPreview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.uiDataArchive_dataGridViewXPreview.ShowEditingIcon = false;
-            this.uiDataArchive_dataGridViewXPreview.Size = new System.Drawing.Size(262, 490);
+            this.uiDataArchive_dataGridViewXPreview.Size = new System.Drawing.Size(262, 486);
             this.uiDataArchive_dataGridViewXPreview.TabIndex = 33;
             // 
             // PreviewColumnDate
@@ -3393,10 +4053,10 @@
             this.metroTabPanel_calendar.Controls.Add(this.tableLayoutPanel3);
             this.metroTabPanel_calendar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabPanel_calendar.Enabled = false;
-            this.metroTabPanel_calendar.Location = new System.Drawing.Point(0, 51);
+            this.metroTabPanel_calendar.Location = new System.Drawing.Point(0, 55);
             this.metroTabPanel_calendar.Name = "metroTabPanel_calendar";
             this.metroTabPanel_calendar.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.metroTabPanel_calendar.Size = new System.Drawing.Size(1198, 589);
+            this.metroTabPanel_calendar.Size = new System.Drawing.Size(1198, 585);
             // 
             // 
             // 
@@ -3420,7 +4080,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.15344F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 241F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 302F));
             this.tableLayoutPanel3.Controls.Add(this.uiCalendar_panelExSaving, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.uiCalendar_panelExPrevNext, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.panelEx5, 0, 1);
@@ -3432,7 +4092,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1192, 586);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1192, 582);
             this.tableLayoutPanel3.TabIndex = 25;
             // 
             // uiCalendar_panelExSaving
@@ -3489,7 +4149,7 @@
             this.uiCalendar_buttonXLoad.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.uiCalendar_buttonXLoad.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.uiCalendar_buttonXLoad.Enabled = false;
-            this.uiCalendar_buttonXLoad.Location = new System.Drawing.Point(368, 7);
+            this.uiCalendar_buttonXLoad.Location = new System.Drawing.Point(369, 7);
             this.uiCalendar_buttonXLoad.Name = "uiCalendar_buttonXLoad";
             this.uiCalendar_buttonXLoad.Size = new System.Drawing.Size(75, 25);
             this.uiCalendar_buttonXLoad.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -3537,7 +4197,7 @@
             this.uiCalendar_panelExPrevNext.Controls.Add(this.uiCalendar_buttonXNext);
             this.uiCalendar_panelExPrevNext.Controls.Add(this.uiCalendar_labelXMonthTotal);
             this.uiCalendar_panelExPrevNext.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiCalendar_panelExPrevNext.Location = new System.Drawing.Point(3, 545);
+            this.uiCalendar_panelExPrevNext.Location = new System.Drawing.Point(3, 541);
             this.uiCalendar_panelExPrevNext.Name = "uiCalendar_panelExPrevNext";
             this.uiCalendar_panelExPrevNext.Size = new System.Drawing.Size(1186, 38);
             this.uiCalendar_panelExPrevNext.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -3618,7 +4278,7 @@
             this.panelEx5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx5.Location = new System.Drawing.Point(3, 47);
             this.panelEx5.Name = "panelEx5";
-            this.panelEx5.Size = new System.Drawing.Size(1186, 492);
+            this.panelEx5.Size = new System.Drawing.Size(1186, 488);
             this.panelEx5.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx5.Style.BackColor1.Color = System.Drawing.Color.SteelBlue;
             this.panelEx5.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -3655,7 +4315,7 @@
             this.tableLayoutPanelCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanelCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanelCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanelCalendar.Size = new System.Drawing.Size(1186, 492);
+            this.tableLayoutPanelCalendar.Size = new System.Drawing.Size(1186, 488);
             this.tableLayoutPanelCalendar.TabIndex = 14;
             // 
             // uiCalendar_panelExWhiteCell6
@@ -3666,7 +4326,7 @@
             this.uiCalendar_panelExWhiteCell6.Controls.Add(this.uiCalendar_labelXWeek6);
             this.uiCalendar_panelExWhiteCell6.Controls.Add(this.panelEx2);
             this.uiCalendar_panelExWhiteCell6.Controls.Add(this.labelX21);
-            this.uiCalendar_panelExWhiteCell6.Location = new System.Drawing.Point(1041, 409);
+            this.uiCalendar_panelExWhiteCell6.Location = new System.Drawing.Point(1041, 404);
             this.uiCalendar_panelExWhiteCell6.Name = "uiCalendar_panelExWhiteCell6";
             this.uiCalendar_panelExWhiteCell6.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.uiCalendar_panelExWhiteCell6.Size = new System.Drawing.Size(130, 65);
@@ -3743,7 +4403,7 @@
             this.panelEx31.Controls.Add(this.uiCalendar_labelXWeek5);
             this.panelEx31.Controls.Add(this.panelEx46);
             this.panelEx31.Controls.Add(this.labelX22);
-            this.panelEx31.Location = new System.Drawing.Point(1041, 335);
+            this.panelEx31.Location = new System.Drawing.Point(1041, 331);
             this.panelEx31.Name = "panelEx31";
             this.panelEx31.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.panelEx31.Size = new System.Drawing.Size(130, 65);
@@ -3820,7 +4480,7 @@
             this.panelEx55.Controls.Add(this.uiCalendar_labelXWeek4);
             this.panelEx55.Controls.Add(this.panelEx56);
             this.panelEx55.Controls.Add(this.labelX27);
-            this.panelEx55.Location = new System.Drawing.Point(1041, 261);
+            this.panelEx55.Location = new System.Drawing.Point(1041, 258);
             this.panelEx55.Name = "panelEx55";
             this.panelEx55.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.panelEx55.Size = new System.Drawing.Size(130, 65);
@@ -3897,7 +4557,7 @@
             this.panelEx47.Controls.Add(this.uiCalendar_labelXWeek3);
             this.panelEx47.Controls.Add(this.panelEx51);
             this.panelEx47.Controls.Add(this.labelX12);
-            this.panelEx47.Location = new System.Drawing.Point(1041, 187);
+            this.panelEx47.Location = new System.Drawing.Point(1041, 185);
             this.panelEx47.Name = "panelEx47";
             this.panelEx47.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.panelEx47.Size = new System.Drawing.Size(130, 65);
@@ -3974,7 +4634,7 @@
             this.panelEx52.Controls.Add(this.uiCalendar_labelXWeek2);
             this.panelEx52.Controls.Add(this.panelEx54);
             this.panelEx52.Controls.Add(this.labelX25);
-            this.panelEx52.Location = new System.Drawing.Point(1041, 113);
+            this.panelEx52.Location = new System.Drawing.Point(1041, 112);
             this.panelEx52.Name = "panelEx52";
             this.panelEx52.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.panelEx52.Size = new System.Drawing.Size(130, 65);
@@ -4138,7 +4798,7 @@
             this.tableLayoutPanelCalendar.SetRowSpan(this.uiCalendar_calendarViewResultView, 7);
             this.uiCalendar_calendarViewResultView.SelectedView = DevComponents.DotNetBar.Schedule.eCalendarView.Month;
             this.uiCalendar_calendarViewResultView.ShowTabs = false;
-            this.uiCalendar_calendarViewResultView.Size = new System.Drawing.Size(1010, 463);
+            this.uiCalendar_calendarViewResultView.Size = new System.Drawing.Size(1010, 457);
             this.uiCalendar_calendarViewResultView.TabIndex = 13;
             this.uiCalendar_calendarViewResultView.Text = "calendarView1";
             this.uiCalendar_calendarViewResultView.TimeIndicator.BorderColor = System.Drawing.Color.Blue;
@@ -4166,851 +4826,151 @@
             this.uiCalendar_labelXMonth.TextAlignment = System.Drawing.StringAlignment.Center;
             this.uiCalendar_labelXMonth.Visible = false;
             // 
-            // metroTabPanel_weekly
-            // 
-            this.metroTabPanel_weekly.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.metroTabPanel_weekly.Controls.Add(this.uiWeekly_tableLayoutPanel4);
-            this.metroTabPanel_weekly.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTabPanel_weekly.Enabled = false;
-            this.metroTabPanel_weekly.Location = new System.Drawing.Point(0, 51);
-            this.metroTabPanel_weekly.Name = "metroTabPanel_weekly";
-            this.metroTabPanel_weekly.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.metroTabPanel_weekly.Size = new System.Drawing.Size(1198, 589);
-            // 
-            // 
-            // 
-            this.metroTabPanel_weekly.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.metroTabPanel_weekly.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.metroTabPanel_weekly.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroTabPanel_weekly.TabIndex = 3;
-            this.metroTabPanel_weekly.Visible = false;
-            // 
-            // uiWeekly_tableLayoutPanel4
-            // 
-            this.uiWeekly_tableLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.uiWeekly_tableLayoutPanel4.ColumnCount = 1;
-            this.uiWeekly_tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.uiWeekly_tableLayoutPanel4.Controls.Add(this.uiWeeklyData_superGridControlTable, 0, 0);
-            this.uiWeekly_tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiWeekly_tableLayoutPanel4.ForeColor = System.Drawing.Color.Black;
-            this.uiWeekly_tableLayoutPanel4.Location = new System.Drawing.Point(3, 0);
-            this.uiWeekly_tableLayoutPanel4.Name = "uiWeekly_tableLayoutPanel4";
-            this.uiWeekly_tableLayoutPanel4.RowCount = 1;
-            this.uiWeekly_tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.uiWeekly_tableLayoutPanel4.Size = new System.Drawing.Size(1192, 586);
-            this.uiWeekly_tableLayoutPanel4.TabIndex = 2;
-            // 
-            // uiWeeklyData_superGridControlTable
-            // 
-            this.uiWeeklyData_superGridControlTable.BackColor = System.Drawing.Color.White;
-            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.AlternateColumnCellStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.TopRight;
-            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.CellStyles.Default.Alignment = DevComponents.DotNetBar.SuperGrid.Style.Alignment.TopRight;
-            background1.Color1 = System.Drawing.Color.LightSkyBlue;
-            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.CellStyles.Selected.Background = background1;
-            background2.Color1 = System.Drawing.Color.AliceBlue;
-            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.CellStyles.SelectedMouseOver.Background = background2;
-            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.CellStyles.SelectedMouseOver.TextColor = System.Drawing.Color.Black;
-            background3.Color1 = System.Drawing.Color.DodgerBlue;
-            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.ColumnHeaderRowStyles.Default.WhiteSpaceBackground = background3;
-            background4.Color1 = System.Drawing.Color.DeepSkyBlue;
-            background4.Color2 = System.Drawing.Color.DeepSkyBlue;
-            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.ColumnHeaderStyles.Default.Background = background4;
-            background5.Color1 = System.Drawing.Color.LightBlue;
-            background5.Color2 = System.Drawing.Color.LightBlue;
-            this.uiWeeklyData_superGridControlTable.DefaultVisualStyles.ColumnHeaderStyles.MouseOver.Background = background5;
-            this.uiWeeklyData_superGridControlTable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiWeeklyData_superGridControlTable.ExpandButtonType = DevComponents.DotNetBar.SuperGrid.ExpandButtonType.Square;
-            this.uiWeeklyData_superGridControlTable.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
-            this.uiWeeklyData_superGridControlTable.ForeColor = System.Drawing.Color.Black;
-            this.uiWeeklyData_superGridControlTable.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F";
-            this.uiWeeklyData_superGridControlTable.Location = new System.Drawing.Point(3, 3);
-            this.uiWeeklyData_superGridControlTable.Name = "uiWeeklyData_superGridControlTable";
-            this.uiWeeklyData_superGridControlTable.PrimaryGrid.AllowEdit = false;
-            this.uiWeeklyData_superGridControlTable.PrimaryGrid.AutoGenerateColumns = false;
-            this.uiWeeklyData_superGridControlTable.PrimaryGrid.CollapseImage = ((System.Drawing.Image)(resources.GetObject("uiWeeklyData_superGridControlTable.PrimaryGrid.CollapseImage")));
-            this.uiWeeklyData_superGridControlTable.PrimaryGrid.ColumnAutoSizeMode = DevComponents.DotNetBar.SuperGrid.ColumnAutoSizeMode.Fill;
-            background6.Color1 = System.Drawing.Color.LightSkyBlue;
-            this.uiWeeklyData_superGridControlTable.PrimaryGrid.DefaultVisualStyles.CellStyles.Selected.Background = background6;
-            this.uiWeeklyData_superGridControlTable.PrimaryGrid.DefaultVisualStyles.CellStyles.Selected.TextColor = System.Drawing.Color.Black;
-            background7.Color1 = System.Drawing.Color.AliceBlue;
-            this.uiWeeklyData_superGridControlTable.PrimaryGrid.DefaultVisualStyles.CellStyles.SelectedMouseOver.Background = background7;
-            background8.Color1 = System.Drawing.Color.DodgerBlue;
-            background8.Color2 = System.Drawing.Color.DodgerBlue;
-            this.uiWeeklyData_superGridControlTable.PrimaryGrid.DefaultVisualStyles.ColumnHeaderStyles.Default.Background = background8;
-            this.uiWeeklyData_superGridControlTable.PrimaryGrid.ExpandImage = ((System.Drawing.Image)(resources.GetObject("uiWeeklyData_superGridControlTable.PrimaryGrid.ExpandImage")));
-            this.uiWeeklyData_superGridControlTable.PrimaryGrid.RowHeaderWidth = 0;
-            this.uiWeeklyData_superGridControlTable.PrimaryGrid.ShowTreeButtons = true;
-            this.uiWeeklyData_superGridControlTable.Size = new System.Drawing.Size(1186, 580);
-            this.uiWeeklyData_superGridControlTable.TabIndex = 1;
-            this.uiWeeklyData_superGridControlTable.Text = "superGridControl1";
-            this.uiWeeklyData_superGridControlTable.CompareElements += new System.EventHandler<DevComponents.DotNetBar.SuperGrid.GridCompareElementsEventArgs>(this.uiWeeklyDataTable_CompareElements);
-            this.uiWeeklyData_superGridControlTable.DataBindingComplete += new System.EventHandler<DevComponents.DotNetBar.SuperGrid.GridDataBindingCompleteEventArgs>(this.uiWeeklyDataTable_DataBindingComplete);
-            this.uiWeeklyData_superGridControlTable.AfterExpand += new System.EventHandler<DevComponents.DotNetBar.SuperGrid.GridAfterExpandEventArgs>(this.uiWeeklyDataTable_AfterExpand);
-            // 
-            // metroTabPanel_summary
-            // 
-            this.metroTabPanel_summary.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.metroTabPanel_summary.Controls.Add(this.uiSummary_tableLayoutPanel4);
-            this.metroTabPanel_summary.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTabPanel_summary.Enabled = false;
-            this.metroTabPanel_summary.Location = new System.Drawing.Point(0, 51);
-            this.metroTabPanel_summary.Name = "metroTabPanel_summary";
-            this.metroTabPanel_summary.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.metroTabPanel_summary.Size = new System.Drawing.Size(1198, 589);
-            // 
-            // 
-            // 
-            this.metroTabPanel_summary.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.metroTabPanel_summary.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.metroTabPanel_summary.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroTabPanel_summary.TabIndex = 2;
-            this.metroTabPanel_summary.Visible = false;
-            // 
-            // uiSummary_tableLayoutPanel4
-            // 
-            this.uiSummary_tableLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummary_tableLayoutPanel4.ColumnCount = 1;
-            this.uiSummary_tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.uiSummary_tableLayoutPanel4.Controls.Add(this.pageSlider1, 0, 0);
-            this.uiSummary_tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSummary_tableLayoutPanel4.ForeColor = System.Drawing.Color.Black;
-            this.uiSummary_tableLayoutPanel4.Location = new System.Drawing.Point(3, 0);
-            this.uiSummary_tableLayoutPanel4.Name = "uiSummary_tableLayoutPanel4";
-            this.uiSummary_tableLayoutPanel4.RowCount = 1;
-            this.uiSummary_tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.uiSummary_tableLayoutPanel4.Size = new System.Drawing.Size(1192, 586);
-            this.uiSummary_tableLayoutPanel4.TabIndex = 2;
-            // 
-            // pageSlider1
-            // 
-            this.pageSlider1.AnimationTime = 1;
-            this.pageSlider1.BackColor = System.Drawing.Color.White;
-            this.pageSlider1.Controls.Add(this.pageSliderPage1);
-            this.pageSlider1.Controls.Add(this.pageSliderPage2);
-            this.pageSlider1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pageSlider1.ForeColor = System.Drawing.Color.Black;
-            this.pageSlider1.Location = new System.Drawing.Point(3, 3);
-            this.pageSlider1.Name = "pageSlider1";
-            this.pageSlider1.NextPageVisibleMargin = -4;
-            this.pageSlider1.PageMouseDragEnabled = false;
-            this.pageSlider1.PageSpacing = 10;
-            this.pageSlider1.ScrollBarVisibility = DevComponents.DotNetBar.Controls.eScrollBarVisibility.Hidden;
-            this.pageSlider1.SelectedPage = this.pageSliderPage1;
-            this.pageSlider1.Size = new System.Drawing.Size(1186, 580);
-            this.pageSlider1.TabIndex = 1;
-            this.pageSlider1.Text = "pageSlider1";
-            // 
-            // pageSliderPage1
-            // 
-            this.pageSliderPage1.BackColor = System.Drawing.Color.White;
-            this.pageSliderPage1.Controls.Add(this.tableLayoutPanel2);
-            this.pageSliderPage1.Controls.Add(this.uiBTSummaryHeaderText);
-            this.pageSliderPage1.Controls.Add(this.uiBTSymmarySymbol);
-            this.pageSliderPage1.ForeColor = System.Drawing.Color.Black;
-            this.pageSliderPage1.Location = new System.Drawing.Point(4, 8);
-            this.pageSliderPage1.Name = "pageSliderPage1";
-            this.pageSliderPage1.Size = new System.Drawing.Size(1172, 568);
-            this.pageSliderPage1.TabIndex = 3;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.92074F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.07926F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryGroupPanel, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryChart, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.uiSummary_dataGridViewBT, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryScrollBar, 2, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.ForeColor = System.Drawing.Color.Black;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 98.78971F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.210287F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1172, 568);
-            this.tableLayoutPanel2.TabIndex = 36;
-            // 
-            // uiBTSummaryGroupPanel
-            // 
-            this.uiBTSummaryGroupPanel.BackColor = System.Drawing.Color.White;
-            this.uiBTSummaryGroupPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBToData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBFrData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNLsData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNPrData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNTrData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBAvgTrData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrFData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrfPercData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetLSData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBnetPRData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetPrLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBToLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBFrLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNLsLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNPrLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNTrLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBAvgTrLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrFLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrfpercLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetLsLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiBTStatisticDataLabel);
-            this.uiBTSummaryGroupPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiBTSummaryGroupPanel.DrawTitleBox = false;
-            this.uiBTSummaryGroupPanel.Location = new System.Drawing.Point(3, 564);
-            this.uiBTSummaryGroupPanel.Name = "uiBTSummaryGroupPanel";
-            this.uiBTSummaryGroupPanel.Size = new System.Drawing.Size(138, 1);
-            // 
-            // 
-            // 
-            this.uiBTSummaryGroupPanel.Style.BackColor = System.Drawing.Color.RoyalBlue;
-            this.uiBTSummaryGroupPanel.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.uiBTSummaryGroupPanel.Style.BackColorGradientAngle = 90;
-            this.uiBTSummaryGroupPanel.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.uiBTSummaryGroupPanel.Style.BorderBottomWidth = 1;
-            this.uiBTSummaryGroupPanel.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.uiBTSummaryGroupPanel.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.uiBTSummaryGroupPanel.Style.BorderLeftWidth = 1;
-            this.uiBTSummaryGroupPanel.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.uiBTSummaryGroupPanel.Style.BorderRightWidth = 1;
-            this.uiBTSummaryGroupPanel.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.uiBTSummaryGroupPanel.Style.BorderTopWidth = 1;
-            this.uiBTSummaryGroupPanel.Style.CornerDiameter = 4;
-            this.uiBTSummaryGroupPanel.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiBTSummaryGroupPanel.Style.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.uiBTSummaryGroupPanel.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.uiBTSummaryGroupPanel.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.uiBTSummaryGroupPanel.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiBTSummaryGroupPanel.TabIndex = 40;
-            this.uiBTSummaryGroupPanel.Visible = false;
-            // 
-            // uiSummaryStatisticsBToData
-            // 
-            this.uiSummaryStatisticsBToData.AutoSize = true;
-            this.uiSummaryStatisticsBToData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBToData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBToData.Location = new System.Drawing.Point(50, 168);
-            this.uiSummaryStatisticsBToData.Name = "uiSummaryStatisticsBToData";
-            this.uiSummaryStatisticsBToData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBToData.TabIndex = 33;
-            this.uiSummaryStatisticsBToData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBFrData
-            // 
-            this.uiSummaryStatisticsBFrData.AutoSize = true;
-            this.uiSummaryStatisticsBFrData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBFrData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBFrData.Location = new System.Drawing.Point(49, 153);
-            this.uiSummaryStatisticsBFrData.Name = "uiSummaryStatisticsBFrData";
-            this.uiSummaryStatisticsBFrData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBFrData.TabIndex = 32;
-            this.uiSummaryStatisticsBFrData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBNLsData
-            // 
-            this.uiSummaryStatisticsBNLsData.AutoSize = true;
-            this.uiSummaryStatisticsBNLsData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBNLsData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNLsData.Location = new System.Drawing.Point(49, 138);
-            this.uiSummaryStatisticsBNLsData.Name = "uiSummaryStatisticsBNLsData";
-            this.uiSummaryStatisticsBNLsData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBNLsData.TabIndex = 31;
-            this.uiSummaryStatisticsBNLsData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBNPrData
-            // 
-            this.uiSummaryStatisticsBNPrData.AutoSize = true;
-            this.uiSummaryStatisticsBNPrData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBNPrData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNPrData.Location = new System.Drawing.Point(50, 123);
-            this.uiSummaryStatisticsBNPrData.Name = "uiSummaryStatisticsBNPrData";
-            this.uiSummaryStatisticsBNPrData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBNPrData.TabIndex = 30;
-            this.uiSummaryStatisticsBNPrData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBNTrData
-            // 
-            this.uiSummaryStatisticsBNTrData.AutoSize = true;
-            this.uiSummaryStatisticsBNTrData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBNTrData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNTrData.Location = new System.Drawing.Point(50, 107);
-            this.uiSummaryStatisticsBNTrData.Name = "uiSummaryStatisticsBNTrData";
-            this.uiSummaryStatisticsBNTrData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBNTrData.TabIndex = 29;
-            this.uiSummaryStatisticsBNTrData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBAvgTrData
-            // 
-            this.uiSummaryStatisticsBAvgTrData.AutoSize = true;
-            this.uiSummaryStatisticsBAvgTrData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBAvgTrData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBAvgTrData.Location = new System.Drawing.Point(50, 93);
-            this.uiSummaryStatisticsBAvgTrData.Name = "uiSummaryStatisticsBAvgTrData";
-            this.uiSummaryStatisticsBAvgTrData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBAvgTrData.TabIndex = 28;
-            this.uiSummaryStatisticsBAvgTrData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBPrFData
-            // 
-            this.uiSummaryStatisticsBPrFData.AutoSize = true;
-            this.uiSummaryStatisticsBPrFData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBPrFData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBPrFData.Location = new System.Drawing.Point(50, 78);
-            this.uiSummaryStatisticsBPrFData.Name = "uiSummaryStatisticsBPrFData";
-            this.uiSummaryStatisticsBPrFData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBPrFData.TabIndex = 27;
-            this.uiSummaryStatisticsBPrFData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBPrfPercData
-            // 
-            this.uiSummaryStatisticsBPrfPercData.AutoSize = true;
-            this.uiSummaryStatisticsBPrfPercData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBPrfPercData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBPrfPercData.Location = new System.Drawing.Point(50, 63);
-            this.uiSummaryStatisticsBPrfPercData.Name = "uiSummaryStatisticsBPrfPercData";
-            this.uiSummaryStatisticsBPrfPercData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBPrfPercData.TabIndex = 26;
-            this.uiSummaryStatisticsBPrfPercData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBNetLSData
-            // 
-            this.uiSummaryStatisticsBNetLSData.AutoSize = true;
-            this.uiSummaryStatisticsBNetLSData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBNetLSData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNetLSData.Location = new System.Drawing.Point(50, 48);
-            this.uiSummaryStatisticsBNetLSData.Name = "uiSummaryStatisticsBNetLSData";
-            this.uiSummaryStatisticsBNetLSData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBNetLSData.TabIndex = 25;
-            this.uiSummaryStatisticsBNetLSData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBnetPRData
-            // 
-            this.uiSummaryStatisticsBnetPRData.AutoSize = true;
-            this.uiSummaryStatisticsBnetPRData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBnetPRData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBnetPRData.Location = new System.Drawing.Point(50, 33);
-            this.uiSummaryStatisticsBnetPRData.Name = "uiSummaryStatisticsBnetPRData";
-            this.uiSummaryStatisticsBnetPRData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBnetPRData.TabIndex = 24;
-            this.uiSummaryStatisticsBnetPRData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBNetData
-            // 
-            this.uiSummaryStatisticsBNetData.AutoSize = true;
-            this.uiSummaryStatisticsBNetData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBNetData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNetData.Location = new System.Drawing.Point(50, 20);
-            this.uiSummaryStatisticsBNetData.Name = "uiSummaryStatisticsBNetData";
-            this.uiSummaryStatisticsBNetData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBNetData.TabIndex = 23;
-            this.uiSummaryStatisticsBNetData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBNetPrLabel
-            // 
-            this.uiSummaryStatisticsBNetPrLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBNetPrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBNetPrLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNetPrLabel.Location = new System.Drawing.Point(1, 32);
-            this.uiSummaryStatisticsBNetPrLabel.Name = "uiSummaryStatisticsBNetPrLabel";
-            this.uiSummaryStatisticsBNetPrLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBNetPrLabel.TabIndex = 22;
-            this.uiSummaryStatisticsBNetPrLabel.Text = "BNetPr";
-            // 
-            // uiSummaryStatisticsBToLabel
-            // 
-            this.uiSummaryStatisticsBToLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBToLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBToLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBToLabel.Location = new System.Drawing.Point(1, 168);
-            this.uiSummaryStatisticsBToLabel.Name = "uiSummaryStatisticsBToLabel";
-            this.uiSummaryStatisticsBToLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBToLabel.TabIndex = 10;
-            this.uiSummaryStatisticsBToLabel.Text = "BTo";
-            // 
-            // uiSummaryStatisticsBFrLabel
-            // 
-            this.uiSummaryStatisticsBFrLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBFrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBFrLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBFrLabel.Location = new System.Drawing.Point(1, 152);
-            this.uiSummaryStatisticsBFrLabel.Name = "uiSummaryStatisticsBFrLabel";
-            this.uiSummaryStatisticsBFrLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBFrLabel.TabIndex = 9;
-            this.uiSummaryStatisticsBFrLabel.Text = "BFr";
-            // 
-            // uiSummaryStatisticsBNLsLabel
-            // 
-            this.uiSummaryStatisticsBNLsLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
+            // metroAppButton1
             // 
-            // 
-            this.uiSummaryStatisticsBNLsLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBNLsLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNLsLabel.Location = new System.Drawing.Point(1, 137);
-            this.uiSummaryStatisticsBNLsLabel.Name = "uiSummaryStatisticsBNLsLabel";
-            this.uiSummaryStatisticsBNLsLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBNLsLabel.TabIndex = 8;
-            this.uiSummaryStatisticsBNLsLabel.Text = "BNLs";
-            // 
-            // uiSummaryStatisticsBNPrLabel
-            // 
-            this.uiSummaryStatisticsBNPrLabel.BackColor = System.Drawing.Color.Transparent;
+            this.metroAppButton1.AutoExpandOnClick = true;
+            this.metroAppButton1.CanCustomize = false;
+            this.metroAppButton1.ImageFixedSize = new System.Drawing.Size(16, 16);
+            this.metroAppButton1.ImagePaddingHorizontal = 0;
+            this.metroAppButton1.ImagePaddingVertical = 0;
+            this.metroAppButton1.Name = "metroAppButton1";
+            this.metroAppButton1.ShowSubItems = false;
+            this.metroAppButton1.Text = "&File";
+            this.metroAppButton1.Visible = false;
             // 
+            // ui_tabItem_strategy
             // 
+            this.ui_tabItem_strategy.Checked = true;
+            this.ui_tabItem_strategy.Name = "ui_tabItem_strategy";
+            this.ui_tabItem_strategy.Panel = this.metroTabPanel_startegy;
+            this.ui_tabItem_strategy.Text = "&STRATEGY";
             // 
-            this.uiSummaryStatisticsBNPrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBNPrLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNPrLabel.Location = new System.Drawing.Point(1, 122);
-            this.uiSummaryStatisticsBNPrLabel.Name = "uiSummaryStatisticsBNPrLabel";
-            this.uiSummaryStatisticsBNPrLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBNPrLabel.TabIndex = 7;
-            this.uiSummaryStatisticsBNPrLabel.Text = "BNPr";
+            // ui_tabItem_summary
             // 
-            // uiSummaryStatisticsBNTrLabel
+            this.ui_tabItem_summary.Name = "ui_tabItem_summary";
+            this.ui_tabItem_summary.Panel = this.metroTabPanel_summary;
+            this.ui_tabItem_summary.Text = "SU&MMARY";
             // 
-            this.uiSummaryStatisticsBNTrLabel.BackColor = System.Drawing.Color.Transparent;
+            // ui_tabItem_weekly
             // 
+            this.ui_tabItem_weekly.Name = "ui_tabItem_weekly";
+            this.ui_tabItem_weekly.Panel = this.metroTabPanel_weekly;
+            this.ui_tabItem_weekly.Text = "&WEEKLY DATA";
             // 
-            // 
-            this.uiSummaryStatisticsBNTrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBNTrLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNTrLabel.Location = new System.Drawing.Point(1, 106);
-            this.uiSummaryStatisticsBNTrLabel.Name = "uiSummaryStatisticsBNTrLabel";
-            this.uiSummaryStatisticsBNTrLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBNTrLabel.TabIndex = 6;
-            this.uiSummaryStatisticsBNTrLabel.Text = "BNTr";
-            // 
-            // uiSummaryStatisticsBAvgTrLabel
-            // 
-            this.uiSummaryStatisticsBAvgTrLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBAvgTrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBAvgTrLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBAvgTrLabel.Location = new System.Drawing.Point(0, 92);
-            this.uiSummaryStatisticsBAvgTrLabel.Name = "uiSummaryStatisticsBAvgTrLabel";
-            this.uiSummaryStatisticsBAvgTrLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBAvgTrLabel.TabIndex = 5;
-            this.uiSummaryStatisticsBAvgTrLabel.Text = "BAvgTr";
-            // 
-            // uiSummaryStatisticsBPrFLabel
-            // 
-            this.uiSummaryStatisticsBPrFLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBPrFLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBPrFLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBPrFLabel.Location = new System.Drawing.Point(1, 78);
-            this.uiSummaryStatisticsBPrFLabel.Name = "uiSummaryStatisticsBPrFLabel";
-            this.uiSummaryStatisticsBPrFLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBPrFLabel.TabIndex = 4;
-            this.uiSummaryStatisticsBPrFLabel.Text = "BPrF";
-            // 
-            // uiSummaryStatisticsBPrfpercLabel
-            // 
-            this.uiSummaryStatisticsBPrfpercLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBPrfpercLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBPrfpercLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBPrfpercLabel.Location = new System.Drawing.Point(0, 62);
-            this.uiSummaryStatisticsBPrfpercLabel.Name = "uiSummaryStatisticsBPrfpercLabel";
-            this.uiSummaryStatisticsBPrfpercLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBPrfpercLabel.TabIndex = 3;
-            this.uiSummaryStatisticsBPrfpercLabel.Text = "BPrf%";
-            // 
-            // uiSummaryStatisticsBNetLabel
-            // 
-            this.uiSummaryStatisticsBNetLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBNetLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBNetLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNetLabel.Location = new System.Drawing.Point(0, 16);
-            this.uiSummaryStatisticsBNetLabel.Name = "uiSummaryStatisticsBNetLabel";
-            this.uiSummaryStatisticsBNetLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBNetLabel.TabIndex = 2;
-            this.uiSummaryStatisticsBNetLabel.Text = "BNet";
-            // 
-            // uiSummaryStatisticsBNetLsLabel
-            // 
-            this.uiSummaryStatisticsBNetLsLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBNetLsLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBNetLsLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNetLsLabel.Location = new System.Drawing.Point(0, 47);
-            this.uiSummaryStatisticsBNetLsLabel.Name = "uiSummaryStatisticsBNetLsLabel";
-            this.uiSummaryStatisticsBNetLsLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBNetLsLabel.TabIndex = 1;
-            this.uiSummaryStatisticsBNetLsLabel.Text = "BNetLs";
-            // 
-            // uiBTStatisticDataLabel
-            // 
-            this.uiBTStatisticDataLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiBTStatisticDataLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiBTStatisticDataLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiBTStatisticDataLabel.Location = new System.Drawing.Point(17, 3);
-            this.uiBTStatisticDataLabel.Name = "uiBTStatisticDataLabel";
-            this.uiBTStatisticDataLabel.Size = new System.Drawing.Size(75, 17);
-            this.uiBTStatisticDataLabel.TabIndex = 0;
-            this.uiBTStatisticDataLabel.Text = "Statistic data:";
-            this.uiBTStatisticDataLabel.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // uiBTSummaryChart
-            // 
-            this.uiBTSummaryChart.BorderlineColor = System.Drawing.SystemColors.AppWorkspace;
-            this.uiBTSummaryChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea1.AxisX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea1.AxisX2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea1.AxisY.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea1.AxisY2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea1.Name = "ChartArea1";
-            this.uiBTSummaryChart.ChartAreas.Add(chartArea1);
-            this.uiBTSummaryChart.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.uiBTSummaryChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.uiBTSummaryChart.Legends.Add(legend1);
-            this.uiBTSummaryChart.Location = new System.Drawing.Point(147, 564);
-            this.uiBTSummaryChart.Name = "uiBTSummaryChart";
-            this.uiBTSummaryChart.Size = new System.Drawing.Size(967, 1);
-            this.uiBTSummaryChart.TabIndex = 36;
-            this.uiBTSummaryChart.Text = "chart1";
-            this.uiBTSummaryChart.Visible = false;
-            // 
-            // uiSummary_dataGridViewBT
-            // 
-            this.uiSummary_dataGridViewBT.AllowUserToAddRows = false;
-            this.uiSummary_dataGridViewBT.AllowUserToDeleteRows = false;
-            this.uiSummary_dataGridViewBT.AllowUserToResizeRows = false;
-            this.uiSummary_dataGridViewBT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.uiSummary_dataGridViewBT.BackgroundColor = System.Drawing.Color.White;
-            this.uiSummary_dataGridViewBT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.uiSummary_dataGridViewBT.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiSummary_dataGridViewBT.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
-            this.uiSummary_dataGridViewBT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.uiSummary_dataGridViewBT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.btsmb,
-            this.BFr,
-            this.BTo,
-            this.BNet});
-            this.tableLayoutPanel2.SetColumnSpan(this.uiSummary_dataGridViewBT, 2);
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiSummary_dataGridViewBT.DefaultCellStyle = dataGridViewCellStyle15;
-            this.uiSummary_dataGridViewBT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSummary_dataGridViewBT.EnableHeadersVisualStyles = false;
-            this.uiSummary_dataGridViewBT.Location = new System.Drawing.Point(0, 0);
-            this.uiSummary_dataGridViewBT.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSummary_dataGridViewBT.Name = "uiSummary_dataGridViewBT";
-            this.uiSummary_dataGridViewBT.RowHeadersVisible = false;
-            this.uiSummary_dataGridViewBT.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.uiSummary_dataGridViewBT.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uiSummary_dataGridViewBT.Size = new System.Drawing.Size(1117, 561);
-            this.uiSummary_dataGridViewBT.TabIndex = 22;
-            this.uiSummary_dataGridViewBT.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.uiBTSummaryTable_RowsAdded);
-            // 
-            // btsmb
-            // 
-            this.btsmb.HeaderText = "Symbol";
-            this.btsmb.Name = "btsmb";
-            this.btsmb.ReadOnly = true;
-            // 
-            // BFr
-            // 
-            this.BFr.FillWeight = 150F;
-            this.BFr.HeaderText = "BFr";
-            this.BFr.Name = "BFr";
-            this.BFr.ReadOnly = true;
-            // 
-            // BTo
-            // 
-            this.BTo.FillWeight = 150F;
-            this.BTo.HeaderText = "BTo";
-            this.BTo.Name = "BTo";
-            this.BTo.ReadOnly = true;
-            // 
-            // BNet
-            // 
-            dataGridViewCellStyle14.Format = "N2";
-            dataGridViewCellStyle14.NullValue = null;
-            this.BNet.DefaultCellStyle = dataGridViewCellStyle14;
-            this.BNet.HeaderText = "BNet";
-            this.BNet.Name = "BNet";
-            this.BNet.ReadOnly = true;
-            // 
-            // uiBTSummaryScrollBar
-            // 
-            this.uiBTSummaryScrollBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            // ui_tabItem_calendar
+            // 
+            this.ui_tabItem_calendar.Name = "ui_tabItem_calendar";
+            this.ui_tabItem_calendar.Panel = this.metroTabPanel_calendar;
+            this.ui_tabItem_calendar.Text = "&CALENDAR";
+            // 
+            // ui_tabItem_data_archive
+            // 
+            this.ui_tabItem_data_archive.Name = "ui_tabItem_data_archive";
+            this.ui_tabItem_data_archive.Panel = this.metroTabPanel_data_archive;
+            this.ui_tabItem_data_archive.Text = "&DATA ARCHIVE";
+            // 
+            // qatCustomizeItem1
+            // 
+            this.qatCustomizeItem1.BeginGroup = true;
+            this.qatCustomizeItem1.Name = "qatCustomizeItem1";
+            // 
+            // styleManager1
+            // 
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Metro;
+            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.SteelBlue);
+            // 
+            // uiStatus_metroStatusBarStripInformer
+            // 
+            this.uiStatus_metroStatusBarStripInformer.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.uiStatus_metroStatusBarStripInformer.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiStatus_metroStatusBarStripInformer.ContainerControlProcessDialogKey = true;
+            this.uiStatus_metroStatusBarStripInformer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.uiStatus_metroStatusBarStripInformer.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uiStatus_metroStatusBarStripInformer.ForeColor = System.Drawing.Color.Black;
+            this.uiStatus_metroStatusBarStripInformer.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.uiStatus_labelItemProgramStatus,
+            this.uiStatus_labelItemConnectionStatus,
+            this.uiStatus_toolStripProgressBar,
+            this.uiStatus_labelItemSeparate});
+            this.uiStatus_metroStatusBarStripInformer.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F";
+            this.uiStatus_metroStatusBarStripInformer.Location = new System.Drawing.Point(0, 648);
+            this.uiStatus_metroStatusBarStripInformer.Name = "uiStatus_metroStatusBarStripInformer";
+            this.uiStatus_metroStatusBarStripInformer.Size = new System.Drawing.Size(1199, 21);
+            this.uiStatus_metroStatusBarStripInformer.TabIndex = 1;
+            this.uiStatus_metroStatusBarStripInformer.TabStop = false;
+            // 
+            // uiStatus_labelItemProgramStatus
+            // 
+            this.uiStatus_labelItemProgramStatus.Name = "uiStatus_labelItemProgramStatus";
+            this.uiStatus_labelItemProgramStatus.Text = "READY";
+            this.uiStatus_labelItemProgramStatus.TextChanged += new System.EventHandler(this.uiStatus_labelItemProgramStatus_TextChanged);
+            // 
+            // uiStatus_labelItemConnectionStatus
+            // 
+            this.uiStatus_labelItemConnectionStatus.ItemAlignment = DevComponents.DotNetBar.eItemAlignment.Far;
+            this.uiStatus_labelItemConnectionStatus.Name = "uiStatus_labelItemConnectionStatus";
+            this.uiStatus_labelItemConnectionStatus.PaddingLeft = 5;
+            this.uiStatus_labelItemConnectionStatus.PaddingRight = 5;
+            this.uiStatus_labelItemConnectionStatus.Text = "Not Connected";
+            this.uiStatus_labelItemConnectionStatus.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.uiStatus_labelItemConnectionStatus.Tooltip = "Database connection status";
+            // 
+            // uiStatus_toolStripProgressBar
+            // 
+            // 
+            // 
+            // 
+            this.uiStatus_toolStripProgressBar.BackStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiStatus_toolStripProgressBar.ChunkGradientAngle = 0F;
+            this.uiStatus_toolStripProgressBar.MenuVisibility = DevComponents.DotNetBar.eMenuVisibility.VisibleAlways;
+            this.uiStatus_toolStripProgressBar.Name = "uiStatus_toolStripProgressBar";
+            this.uiStatus_toolStripProgressBar.RecentlyUsed = false;
+            this.uiStatus_toolStripProgressBar.Width = 200;
+            // 
+            // uiStatus_labelItemSeparate
+            // 
+            this.uiStatus_labelItemSeparate.Name = "uiStatus_labelItemSeparate";
+            this.uiStatus_labelItemSeparate.PaddingLeft = 5;
+            this.uiStatus_labelItemSeparate.PaddingRight = 5;
+            // 
+            // uiFTSummarySymbol
+            // 
+            this.uiFTSummarySymbol.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.uiFTSummarySymbol.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiFTSummarySymbol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.uiFTSummarySymbol.ForeColor = System.Drawing.Color.Black;
+            this.uiFTSummarySymbol.Location = new System.Drawing.Point(11, 9);
+            this.uiFTSummarySymbol.Name = "uiFTSummarySymbol";
+            this.uiFTSummarySymbol.Size = new System.Drawing.Size(125, 18);
+            this.uiFTSummarySymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
+            this.uiFTSummarySymbol.TabIndex = 31;
+            this.uiFTSummarySymbol.Text = "Symbol:EUR/USD";
+            // 
+            // uiFTSummaryHeaderText
+            // 
+            this.uiFTSummaryHeaderText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiBTSummaryScrollBar.BackColor = System.Drawing.Color.White;
-            this.uiBTSummaryScrollBar.ForeColor = System.Drawing.Color.Black;
-            this.uiBTSummaryScrollBar.Location = new System.Drawing.Point(1156, 3);
-            this.uiBTSummaryScrollBar.Name = "uiBTSummaryScrollBar";
-            this.uiBTSummaryScrollBar.Size = new System.Drawing.Size(13, 555);
-            this.uiBTSummaryScrollBar.TabIndex = 23;
-            this.uiBTSummaryScrollBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.UiBTSummaryScrollBar_Scroll);
-            // 
-            // uiBTSummaryHeaderText
-            // 
-            this.uiBTSummaryHeaderText.BackColor = System.Drawing.Color.White;
+            this.uiFTSummaryHeaderText.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
-            this.uiBTSummaryHeaderText.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiBTSummaryHeaderText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.uiBTSummaryHeaderText.ForeColor = System.Drawing.Color.Black;
-            this.uiBTSummaryHeaderText.Location = new System.Drawing.Point(294, 3);
-            this.uiBTSummaryHeaderText.Name = "uiBTSummaryHeaderText";
-            this.uiBTSummaryHeaderText.Size = new System.Drawing.Size(147, 26);
-            this.uiBTSummaryHeaderText.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
-            this.uiBTSummaryHeaderText.Symbol = "";
-            this.uiBTSummaryHeaderText.SymbolColor = System.Drawing.Color.DodgerBlue;
-            this.uiBTSummaryHeaderText.TabIndex = 33;
-            this.uiBTSummaryHeaderText.Text = "BT Statistic Data";
-            // 
-            // uiBTSymmarySymbol
-            // 
-            this.uiBTSymmarySymbol.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.uiBTSymmarySymbol.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiBTSymmarySymbol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.uiBTSymmarySymbol.ForeColor = System.Drawing.Color.Black;
-            this.uiBTSymmarySymbol.Location = new System.Drawing.Point(4, 11);
-            this.uiBTSymmarySymbol.Name = "uiBTSymmarySymbol";
-            this.uiBTSymmarySymbol.Size = new System.Drawing.Size(144, 18);
-            this.uiBTSymmarySymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
-            this.uiBTSymmarySymbol.TabIndex = 32;
-            this.uiBTSymmarySymbol.Text = "Symbol:EUR/USD";
-            // 
-            // pageSliderPage2
-            // 
-            this.pageSliderPage2.BackColor = System.Drawing.Color.White;
-            this.pageSliderPage2.Controls.Add(this.tableLayoutPanel5);
-            this.pageSliderPage2.Controls.Add(this.uiFTSummaryHeaderText);
-            this.pageSliderPage2.Controls.Add(this.uiFTSummarySymbol);
-            this.pageSliderPage2.ForeColor = System.Drawing.Color.Black;
-            this.pageSliderPage2.Location = new System.Drawing.Point(1186, 8);
-            this.pageSliderPage2.Name = "pageSliderPage2";
-            this.pageSliderPage2.Size = new System.Drawing.Size(1172, 568);
-            this.pageSliderPage2.TabIndex = 4;
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.92F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.08F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryScrollbar, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryTable, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryChart, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryGroupPanel, 0, 1);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.ForeColor = System.Drawing.Color.Black;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 98.04305F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.956947F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1172, 568);
-            this.tableLayoutPanel5.TabIndex = 37;
-            // 
-            // uiFTSummaryScrollbar
-            // 
-            this.uiFTSummaryScrollbar.BackColor = System.Drawing.Color.White;
-            this.uiFTSummaryScrollbar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiFTSummaryScrollbar.ForeColor = System.Drawing.Color.Black;
-            this.uiFTSummaryScrollbar.Location = new System.Drawing.Point(1120, 3);
-            this.uiFTSummaryScrollbar.Name = "uiFTSummaryScrollbar";
-            this.uiFTSummaryScrollbar.Size = new System.Drawing.Size(49, 550);
-            this.uiFTSummaryScrollbar.TabIndex = 19;
-            // 
-            // uiFTSummaryTable
-            // 
-            this.uiFTSummaryTable.AllowUserToResizeRows = false;
-            this.uiFTSummaryTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.uiFTSummaryTable.BackgroundColor = System.Drawing.Color.White;
-            this.uiFTSummaryTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.uiFTSummaryTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.MediumPurple;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiFTSummaryTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
-            this.uiFTSummaryTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.uiFTSummaryTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.smb,
-            this.FFr,
-            this.FTo,
-            this.FNet,
-            this.FNetPr,
-            this.FNetLs,
-            this.FPrfperc,
-            this.FPrF,
-            this.FAvgTr,
-            this.FNTr,
-            this.FNPr,
-            this.FNLs});
-            this.tableLayoutPanel5.SetColumnSpan(this.uiFTSummaryTable, 2);
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiFTSummaryTable.DefaultCellStyle = dataGridViewCellStyle17;
-            this.uiFTSummaryTable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiFTSummaryTable.EnableHeadersVisualStyles = false;
-            this.uiFTSummaryTable.Location = new System.Drawing.Point(0, 0);
-            this.uiFTSummaryTable.Margin = new System.Windows.Forms.Padding(0);
-            this.uiFTSummaryTable.Name = "uiFTSummaryTable";
-            this.uiFTSummaryTable.RowHeadersVisible = false;
-            this.uiFTSummaryTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.uiFTSummaryTable.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uiFTSummaryTable.Size = new System.Drawing.Size(1117, 556);
-            this.uiFTSummaryTable.TabIndex = 32;
-            // 
-            // smb
-            // 
-            this.smb.HeaderText = "Symbol";
-            this.smb.Name = "smb";
-            // 
-            // FFr
-            // 
-            this.FFr.HeaderText = "FFr";
-            this.FFr.Name = "FFr";
-            // 
-            // FTo
-            // 
-            this.FTo.HeaderText = "FTo";
-            this.FTo.Name = "FTo";
-            // 
-            // FNet
-            // 
-            this.FNet.HeaderText = "FNet";
-            this.FNet.Name = "FNet";
-            // 
-            // FNetPr
-            // 
-            this.FNetPr.HeaderText = "FNetPr";
-            this.FNetPr.Name = "FNetPr";
-            // 
-            // FNetLs
-            // 
-            this.FNetLs.HeaderText = "FNetLs";
-            this.FNetLs.Name = "FNetLs";
-            // 
-            // FPrfperc
-            // 
-            this.FPrfperc.HeaderText = "FPrf%";
-            this.FPrfperc.Name = "FPrfperc";
-            // 
-            // FPrF
-            // 
-            this.FPrF.HeaderText = "FPrF";
-            this.FPrF.Name = "FPrF";
-            // 
-            // FAvgTr
-            // 
-            this.FAvgTr.HeaderText = "FAvgTr";
-            this.FAvgTr.Name = "FAvgTr";
-            // 
-            // FNTr
-            // 
-            this.FNTr.HeaderText = "FNTr";
-            this.FNTr.Name = "FNTr";
-            // 
-            // FNPr
-            // 
-            this.FNPr.HeaderText = "FNPr";
-            this.FNPr.Name = "FNPr";
-            // 
-            // FNLs
-            // 
-            this.FNLs.HeaderText = "FNLs";
-            this.FNLs.Name = "FNLs";
-            // 
-            // uiFTSummaryChart
-            // 
-            this.uiFTSummaryChart.BorderlineColor = System.Drawing.SystemColors.AppWorkspace;
-            this.uiFTSummaryChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea2.AxisX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea2.AxisX2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea2.AxisY.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea2.AxisY2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea2.Name = "ChartArea1";
-            this.uiFTSummaryChart.ChartAreas.Add(chartArea2);
-            this.uiFTSummaryChart.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.uiFTSummaryChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.uiFTSummaryChart.Legends.Add(legend2);
-            this.uiFTSummaryChart.Location = new System.Drawing.Point(147, 559);
-            this.uiFTSummaryChart.Name = "uiFTSummaryChart";
-            this.uiFTSummaryChart.Size = new System.Drawing.Size(967, 6);
-            this.uiFTSummaryChart.TabIndex = 37;
-            this.uiFTSummaryChart.Text = "<no data>";
-            this.uiFTSummaryChart.Visible = false;
+            this.uiFTSummaryHeaderText.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiFTSummaryHeaderText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.uiFTSummaryHeaderText.ForeColor = System.Drawing.Color.Black;
+            this.uiFTSummaryHeaderText.Location = new System.Drawing.Point(294, 3);
+            this.uiFTSummaryHeaderText.Name = "uiFTSummaryHeaderText";
+            this.uiFTSummaryHeaderText.Size = new System.Drawing.Size(416, 26);
+            this.uiFTSummaryHeaderText.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
+            this.uiFTSummaryHeaderText.Symbol = "";
+            this.uiFTSummaryHeaderText.SymbolColor = System.Drawing.Color.MediumPurple;
+            this.uiFTSummaryHeaderText.TabIndex = 33;
+            this.uiFTSummaryHeaderText.Text = "FT Statistic Data";
             // 
             // uiFTSummaryGroupPanel
             // 
@@ -5041,9 +5001,9 @@
             this.uiFTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsLabel);
             this.uiFTSummaryGroupPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiFTSummaryGroupPanel.DrawTitleBox = false;
-            this.uiFTSummaryGroupPanel.Location = new System.Drawing.Point(3, 559);
+            this.uiFTSummaryGroupPanel.Location = new System.Drawing.Point(3, 555);
             this.uiFTSummaryGroupPanel.Name = "uiFTSummaryGroupPanel";
-            this.uiFTSummaryGroupPanel.Size = new System.Drawing.Size(138, 6);
+            this.uiFTSummaryGroupPanel.Size = new System.Drawing.Size(133, 6);
             // 
             // 
             // 
@@ -5082,7 +5042,7 @@
             this.label22.ForeColor = System.Drawing.Color.Black;
             this.label22.Location = new System.Drawing.Point(52, 144);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(76, 19);
+            this.label22.Size = new System.Drawing.Size(72, 17);
             this.label22.TabIndex = 22;
             this.label22.Text = "<no data>";
             // 
@@ -5093,7 +5053,7 @@
             this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Location = new System.Drawing.Point(52, 131);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(76, 19);
+            this.label21.Size = new System.Drawing.Size(72, 17);
             this.label21.TabIndex = 21;
             this.label21.Text = "<no data>";
             // 
@@ -5104,7 +5064,7 @@
             this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(52, 118);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(76, 19);
+            this.label20.Size = new System.Drawing.Size(72, 17);
             this.label20.TabIndex = 20;
             this.label20.Text = "<no data>";
             // 
@@ -5115,7 +5075,7 @@
             this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(52, 106);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(76, 19);
+            this.label19.Size = new System.Drawing.Size(72, 17);
             this.label19.TabIndex = 19;
             this.label19.Text = "<no data>";
             // 
@@ -5126,7 +5086,7 @@
             this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(52, 93);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(76, 19);
+            this.label18.Size = new System.Drawing.Size(72, 17);
             this.label18.TabIndex = 18;
             this.label18.Text = "<no data>";
             // 
@@ -5137,7 +5097,7 @@
             this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.Location = new System.Drawing.Point(52, 80);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(76, 19);
+            this.label17.Size = new System.Drawing.Size(72, 17);
             this.label17.TabIndex = 17;
             this.label17.Text = "<no data>";
             // 
@@ -5148,7 +5108,7 @@
             this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(52, 67);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(76, 19);
+            this.label16.Size = new System.Drawing.Size(72, 17);
             this.label16.TabIndex = 16;
             this.label16.Text = "<no data>";
             // 
@@ -5159,7 +5119,7 @@
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(52, 54);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(76, 19);
+            this.label15.Size = new System.Drawing.Size(72, 17);
             this.label15.TabIndex = 15;
             this.label15.Text = "<no data>";
             // 
@@ -5170,7 +5130,7 @@
             this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(52, 41);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(76, 19);
+            this.label14.Size = new System.Drawing.Size(72, 17);
             this.label14.TabIndex = 14;
             this.label14.Text = "<no data>";
             // 
@@ -5181,7 +5141,7 @@
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(52, 28);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 19);
+            this.label13.Size = new System.Drawing.Size(72, 17);
             this.label13.TabIndex = 13;
             this.label13.Text = "<no data>";
             // 
@@ -5192,7 +5152,7 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(52, 15);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 19);
+            this.label12.Size = new System.Drawing.Size(72, 17);
             this.label12.TabIndex = 12;
             this.label12.Text = "<no data>";
             // 
@@ -5364,150 +5324,57 @@
             this.uiSummaryStatisticsLabel.TabIndex = 0;
             this.uiSummaryStatisticsLabel.Text = "StatisticData";
             // 
-            // uiFTSummaryHeaderText
+            // uiFTSummaryChart
             // 
-            this.uiFTSummaryHeaderText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uiFTSummaryHeaderText.BackColor = System.Drawing.Color.White;
+            this.uiFTSummaryChart.BorderlineColor = System.Drawing.SystemColors.AppWorkspace;
+            this.uiFTSummaryChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
+            chartArea4.AxisX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea4.AxisX2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea4.AxisY.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea4.AxisY2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea4.Name = "ChartArea1";
+            this.uiFTSummaryChart.ChartAreas.Add(chartArea4);
+            this.uiFTSummaryChart.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.uiFTSummaryChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend4.Name = "Legend1";
+            this.uiFTSummaryChart.Legends.Add(legend4);
+            this.uiFTSummaryChart.Location = new System.Drawing.Point(142, 555);
+            this.uiFTSummaryChart.Name = "uiFTSummaryChart";
+            this.uiFTSummaryChart.Size = new System.Drawing.Size(934, 6);
+            this.uiFTSummaryChart.TabIndex = 37;
+            this.uiFTSummaryChart.Text = "<no data>";
+            this.uiFTSummaryChart.Visible = false;
             // 
+            // uiFTSummaryScrollbar
             // 
+            this.uiFTSummaryScrollbar.BackColor = System.Drawing.Color.White;
+            this.uiFTSummaryScrollbar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiFTSummaryScrollbar.ForeColor = System.Drawing.Color.Black;
+            this.uiFTSummaryScrollbar.Location = new System.Drawing.Point(1082, 3);
+            this.uiFTSummaryScrollbar.Name = "uiFTSummaryScrollbar";
+            this.uiFTSummaryScrollbar.Size = new System.Drawing.Size(87, 546);
+            this.uiFTSummaryScrollbar.TabIndex = 19;
             // 
-            this.uiFTSummaryHeaderText.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiFTSummaryHeaderText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.uiFTSummaryHeaderText.ForeColor = System.Drawing.Color.Black;
-            this.uiFTSummaryHeaderText.Location = new System.Drawing.Point(294, 3);
-            this.uiFTSummaryHeaderText.Name = "uiFTSummaryHeaderText";
-            this.uiFTSummaryHeaderText.Size = new System.Drawing.Size(416, 26);
-            this.uiFTSummaryHeaderText.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
-            this.uiFTSummaryHeaderText.Symbol = "";
-            this.uiFTSummaryHeaderText.SymbolColor = System.Drawing.Color.MediumPurple;
-            this.uiFTSummaryHeaderText.TabIndex = 33;
-            this.uiFTSummaryHeaderText.Text = "FT Statistic Data";
+            // tableLayoutPanel5
             // 
-            // uiFTSummarySymbol
-            // 
-            this.uiFTSummarySymbol.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.uiFTSummarySymbol.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiFTSummarySymbol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.uiFTSummarySymbol.ForeColor = System.Drawing.Color.Black;
-            this.uiFTSummarySymbol.Location = new System.Drawing.Point(11, 9);
-            this.uiFTSummarySymbol.Name = "uiFTSummarySymbol";
-            this.uiFTSummarySymbol.Size = new System.Drawing.Size(125, 18);
-            this.uiFTSummarySymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro;
-            this.uiFTSummarySymbol.TabIndex = 31;
-            this.uiFTSummarySymbol.Text = "Symbol:EUR/USD";
-            // 
-            // metroAppButton1
-            // 
-            this.metroAppButton1.AutoExpandOnClick = true;
-            this.metroAppButton1.CanCustomize = false;
-            this.metroAppButton1.ImageFixedSize = new System.Drawing.Size(16, 16);
-            this.metroAppButton1.ImagePaddingHorizontal = 0;
-            this.metroAppButton1.ImagePaddingVertical = 0;
-            this.metroAppButton1.Name = "metroAppButton1";
-            this.metroAppButton1.ShowSubItems = false;
-            this.metroAppButton1.Text = "&File";
-            this.metroAppButton1.Visible = false;
-            // 
-            // ui_tabItem_strategy
-            // 
-            this.ui_tabItem_strategy.Checked = true;
-            this.ui_tabItem_strategy.Name = "ui_tabItem_strategy";
-            this.ui_tabItem_strategy.Panel = this.metroTabPanel_startegy;
-            this.ui_tabItem_strategy.Text = "&STRATEGY";
-            // 
-            // ui_tabItem_summary
-            // 
-            this.ui_tabItem_summary.Name = "ui_tabItem_summary";
-            this.ui_tabItem_summary.Panel = this.metroTabPanel_summary;
-            this.ui_tabItem_summary.Text = "SU&MMARY";
-            // 
-            // ui_tabItem_weekly
-            // 
-            this.ui_tabItem_weekly.Name = "ui_tabItem_weekly";
-            this.ui_tabItem_weekly.Panel = this.metroTabPanel_weekly;
-            this.ui_tabItem_weekly.Text = "&WEEKLY DATA";
-            // 
-            // ui_tabItem_calendar
-            // 
-            this.ui_tabItem_calendar.Name = "ui_tabItem_calendar";
-            this.ui_tabItem_calendar.Panel = this.metroTabPanel_calendar;
-            this.ui_tabItem_calendar.Text = "&CALENDAR";
-            // 
-            // ui_tabItem_data_archive
-            // 
-            this.ui_tabItem_data_archive.Name = "ui_tabItem_data_archive";
-            this.ui_tabItem_data_archive.Panel = this.metroTabPanel_data_archive;
-            this.ui_tabItem_data_archive.Text = "&DATA ARCHIVE";
-            // 
-            // qatCustomizeItem1
-            // 
-            this.qatCustomizeItem1.BeginGroup = true;
-            this.qatCustomizeItem1.Name = "qatCustomizeItem1";
-            // 
-            // styleManager1
-            // 
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Metro;
-            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.SteelBlue);
-            // 
-            // uiStatus_metroStatusBarStripInformer
-            // 
-            this.uiStatus_metroStatusBarStripInformer.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.uiStatus_metroStatusBarStripInformer.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiStatus_metroStatusBarStripInformer.ContainerControlProcessDialogKey = true;
-            this.uiStatus_metroStatusBarStripInformer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.uiStatus_metroStatusBarStripInformer.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiStatus_metroStatusBarStripInformer.ForeColor = System.Drawing.Color.Black;
-            this.uiStatus_metroStatusBarStripInformer.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.uiStatus_labelItemProgramStatus,
-            this.uiStatus_labelItemConnectionStatus,
-            this.uiStatus_toolStripProgressBar,
-            this.uiStatus_labelItemSeparate});
-            this.uiStatus_metroStatusBarStripInformer.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F";
-            this.uiStatus_metroStatusBarStripInformer.Location = new System.Drawing.Point(0, 648);
-            this.uiStatus_metroStatusBarStripInformer.Name = "uiStatus_metroStatusBarStripInformer";
-            this.uiStatus_metroStatusBarStripInformer.Size = new System.Drawing.Size(1199, 21);
-            this.uiStatus_metroStatusBarStripInformer.TabIndex = 1;
-            this.uiStatus_metroStatusBarStripInformer.TabStop = false;
-            // 
-            // uiStatus_labelItemProgramStatus
-            // 
-            this.uiStatus_labelItemProgramStatus.Name = "uiStatus_labelItemProgramStatus";
-            this.uiStatus_labelItemProgramStatus.Text = "READY";
-            // 
-            // uiStatus_labelItemConnectionStatus
-            // 
-            this.uiStatus_labelItemConnectionStatus.ItemAlignment = DevComponents.DotNetBar.eItemAlignment.Far;
-            this.uiStatus_labelItemConnectionStatus.Name = "uiStatus_labelItemConnectionStatus";
-            this.uiStatus_labelItemConnectionStatus.PaddingLeft = 5;
-            this.uiStatus_labelItemConnectionStatus.PaddingRight = 5;
-            this.uiStatus_labelItemConnectionStatus.Text = "Not Connected";
-            this.uiStatus_labelItemConnectionStatus.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.uiStatus_labelItemConnectionStatus.Tooltip = "Database connection status";
-            // 
-            // uiStatus_toolStripProgressBar
-            // 
-            // 
-            // 
-            // 
-            this.uiStatus_toolStripProgressBar.BackStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiStatus_toolStripProgressBar.ChunkGradientAngle = 0F;
-            this.uiStatus_toolStripProgressBar.MenuVisibility = DevComponents.DotNetBar.eMenuVisibility.VisibleAlways;
-            this.uiStatus_toolStripProgressBar.Name = "uiStatus_toolStripProgressBar";
-            this.uiStatus_toolStripProgressBar.RecentlyUsed = false;
-            this.uiStatus_toolStripProgressBar.Width = 200;
-            // 
-            // uiStatus_labelItemSeparate
-            // 
-            this.uiStatus_labelItemSeparate.Name = "uiStatus_labelItemSeparate";
-            this.uiStatus_labelItemSeparate.PaddingLeft = 5;
-            this.uiStatus_labelItemSeparate.PaddingRight = 5;
+            this.tableLayoutPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel5.ColumnCount = 3;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.92F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.08F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
+            this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryScrollbar, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryChart, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.uiFTSummaryGroupPanel, 0, 1);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.ForeColor = System.Drawing.Color.Black;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 98.04305F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.956947F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1172, 564);
+            this.tableLayoutPanel5.TabIndex = 37;
             // 
             // MainFormMetroApp
             // 
@@ -5524,9 +5391,19 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reversals";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainFormMetroApp_FormClosed);
             this.Shown += new System.EventHandler(this.MainFormMetroApp_Shown);
             this.metroShellMain.ResumeLayout(false);
             this.metroShellMain.PerformLayout();
+            this.metroTabPanel_summary.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.uiBTSummaryGroupPanel.ResumeLayout(false);
+            this.uiBTSummaryGroupPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiBTSummaryChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiSummary_dataGridViewBT)).EndInit();
+            this.uiSummary_panelExSaving.ResumeLayout(false);
+            this.metroTabPanel_weekly.ResumeLayout(false);
+            this.uiWeekly_tableLayoutPanel4.ResumeLayout(false);
             this.metroTabPanel_startegy.ResumeLayout(false);
             this.uiStrategyTablTableLayout.ResumeLayout(false);
             this.uiStrategy_panelExOptions.ResumeLayout(false);
@@ -5577,23 +5454,10 @@
             this.panelEx47.ResumeLayout(false);
             this.panelEx52.ResumeLayout(false);
             this.panelEx57.ResumeLayout(false);
-            this.metroTabPanel_weekly.ResumeLayout(false);
-            this.uiWeekly_tableLayoutPanel4.ResumeLayout(false);
-            this.metroTabPanel_summary.ResumeLayout(false);
-            this.uiSummary_tableLayoutPanel4.ResumeLayout(false);
-            this.pageSlider1.ResumeLayout(false);
-            this.pageSliderPage1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.uiBTSummaryGroupPanel.ResumeLayout(false);
-            this.uiBTSummaryGroupPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiBTSummaryChart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiSummary_dataGridViewBT)).EndInit();
-            this.pageSliderPage2.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.uiFTSummaryTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiFTSummaryChart)).EndInit();
             this.uiFTSummaryGroupPanel.ResumeLayout(false);
             this.uiFTSummaryGroupPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiFTSummaryChart)).EndInit();
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -5611,85 +5475,7 @@
         private DevComponents.DotNetBar.Metro.MetroStatusBar uiStatus_metroStatusBarStripInformer;
         private DevComponents.DotNetBar.LabelItem uiStatus_labelItemProgramStatus;
         private System.Windows.Forms.TableLayoutPanel uiStrategyTablTableLayout;
-        private DevComponents.DotNetBar.Controls.PageSlider pageSlider1;
-        private DevComponents.DotNetBar.Controls.PageSliderPage pageSliderPage1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private DevComponents.DotNetBar.Controls.GroupPanel uiBTSummaryGroupPanel;
-        private System.Windows.Forms.Label uiSummaryStatisticsBToData;
-        private System.Windows.Forms.Label uiSummaryStatisticsBFrData;
-        private System.Windows.Forms.Label uiSummaryStatisticsBNLsData;
-        private System.Windows.Forms.Label uiSummaryStatisticsBNPrData;
-        private System.Windows.Forms.Label uiSummaryStatisticsBNTrData;
-        private System.Windows.Forms.Label uiSummaryStatisticsBAvgTrData;
-        private System.Windows.Forms.Label uiSummaryStatisticsBPrFData;
-        private System.Windows.Forms.Label uiSummaryStatisticsBPrfPercData;
-        private System.Windows.Forms.Label uiSummaryStatisticsBNetLSData;
-        private System.Windows.Forms.Label uiSummaryStatisticsBnetPRData;
-        private System.Windows.Forms.Label uiSummaryStatisticsBNetData;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBNetPrLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBToLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBFrLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBNLsLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBNPrLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBNTrLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBAvgTrLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBPrFLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBPrfpercLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBNetLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBNetLsLabel;
-        private DevComponents.DotNetBar.LabelX uiBTStatisticDataLabel;
-        private System.Windows.Forms.DataVisualization.Charting.Chart uiBTSummaryChart;
-        private System.Windows.Forms.DataGridView uiSummary_dataGridViewBT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn btsmb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BFr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BTo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BNet;
-        private DevComponents.DotNetBar.VScrollBarAdv uiBTSummaryScrollBar;
-        private DevComponents.DotNetBar.LabelX uiBTSummaryHeaderText;
-        private DevComponents.DotNetBar.LabelX uiBTSymmarySymbol;
         private DevComponents.DotNetBar.Controls.PageSliderPage pageSliderPage2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private DevComponents.DotNetBar.VScrollBarAdv uiFTSummaryScrollbar;
-        private System.Windows.Forms.DataGridView uiFTSummaryTable;
-        private System.Windows.Forms.DataGridViewTextBoxColumn smb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FFr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FTo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FNet;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FNetPr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FNetLs;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FPrfperc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FPrF;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FAvgTr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FNTr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FNPr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FNLs;
-        private System.Windows.Forms.DataVisualization.Charting.Chart uiFTSummaryChart;
-        private DevComponents.DotNetBar.Controls.GroupPanel uiFTSummaryGroupPanel;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private DevComponents.DotNetBar.LabelX labelX19;
-        private DevComponents.DotNetBar.LabelX labelX18;
-        private DevComponents.DotNetBar.LabelX labelX17;
-        private DevComponents.DotNetBar.LabelX labelX16;
-        private DevComponents.DotNetBar.LabelX labelX15;
-        private DevComponents.DotNetBar.LabelX labelX14;
-        private DevComponents.DotNetBar.LabelX labelX13;
-        private DevComponents.DotNetBar.LabelX labelX6;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsFNetLsLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsFNetPrLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsFNetLabel;
-        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsLabel;
-        private DevComponents.DotNetBar.LabelX uiFTSummaryHeaderText;
-        private DevComponents.DotNetBar.LabelX uiFTSummarySymbol;
         private DevComponents.DotNetBar.Metro.MetroTabPanel metroTabPanel_weekly;
         private DevComponents.DotNetBar.Metro.MetroTabItem ui_tabItem_weekly;
         private DevComponents.DotNetBar.SuperGrid.SuperGridControl uiWeeklyData_superGridControlTable;
@@ -5844,7 +5630,6 @@
         private DevComponents.DotNetBar.LabelX uiDataArchive_labelXSymbolsCommands;
         private DevComponents.DotNetBar.LabelX uiDataArchive_labelXCollectingControl;
         private System.Windows.Forms.TableLayoutPanel uiWeekly_tableLayoutPanel4;
-        private System.Windows.Forms.TableLayoutPanel uiSummary_tableLayoutPanel4;
         private DevComponents.DotNetBar.PanelEx uiDataArchive_panelExPreview;
         private DevComponents.DotNetBar.Controls.DataGridViewX uiDataArchive_dataGridViewXPreview;
         private DevComponents.DotNetBar.PanelEx uiDataArchive_panelExSearchPanel;
@@ -5887,6 +5672,72 @@
         private DevComponents.DotNetBar.PanelEx panelEx2;
         private DevComponents.DotNetBar.LabelX labelX21;
         private DevComponents.DotNetBar.ButtonX uiDataArchive_buttonXEditSymbol;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private DevComponents.DotNetBar.Controls.GroupPanel uiBTSummaryGroupPanel;
+        private System.Windows.Forms.Label uiSummaryStatisticsBToData;
+        private System.Windows.Forms.Label uiSummaryStatisticsBFrData;
+        private System.Windows.Forms.Label uiSummaryStatisticsBNLsData;
+        private System.Windows.Forms.Label uiSummaryStatisticsBNPrData;
+        private System.Windows.Forms.Label uiSummaryStatisticsBNTrData;
+        private System.Windows.Forms.Label uiSummaryStatisticsBAvgTrData;
+        private System.Windows.Forms.Label uiSummaryStatisticsBPrFData;
+        private System.Windows.Forms.Label uiSummaryStatisticsBPrfPercData;
+        private System.Windows.Forms.Label uiSummaryStatisticsBNetLSData;
+        private System.Windows.Forms.Label uiSummaryStatisticsBnetPRData;
+        private System.Windows.Forms.Label uiSummaryStatisticsBNetData;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBNetPrLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBToLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBFrLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBNLsLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBNPrLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBNTrLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBAvgTrLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBPrFLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBPrfpercLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBNetLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsBNetLsLabel;
+        private DevComponents.DotNetBar.LabelX uiBTStatisticDataLabel;
+        private System.Windows.Forms.DataVisualization.Charting.Chart uiBTSummaryChart;
+        private DevComponents.DotNetBar.PanelEx uiSummary_panelExSaving;
+        private DevComponents.DotNetBar.ButtonX uiSummary_buttonXDelete;
+        private DevComponents.DotNetBar.ButtonX uiSummary_buttonXSave;
+        private DevComponents.DotNetBar.ButtonX uiSummary_buttonXLoad;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx uiSummary_comboBoxXDSet;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx uiSummary_comboBoxXSymbol;
+        private DevComponents.DotNetBar.LabelX uiFTSummarySymbol;
+        private DevComponents.DotNetBar.LabelX uiFTSummaryHeaderText;
+        private DevComponents.DotNetBar.Controls.GroupPanel uiFTSummaryGroupPanel;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private DevComponents.DotNetBar.LabelX labelX19;
+        private DevComponents.DotNetBar.LabelX labelX18;
+        private DevComponents.DotNetBar.LabelX labelX17;
+        private DevComponents.DotNetBar.LabelX labelX16;
+        private DevComponents.DotNetBar.LabelX labelX15;
+        private DevComponents.DotNetBar.LabelX labelX14;
+        private DevComponents.DotNetBar.LabelX labelX13;
+        private DevComponents.DotNetBar.LabelX labelX6;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsFNetLsLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsFNetPrLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsFNetLabel;
+        private DevComponents.DotNetBar.LabelX uiSummaryStatisticsLabel;
+        private System.Windows.Forms.DataVisualization.Charting.Chart uiFTSummaryChart;
+        private DevComponents.DotNetBar.VScrollBarAdv uiFTSummaryScrollbar;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BTSymbol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BTStartDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BTEndDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BTPnl;
+        private DevComponents.DotNetBar.Controls.DataGridViewX uiSummary_dataGridViewBT;
 
     }
 }

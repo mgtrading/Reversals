@@ -33,6 +33,7 @@ namespace Reversals
                 DateFormatsManager.CurrentShortDateFormat = CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern;
                 var culture = new CultureInfo("en-US", false) {DateTimeFormat = {ShortTimePattern = "HH:mm:ss"}};
                 Application.CurrentCulture = culture;
+
                 Application.Run(new MainFormMetroApp());
             }
             else

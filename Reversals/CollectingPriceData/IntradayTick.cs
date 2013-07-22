@@ -1,4 +1,5 @@
-﻿using System;
+﻿        
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using Reversals.DbDataManager;
@@ -17,8 +18,11 @@ namespace Reversals.CollectingPriceData
         private static List<string> _contracts;
         private static Semaphore _waitEndOfCollection;
 
-        public delegate void ProgressEventHandler(int value);
+        public delegate void ProgressEventHandler(int value);       
         public static event ProgressEventHandler ProgressEvent;
+
+        public delegate void ErrorEventHandler(int errorCode);
+        public static event ErrorEventHandler ErrorEvent;      
 
         public static void CollectContracts(List<string> contracts, DateTime start, DateTime end)
         {
@@ -41,16 +45,29 @@ namespace Reversals.CollectingPriceData
             }).Start();
         }
 
-        private static void NotifyProgress()
+        public static bool IsBusy()
+        {
+            if (_contracts != null)
+                return ContractColected != _contracts.Count;
+            return false;
+        }
+
+        private static void NotifyProgress(double percent = 1)
         {
             if (ProgressEvent != null)
             {
-                int percent = ContractColected * 100 / _contracts.Count;
-                ProgressEvent(percent);
+                var resPercent = (int)Math.Round((ContractColected - 1 + percent) * 100 / _contracts.Count);
+                ProgressEvent(resPercent);
             }
         }
 
-
+        private static void NotifyError(int error)
+        {
+            if (ErrorEvent !=  null)
+            {
+                ErrorEvent(error);
+            }
+        }
 
         private static readonly Name TickData = new Name("tickData");
         //private static readonly Name CondCode = new Name("conditionCodes");
@@ -196,6 +213,10 @@ namespace Reversals.CollectingPriceData
             {
                 if (msg.HasElement(ResponseError))
                 {
+                    if (msg.GetElement(ResponseError).GetElementAsString(Category) == "BAD_SEC")
+                    {
+                        NotifyError(2);
+                    }
                     printErrorInfo("REQUEST FAILED: ", msg.GetElement(ResponseError));
                     continue;
                 }
@@ -227,13 +248,19 @@ namespace Reversals.CollectingPriceData
                     new DateTime(time.Year, time.Month, time.DayOfMonth,
                             time.Hour, time.Minute, time.Second, time.MilliSecond);
 
+                double prgrs = (_endDate - _startDate).TotalDays / (sysDatetime - _startDate).TotalDays;
+
+                NotifyProgress(prgrs);
+                //TODO Notify prgress
                 
                 if (_shouldStop)
                 {
                     break;
                 }
+
                 DataManager.AddTick(_dSecurity, sysDatetime, value);
             }
+            DataManager.CommitQueue();
         }
 
         public static void Stop()

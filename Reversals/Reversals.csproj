@@ -121,6 +121,7 @@
     <Compile Include="DataContainer\Tick.cs" />
     <Compile Include="DataContainer\Data.cs" />
     <Compile Include="DateFormats\DateFormatsManager.cs" />
+    <Compile Include="DbDataManager\Structs\SummaryResultModel.cs" />
     <Compile Include="DbDataManager\Structs\TickDataModel.cs" />
     <Compile Include="DbDataManager\Structs\ContractModel.cs" />
     <Compile Include="DbDataManager\Structs\DataSetModel.cs" />
