@@ -14,6 +14,7 @@ using DevComponents.Editors;
 using DevComponents.DotNetBar.Metro;
 using DevComponents.DotNetBar;
 using System.Text.RegularExpressions;
+using Reversals.Backtests;
 using Reversals.CollectingPriceData;
 using Reversals.DataContainer;
 using Reversals.DateFormats;
@@ -27,6 +28,7 @@ using Reversals.ParametersNotifier;
 using Reversals.Properties;
 using Reversals.Strategies;
 using Reversals.TestWorking;
+using Reversals.Backtests.Enums;
 using ToolTip = System.Windows.Forms.ToolTip;
 
 namespace Reversals.Forms
@@ -62,6 +64,10 @@ namespace Reversals.Forms
         private readonly List<ResultModel> _weeklist;
         private CalendarDisplayer _calendarDisplayer;
         private readonly BlackScholesCalculator _blackScholesCalculator;
+
+        //weeklyData
+        private Strategy _strategyWeekly;
+        private List<Order> _orderListToSaveWeekly; 
 
         public MainFormMetroApp()
         {
@@ -166,7 +172,7 @@ namespace Reversals.Forms
             uiBlackSExpiryDate.Value = DateTime.Today.AddDays(30);
 
             DefaultBtSummaryTable();
-            
+            metroTabPanel_summary.Enabled = true;
         }
 
         private void metroShell1_SettingsButtonClick(object sender, EventArgs e)
@@ -313,8 +319,7 @@ namespace Reversals.Forms
 
             uiStrategy_dataGridViewNoOptomizationParameters.Columns[1].SortMode = DataGridViewColumnSortMode.NotSortable;
             uiStrategy_dataGridViewNoOptomizationParameters.Columns[0].SortMode = DataGridViewColumnSortMode.NotSortable;
-
-            uiStrategy_panelExRunContinuesPanel.Enabled = true;
+           uiStrategy_panelExRunContinuesPanel.Enabled = true;
         }
 
 
@@ -323,12 +328,16 @@ namespace Reversals.Forms
             uiStrategy_SelectedIndexChanged(this, e);
             DefaultBtSummaryTable();
             //DefaultFtSummaryTable();
+            uiSummary_dataGridViewBT.ScrollBars = ScrollBars.None;
 
             uiCalendar_comboBoxXSymbol.SelectedItem = uiStrategy_comboBoxExSymbol.SelectedItem;
             uiCalendar_comboBoxXDSet.SelectedItem = uiStrategy_comboBoxExDataSet.SelectedItem;
 
             uiSummary_comboBoxXSymbol.SelectedItem = uiStrategy_comboBoxExSymbol.SelectedItem;
             uiSummary_comboBoxXDSet.SelectedItem = uiStrategy_comboBoxExDataSet.SelectedItem;
+            
+            uiWeeklySymbolName.SelectedItem = uiStrategy_comboBoxExSymbol.SelectedItem;
+            uiWeeklyDataSetName.SelectedItem = uiStrategy_comboBoxExDataSet.SelectedItem;
 
             uiBTSummaryChart.Series.Clear();
 
@@ -393,8 +402,8 @@ namespace Reversals.Forms
 
         private void StartOptimize()
         {
-            _strategy.Parameters = new Strategy.StrategyParameters(1, _currentSymbolName, "Step Change");
             uiWeeklyData_superGridControlTable.PrimaryGrid.DataSource = null;
+            _strategy.Parameters = new Strategy.StrategyParameters(1, _currentSymbolName, "Step Change");
             var optimizer = new Optimizer(_strategy, OptimizationParameters.Instance.Parameters, uiStrategy_dateTimeAdvOISStart.Value, uiStrategy_dateTimeAdvOISEnd.Value);
             optimizer.ProgressEvent += OptimizeProgressIncrement;
             optimizer.StartOptimize(uiSummary_dataGridViewBT);
@@ -405,9 +414,8 @@ namespace Reversals.Forms
                 uiStrategy_buttonXStart.Enabled = true;
                 uiStrategy_buttonXStop.Enabled = false;
                 uiStatus_toolStripProgressBar.Value = 100;
-                this.Height += 1;
-                this.Height -= 1;
             });
+
         }
 
         private void OptimizeProgressIncrement(double percent)
@@ -427,10 +435,18 @@ namespace Reversals.Forms
 
         private void DisplayBackTestResult(Strategy strategy)
         {
+            _strategyWeekly = strategy;
+            _orderListToSaveWeekly = new List<Order>();
+            foreach (var order in strategy.OrderOperationsList)
+            {
 
+                var ord = new Order(1, "", DateTime.Now.Millisecond, order.Time, order.Operation, order.Type, 1,
+                                    order.Price, "", "");
+                _orderListToSaveWeekly.Add(ord);
+            }
             var summaryDisplayer = new SummaryDisplayer(strategy, _inSampleStartTime, _inSampleEndTime);
+        
 
-            
             Invoke((Action)(() => summaryDisplayer.DisplayTable(uiSummary_dataGridViewBT)));
 
             if (uiStrategy_checkBoxXRunContinuesCheck.Checked == false)
@@ -688,14 +704,11 @@ namespace Reversals.Forms
 
         private void uiWeeklyData_superGridControlTable_BeforeExpand(object sender, GridBeforeExpandEventArgs e)
         {
-            var row = e.GridContainer as GridRow;
+            GridRow row = e.GridContainer as GridRow;
             string str = e.GridPanel.Name;
-            if (row != null)
+            if (row["Trades"].Value.ToString() == "0" && str == "tableDays")
             {
-                if (row["Trades"].Value.ToString() == "0" && str == "tableDays")
-                {
-                    e.Cancel = true;
-                }
+                e.Cancel = true;
             }
         }
 
@@ -943,6 +956,17 @@ namespace Reversals.Forms
         {
             if (e.RowIndex >= 0)
             {
+                Invoke((Action)delegate
+                    {
+                        var count = Math.Round((double)uiSummary_dataGridViewBT.Height / 24);
+                        if (uiSummary_dataGridViewBT.Rows.Count >
+                            count + 2)
+                        {
+                            uiSummary_dataGridViewBT.ScrollBars = ScrollBars.Vertical;
+                        }
+                    });
+
+
                 for (int i = 0; i < uiSummary_dataGridViewBT.Rows.Count; i++)
                 {
                     if (uiSummary_dataGridViewBT.Rows[i].Cells.Count >= 3)
@@ -1234,6 +1258,7 @@ namespace Reversals.Forms
 
                 uiCalendar_buttonXSave.Enabled = false;
                 uiStrategy_checkBoxXReqTVCheck.Checked = false;
+                uiWeeklyDBPanel.Enabled = true;
                 uiStrategy_comboBoxExSymbol.Items.Clear();
                 uiCalendar_comboBoxXSymbol.Items.Clear();
 
@@ -1303,7 +1328,7 @@ namespace Reversals.Forms
             var tickList = DataManager.GetContractData(symbol);
             if (tickList.Count > 0)
             {
-                _data = new Data(tickList, Data.DataFileType.TickFromDb,Convert.ToInt32(Settings.Default.sTimeZone));
+                _data = new Data(tickList, Data.DataFileType.TickFromDb,Convert.ToInt32(Properties.Settings.Default.sTimeZone));
 
                 _data.CreateData();
 
@@ -1336,10 +1361,18 @@ namespace Reversals.Forms
                 uiDataArchive_dataGridViewXContracts.RowCount = _contracts.Count;                
                 uiCalendar_comboBoxXSymbol.Items.Clear();
                 uiStrategy_comboBoxExDataSet.Items.Clear();
+                uiWeeklyDataSetName.Items.Clear();
+                uiWeeklySymbolName.Items.Clear();
+
+
                 for (int i = 0; i < _contracts.Count; i++)
                 {
                     uiStrategy_comboBoxExDataSet.Items.Add(_contracts[i].ContractName);
                     uiCalendar_comboBoxXSymbol.Items.Add(_contracts[i].ContractName);
+                    //todo weekly
+                    uiWeeklyDataSetName.Items.Add(_contracts[i].ContractName);
+                    uiWeeklySymbolName.Items.Add(_contracts[i].ContractName);
+
                     uiDataArchive_checkedListBoxSymbols.Items.Add(_contracts[i].ContractName);
                     //* add list
                     uiDataArchive_dataGridViewXContracts.Rows[i].Cells[0].Value =
@@ -1526,7 +1559,7 @@ namespace Reversals.Forms
             if (uiStrategy_radioButtonDataFromFile.Checked)
             {
                 uiStrategy_checkBoxXReqTVCheck.Checked = false;
-
+                uiWeeklyDBPanel.Enabled = false;
                 uiStrategy_comboBoxExDataSet.Items.Clear();
                 uiStrategy_comboBoxExDataSet.Text = "";
                 uiFilePathLabel.Visible = true;
@@ -2185,6 +2218,14 @@ namespace Reversals.Forms
                 }
             }
 
+            if ((rowindex == 0) && (columnindex == 2))
+            {
+                zim = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 6].Value.ToString(), _nfi);
+                //ticksize = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 7].Value.ToString(), _nfi);
+                step = double.Parse(uiStrategy_dataGridViewOptomizationParameters[columnindex, rowindex].Value.ToString(), _nfi);
+                pvalue = zim / step;
+                uiStrategy_dataGridViewNoOptomizationParameters[1, 5].Value = Math.Round(pvalue, 5);
+            }
             if ((rowindex == 0) && (columnindex == 1))
             {
                 zim = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 6].Value.ToString(), _nfi);
@@ -2427,6 +2468,271 @@ namespace Reversals.Forms
         }
         #endregion
 
+
+        #region WEEKLYDATA RESULT SAVING/LOADING/DELETING
+
+        #region LOAD FROM DB
+        private void uiLoadWeeklyResultBtn_Click(object sender, EventArgs e)
+        {
+            var loadWeeklyThread = new Thread(LoadWeeklyDataFromDB)
+            {
+                Name = "LoadWeeklyDataFromDB",
+                Priority = ThreadPriority.Highest
+            };
+            loadWeeklyThread.Start();
+        }
+        private void LoadWeeklyDataFromDB()
+        {
+
+
+            int symbolId = 0;
+            int dsetId = 0;
+
+
+            if (_symbolList == null)
+                _symbolList = DataManager.GetContracts();
+
+
+            Invoke((MethodInvoker)delegate
+            {
+                foreach (var item in _symbolList)
+                {
+                    if (uiWeeklySymbolName.Text == item.ContractName)
+                        symbolId = item.CountractId;
+                }
+
+                _datasetList = DataManager.GetDatasets();
+
+                foreach (var item in _datasetList)
+                {
+                    if (uiWeeklyDataSetName.Text == item.DataSetName)
+                        dsetId = item.Id;
+                }
+
+                uiWeeklyData_superGridControlTable.PrimaryGrid.DataSource = null;
+                uiWeeklyData_superGridControlTable.Refresh();
+            });
+
+
+            var tradelist = DataManager.GetWeeklyDataTradeResult(symbolId, dsetId);
+            var orderlist = DataManager.GetWeeklyDataOrderResult(symbolId, dsetId);
+            var listOrder = new List<Order>();
+            var listPositions = new List<Position>();
+            var oper = new Operation();
+
+            if (tradelist.Count != 0 && orderlist.Count != 0)
+            {
+                foreach (var item in orderlist)
+                {
+                    switch (item.Operation)
+                    {
+                        case "Buy":
+                            oper = Operation.Buy;
+                            break;
+                        case "Sell":
+                            oper = Operation.Sell;
+                            break;
+                    }
+                    var orderitem = new Order(1, "", DateTime.Now.Millisecond, item.Time, oper, OrderType.Market, 1,
+                                              item.Price, "", "");
+                    listOrder.Add(orderitem);
+                }
+                var tradeop = new Operation();
+                foreach (var item in tradelist)
+                {
+                    bool isPremium = false;
+                    switch (item.Operation)
+                    {
+                        case "Buy":
+                            tradeop = Operation.Buy;
+                            break;
+                        case "Sell":
+                            tradeop = Operation.Sell;
+                            break;
+                        case "Premium":
+                            tradeop = Operation.Premium;
+                            break;
+                        case "PNL":
+                            tradeop = Operation.PNL;
+                            break;
+                    }
+                    var trade = new Position(1, "", DateTime.Now.Millisecond, item.TimeOpen, tradeop, 1, item.OpenPr,
+                                             item.ClosePr, item.Comment, "", false);
+                    trade.TimeClose = item.TimeClose;
+                    trade.Trades = item.Trades;
+                    trade.PosPNL = item.PosPNL;
+                    trade.Commission = item.Commission;
+                    trade.ClosePNL = item.ClosePNL;
+
+
+
+                    listPositions.Add(trade);
+                }
+
+                _weekData = new WeeklyDataDisplayer(listPositions, listOrder);
+                Invoke((MethodInvoker)delegate
+                {
+                    uiWeeklyData_superGridControlTable.PrimaryGrid.DataSource = _weekData._weeklyData;
+                    uiWeeklyData_superGridControlTable.Refresh();
+                    ToastNotification.Show(this, "WEEKLY DATA ITEMS ARE LOADED.");
+                });
+
+            }
+        }
+        #endregion
+        #region SAVE TO DB
+        private void uiSaveWeeklyResultBtn_Click(object sender, EventArgs e)
+        {
+            var saveWeeklyThread = new Thread(SaveWeeklyDataToDB)
+            {
+                Name = "SaveWeeklyDataToDB",
+                Priority = ThreadPriority.Highest
+            };
+
+            saveWeeklyThread.Start();
+        }
+
+        private void SaveWeeklyDataToDB()
+        {
+            int symbolId = 0;
+            int dataSetId = 0;
+            _symbolList = DataManager.GetContracts();
+
+            Invoke((MethodInvoker)delegate
+            {
+                foreach (var item in _symbolList)
+                {
+                    if (item.ContractName == uiWeeklySymbolName.Text)
+                        symbolId = item.CountractId;
+                }
+                _datasetList = DataManager.GetDatasets();
+
+                foreach (var item in _datasetList)
+                {
+                    if (item.DataSetName == uiWeeklyDataSetName.Text)
+                        dataSetId = item.Id;
+                }
+            });
+
+
+            if (_strategyWeekly.Trades.Count != 0)
+            {
+
+                var currtrades = _strategyWeekly.Trades;
+                var currorders = _orderListToSaveWeekly;
+                var tradeList = new List<WeeklyDataTradeModel>();
+                var orderList = new List<WeeklyDataOrderModel>();
+                foreach (var item in currtrades)
+                {
+                    var trade = new WeeklyDataTradeModel
+                    {
+                        OpenPr = item.Price,
+                        ClosePr = item.Last,
+                        TimeOpen = item.TimeOpen,
+                        TimeClose = item.TimeClose,
+                        Operation = item.Operation == Backtests.Enums.Operation.Buy ? "Buy" :
+                        item.Operation == Operation.Sell ? "Sell" : item.Operation == Operation.PNL ? "PNL" : "Premium",
+                        ClosePNL = item.ClosePNL,
+                        PosPNL = item.PosPNL,
+                        Comment = item.Comment,
+                        Commission = item.Commission,
+                        Trades = item.Trades
+                    };
+                    tradeList.Add(trade);
+                }
+
+                foreach (var itemo in currorders)
+                {
+                    var order = new WeeklyDataOrderModel()
+                    {
+                        Price = itemo.Price,
+                        Time = itemo.Time,
+                        Operation = itemo.Operation == Operation.Buy ? "Buy" : "Sell"
+                    };
+                    orderList.Add(order);
+                }
+
+                DataManager.AddWeeklyResult(symbolId, dataSetId, tradeList, orderList);
+                Invoke((MethodInvoker)(() => ToastNotification.Show(this, "WEEKLY DATA ITEMS ARE SAVED."))
+
+                                           );
+                _strategyWeekly.Trades.Clear();
+                _strategyWeekly.OrderOperationsList.Clear();
+            }
+
+        }
+
+        #endregion
+        #region DELETE FROM DB
+        private void uiDeleteWeeklyResultBtn_Click(object sender, EventArgs e)
+        {
+
+            var deleteWeeklyThread = new Thread(DeleteWeeklyDataFromDB)
+            {
+                Name = "DeleteWeeklyDataFromDB",
+                Priority = ThreadPriority.AboveNormal
+            };
+            deleteWeeklyThread.IsBackground = true;
+            deleteWeeklyThread.Start();
+        }
+        private void DeleteWeeklyDataFromDB()
+        {
+            int symbolId = 0;
+            int dsetId = 0;
+         
+            _symbolList = DataManager.GetContracts();
+
+
+            Invoke((MethodInvoker)delegate
+            {
+                foreach (var item in _symbolList)
+                {
+                    if (uiWeeklySymbolName.Text == item.ContractName)
+                        symbolId = item.CountractId;
+                }
+
+                _datasetList = DataManager.GetDatasets();
+
+                foreach (var item in _datasetList)
+                {
+                    if (uiWeeklyDataSetName.Text == item.DataSetName)
+                        dsetId = item.Id;
+                }
+                var trList = DataManager.GetWeeklyDataTradeResult(symbolId, dsetId);
+                if (trList.Count != 0)
+                {
+
+                    if (DataManager.DelWeeklyResult(symbolId, dsetId))
+                    {
+                        ToastNotification.Show(this, "WEEKLY DATA ITEMS ARE DELETED.");
+                        uiWeeklyData_superGridControlTable.PrimaryGrid.DataSource = null;
+                        uiWeeklyData_superGridControlTable.Refresh();
+                    }
+                }
+            });
+            
+
+
+
+        }
+        #endregion
+
+        private void uiWeeklySymbolName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            _dataSets = DataManager.GetDatasets();
+            int symbolId = _contracts.Find(a => a.ContractName == uiWeeklySymbolName.Text).CountractId;
+            uiWeeklyDataSetName.Items.Clear();
+            uiWeeklyDataSetName.Text = "";
+            foreach (DataSetModel dataSet in _dataSets.Where(a => a.SymbolId == symbolId))
+            {
+                uiWeeklyDataSetName.Items.Add(dataSet.DataSetName);
+
+            }
+        }
+
+
+        #endregion
         private void MainFormMetroApp_FormClosed(object sender, FormClosedEventArgs e)
         {
             IntradayTick.Stop();
@@ -2458,11 +2764,22 @@ namespace Reversals.Forms
 
         private void ui_tabItem_summary_Click(object sender, EventArgs e)
         {
-            Invoke((Action)delegate
+            Invoke((Action) delegate
+                {
+                    if (uiSummary_dataGridViewBT.ScrollBars == ScrollBars.Vertical)
+                    {
+                        uiSummary_dataGridViewBT.ScrollBars = ScrollBars.None;
+                        uiSummary_dataGridViewBT.ScrollBars = ScrollBars.Vertical;
+                    }                
+                });
+        }
+
+        private void uiStatus_toolStripProgressBar_ValueChanged(object sender, EventArgs e)
+        {
+            if (uiStatus_toolStripProgressBar.Value == uiStatus_toolStripProgressBar.Maximum)
             {
-                this.Height += 1;
-                this.Height -= 1;
-            });
+                uiSummary_dataGridViewBT.ScrollBars = ScrollBars.Vertical;
+            }
         }
     }
 }

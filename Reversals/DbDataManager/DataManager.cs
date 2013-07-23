@@ -19,6 +19,8 @@ namespace Reversals.DbDataManager
         private const string TblResults = "tbl_calendar_results";
         private const string TblSummaryResults = "tbl_summary_results";
         private static readonly List<string> QueryQueue = new List<string>();
+        private const string TblWeeklyDataTradeResults = "tbl_weekly_tradeResults";
+        private const string TblWeeklyDataOrderResults = "tbl_weekly_orderResults";
         #endregion
 
 
@@ -470,6 +472,175 @@ namespace Reversals.DbDataManager
         #endregion
 
 
+        #region  WEEKLYDATADISPLAYER RESULTS
+        /// <summary>
+        /// Save WeeklyData To DataBase
+        /// </summary>
+        /// <param name="symbolId"></param>
+        /// <param name="datasetId"></param>
+        /// <param name="weeklyResultTradeModel"></param>
+        public static void AddWeeklyResult(int symbolId, int datasetId, IEnumerable<WeeklyDataTradeModel> weeklyResultTradeModel, IEnumerable<WeeklyDataOrderModel> weeklyDataOrderModel)
+        {
+            // DELETE old data
+
+            DelWeeklyResult(symbolId, datasetId);
+
+            // ADD new data
+            foreach (var item in weeklyResultTradeModel)
+            {
+
+                var timeOpen = item.TimeOpen.ToString("yyyy/MM/dd HH:mm:ss", CultureInfo.InvariantCulture);
+                var timeClose = item.TimeClose.ToString("yyyy/MM/dd HH:mm:ss", CultureInfo.InvariantCulture);
+                var comment = "comment";
+                var query = "INSERT IGNORE INTO " + TblWeeklyDataTradeResults;
+                query += "(Symbol_ID, Dataset_ID, id_Day, TimeOpen, TimeClose, Operation, OpenPr, ClosePr, Trades, Commission, PosPNL, ClosePNL, Comment) VALUES";
+                query += "(";
+                query += symbolId + ",";
+                query += datasetId + ",";
+                query += item.id_Day + ",";
+                query += "'" + timeOpen + "',";
+                query += "'" + timeClose + "',";
+                query += "'" + item.Operation + "'" + ",";
+                query += "'" + item.OpenPr.ToString("n", CultureInfo.InvariantCulture) + "'" + ",";
+                query += "'" + item.ClosePr.ToString("n", CultureInfo.InvariantCulture) + "'" + ",";
+                query += "'" + item.Trades.ToString("n", CultureInfo.InvariantCulture) + "'" + ",";
+                query += "'" + item.Commission.ToString("n", CultureInfo.InvariantCulture) + "'" + ",";
+                query += "'" + item.PosPNL.ToString("n", CultureInfo.InvariantCulture) + "'" + ",";
+                query += "'" + item.ClosePNL.ToString("n", CultureInfo.InvariantCulture) + "'" + ",";
+                query += comment;
+                query += ");";
+
+                DoSql(query);
+            }
+            foreach (var items in weeklyDataOrderModel)
+            {
+                var orderTime = items.Time.ToString("yyyy/MM/dd HH:mm:ss", CultureInfo.InvariantCulture);
+                var query2 = "INSERT IGNORE INTO " + TblWeeklyDataOrderResults;
+                query2 += "(Symbol_ID, Dataset_ID, Time,Operation,Price) VALUES";
+                query2 += "(";
+                query2 += symbolId + ",";
+                query2 += datasetId + ",";
+                query2 += "'" + orderTime + "',";
+                query2 += "'" + items.Operation + "'" + ",";
+                query2 += "'" + items.Price.ToString("n", CultureInfo.InvariantCulture) + "'" + ");";
+
+                DoSql(query2);
+            }
+            var qry = "COMMIT;";
+            DoSql(qry);
+        }
+
+        /// <summary>
+        /// GetWeeklyData From DataBase
+        /// </summary>
+        /// <param name="symbolId"></param>
+        /// <param name="datasetId"></param>
+        /// <returns></returns>
+        public static List<WeeklyDataTradeModel> GetWeeklyDataTradeResult(int symbolId, int datasetId)
+        {
+            var result = new List<WeeklyDataTradeModel>();
+
+            var sql = "SELECT * FROM " + TblWeeklyDataTradeResults;
+            sql += " WHERE Symbol_ID =" + symbolId + " AND Dataset_ID = " + datasetId + " ORDER BY `TimeOpen`";
+
+
+            var reader = GetReader(sql);
+            if (reader != null)
+            {
+                while (reader.Read())
+                {
+
+                    var aid_Day = reader.GetInt32(3);
+                    var aTimeOpen = reader.GetDateTime(4);
+                    var aTimeClose = reader.GetDateTime(5);
+                    var aOperation = reader.GetString(6);
+                    var aOpenPr = reader.GetDouble(7);
+                    var aClosePr = reader.GetDouble(8);
+                    var aTrades = reader.GetDouble(9);
+                    var aCommission = reader.GetDouble(10);
+                    var aPosPNL = reader.GetDouble(11);
+                    var aClosePNL = reader.GetDouble(12);
+                    var aComment = "";
+
+                    var srm = new WeeklyDataTradeModel()
+                    {
+                        id_Day = aid_Day,
+                        TimeOpen = aTimeOpen,
+                        TimeClose = aTimeClose,
+                        Operation = aOperation,
+                        OpenPr = aOpenPr,
+                        ClosePr = aClosePr,
+                        Trades = aTrades,
+                        Commission = aCommission,
+                        PosPNL = aPosPNL,
+                        ClosePNL = aClosePNL,
+                        Comment = aComment
+
+                    };
+
+
+                    result.Add(srm);
+                }
+
+                reader.Close();
+            }
+
+            return result;
+        }
+
+        public static List<WeeklyDataOrderModel> GetWeeklyDataOrderResult(int symbolId, int datasetId)
+        {
+            var result = new List<WeeklyDataOrderModel>();
+
+            var sql = "SELECT * FROM " + TblWeeklyDataOrderResults;
+            sql += " WHERE Symbol_ID =" + symbolId + " AND Dataset_ID = " + datasetId + " ORDER BY `Time`";
+
+
+            var reader = GetReader(sql);
+            if (reader != null)
+            {
+                while (reader.Read())
+                {
+
+                    var wom = new WeeklyDataOrderModel()
+                    {
+
+                        Time = reader.GetDateTime(3),
+                        Operation = reader.GetString(4),
+                        Price = reader.GetDouble(5)
+
+                    };
+
+                    result.Add(wom);
+                }
+
+                reader.Close();
+            }
+
+            return result;
+        }
+        /// <summary>
+        /// Delete WeeklyData Results From DB
+        /// </summary>
+        /// <param name="symbolId"></param>
+        /// <param name="datasetId"></param>
+        public static bool DelWeeklyResult(int symbolId, int datasetId)
+        {
+            var query1 = "DELETE FROM " + TblWeeklyDataTradeResults;
+            query1 += " WHERE Symbol_ID =" + symbolId + " AND Dataset_ID = " + datasetId + " ;COMMIT;";
+
+            var bool1 = DoSql(query1);
+
+            var query2 = "DELETE FROM " + TblWeeklyDataOrderResults;
+            query2 += " WHERE Symbol_ID =" + symbolId + " AND Dataset_ID = " + datasetId + " ;COMMIT;";
+
+            var bool2 = DoSql(query2);
+            return bool1 || bool2;
+        }
+
+        #endregion
+
+
         #region COLLECTING
 
 
@@ -735,6 +906,41 @@ namespace Reversals.DbDataManager
                                                  + "COLLATE='latin1_swedish_ci'"
                                                  + "ENGINE=InnoDB;";
             DoSql(createSummaryResultSql);
+
+            const string createWeeklyDataTradeResultSql = "CREATE TABLE  IF NOT EXISTS `" + TblWeeklyDataTradeResults + "` ("
+                                            + "`ID` INT(10) UNSIGNED  NOT NULL AUTO_INCREMENT,"
+                                            + "`Symbol_ID` INT(10) NULL,"
+                                            + "`Dataset_ID` INT(10) NULL,"
+                                            + "`id_Day` INT(10) NULL, "
+                                            + "`TimeOpen` VARCHAR(50) NULL, "
+                                            + "`TimeClose` VARCHAR(50) NULL, "
+                                            + "`Operation` VARCHAR(50) NULL, "
+                                            + "`OpenPr` FLOAT(9,5) NULL, "
+                                            + "`ClosePr` FLOAT(9,5) NULL, "
+                                            + "`Trades` FLOAT(9,5) NULL, "
+                                            + "`Commission` FLOAT(9,5) NULL, "
+                                            + "`PosPNL` FLOAT(9,5) NULL, "
+                                            + "`ClosePNL` FLOAT(9,5) NULL, "
+                                            + "`Comment` VARCHAR(50) NULL, "
+                                            + "PRIMARY KEY (`ID`)"
+                                            + ")"
+                                            + "COLLATE='latin1_swedish_ci'"
+                                            + "ENGINE=InnoDB;";
+            DoSql(createWeeklyDataTradeResultSql);
+
+            const string createWeeklyDataOrderResultSql = "CREATE TABLE  IF NOT EXISTS `" + TblWeeklyDataOrderResults + "` ("
+                                             + "`ID` INT(10) UNSIGNED  NOT NULL AUTO_INCREMENT,"
+                                             + "`Symbol_ID` INT(10) NULL,"
+                                             + "`Dataset_ID` INT(10) NULL,"
+                                             + "`Time` DateTime NULL,"
+                                             + "`Operation` VARCHAR(50) NULL,"
+                                             + "`Price` FLOAT(9,5) NULL,"
+                                             + "PRIMARY KEY (`ID`)"
+                                             + ")"
+                                             + "COLLATE='latin1_swedish_ci'"
+                                             + "ENGINE=InnoDB;";
+            DoSql(createWeeklyDataOrderResultSql);
+
 
         }
 

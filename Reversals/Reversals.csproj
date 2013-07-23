@@ -127,6 +127,7 @@
     <Compile Include="DbDataManager\Structs\DataSetModel.cs" />
     <Compile Include="DbDataManager\DataManager.cs" />
     <Compile Include="DbDataManager\Structs\ResultModel.cs" />
+    <Compile Include="DbDataManager\Structs\WeeklyDataModel.cs" />
     <Compile Include="Display\BaseDisplayer\Displayer.cs" />
     <Compile Include="Display\CalendarDisplayer\CalendarDisplayer.cs" />
     <Compile Include="Display\SummaryDisplayer\SummaryDisplayer.cs" />

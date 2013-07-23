@@ -82,7 +82,39 @@ namespace Reversals.Display
 
 
 
+        public WeeklyDataDisplayer(List<Position> trades, List<Order> orderList)
+            : base(trades)
+        {
+            DateTimeFormatInfo dtfInfo = DateTimeFormatInfo.GetInstance(CultureInfo.CurrentCulture);
+            _orderList = orderList;
+            _dateTimeFormat = "dd" + dtfInfo.DateSeparator.ToString() + "MM" + dtfInfo.DateSeparator.ToString() + "yyyy" +
+                              " HH:mm:ss";
+            _dayindexer = 0;
+            _weekindexer = 0;
+            _tradeindexer = 0;
+            _isFullWeek = false;
+            _tempDayOfYear = Trades[0].TimeOpen.DayOfYear;
+            _currDayOfYear = _tempDayOfYear;
+            _currentweek = Trades[0].TimeOpen.DayOfYear;
+            _tempweek = Trades[0].TimeOpen.DayOfYear;
 
+            _currWeek = Trades[0].TimeOpen;
+            _startWeek = Trades[0].TimeOpen;
+            _endWeek = Trades[0].TimeOpen;
+            _tempTrades = Trades;
+
+            _weeklyData = new WeeklyData();
+
+            _weeklyData.Relations.Add("1", _weeklyData.Tables["tableWeek"].Columns["id"],
+                                   _weeklyData.Tables["tableDays"].Columns["id_Week"], false);
+            _weeklyData.Relations.Add("2", _weeklyData.Tables["tableDays"].Columns["id"],
+                                   _weeklyData.Tables["orderTable"].Columns["id_Day"], false);
+
+
+
+
+            CreateDataTablesFromTrades();
+        }
         public void CreateDataTablesFromTrades()
         {
             int i = 0;

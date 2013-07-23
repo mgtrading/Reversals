@@ -18,7 +18,10 @@ namespace Reversals.Display.BaseDisplayer
        //protected string _dateTimeFormat;
        protected NumberFormatInfo Nfi = new CultureInfo("en-US", false).NumberFormat;
 
-
+       protected Displayer(List<Position> trades)
+       {
+           Trades = trades;
+       }
        protected Displayer(Strategy vtrades, DateTime startDate, DateTime endTime)
        {
            Strategy = vtrades;

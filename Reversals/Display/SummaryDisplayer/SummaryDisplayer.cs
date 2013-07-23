@@ -81,7 +81,7 @@ namespace Reversals.Display.SummaryDisplayer
                     dgrid.DataSource = null;
                     dgrid.DataSource = provider;
                     dgrid.Columns[1].FillWeight = dgrid.Columns[2].FillWeight = 180;
-                    dgrid.Refresh();
+                    //dgrid.Refresh();
                 };
                 dgrid.Invoke(action);
             }

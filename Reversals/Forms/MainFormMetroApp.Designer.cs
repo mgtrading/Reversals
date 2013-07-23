@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             DevComponents.DotNetBar.SuperGrid.Style.Background background1 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
             DevComponents.DotNetBar.SuperGrid.Style.Background background2 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
             DevComponents.DotNetBar.SuperGrid.Style.Background background3 = new DevComponents.DotNetBar.SuperGrid.Style.Background();
@@ -59,6 +59,44 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.metroShellMain = new DevComponents.DotNetBar.Metro.MetroShell();
+            this.metroTabPanel_summary = new DevComponents.DotNetBar.Metro.MetroTabPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.uiBTSummaryGroupPanel = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.uiSummaryStatisticsBToData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBFrData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBNLsData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBNPrData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBNTrData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBAvgTrData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBPrFData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBPrfPercData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBNetLSData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBnetPRData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBNetData = new System.Windows.Forms.Label();
+            this.uiSummaryStatisticsBNetPrLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBToLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBFrLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBNLsLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBNPrLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBNTrLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBAvgTrLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBPrFLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBPrfpercLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBNetLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiSummaryStatisticsBNetLsLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiBTStatisticDataLabel = new DevComponents.DotNetBar.LabelX();
+            this.uiBTSummaryChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.uiSummary_dataGridViewBT = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.BTSymbol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BTStartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BTEndDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BTPnl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uiSummary_panelExSaving = new DevComponents.DotNetBar.PanelEx();
+            this.uiSummary_buttonXDelete = new DevComponents.DotNetBar.ButtonX();
+            this.uiSummary_buttonXSave = new DevComponents.DotNetBar.ButtonX();
+            this.uiSummary_buttonXLoad = new DevComponents.DotNetBar.ButtonX();
+            this.uiSummary_comboBoxXDSet = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.uiSummary_comboBoxXSymbol = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.metroTabPanel_startegy = new DevComponents.DotNetBar.Metro.MetroTabPanel();
             this.uiStrategyTablTableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.uiStrategy_panelExOptions = new DevComponents.DotNetBar.PanelEx();
@@ -175,47 +213,15 @@
             this.uiStrategy_WorkingButtonsPanel = new DevComponents.DotNetBar.PanelEx();
             this.uiStrategy_buttonXStart = new DevComponents.DotNetBar.ButtonX();
             this.uiStrategy_buttonXStop = new DevComponents.DotNetBar.ButtonX();
-            this.metroTabPanel_summary = new DevComponents.DotNetBar.Metro.MetroTabPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.uiBTSummaryGroupPanel = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.uiSummaryStatisticsBToData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBFrData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBNLsData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBNPrData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBNTrData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBAvgTrData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBPrFData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBPrfPercData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBNetLSData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBnetPRData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBNetData = new System.Windows.Forms.Label();
-            this.uiSummaryStatisticsBNetPrLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBToLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBFrLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBNLsLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBNPrLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBNTrLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBAvgTrLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBPrFLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBPrfpercLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBNetLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiSummaryStatisticsBNetLsLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiBTStatisticDataLabel = new DevComponents.DotNetBar.LabelX();
-            this.uiBTSummaryChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.uiSummary_dataGridViewBT = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.BTSymbol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BTStartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BTEndDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BTPnl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uiSummary_panelExSaving = new DevComponents.DotNetBar.PanelEx();
-            this.uiSummary_buttonXDelete = new DevComponents.DotNetBar.ButtonX();
-            this.uiSummary_buttonXSave = new DevComponents.DotNetBar.ButtonX();
-            this.uiSummary_buttonXLoad = new DevComponents.DotNetBar.ButtonX();
-            this.uiSummary_comboBoxXDSet = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.uiSummary_comboBoxXSymbol = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.metroTabPanel_weekly = new DevComponents.DotNetBar.Metro.MetroTabPanel();
             this.uiWeekly_tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.uiWeeklyData_superGridControlTable = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
+            this.uiWeeklyDBPanel = new DevComponents.DotNetBar.PanelEx();
+            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.uiWeeklyDataSetName = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.uiWeeklySymbolName = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.metroTabPanel_calendar = new DevComponents.DotNetBar.Metro.MetroTabPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.uiCalendar_panelExSaving = new DevComponents.DotNetBar.PanelEx();
@@ -332,6 +338,12 @@
             this.uiFTSummaryScrollbar = new DevComponents.DotNetBar.VScrollBarAdv();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.metroShellMain.SuspendLayout();
+            this.metroTabPanel_summary.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.uiBTSummaryGroupPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiBTSummaryChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiSummary_dataGridViewBT)).BeginInit();
+            this.uiSummary_panelExSaving.SuspendLayout();
             this.metroTabPanel_startegy.SuspendLayout();
             this.uiStrategyTablTableLayout.SuspendLayout();
             this.uiStrategy_panelExOptions.SuspendLayout();
@@ -355,14 +367,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.uiStrategy_dataGridViewOptomizationParameters)).BeginInit();
             this.uiStrategy_panelExRunContinuesPanel.SuspendLayout();
             this.uiStrategy_WorkingButtonsPanel.SuspendLayout();
-            this.metroTabPanel_summary.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.uiBTSummaryGroupPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiBTSummaryChart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiSummary_dataGridViewBT)).BeginInit();
-            this.uiSummary_panelExSaving.SuspendLayout();
             this.metroTabPanel_weekly.SuspendLayout();
             this.uiWeekly_tableLayoutPanel4.SuspendLayout();
+            this.uiWeeklyDBPanel.SuspendLayout();
             this.metroTabPanel_calendar.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.uiCalendar_panelExSaving.SuspendLayout();
@@ -447,6 +454,598 @@
             this.metroShellMain.Text = "metroShell1";
             this.metroShellMain.SelectedTabChanged += new System.EventHandler(this.metroShellMain_SelectedTabChanged);
             this.metroShellMain.SettingsButtonClick += new System.EventHandler(this.metroShell1_SettingsButtonClick);
+            // 
+            // metroTabPanel_summary
+            // 
+            this.metroTabPanel_summary.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.metroTabPanel_summary.Controls.Add(this.tableLayoutPanel2);
+            this.metroTabPanel_summary.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroTabPanel_summary.Location = new System.Drawing.Point(0, 55);
+            this.metroTabPanel_summary.Name = "metroTabPanel_summary";
+            this.metroTabPanel_summary.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.metroTabPanel_summary.Size = new System.Drawing.Size(1198, 585);
+            // 
+            // 
+            // 
+            this.metroTabPanel_summary.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.metroTabPanel_summary.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.metroTabPanel_summary.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTabPanel_summary.TabIndex = 2;
+            this.metroTabPanel_summary.Visible = false;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.92074F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.07926F));
+            this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryGroupPanel, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryChart, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.uiSummary_dataGridViewBT, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.uiSummary_panelExSaving, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.ForeColor = System.Drawing.Color.Black;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 99.0099F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.9900981F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1192, 582);
+            this.tableLayoutPanel2.TabIndex = 37;
+            // 
+            // uiBTSummaryGroupPanel
+            // 
+            this.uiBTSummaryGroupPanel.BackColor = System.Drawing.Color.White;
+            this.uiBTSummaryGroupPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBToData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBFrData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNLsData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNPrData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNTrData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBAvgTrData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrFData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrfPercData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetLSData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBnetPRData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetData);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetPrLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBToLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBFrLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNLsLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNPrLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNTrLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBAvgTrLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrFLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrfpercLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetLsLabel);
+            this.uiBTSummaryGroupPanel.Controls.Add(this.uiBTStatisticDataLabel);
+            this.uiBTSummaryGroupPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiBTSummaryGroupPanel.DrawTitleBox = false;
+            this.uiBTSummaryGroupPanel.Location = new System.Drawing.Point(3, 579);
+            this.uiBTSummaryGroupPanel.Name = "uiBTSummaryGroupPanel";
+            this.uiBTSummaryGroupPanel.Size = new System.Drawing.Size(148, 1);
+            // 
+            // 
+            // 
+            this.uiBTSummaryGroupPanel.Style.BackColor = System.Drawing.Color.RoyalBlue;
+            this.uiBTSummaryGroupPanel.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.uiBTSummaryGroupPanel.Style.BackColorGradientAngle = 90;
+            this.uiBTSummaryGroupPanel.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.uiBTSummaryGroupPanel.Style.BorderBottomWidth = 1;
+            this.uiBTSummaryGroupPanel.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.uiBTSummaryGroupPanel.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.uiBTSummaryGroupPanel.Style.BorderLeftWidth = 1;
+            this.uiBTSummaryGroupPanel.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.uiBTSummaryGroupPanel.Style.BorderRightWidth = 1;
+            this.uiBTSummaryGroupPanel.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.uiBTSummaryGroupPanel.Style.BorderTopWidth = 1;
+            this.uiBTSummaryGroupPanel.Style.CornerDiameter = 4;
+            this.uiBTSummaryGroupPanel.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiBTSummaryGroupPanel.Style.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.uiBTSummaryGroupPanel.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.uiBTSummaryGroupPanel.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.uiBTSummaryGroupPanel.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiBTSummaryGroupPanel.TabIndex = 40;
+            this.uiBTSummaryGroupPanel.Visible = false;
+            // 
+            // uiSummaryStatisticsBToData
+            // 
+            this.uiSummaryStatisticsBToData.AutoSize = true;
+            this.uiSummaryStatisticsBToData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBToData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBToData.Location = new System.Drawing.Point(50, 168);
+            this.uiSummaryStatisticsBToData.Name = "uiSummaryStatisticsBToData";
+            this.uiSummaryStatisticsBToData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBToData.TabIndex = 33;
+            this.uiSummaryStatisticsBToData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBFrData
+            // 
+            this.uiSummaryStatisticsBFrData.AutoSize = true;
+            this.uiSummaryStatisticsBFrData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBFrData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBFrData.Location = new System.Drawing.Point(49, 153);
+            this.uiSummaryStatisticsBFrData.Name = "uiSummaryStatisticsBFrData";
+            this.uiSummaryStatisticsBFrData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBFrData.TabIndex = 32;
+            this.uiSummaryStatisticsBFrData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBNLsData
+            // 
+            this.uiSummaryStatisticsBNLsData.AutoSize = true;
+            this.uiSummaryStatisticsBNLsData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBNLsData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNLsData.Location = new System.Drawing.Point(49, 138);
+            this.uiSummaryStatisticsBNLsData.Name = "uiSummaryStatisticsBNLsData";
+            this.uiSummaryStatisticsBNLsData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBNLsData.TabIndex = 31;
+            this.uiSummaryStatisticsBNLsData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBNPrData
+            // 
+            this.uiSummaryStatisticsBNPrData.AutoSize = true;
+            this.uiSummaryStatisticsBNPrData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBNPrData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNPrData.Location = new System.Drawing.Point(50, 123);
+            this.uiSummaryStatisticsBNPrData.Name = "uiSummaryStatisticsBNPrData";
+            this.uiSummaryStatisticsBNPrData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBNPrData.TabIndex = 30;
+            this.uiSummaryStatisticsBNPrData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBNTrData
+            // 
+            this.uiSummaryStatisticsBNTrData.AutoSize = true;
+            this.uiSummaryStatisticsBNTrData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBNTrData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNTrData.Location = new System.Drawing.Point(50, 107);
+            this.uiSummaryStatisticsBNTrData.Name = "uiSummaryStatisticsBNTrData";
+            this.uiSummaryStatisticsBNTrData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBNTrData.TabIndex = 29;
+            this.uiSummaryStatisticsBNTrData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBAvgTrData
+            // 
+            this.uiSummaryStatisticsBAvgTrData.AutoSize = true;
+            this.uiSummaryStatisticsBAvgTrData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBAvgTrData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBAvgTrData.Location = new System.Drawing.Point(50, 93);
+            this.uiSummaryStatisticsBAvgTrData.Name = "uiSummaryStatisticsBAvgTrData";
+            this.uiSummaryStatisticsBAvgTrData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBAvgTrData.TabIndex = 28;
+            this.uiSummaryStatisticsBAvgTrData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBPrFData
+            // 
+            this.uiSummaryStatisticsBPrFData.AutoSize = true;
+            this.uiSummaryStatisticsBPrFData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBPrFData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBPrFData.Location = new System.Drawing.Point(50, 78);
+            this.uiSummaryStatisticsBPrFData.Name = "uiSummaryStatisticsBPrFData";
+            this.uiSummaryStatisticsBPrFData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBPrFData.TabIndex = 27;
+            this.uiSummaryStatisticsBPrFData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBPrfPercData
+            // 
+            this.uiSummaryStatisticsBPrfPercData.AutoSize = true;
+            this.uiSummaryStatisticsBPrfPercData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBPrfPercData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBPrfPercData.Location = new System.Drawing.Point(50, 63);
+            this.uiSummaryStatisticsBPrfPercData.Name = "uiSummaryStatisticsBPrfPercData";
+            this.uiSummaryStatisticsBPrfPercData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBPrfPercData.TabIndex = 26;
+            this.uiSummaryStatisticsBPrfPercData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBNetLSData
+            // 
+            this.uiSummaryStatisticsBNetLSData.AutoSize = true;
+            this.uiSummaryStatisticsBNetLSData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBNetLSData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNetLSData.Location = new System.Drawing.Point(50, 48);
+            this.uiSummaryStatisticsBNetLSData.Name = "uiSummaryStatisticsBNetLSData";
+            this.uiSummaryStatisticsBNetLSData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBNetLSData.TabIndex = 25;
+            this.uiSummaryStatisticsBNetLSData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBnetPRData
+            // 
+            this.uiSummaryStatisticsBnetPRData.AutoSize = true;
+            this.uiSummaryStatisticsBnetPRData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBnetPRData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBnetPRData.Location = new System.Drawing.Point(50, 33);
+            this.uiSummaryStatisticsBnetPRData.Name = "uiSummaryStatisticsBnetPRData";
+            this.uiSummaryStatisticsBnetPRData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBnetPRData.TabIndex = 24;
+            this.uiSummaryStatisticsBnetPRData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBNetData
+            // 
+            this.uiSummaryStatisticsBNetData.AutoSize = true;
+            this.uiSummaryStatisticsBNetData.BackColor = System.Drawing.Color.Transparent;
+            this.uiSummaryStatisticsBNetData.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNetData.Location = new System.Drawing.Point(50, 20);
+            this.uiSummaryStatisticsBNetData.Name = "uiSummaryStatisticsBNetData";
+            this.uiSummaryStatisticsBNetData.Size = new System.Drawing.Size(76, 19);
+            this.uiSummaryStatisticsBNetData.TabIndex = 23;
+            this.uiSummaryStatisticsBNetData.Text = "<no data>";
+            // 
+            // uiSummaryStatisticsBNetPrLabel
+            // 
+            this.uiSummaryStatisticsBNetPrLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBNetPrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBNetPrLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNetPrLabel.Location = new System.Drawing.Point(1, 32);
+            this.uiSummaryStatisticsBNetPrLabel.Name = "uiSummaryStatisticsBNetPrLabel";
+            this.uiSummaryStatisticsBNetPrLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBNetPrLabel.TabIndex = 22;
+            this.uiSummaryStatisticsBNetPrLabel.Text = "BNetPr";
+            // 
+            // uiSummaryStatisticsBToLabel
+            // 
+            this.uiSummaryStatisticsBToLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBToLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBToLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBToLabel.Location = new System.Drawing.Point(1, 168);
+            this.uiSummaryStatisticsBToLabel.Name = "uiSummaryStatisticsBToLabel";
+            this.uiSummaryStatisticsBToLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBToLabel.TabIndex = 10;
+            this.uiSummaryStatisticsBToLabel.Text = "BTo";
+            // 
+            // uiSummaryStatisticsBFrLabel
+            // 
+            this.uiSummaryStatisticsBFrLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBFrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBFrLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBFrLabel.Location = new System.Drawing.Point(1, 152);
+            this.uiSummaryStatisticsBFrLabel.Name = "uiSummaryStatisticsBFrLabel";
+            this.uiSummaryStatisticsBFrLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBFrLabel.TabIndex = 9;
+            this.uiSummaryStatisticsBFrLabel.Text = "BFr";
+            // 
+            // uiSummaryStatisticsBNLsLabel
+            // 
+            this.uiSummaryStatisticsBNLsLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBNLsLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBNLsLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNLsLabel.Location = new System.Drawing.Point(1, 137);
+            this.uiSummaryStatisticsBNLsLabel.Name = "uiSummaryStatisticsBNLsLabel";
+            this.uiSummaryStatisticsBNLsLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBNLsLabel.TabIndex = 8;
+            this.uiSummaryStatisticsBNLsLabel.Text = "BNLs";
+            // 
+            // uiSummaryStatisticsBNPrLabel
+            // 
+            this.uiSummaryStatisticsBNPrLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBNPrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBNPrLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNPrLabel.Location = new System.Drawing.Point(1, 122);
+            this.uiSummaryStatisticsBNPrLabel.Name = "uiSummaryStatisticsBNPrLabel";
+            this.uiSummaryStatisticsBNPrLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBNPrLabel.TabIndex = 7;
+            this.uiSummaryStatisticsBNPrLabel.Text = "BNPr";
+            // 
+            // uiSummaryStatisticsBNTrLabel
+            // 
+            this.uiSummaryStatisticsBNTrLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBNTrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBNTrLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNTrLabel.Location = new System.Drawing.Point(1, 106);
+            this.uiSummaryStatisticsBNTrLabel.Name = "uiSummaryStatisticsBNTrLabel";
+            this.uiSummaryStatisticsBNTrLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBNTrLabel.TabIndex = 6;
+            this.uiSummaryStatisticsBNTrLabel.Text = "BNTr";
+            // 
+            // uiSummaryStatisticsBAvgTrLabel
+            // 
+            this.uiSummaryStatisticsBAvgTrLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBAvgTrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBAvgTrLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBAvgTrLabel.Location = new System.Drawing.Point(0, 92);
+            this.uiSummaryStatisticsBAvgTrLabel.Name = "uiSummaryStatisticsBAvgTrLabel";
+            this.uiSummaryStatisticsBAvgTrLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBAvgTrLabel.TabIndex = 5;
+            this.uiSummaryStatisticsBAvgTrLabel.Text = "BAvgTr";
+            // 
+            // uiSummaryStatisticsBPrFLabel
+            // 
+            this.uiSummaryStatisticsBPrFLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBPrFLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBPrFLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBPrFLabel.Location = new System.Drawing.Point(1, 78);
+            this.uiSummaryStatisticsBPrFLabel.Name = "uiSummaryStatisticsBPrFLabel";
+            this.uiSummaryStatisticsBPrFLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBPrFLabel.TabIndex = 4;
+            this.uiSummaryStatisticsBPrFLabel.Text = "BPrF";
+            // 
+            // uiSummaryStatisticsBPrfpercLabel
+            // 
+            this.uiSummaryStatisticsBPrfpercLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBPrfpercLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBPrfpercLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBPrfpercLabel.Location = new System.Drawing.Point(0, 62);
+            this.uiSummaryStatisticsBPrfpercLabel.Name = "uiSummaryStatisticsBPrfpercLabel";
+            this.uiSummaryStatisticsBPrfpercLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBPrfpercLabel.TabIndex = 3;
+            this.uiSummaryStatisticsBPrfpercLabel.Text = "BPrf%";
+            // 
+            // uiSummaryStatisticsBNetLabel
+            // 
+            this.uiSummaryStatisticsBNetLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBNetLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBNetLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNetLabel.Location = new System.Drawing.Point(0, 16);
+            this.uiSummaryStatisticsBNetLabel.Name = "uiSummaryStatisticsBNetLabel";
+            this.uiSummaryStatisticsBNetLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBNetLabel.TabIndex = 2;
+            this.uiSummaryStatisticsBNetLabel.Text = "BNet";
+            // 
+            // uiSummaryStatisticsBNetLsLabel
+            // 
+            this.uiSummaryStatisticsBNetLsLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiSummaryStatisticsBNetLsLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiSummaryStatisticsBNetLsLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiSummaryStatisticsBNetLsLabel.Location = new System.Drawing.Point(0, 47);
+            this.uiSummaryStatisticsBNetLsLabel.Name = "uiSummaryStatisticsBNetLsLabel";
+            this.uiSummaryStatisticsBNetLsLabel.Size = new System.Drawing.Size(48, 14);
+            this.uiSummaryStatisticsBNetLsLabel.TabIndex = 1;
+            this.uiSummaryStatisticsBNetLsLabel.Text = "BNetLs";
+            // 
+            // uiBTStatisticDataLabel
+            // 
+            this.uiBTStatisticDataLabel.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.uiBTStatisticDataLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.uiBTStatisticDataLabel.ForeColor = System.Drawing.Color.Black;
+            this.uiBTStatisticDataLabel.Location = new System.Drawing.Point(17, 3);
+            this.uiBTStatisticDataLabel.Name = "uiBTStatisticDataLabel";
+            this.uiBTStatisticDataLabel.Size = new System.Drawing.Size(75, 17);
+            this.uiBTStatisticDataLabel.TabIndex = 0;
+            this.uiBTStatisticDataLabel.Text = "Statistic data:";
+            this.uiBTStatisticDataLabel.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // uiBTSummaryChart
+            // 
+            this.uiBTSummaryChart.BorderlineColor = System.Drawing.SystemColors.AppWorkspace;
+            this.uiBTSummaryChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
+            chartArea1.AxisX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea1.AxisX2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea1.AxisY.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea1.AxisY2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            chartArea1.Name = "ChartArea1";
+            this.uiBTSummaryChart.ChartAreas.Add(chartArea1);
+            this.uiBTSummaryChart.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.uiBTSummaryChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.uiBTSummaryChart.Legends.Add(legend1);
+            this.uiBTSummaryChart.Location = new System.Drawing.Point(157, 579);
+            this.uiBTSummaryChart.Name = "uiBTSummaryChart";
+            this.uiBTSummaryChart.Size = new System.Drawing.Size(1032, 1);
+            this.uiBTSummaryChart.TabIndex = 36;
+            this.uiBTSummaryChart.Text = "chart1";
+            this.uiBTSummaryChart.Visible = false;
+            // 
+            // uiSummary_dataGridViewBT
+            // 
+            this.uiSummary_dataGridViewBT.AllowUserToAddRows = false;
+            this.uiSummary_dataGridViewBT.AllowUserToDeleteRows = false;
+            this.uiSummary_dataGridViewBT.AllowUserToResizeRows = false;
+            this.uiSummary_dataGridViewBT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.uiSummary_dataGridViewBT.BackgroundColor = System.Drawing.Color.White;
+            this.uiSummary_dataGridViewBT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.uiSummary_dataGridViewBT.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiSummary_dataGridViewBT.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.uiSummary_dataGridViewBT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.uiSummary_dataGridViewBT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.BTSymbol,
+            this.BTStartDate,
+            this.BTEndDate,
+            this.BTPnl});
+            this.tableLayoutPanel2.SetColumnSpan(this.uiSummary_dataGridViewBT, 2);
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uiSummary_dataGridViewBT.DefaultCellStyle = dataGridViewCellStyle8;
+            this.uiSummary_dataGridViewBT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiSummary_dataGridViewBT.EnableHeadersVisualStyles = false;
+            this.uiSummary_dataGridViewBT.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.uiSummary_dataGridViewBT.Location = new System.Drawing.Point(0, 44);
+            this.uiSummary_dataGridViewBT.Margin = new System.Windows.Forms.Padding(0);
+            this.uiSummary_dataGridViewBT.Name = "uiSummary_dataGridViewBT";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uiSummary_dataGridViewBT.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.uiSummary_dataGridViewBT.RowHeadersVisible = false;
+            this.uiSummary_dataGridViewBT.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.uiSummary_dataGridViewBT.ScrollBarAppearance = DevComponents.DotNetBar.eScrollBarAppearance.Default;
+            this.uiSummary_dataGridViewBT.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.uiSummary_dataGridViewBT.Size = new System.Drawing.Size(1192, 532);
+            this.uiSummary_dataGridViewBT.TabIndex = 22;
+            this.uiSummary_dataGridViewBT.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.uiBTSummaryTable_RowsAdded);
+            this.uiSummary_dataGridViewBT.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.uiSummary_dataGridViewBT_SortCompare);
+            // 
+            // BTSymbol
+            // 
+            this.BTSymbol.HeaderText = "Symbol";
+            this.BTSymbol.Name = "BTSymbol";
+            this.BTSymbol.ReadOnly = true;
+            // 
+            // BTStartDate
+            // 
+            this.BTStartDate.FillWeight = 150F;
+            this.BTStartDate.HeaderText = "StartDate";
+            this.BTStartDate.Name = "BTStartDate";
+            this.BTStartDate.ReadOnly = true;
+            // 
+            // BTEndDate
+            // 
+            this.BTEndDate.FillWeight = 150F;
+            this.BTEndDate.HeaderText = "EndDate";
+            this.BTEndDate.Name = "BTEndDate";
+            this.BTEndDate.ReadOnly = true;
+            // 
+            // BTPnl
+            // 
+            dataGridViewCellStyle7.Format = "N2";
+            dataGridViewCellStyle7.NullValue = null;
+            this.BTPnl.DefaultCellStyle = dataGridViewCellStyle7;
+            this.BTPnl.HeaderText = "PNL";
+            this.BTPnl.Name = "BTPnl";
+            this.BTPnl.ReadOnly = true;
+            // 
+            // uiSummary_panelExSaving
+            // 
+            this.uiSummary_panelExSaving.CanvasColor = System.Drawing.SystemColors.Control;
+            this.uiSummary_panelExSaving.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.tableLayoutPanel2.SetColumnSpan(this.uiSummary_panelExSaving, 2);
+            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_buttonXDelete);
+            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_buttonXSave);
+            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_buttonXLoad);
+            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_comboBoxXDSet);
+            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_comboBoxXSymbol);
+            this.uiSummary_panelExSaving.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiSummary_panelExSaving.Enabled = false;
+            this.uiSummary_panelExSaving.Location = new System.Drawing.Point(3, 3);
+            this.uiSummary_panelExSaving.Name = "uiSummary_panelExSaving";
+            this.uiSummary_panelExSaving.Size = new System.Drawing.Size(1186, 38);
+            this.uiSummary_panelExSaving.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.uiSummary_panelExSaving.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiSummary_panelExSaving.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.uiSummary_panelExSaving.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.uiSummary_panelExSaving.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.uiSummary_panelExSaving.Style.GradientAngle = 90;
+            this.uiSummary_panelExSaving.TabIndex = 41;
+            // 
+            // uiSummary_buttonXDelete
+            // 
+            this.uiSummary_buttonXDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.uiSummary_buttonXDelete.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.uiSummary_buttonXDelete.Location = new System.Drawing.Point(618, 6);
+            this.uiSummary_buttonXDelete.Name = "uiSummary_buttonXDelete";
+            this.uiSummary_buttonXDelete.Size = new System.Drawing.Size(75, 26);
+            this.uiSummary_buttonXDelete.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiSummary_buttonXDelete.TabIndex = 4;
+            this.uiSummary_buttonXDelete.Text = "DELETE";
+            this.uiSummary_buttonXDelete.Click += new System.EventHandler(this.uiSummary_buttonXDelete_Click);
+            // 
+            // uiSummary_buttonXSave
+            // 
+            this.uiSummary_buttonXSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.uiSummary_buttonXSave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.uiSummary_buttonXSave.Location = new System.Drawing.Point(522, 6);
+            this.uiSummary_buttonXSave.Name = "uiSummary_buttonXSave";
+            this.uiSummary_buttonXSave.Size = new System.Drawing.Size(75, 26);
+            this.uiSummary_buttonXSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiSummary_buttonXSave.TabIndex = 3;
+            this.uiSummary_buttonXSave.Text = "SAVE";
+            this.uiSummary_buttonXSave.Click += new System.EventHandler(this.uiSummary_buttonXSave_Click);
+            // 
+            // uiSummary_buttonXLoad
+            // 
+            this.uiSummary_buttonXLoad.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.uiSummary_buttonXLoad.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.uiSummary_buttonXLoad.Location = new System.Drawing.Point(426, 6);
+            this.uiSummary_buttonXLoad.Name = "uiSummary_buttonXLoad";
+            this.uiSummary_buttonXLoad.Size = new System.Drawing.Size(75, 26);
+            this.uiSummary_buttonXLoad.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiSummary_buttonXLoad.TabIndex = 2;
+            this.uiSummary_buttonXLoad.Text = "LOAD";
+            this.uiSummary_buttonXLoad.Click += new System.EventHandler(this.uiSummary_buttonXLoad_Click);
+            // 
+            // uiSummary_comboBoxXDSet
+            // 
+            this.uiSummary_comboBoxXDSet.DisplayMember = "Text";
+            this.uiSummary_comboBoxXDSet.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.uiSummary_comboBoxXDSet.ForeColor = System.Drawing.Color.Black;
+            this.uiSummary_comboBoxXDSet.FormattingEnabled = true;
+            this.uiSummary_comboBoxXDSet.ItemHeight = 20;
+            this.uiSummary_comboBoxXDSet.Location = new System.Drawing.Point(240, 6);
+            this.uiSummary_comboBoxXDSet.Name = "uiSummary_comboBoxXDSet";
+            this.uiSummary_comboBoxXDSet.Size = new System.Drawing.Size(165, 26);
+            this.uiSummary_comboBoxXDSet.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiSummary_comboBoxXDSet.TabIndex = 1;
+            this.uiSummary_comboBoxXDSet.WatermarkText = "DataSet Name";
+            this.uiSummary_comboBoxXDSet.SelectedIndexChanged += new System.EventHandler(this.uiCalendarDSet_SelectedIndexChanged);
+            // 
+            // uiSummary_comboBoxXSymbol
+            // 
+            this.uiSummary_comboBoxXSymbol.DisplayMember = "Text";
+            this.uiSummary_comboBoxXSymbol.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.uiSummary_comboBoxXSymbol.ForeColor = System.Drawing.Color.Black;
+            this.uiSummary_comboBoxXSymbol.FormattingEnabled = true;
+            this.uiSummary_comboBoxXSymbol.ItemHeight = 20;
+            this.uiSummary_comboBoxXSymbol.Location = new System.Drawing.Point(21, 6);
+            this.uiSummary_comboBoxXSymbol.Name = "uiSummary_comboBoxXSymbol";
+            this.uiSummary_comboBoxXSymbol.Size = new System.Drawing.Size(199, 26);
+            this.uiSummary_comboBoxXSymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiSummary_comboBoxXSymbol.TabIndex = 0;
+            this.uiSummary_comboBoxXSymbol.WatermarkText = "Symbol Name";
+            this.uiSummary_comboBoxXSymbol.SelectedIndexChanged += new System.EventHandler(this.uiSummary_comboBoxExSymbol_SelectedIndexChanged);
             // 
             // metroTabPanel_startegy
             // 
@@ -2642,598 +3241,6 @@
             this.uiStrategy_buttonXStop.Text = "Stop";
             this.uiStrategy_buttonXStop.Click += new System.EventHandler(this.uiStop_Click);
             // 
-            // metroTabPanel_summary
-            // 
-            this.metroTabPanel_summary.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.metroTabPanel_summary.Controls.Add(this.tableLayoutPanel2);
-            this.metroTabPanel_summary.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTabPanel_summary.Enabled = false;
-            this.metroTabPanel_summary.Location = new System.Drawing.Point(0, 55);
-            this.metroTabPanel_summary.Name = "metroTabPanel_summary";
-            this.metroTabPanel_summary.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.metroTabPanel_summary.Size = new System.Drawing.Size(1198, 585);
-            // 
-            // 
-            // 
-            this.metroTabPanel_summary.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.metroTabPanel_summary.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.metroTabPanel_summary.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroTabPanel_summary.TabIndex = 2;
-            this.metroTabPanel_summary.Visible = false;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.92074F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.07926F));
-            this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryGroupPanel, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.uiBTSummaryChart, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.uiSummary_dataGridViewBT, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.uiSummary_panelExSaving, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.ForeColor = System.Drawing.Color.Black;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 99.0099F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.9900981F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1192, 582);
-            this.tableLayoutPanel2.TabIndex = 37;
-            // 
-            // uiBTSummaryGroupPanel
-            // 
-            this.uiBTSummaryGroupPanel.BackColor = System.Drawing.Color.White;
-            this.uiBTSummaryGroupPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBToData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBFrData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNLsData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNPrData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNTrData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBAvgTrData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrFData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrfPercData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetLSData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBnetPRData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetData);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetPrLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBToLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBFrLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNLsLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNPrLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNTrLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBAvgTrLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrFLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBPrfpercLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiSummaryStatisticsBNetLsLabel);
-            this.uiBTSummaryGroupPanel.Controls.Add(this.uiBTStatisticDataLabel);
-            this.uiBTSummaryGroupPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiBTSummaryGroupPanel.DrawTitleBox = false;
-            this.uiBTSummaryGroupPanel.Location = new System.Drawing.Point(3, 579);
-            this.uiBTSummaryGroupPanel.Name = "uiBTSummaryGroupPanel";
-            this.uiBTSummaryGroupPanel.Size = new System.Drawing.Size(148, 1);
-            // 
-            // 
-            // 
-            this.uiBTSummaryGroupPanel.Style.BackColor = System.Drawing.Color.RoyalBlue;
-            this.uiBTSummaryGroupPanel.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.uiBTSummaryGroupPanel.Style.BackColorGradientAngle = 90;
-            this.uiBTSummaryGroupPanel.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.uiBTSummaryGroupPanel.Style.BorderBottomWidth = 1;
-            this.uiBTSummaryGroupPanel.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.uiBTSummaryGroupPanel.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.uiBTSummaryGroupPanel.Style.BorderLeftWidth = 1;
-            this.uiBTSummaryGroupPanel.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.uiBTSummaryGroupPanel.Style.BorderRightWidth = 1;
-            this.uiBTSummaryGroupPanel.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.uiBTSummaryGroupPanel.Style.BorderTopWidth = 1;
-            this.uiBTSummaryGroupPanel.Style.CornerDiameter = 4;
-            this.uiBTSummaryGroupPanel.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiBTSummaryGroupPanel.Style.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.uiBTSummaryGroupPanel.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.uiBTSummaryGroupPanel.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.uiBTSummaryGroupPanel.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiBTSummaryGroupPanel.TabIndex = 40;
-            this.uiBTSummaryGroupPanel.Visible = false;
-            // 
-            // uiSummaryStatisticsBToData
-            // 
-            this.uiSummaryStatisticsBToData.AutoSize = true;
-            this.uiSummaryStatisticsBToData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBToData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBToData.Location = new System.Drawing.Point(50, 168);
-            this.uiSummaryStatisticsBToData.Name = "uiSummaryStatisticsBToData";
-            this.uiSummaryStatisticsBToData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBToData.TabIndex = 33;
-            this.uiSummaryStatisticsBToData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBFrData
-            // 
-            this.uiSummaryStatisticsBFrData.AutoSize = true;
-            this.uiSummaryStatisticsBFrData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBFrData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBFrData.Location = new System.Drawing.Point(49, 153);
-            this.uiSummaryStatisticsBFrData.Name = "uiSummaryStatisticsBFrData";
-            this.uiSummaryStatisticsBFrData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBFrData.TabIndex = 32;
-            this.uiSummaryStatisticsBFrData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBNLsData
-            // 
-            this.uiSummaryStatisticsBNLsData.AutoSize = true;
-            this.uiSummaryStatisticsBNLsData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBNLsData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNLsData.Location = new System.Drawing.Point(49, 138);
-            this.uiSummaryStatisticsBNLsData.Name = "uiSummaryStatisticsBNLsData";
-            this.uiSummaryStatisticsBNLsData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBNLsData.TabIndex = 31;
-            this.uiSummaryStatisticsBNLsData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBNPrData
-            // 
-            this.uiSummaryStatisticsBNPrData.AutoSize = true;
-            this.uiSummaryStatisticsBNPrData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBNPrData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNPrData.Location = new System.Drawing.Point(50, 123);
-            this.uiSummaryStatisticsBNPrData.Name = "uiSummaryStatisticsBNPrData";
-            this.uiSummaryStatisticsBNPrData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBNPrData.TabIndex = 30;
-            this.uiSummaryStatisticsBNPrData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBNTrData
-            // 
-            this.uiSummaryStatisticsBNTrData.AutoSize = true;
-            this.uiSummaryStatisticsBNTrData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBNTrData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNTrData.Location = new System.Drawing.Point(50, 107);
-            this.uiSummaryStatisticsBNTrData.Name = "uiSummaryStatisticsBNTrData";
-            this.uiSummaryStatisticsBNTrData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBNTrData.TabIndex = 29;
-            this.uiSummaryStatisticsBNTrData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBAvgTrData
-            // 
-            this.uiSummaryStatisticsBAvgTrData.AutoSize = true;
-            this.uiSummaryStatisticsBAvgTrData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBAvgTrData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBAvgTrData.Location = new System.Drawing.Point(50, 93);
-            this.uiSummaryStatisticsBAvgTrData.Name = "uiSummaryStatisticsBAvgTrData";
-            this.uiSummaryStatisticsBAvgTrData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBAvgTrData.TabIndex = 28;
-            this.uiSummaryStatisticsBAvgTrData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBPrFData
-            // 
-            this.uiSummaryStatisticsBPrFData.AutoSize = true;
-            this.uiSummaryStatisticsBPrFData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBPrFData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBPrFData.Location = new System.Drawing.Point(50, 78);
-            this.uiSummaryStatisticsBPrFData.Name = "uiSummaryStatisticsBPrFData";
-            this.uiSummaryStatisticsBPrFData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBPrFData.TabIndex = 27;
-            this.uiSummaryStatisticsBPrFData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBPrfPercData
-            // 
-            this.uiSummaryStatisticsBPrfPercData.AutoSize = true;
-            this.uiSummaryStatisticsBPrfPercData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBPrfPercData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBPrfPercData.Location = new System.Drawing.Point(50, 63);
-            this.uiSummaryStatisticsBPrfPercData.Name = "uiSummaryStatisticsBPrfPercData";
-            this.uiSummaryStatisticsBPrfPercData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBPrfPercData.TabIndex = 26;
-            this.uiSummaryStatisticsBPrfPercData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBNetLSData
-            // 
-            this.uiSummaryStatisticsBNetLSData.AutoSize = true;
-            this.uiSummaryStatisticsBNetLSData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBNetLSData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNetLSData.Location = new System.Drawing.Point(50, 48);
-            this.uiSummaryStatisticsBNetLSData.Name = "uiSummaryStatisticsBNetLSData";
-            this.uiSummaryStatisticsBNetLSData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBNetLSData.TabIndex = 25;
-            this.uiSummaryStatisticsBNetLSData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBnetPRData
-            // 
-            this.uiSummaryStatisticsBnetPRData.AutoSize = true;
-            this.uiSummaryStatisticsBnetPRData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBnetPRData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBnetPRData.Location = new System.Drawing.Point(50, 33);
-            this.uiSummaryStatisticsBnetPRData.Name = "uiSummaryStatisticsBnetPRData";
-            this.uiSummaryStatisticsBnetPRData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBnetPRData.TabIndex = 24;
-            this.uiSummaryStatisticsBnetPRData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBNetData
-            // 
-            this.uiSummaryStatisticsBNetData.AutoSize = true;
-            this.uiSummaryStatisticsBNetData.BackColor = System.Drawing.Color.Transparent;
-            this.uiSummaryStatisticsBNetData.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNetData.Location = new System.Drawing.Point(50, 20);
-            this.uiSummaryStatisticsBNetData.Name = "uiSummaryStatisticsBNetData";
-            this.uiSummaryStatisticsBNetData.Size = new System.Drawing.Size(76, 19);
-            this.uiSummaryStatisticsBNetData.TabIndex = 23;
-            this.uiSummaryStatisticsBNetData.Text = "<no data>";
-            // 
-            // uiSummaryStatisticsBNetPrLabel
-            // 
-            this.uiSummaryStatisticsBNetPrLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBNetPrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBNetPrLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNetPrLabel.Location = new System.Drawing.Point(1, 32);
-            this.uiSummaryStatisticsBNetPrLabel.Name = "uiSummaryStatisticsBNetPrLabel";
-            this.uiSummaryStatisticsBNetPrLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBNetPrLabel.TabIndex = 22;
-            this.uiSummaryStatisticsBNetPrLabel.Text = "BNetPr";
-            // 
-            // uiSummaryStatisticsBToLabel
-            // 
-            this.uiSummaryStatisticsBToLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBToLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBToLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBToLabel.Location = new System.Drawing.Point(1, 168);
-            this.uiSummaryStatisticsBToLabel.Name = "uiSummaryStatisticsBToLabel";
-            this.uiSummaryStatisticsBToLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBToLabel.TabIndex = 10;
-            this.uiSummaryStatisticsBToLabel.Text = "BTo";
-            // 
-            // uiSummaryStatisticsBFrLabel
-            // 
-            this.uiSummaryStatisticsBFrLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBFrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBFrLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBFrLabel.Location = new System.Drawing.Point(1, 152);
-            this.uiSummaryStatisticsBFrLabel.Name = "uiSummaryStatisticsBFrLabel";
-            this.uiSummaryStatisticsBFrLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBFrLabel.TabIndex = 9;
-            this.uiSummaryStatisticsBFrLabel.Text = "BFr";
-            // 
-            // uiSummaryStatisticsBNLsLabel
-            // 
-            this.uiSummaryStatisticsBNLsLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBNLsLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBNLsLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNLsLabel.Location = new System.Drawing.Point(1, 137);
-            this.uiSummaryStatisticsBNLsLabel.Name = "uiSummaryStatisticsBNLsLabel";
-            this.uiSummaryStatisticsBNLsLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBNLsLabel.TabIndex = 8;
-            this.uiSummaryStatisticsBNLsLabel.Text = "BNLs";
-            // 
-            // uiSummaryStatisticsBNPrLabel
-            // 
-            this.uiSummaryStatisticsBNPrLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBNPrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBNPrLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNPrLabel.Location = new System.Drawing.Point(1, 122);
-            this.uiSummaryStatisticsBNPrLabel.Name = "uiSummaryStatisticsBNPrLabel";
-            this.uiSummaryStatisticsBNPrLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBNPrLabel.TabIndex = 7;
-            this.uiSummaryStatisticsBNPrLabel.Text = "BNPr";
-            // 
-            // uiSummaryStatisticsBNTrLabel
-            // 
-            this.uiSummaryStatisticsBNTrLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBNTrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBNTrLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNTrLabel.Location = new System.Drawing.Point(1, 106);
-            this.uiSummaryStatisticsBNTrLabel.Name = "uiSummaryStatisticsBNTrLabel";
-            this.uiSummaryStatisticsBNTrLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBNTrLabel.TabIndex = 6;
-            this.uiSummaryStatisticsBNTrLabel.Text = "BNTr";
-            // 
-            // uiSummaryStatisticsBAvgTrLabel
-            // 
-            this.uiSummaryStatisticsBAvgTrLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBAvgTrLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBAvgTrLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBAvgTrLabel.Location = new System.Drawing.Point(0, 92);
-            this.uiSummaryStatisticsBAvgTrLabel.Name = "uiSummaryStatisticsBAvgTrLabel";
-            this.uiSummaryStatisticsBAvgTrLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBAvgTrLabel.TabIndex = 5;
-            this.uiSummaryStatisticsBAvgTrLabel.Text = "BAvgTr";
-            // 
-            // uiSummaryStatisticsBPrFLabel
-            // 
-            this.uiSummaryStatisticsBPrFLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBPrFLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBPrFLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBPrFLabel.Location = new System.Drawing.Point(1, 78);
-            this.uiSummaryStatisticsBPrFLabel.Name = "uiSummaryStatisticsBPrFLabel";
-            this.uiSummaryStatisticsBPrFLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBPrFLabel.TabIndex = 4;
-            this.uiSummaryStatisticsBPrFLabel.Text = "BPrF";
-            // 
-            // uiSummaryStatisticsBPrfpercLabel
-            // 
-            this.uiSummaryStatisticsBPrfpercLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBPrfpercLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBPrfpercLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBPrfpercLabel.Location = new System.Drawing.Point(0, 62);
-            this.uiSummaryStatisticsBPrfpercLabel.Name = "uiSummaryStatisticsBPrfpercLabel";
-            this.uiSummaryStatisticsBPrfpercLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBPrfpercLabel.TabIndex = 3;
-            this.uiSummaryStatisticsBPrfpercLabel.Text = "BPrf%";
-            // 
-            // uiSummaryStatisticsBNetLabel
-            // 
-            this.uiSummaryStatisticsBNetLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBNetLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBNetLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNetLabel.Location = new System.Drawing.Point(0, 16);
-            this.uiSummaryStatisticsBNetLabel.Name = "uiSummaryStatisticsBNetLabel";
-            this.uiSummaryStatisticsBNetLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBNetLabel.TabIndex = 2;
-            this.uiSummaryStatisticsBNetLabel.Text = "BNet";
-            // 
-            // uiSummaryStatisticsBNetLsLabel
-            // 
-            this.uiSummaryStatisticsBNetLsLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiSummaryStatisticsBNetLsLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiSummaryStatisticsBNetLsLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiSummaryStatisticsBNetLsLabel.Location = new System.Drawing.Point(0, 47);
-            this.uiSummaryStatisticsBNetLsLabel.Name = "uiSummaryStatisticsBNetLsLabel";
-            this.uiSummaryStatisticsBNetLsLabel.Size = new System.Drawing.Size(48, 14);
-            this.uiSummaryStatisticsBNetLsLabel.TabIndex = 1;
-            this.uiSummaryStatisticsBNetLsLabel.Text = "BNetLs";
-            // 
-            // uiBTStatisticDataLabel
-            // 
-            this.uiBTStatisticDataLabel.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.uiBTStatisticDataLabel.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.uiBTStatisticDataLabel.ForeColor = System.Drawing.Color.Black;
-            this.uiBTStatisticDataLabel.Location = new System.Drawing.Point(17, 3);
-            this.uiBTStatisticDataLabel.Name = "uiBTStatisticDataLabel";
-            this.uiBTStatisticDataLabel.Size = new System.Drawing.Size(75, 17);
-            this.uiBTStatisticDataLabel.TabIndex = 0;
-            this.uiBTStatisticDataLabel.Text = "Statistic data:";
-            this.uiBTStatisticDataLabel.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // uiBTSummaryChart
-            // 
-            this.uiBTSummaryChart.BorderlineColor = System.Drawing.SystemColors.AppWorkspace;
-            this.uiBTSummaryChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea1.AxisX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea1.AxisX2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea1.AxisY.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea1.AxisY2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            chartArea1.Name = "ChartArea1";
-            this.uiBTSummaryChart.ChartAreas.Add(chartArea1);
-            this.uiBTSummaryChart.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.uiBTSummaryChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.uiBTSummaryChart.Legends.Add(legend1);
-            this.uiBTSummaryChart.Location = new System.Drawing.Point(157, 579);
-            this.uiBTSummaryChart.Name = "uiBTSummaryChart";
-            this.uiBTSummaryChart.Size = new System.Drawing.Size(1032, 1);
-            this.uiBTSummaryChart.TabIndex = 36;
-            this.uiBTSummaryChart.Text = "chart1";
-            this.uiBTSummaryChart.Visible = false;
-            // 
-            // uiSummary_dataGridViewBT
-            // 
-            this.uiSummary_dataGridViewBT.AllowUserToAddRows = false;
-            this.uiSummary_dataGridViewBT.AllowUserToDeleteRows = false;
-            this.uiSummary_dataGridViewBT.AllowUserToResizeRows = false;
-            this.uiSummary_dataGridViewBT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.uiSummary_dataGridViewBT.BackgroundColor = System.Drawing.Color.White;
-            this.uiSummary_dataGridViewBT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.uiSummary_dataGridViewBT.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiSummary_dataGridViewBT.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.uiSummary_dataGridViewBT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.uiSummary_dataGridViewBT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.BTSymbol,
-            this.BTStartDate,
-            this.BTEndDate,
-            this.BTPnl});
-            this.tableLayoutPanel2.SetColumnSpan(this.uiSummary_dataGridViewBT, 2);
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uiSummary_dataGridViewBT.DefaultCellStyle = dataGridViewCellStyle8;
-            this.uiSummary_dataGridViewBT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSummary_dataGridViewBT.EnableHeadersVisualStyles = false;
-            this.uiSummary_dataGridViewBT.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.uiSummary_dataGridViewBT.Location = new System.Drawing.Point(0, 44);
-            this.uiSummary_dataGridViewBT.Margin = new System.Windows.Forms.Padding(0);
-            this.uiSummary_dataGridViewBT.Name = "uiSummary_dataGridViewBT";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiSummary_dataGridViewBT.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.uiSummary_dataGridViewBT.RowHeadersVisible = false;
-            this.uiSummary_dataGridViewBT.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.uiSummary_dataGridViewBT.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.uiSummary_dataGridViewBT.Size = new System.Drawing.Size(1192, 532);
-            this.uiSummary_dataGridViewBT.TabIndex = 22;
-            this.uiSummary_dataGridViewBT.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.uiBTSummaryTable_RowsAdded);
-            this.uiSummary_dataGridViewBT.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.uiSummary_dataGridViewBT_SortCompare);
-            // 
-            // BTSymbol
-            // 
-            this.BTSymbol.HeaderText = "Symbol";
-            this.BTSymbol.Name = "BTSymbol";
-            this.BTSymbol.ReadOnly = true;
-            // 
-            // BTStartDate
-            // 
-            this.BTStartDate.FillWeight = 150F;
-            this.BTStartDate.HeaderText = "StartDate";
-            this.BTStartDate.Name = "BTStartDate";
-            this.BTStartDate.ReadOnly = true;
-            // 
-            // BTEndDate
-            // 
-            this.BTEndDate.FillWeight = 150F;
-            this.BTEndDate.HeaderText = "EndDate";
-            this.BTEndDate.Name = "BTEndDate";
-            this.BTEndDate.ReadOnly = true;
-            // 
-            // BTPnl
-            // 
-            dataGridViewCellStyle7.Format = "N2";
-            dataGridViewCellStyle7.NullValue = null;
-            this.BTPnl.DefaultCellStyle = dataGridViewCellStyle7;
-            this.BTPnl.HeaderText = "PNL";
-            this.BTPnl.Name = "BTPnl";
-            this.BTPnl.ReadOnly = true;
-            // 
-            // uiSummary_panelExSaving
-            // 
-            this.uiSummary_panelExSaving.CanvasColor = System.Drawing.SystemColors.Control;
-            this.uiSummary_panelExSaving.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.tableLayoutPanel2.SetColumnSpan(this.uiSummary_panelExSaving, 2);
-            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_buttonXDelete);
-            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_buttonXSave);
-            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_buttonXLoad);
-            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_comboBoxXDSet);
-            this.uiSummary_panelExSaving.Controls.Add(this.uiSummary_comboBoxXSymbol);
-            this.uiSummary_panelExSaving.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiSummary_panelExSaving.Enabled = false;
-            this.uiSummary_panelExSaving.Location = new System.Drawing.Point(3, 3);
-            this.uiSummary_panelExSaving.Name = "uiSummary_panelExSaving";
-            this.uiSummary_panelExSaving.Size = new System.Drawing.Size(1186, 38);
-            this.uiSummary_panelExSaving.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.uiSummary_panelExSaving.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.uiSummary_panelExSaving.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.uiSummary_panelExSaving.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.uiSummary_panelExSaving.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.uiSummary_panelExSaving.Style.GradientAngle = 90;
-            this.uiSummary_panelExSaving.TabIndex = 41;
-            // 
-            // uiSummary_buttonXDelete
-            // 
-            this.uiSummary_buttonXDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.uiSummary_buttonXDelete.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.uiSummary_buttonXDelete.Location = new System.Drawing.Point(618, 6);
-            this.uiSummary_buttonXDelete.Name = "uiSummary_buttonXDelete";
-            this.uiSummary_buttonXDelete.Size = new System.Drawing.Size(75, 26);
-            this.uiSummary_buttonXDelete.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiSummary_buttonXDelete.TabIndex = 4;
-            this.uiSummary_buttonXDelete.Text = "DELETE";
-            this.uiSummary_buttonXDelete.Click += new System.EventHandler(this.uiSummary_buttonXDelete_Click);
-            // 
-            // uiSummary_buttonXSave
-            // 
-            this.uiSummary_buttonXSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.uiSummary_buttonXSave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.uiSummary_buttonXSave.Location = new System.Drawing.Point(522, 6);
-            this.uiSummary_buttonXSave.Name = "uiSummary_buttonXSave";
-            this.uiSummary_buttonXSave.Size = new System.Drawing.Size(75, 26);
-            this.uiSummary_buttonXSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiSummary_buttonXSave.TabIndex = 3;
-            this.uiSummary_buttonXSave.Text = "SAVE";
-            this.uiSummary_buttonXSave.Click += new System.EventHandler(this.uiSummary_buttonXSave_Click);
-            // 
-            // uiSummary_buttonXLoad
-            // 
-            this.uiSummary_buttonXLoad.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.uiSummary_buttonXLoad.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.uiSummary_buttonXLoad.Location = new System.Drawing.Point(426, 6);
-            this.uiSummary_buttonXLoad.Name = "uiSummary_buttonXLoad";
-            this.uiSummary_buttonXLoad.Size = new System.Drawing.Size(75, 26);
-            this.uiSummary_buttonXLoad.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiSummary_buttonXLoad.TabIndex = 2;
-            this.uiSummary_buttonXLoad.Text = "LOAD";
-            this.uiSummary_buttonXLoad.Click += new System.EventHandler(this.uiSummary_buttonXLoad_Click);
-            // 
-            // uiSummary_comboBoxXDSet
-            // 
-            this.uiSummary_comboBoxXDSet.DisplayMember = "Text";
-            this.uiSummary_comboBoxXDSet.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.uiSummary_comboBoxXDSet.ForeColor = System.Drawing.Color.Black;
-            this.uiSummary_comboBoxXDSet.FormattingEnabled = true;
-            this.uiSummary_comboBoxXDSet.ItemHeight = 20;
-            this.uiSummary_comboBoxXDSet.Location = new System.Drawing.Point(240, 6);
-            this.uiSummary_comboBoxXDSet.Name = "uiSummary_comboBoxXDSet";
-            this.uiSummary_comboBoxXDSet.Size = new System.Drawing.Size(165, 26);
-            this.uiSummary_comboBoxXDSet.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiSummary_comboBoxXDSet.TabIndex = 1;
-            this.uiSummary_comboBoxXDSet.WatermarkText = "DataSet Name";
-            this.uiSummary_comboBoxXDSet.SelectedIndexChanged += new System.EventHandler(this.uiCalendarDSet_SelectedIndexChanged);
-            // 
-            // uiSummary_comboBoxXSymbol
-            // 
-            this.uiSummary_comboBoxXSymbol.DisplayMember = "Text";
-            this.uiSummary_comboBoxXSymbol.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.uiSummary_comboBoxXSymbol.ForeColor = System.Drawing.Color.Black;
-            this.uiSummary_comboBoxXSymbol.FormattingEnabled = true;
-            this.uiSummary_comboBoxXSymbol.ItemHeight = 20;
-            this.uiSummary_comboBoxXSymbol.Location = new System.Drawing.Point(21, 6);
-            this.uiSummary_comboBoxXSymbol.Name = "uiSummary_comboBoxXSymbol";
-            this.uiSummary_comboBoxXSymbol.Size = new System.Drawing.Size(199, 26);
-            this.uiSummary_comboBoxXSymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.uiSummary_comboBoxXSymbol.TabIndex = 0;
-            this.uiSummary_comboBoxXSymbol.WatermarkText = "Symbol name";
-            this.uiSummary_comboBoxXSymbol.SelectedIndexChanged += new System.EventHandler(this.uiSummary_comboBoxExSymbol_SelectedIndexChanged);
-            // 
             // metroTabPanel_weekly
             // 
             this.metroTabPanel_weekly.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -3262,14 +3269,16 @@
             // 
             this.uiWeekly_tableLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
             this.uiWeekly_tableLayoutPanel4.ColumnCount = 1;
-            this.uiWeekly_tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.uiWeekly_tableLayoutPanel4.Controls.Add(this.uiWeeklyData_superGridControlTable, 0, 0);
+            this.uiWeekly_tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.uiWeekly_tableLayoutPanel4.Controls.Add(this.uiWeeklyData_superGridControlTable, 0, 1);
+            this.uiWeekly_tableLayoutPanel4.Controls.Add(this.uiWeeklyDBPanel, 0, 0);
             this.uiWeekly_tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiWeekly_tableLayoutPanel4.ForeColor = System.Drawing.Color.Black;
             this.uiWeekly_tableLayoutPanel4.Location = new System.Drawing.Point(3, 0);
             this.uiWeekly_tableLayoutPanel4.Name = "uiWeekly_tableLayoutPanel4";
-            this.uiWeekly_tableLayoutPanel4.RowCount = 1;
-            this.uiWeekly_tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.uiWeekly_tableLayoutPanel4.RowCount = 2;
+            this.uiWeekly_tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.uiWeekly_tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.uiWeekly_tableLayoutPanel4.Size = new System.Drawing.Size(1192, 582);
             this.uiWeekly_tableLayoutPanel4.TabIndex = 2;
             // 
@@ -3296,7 +3305,7 @@
             this.uiWeeklyData_superGridControlTable.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
             this.uiWeeklyData_superGridControlTable.ForeColor = System.Drawing.Color.Black;
             this.uiWeeklyData_superGridControlTable.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F";
-            this.uiWeeklyData_superGridControlTable.Location = new System.Drawing.Point(3, 3);
+            this.uiWeeklyData_superGridControlTable.Location = new System.Drawing.Point(3, 47);
             this.uiWeeklyData_superGridControlTable.Name = "uiWeeklyData_superGridControlTable";
             this.uiWeeklyData_superGridControlTable.PrimaryGrid.AllowEdit = false;
             this.uiWeeklyData_superGridControlTable.PrimaryGrid.AutoGenerateColumns = false;
@@ -3313,13 +3322,100 @@
             this.uiWeeklyData_superGridControlTable.PrimaryGrid.ExpandImage = ((System.Drawing.Image)(resources.GetObject("uiWeeklyData_superGridControlTable.PrimaryGrid.ExpandImage")));
             this.uiWeeklyData_superGridControlTable.PrimaryGrid.RowHeaderWidth = 0;
             this.uiWeeklyData_superGridControlTable.PrimaryGrid.ShowTreeButtons = true;
-            this.uiWeeklyData_superGridControlTable.Size = new System.Drawing.Size(1186, 576);
+            this.uiWeeklyData_superGridControlTable.Size = new System.Drawing.Size(1186, 532);
             this.uiWeeklyData_superGridControlTable.TabIndex = 1;
             this.uiWeeklyData_superGridControlTable.Text = "superGridControl1";
             this.uiWeeklyData_superGridControlTable.CompareElements += new System.EventHandler<DevComponents.DotNetBar.SuperGrid.GridCompareElementsEventArgs>(this.uiWeeklyDataTable_CompareElements);
             this.uiWeeklyData_superGridControlTable.DataBindingComplete += new System.EventHandler<DevComponents.DotNetBar.SuperGrid.GridDataBindingCompleteEventArgs>(this.uiWeeklyDataTable_DataBindingComplete);
             this.uiWeeklyData_superGridControlTable.BeforeExpand += new System.EventHandler<DevComponents.DotNetBar.SuperGrid.GridBeforeExpandEventArgs>(this.uiWeeklyData_superGridControlTable_BeforeExpand);
             this.uiWeeklyData_superGridControlTable.AfterExpand += new System.EventHandler<DevComponents.DotNetBar.SuperGrid.GridAfterExpandEventArgs>(this.uiWeeklyDataTable_AfterExpand);
+            // 
+            // uiWeeklyDBPanel
+            // 
+            this.uiWeeklyDBPanel.CanvasColor = System.Drawing.SystemColors.Control;
+            this.uiWeeklyDBPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiWeeklyDBPanel.Controls.Add(this.buttonX3);
+            this.uiWeeklyDBPanel.Controls.Add(this.buttonX2);
+            this.uiWeeklyDBPanel.Controls.Add(this.buttonX1);
+            this.uiWeeklyDBPanel.Controls.Add(this.uiWeeklyDataSetName);
+            this.uiWeeklyDBPanel.Controls.Add(this.uiWeeklySymbolName);
+            this.uiWeeklyDBPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiWeeklyDBPanel.Enabled = false;
+            this.uiWeeklyDBPanel.Location = new System.Drawing.Point(3, 3);
+            this.uiWeeklyDBPanel.Name = "uiWeeklyDBPanel";
+            this.uiWeeklyDBPanel.Size = new System.Drawing.Size(1186, 38);
+            this.uiWeeklyDBPanel.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.uiWeeklyDBPanel.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.uiWeeklyDBPanel.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.uiWeeklyDBPanel.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.uiWeeklyDBPanel.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.uiWeeklyDBPanel.Style.GradientAngle = 90;
+            this.uiWeeklyDBPanel.TabIndex = 2;
+            // 
+            // buttonX3
+            // 
+            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX3.Location = new System.Drawing.Point(618, 6);
+            this.buttonX3.Name = "buttonX3";
+            this.buttonX3.Size = new System.Drawing.Size(75, 26);
+            this.buttonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX3.TabIndex = 4;
+            this.buttonX3.Text = "DELETE";
+            this.buttonX3.Click += new System.EventHandler(this.uiDeleteWeeklyResultBtn_Click);
+            // 
+            // buttonX2
+            // 
+            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX2.Location = new System.Drawing.Point(522, 6);
+            this.buttonX2.Name = "buttonX2";
+            this.buttonX2.Size = new System.Drawing.Size(75, 26);
+            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX2.TabIndex = 3;
+            this.buttonX2.Text = "SAVE";
+            this.buttonX2.Click += new System.EventHandler(this.uiSaveWeeklyResultBtn_Click);
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Location = new System.Drawing.Point(426, 6);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(75, 26);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 2;
+            this.buttonX1.Text = "LOAD";
+            this.buttonX1.Click += new System.EventHandler(this.uiLoadWeeklyResultBtn_Click);
+            // 
+            // uiWeeklyDataSetName
+            // 
+            this.uiWeeklyDataSetName.DisplayMember = "Text";
+            this.uiWeeklyDataSetName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.uiWeeklyDataSetName.ForeColor = System.Drawing.Color.Black;
+            this.uiWeeklyDataSetName.FormattingEnabled = true;
+            this.uiWeeklyDataSetName.ItemHeight = 20;
+            this.uiWeeklyDataSetName.Location = new System.Drawing.Point(240, 6);
+            this.uiWeeklyDataSetName.Name = "uiWeeklyDataSetName";
+            this.uiWeeklyDataSetName.Size = new System.Drawing.Size(165, 26);
+            this.uiWeeklyDataSetName.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiWeeklyDataSetName.TabIndex = 1;
+            this.uiWeeklyDataSetName.WatermarkText = "DataSet Name";
+            // 
+            // uiWeeklySymbolName
+            // 
+            this.uiWeeklySymbolName.DisplayMember = "Text";
+            this.uiWeeklySymbolName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.uiWeeklySymbolName.ForeColor = System.Drawing.Color.Black;
+            this.uiWeeklySymbolName.FormattingEnabled = true;
+            this.uiWeeklySymbolName.ItemHeight = 20;
+            this.uiWeeklySymbolName.Location = new System.Drawing.Point(21, 6);
+            this.uiWeeklySymbolName.Name = "uiWeeklySymbolName";
+            this.uiWeeklySymbolName.Size = new System.Drawing.Size(199, 26);
+            this.uiWeeklySymbolName.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.uiWeeklySymbolName.TabIndex = 0;
+            this.uiWeeklySymbolName.WatermarkText = "Symbol Name";
+            this.uiWeeklySymbolName.SelectedIndexChanged += new System.EventHandler(this.uiWeeklySymbolName_SelectedIndexChanged);
             // 
             // metroTabPanel_calendar
             // 
@@ -3354,7 +3450,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.15344F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 309F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 330F));
             this.tableLayoutPanel3.Controls.Add(this.uiCalendar_panelExSaving, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.uiCalendar_panelExPrevNext, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.panelEx5, 0, 1);
@@ -3397,9 +3493,9 @@
             this.uiCalendar_buttonXDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.uiCalendar_buttonXDelete.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.uiCalendar_buttonXDelete.Enabled = false;
-            this.uiCalendar_buttonXDelete.Location = new System.Drawing.Point(575, 7);
+            this.uiCalendar_buttonXDelete.Location = new System.Drawing.Point(618, 6);
             this.uiCalendar_buttonXDelete.Name = "uiCalendar_buttonXDelete";
-            this.uiCalendar_buttonXDelete.Size = new System.Drawing.Size(75, 25);
+            this.uiCalendar_buttonXDelete.Size = new System.Drawing.Size(75, 26);
             this.uiCalendar_buttonXDelete.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.uiCalendar_buttonXDelete.TabIndex = 4;
             this.uiCalendar_buttonXDelete.Text = "DELETE";
@@ -3410,9 +3506,9 @@
             this.uiCalendar_buttonXSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.uiCalendar_buttonXSave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.uiCalendar_buttonXSave.Enabled = false;
-            this.uiCalendar_buttonXSave.Location = new System.Drawing.Point(470, 7);
+            this.uiCalendar_buttonXSave.Location = new System.Drawing.Point(522, 6);
             this.uiCalendar_buttonXSave.Name = "uiCalendar_buttonXSave";
-            this.uiCalendar_buttonXSave.Size = new System.Drawing.Size(75, 25);
+            this.uiCalendar_buttonXSave.Size = new System.Drawing.Size(75, 26);
             this.uiCalendar_buttonXSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.uiCalendar_buttonXSave.TabIndex = 3;
             this.uiCalendar_buttonXSave.Text = "SAVE";
@@ -3423,9 +3519,9 @@
             this.uiCalendar_buttonXLoad.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.uiCalendar_buttonXLoad.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.uiCalendar_buttonXLoad.Enabled = false;
-            this.uiCalendar_buttonXLoad.Location = new System.Drawing.Point(369, 7);
+            this.uiCalendar_buttonXLoad.Location = new System.Drawing.Point(426, 6);
             this.uiCalendar_buttonXLoad.Name = "uiCalendar_buttonXLoad";
-            this.uiCalendar_buttonXLoad.Size = new System.Drawing.Size(75, 25);
+            this.uiCalendar_buttonXLoad.Size = new System.Drawing.Size(75, 26);
             this.uiCalendar_buttonXLoad.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.uiCalendar_buttonXLoad.TabIndex = 2;
             this.uiCalendar_buttonXLoad.Text = "LOAD";
@@ -3439,11 +3535,12 @@
             this.uiCalendar_comboBoxXDSet.ForeColor = System.Drawing.Color.Black;
             this.uiCalendar_comboBoxXDSet.FormattingEnabled = true;
             this.uiCalendar_comboBoxXDSet.ItemHeight = 20;
-            this.uiCalendar_comboBoxXDSet.Location = new System.Drawing.Point(197, 9);
+            this.uiCalendar_comboBoxXDSet.Location = new System.Drawing.Point(240, 6);
             this.uiCalendar_comboBoxXDSet.Name = "uiCalendar_comboBoxXDSet";
-            this.uiCalendar_comboBoxXDSet.Size = new System.Drawing.Size(121, 26);
+            this.uiCalendar_comboBoxXDSet.Size = new System.Drawing.Size(165, 26);
             this.uiCalendar_comboBoxXDSet.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.uiCalendar_comboBoxXDSet.TabIndex = 1;
+            this.uiCalendar_comboBoxXDSet.WatermarkText = "DataSet Name";
             this.uiCalendar_comboBoxXDSet.SelectedIndexChanged += new System.EventHandler(this.uiCalendarDSet_SelectedIndexChanged);
             // 
             // uiCalendar_comboBoxXSymbol
@@ -3454,11 +3551,12 @@
             this.uiCalendar_comboBoxXSymbol.ForeColor = System.Drawing.Color.Black;
             this.uiCalendar_comboBoxXSymbol.FormattingEnabled = true;
             this.uiCalendar_comboBoxXSymbol.ItemHeight = 20;
-            this.uiCalendar_comboBoxXSymbol.Location = new System.Drawing.Point(43, 9);
+            this.uiCalendar_comboBoxXSymbol.Location = new System.Drawing.Point(21, 6);
             this.uiCalendar_comboBoxXSymbol.Name = "uiCalendar_comboBoxXSymbol";
-            this.uiCalendar_comboBoxXSymbol.Size = new System.Drawing.Size(121, 26);
+            this.uiCalendar_comboBoxXSymbol.Size = new System.Drawing.Size(199, 26);
             this.uiCalendar_comboBoxXSymbol.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.uiCalendar_comboBoxXSymbol.TabIndex = 0;
+            this.uiCalendar_comboBoxXSymbol.WatermarkText = "Symbol Name";
             this.uiCalendar_comboBoxXSymbol.SelectedIndexChanged += new System.EventHandler(this.uiCalendarSymbol_SelectedIndexChanged);
             // 
             // uiCalendar_panelExPrevNext
@@ -4105,10 +4203,10 @@
             this.metroTabPanel_data_archive.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.metroTabPanel_data_archive.Controls.Add(this.tableLayoutPanel1);
             this.metroTabPanel_data_archive.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTabPanel_data_archive.Location = new System.Drawing.Point(0, 55);
+            this.metroTabPanel_data_archive.Location = new System.Drawing.Point(0, 51);
             this.metroTabPanel_data_archive.Name = "metroTabPanel_data_archive";
             this.metroTabPanel_data_archive.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.metroTabPanel_data_archive.Size = new System.Drawing.Size(1198, 585);
+            this.metroTabPanel_data_archive.Size = new System.Drawing.Size(1198, 589);
             // 
             // 
             // 
@@ -4145,7 +4243,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 156F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1192, 582);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1192, 586);
             this.tableLayoutPanel1.TabIndex = 24;
             // 
             // uiDataArchive_panelExSearchPanel
@@ -4327,7 +4425,7 @@
             this.uiDataArchive_panelExSymbols.Location = new System.Drawing.Point(3, 91);
             this.uiDataArchive_panelExSymbols.Name = "uiDataArchive_panelExSymbols";
             this.uiDataArchive_panelExSymbols.Padding = new System.Windows.Forms.Padding(1);
-            this.uiDataArchive_panelExSymbols.Size = new System.Drawing.Size(264, 332);
+            this.uiDataArchive_panelExSymbols.Size = new System.Drawing.Size(264, 336);
             this.uiDataArchive_panelExSymbols.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.uiDataArchive_panelExSymbols.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.uiDataArchive_panelExSymbols.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -4345,7 +4443,7 @@
             this.uiDataArchive_checkedListBoxSymbols.FormattingEnabled = true;
             this.uiDataArchive_checkedListBoxSymbols.Location = new System.Drawing.Point(1, 1);
             this.uiDataArchive_checkedListBoxSymbols.Name = "uiDataArchive_checkedListBoxSymbols";
-            this.uiDataArchive_checkedListBoxSymbols.Size = new System.Drawing.Size(262, 330);
+            this.uiDataArchive_checkedListBoxSymbols.Size = new System.Drawing.Size(262, 334);
             this.uiDataArchive_checkedListBoxSymbols.TabIndex = 44;
             // 
             // uiDataArchive_panelExCollectingControl
@@ -4360,7 +4458,7 @@
             this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_buttonXStopCollecting);
             this.uiDataArchive_panelExCollectingControl.Controls.Add(this.uiDataArchive_buttonXStartCollecting);
             this.uiDataArchive_panelExCollectingControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiDataArchive_panelExCollectingControl.Location = new System.Drawing.Point(3, 429);
+            this.uiDataArchive_panelExCollectingControl.Location = new System.Drawing.Point(3, 433);
             this.uiDataArchive_panelExCollectingControl.Name = "uiDataArchive_panelExCollectingControl";
             this.uiDataArchive_panelExCollectingControl.Size = new System.Drawing.Size(264, 150);
             this.uiDataArchive_panelExCollectingControl.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -4573,7 +4671,7 @@
             this.uiDataArchive_panelExContracts.Name = "uiDataArchive_panelExContracts";
             this.uiDataArchive_panelExContracts.Padding = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel1.SetRowSpan(this.uiDataArchive_panelExContracts, 3);
-            this.uiDataArchive_panelExContracts.Size = new System.Drawing.Size(646, 576);
+            this.uiDataArchive_panelExContracts.Size = new System.Drawing.Size(646, 580);
             this.uiDataArchive_panelExContracts.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.uiDataArchive_panelExContracts.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.uiDataArchive_panelExContracts.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -4631,7 +4729,7 @@
             this.uiDataArchive_dataGridViewXContracts.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.uiDataArchive_dataGridViewXContracts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.uiDataArchive_dataGridViewXContracts.ShowEditingIcon = false;
-            this.uiDataArchive_dataGridViewXContracts.Size = new System.Drawing.Size(644, 574);
+            this.uiDataArchive_dataGridViewXContracts.Size = new System.Drawing.Size(644, 578);
             this.uiDataArchive_dataGridViewXContracts.TabIndex = 31;
             this.uiDataArchive_dataGridViewXContracts.CurrentCellChanged += new System.EventHandler(this.uiDataArchive_dataGridViewXContracts_CurrentCellChanged);
             // 
@@ -4755,7 +4853,7 @@
             this.uiDataArchive_panelExPreview.Name = "uiDataArchive_panelExPreview";
             this.uiDataArchive_panelExPreview.Padding = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel1.SetRowSpan(this.uiDataArchive_panelExPreview, 2);
-            this.uiDataArchive_panelExPreview.Size = new System.Drawing.Size(264, 488);
+            this.uiDataArchive_panelExPreview.Size = new System.Drawing.Size(264, 492);
             this.uiDataArchive_panelExPreview.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.uiDataArchive_panelExPreview.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.uiDataArchive_panelExPreview.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -4809,7 +4907,7 @@
             this.uiDataArchive_dataGridViewXPreview.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.uiDataArchive_dataGridViewXPreview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.uiDataArchive_dataGridViewXPreview.ShowEditingIcon = false;
-            this.uiDataArchive_dataGridViewXPreview.Size = new System.Drawing.Size(262, 486);
+            this.uiDataArchive_dataGridViewXPreview.Size = new System.Drawing.Size(262, 490);
             this.uiDataArchive_dataGridViewXPreview.TabIndex = 33;
             // 
             // PreviewColumnDate
@@ -4930,6 +5028,7 @@
             this.uiStatus_toolStripProgressBar.Name = "uiStatus_toolStripProgressBar";
             this.uiStatus_toolStripProgressBar.RecentlyUsed = false;
             this.uiStatus_toolStripProgressBar.Width = 200;
+            this.uiStatus_toolStripProgressBar.ValueChanged += new System.EventHandler(this.uiStatus_toolStripProgressBar_ValueChanged);
             // 
             // uiStatus_labelItemSeparate
             // 
@@ -5396,6 +5495,13 @@
             this.Shown += new System.EventHandler(this.MainFormMetroApp_Shown);
             this.metroShellMain.ResumeLayout(false);
             this.metroShellMain.PerformLayout();
+            this.metroTabPanel_summary.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.uiBTSummaryGroupPanel.ResumeLayout(false);
+            this.uiBTSummaryGroupPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiBTSummaryChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiSummary_dataGridViewBT)).EndInit();
+            this.uiSummary_panelExSaving.ResumeLayout(false);
             this.metroTabPanel_startegy.ResumeLayout(false);
             this.uiStrategyTablTableLayout.ResumeLayout(false);
             this.uiStrategy_panelExOptions.ResumeLayout(false);
@@ -5420,15 +5526,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.uiStrategy_dataGridViewOptomizationParameters)).EndInit();
             this.uiStrategy_panelExRunContinuesPanel.ResumeLayout(false);
             this.uiStrategy_WorkingButtonsPanel.ResumeLayout(false);
-            this.metroTabPanel_summary.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.uiBTSummaryGroupPanel.ResumeLayout(false);
-            this.uiBTSummaryGroupPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiBTSummaryChart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiSummary_dataGridViewBT)).EndInit();
-            this.uiSummary_panelExSaving.ResumeLayout(false);
             this.metroTabPanel_weekly.ResumeLayout(false);
             this.uiWeekly_tableLayoutPanel4.ResumeLayout(false);
+            this.uiWeeklyDBPanel.ResumeLayout(false);
             this.metroTabPanel_calendar.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.uiCalendar_panelExSaving.ResumeLayout(false);
@@ -5739,6 +5839,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BTEndDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn BTPnl;
         private DevComponents.DotNetBar.Controls.DataGridViewX uiSummary_dataGridViewBT;
+        private DevComponents.DotNetBar.PanelEx uiWeeklyDBPanel;
+        private DevComponents.DotNetBar.ButtonX buttonX3;
+        private DevComponents.DotNetBar.ButtonX buttonX2;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx uiWeeklyDataSetName;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx uiWeeklySymbolName;
 
     }
 }
