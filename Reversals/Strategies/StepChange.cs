@@ -393,7 +393,7 @@ namespace Reversals.Strategies
             if (ticks[ticks.Count - 1].IntradayIndex > 170000 && ticks[ticks.Count - 1].Time.Day == trades[trades.Count - 1].TimeOpen.Day)
             {
                 Tick tick = ticks[ticks.Count - 1];
-                AddPremium(new DateTime(tick.Time.Year, tick.Time.Month, tick.Time.Day + 1, 17, 00, 00));
+                AddPremium(new DateTime(tick.Time.Year, tick.Time.AddDays(1).Month, tick.Time.AddDays(1).Day, 17, 00, 00));
             }
 
             for (int i = 0; i < trades.Count; i++)
@@ -486,10 +486,10 @@ namespace Reversals.Strategies
             }
             else
             {
-                _zim = Convert.ToDouble(AdditionalParameter(AdditionalParametersEnum.Zim).Value, new CultureInfo("en-US", false));
-                _pointValue = Math.Round(_zim / _step1, 5);
-                //additional[5] = new StrategyAdditionalParameter("", "ZIM", _step1 * _pointValue, typeof(double), false);
-                additional[4] = new StrategyAdditionalParameter("", "Point Value", _pointValue, typeof(double), false);
+                //_zim = Convert.ToDouble(AdditionalParameter(AdditionalParametersEnum.Zim).Value, new CultureInfo("en-US", false));
+                _zim = Math.Round(_pointValue * _step1, 5);
+                additional[5] = new StrategyAdditionalParameter("", "ZIM", _zim, typeof(double), false);
+                //additional[4] = new StrategyAdditionalParameter("", "Point Value", _pointValue, typeof(double), false);
             }
             //_step1*_pointValue/_tickSize;
         }

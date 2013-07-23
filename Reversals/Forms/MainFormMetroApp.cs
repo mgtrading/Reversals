@@ -393,6 +393,7 @@ namespace Reversals.Forms
 
         private void StartOptimize()
         {
+            _strategy.Parameters = new Strategy.StrategyParameters(1, _currentSymbolName, "Step Change");
             uiWeeklyData_superGridControlTable.PrimaryGrid.DataSource = null;
             var optimizer = new Optimizer(_strategy, OptimizationParameters.Instance.Parameters, uiStrategy_dateTimeAdvOISStart.Value, uiStrategy_dateTimeAdvOISEnd.Value);
             optimizer.ProgressEvent += OptimizeProgressIncrement;
@@ -404,8 +405,9 @@ namespace Reversals.Forms
                 uiStrategy_buttonXStart.Enabled = true;
                 uiStrategy_buttonXStop.Enabled = false;
                 uiStatus_toolStripProgressBar.Value = 100;
+                this.Height += 1;
+                this.Height -= 1;
             });
-
         }
 
         private void OptimizeProgressIncrement(double percent)
@@ -428,6 +430,7 @@ namespace Reversals.Forms
 
             var summaryDisplayer = new SummaryDisplayer(strategy, _inSampleStartTime, _inSampleEndTime);
 
+            
             Invoke((Action)(() => summaryDisplayer.DisplayTable(uiSummary_dataGridViewBT)));
 
             if (uiStrategy_checkBoxXRunContinuesCheck.Checked == false)
@@ -685,11 +688,14 @@ namespace Reversals.Forms
 
         private void uiWeeklyData_superGridControlTable_BeforeExpand(object sender, GridBeforeExpandEventArgs e)
         {
-            GridRow row = e.GridContainer as GridRow;
+            var row = e.GridContainer as GridRow;
             string str = e.GridPanel.Name;
-            if (row["Trades"].Value.ToString() == "0" && str == "tableDays")
+            if (row != null)
             {
-                e.Cancel = true;
+                if (row["Trades"].Value.ToString() == "0" && str == "tableDays")
+                {
+                    e.Cancel = true;
+                }
             }
         }
 
@@ -1297,7 +1303,7 @@ namespace Reversals.Forms
             var tickList = DataManager.GetContractData(symbol);
             if (tickList.Count > 0)
             {
-                _data = new Data(tickList, Data.DataFileType.TickFromDb,Convert.ToInt32(Properties.Settings.Default.sTimeZone));
+                _data = new Data(tickList, Data.DataFileType.TickFromDb,Convert.ToInt32(Settings.Default.sTimeZone));
 
                 _data.CreateData();
 
@@ -2179,14 +2185,6 @@ namespace Reversals.Forms
                 }
             }
 
-            if ((rowindex == 0) && (columnindex == 2))
-            {
-                zim = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 6].Value.ToString(), _nfi);
-                //ticksize = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 7].Value.ToString(), _nfi);
-                step = double.Parse(uiStrategy_dataGridViewOptomizationParameters[columnindex, rowindex].Value.ToString(), _nfi);
-                pvalue = zim / step;
-                uiStrategy_dataGridViewNoOptomizationParameters[1, 5].Value = Math.Round(pvalue, 5);
-            }
             if ((rowindex == 0) && (columnindex == 1))
             {
                 zim = double.Parse(uiStrategy_dataGridViewNoOptomizationParameters[1, 6].Value.ToString(), _nfi);
@@ -2456,6 +2454,15 @@ namespace Reversals.Forms
         private void uiStatus_labelItemProgramStatus_TextChanged(object sender, EventArgs e)
         {
             this.Refresh();
+        }
+
+        private void ui_tabItem_summary_Click(object sender, EventArgs e)
+        {
+            Invoke((Action)delegate
+            {
+                this.Height += 1;
+                this.Height -= 1;
+            });
         }
     }
 }
